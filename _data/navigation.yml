@@ -4,6 +4,8 @@ main:
     url: /graph/
   #- title: "Lessons"
   #  url: /lessons/
+  - title: "Syllabus"
+    url: /syllabus/
   - title: "Introduction"
     url: /introduction/
   - title: "Hillslope"
