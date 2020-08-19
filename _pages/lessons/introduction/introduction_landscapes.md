@@ -1,7 +1,7 @@
 ---
 title: ""
 layout: single
-permalink: /lessons/introduction/what_is_a_landscape/
+permalink: /lessons/introduction/introduction_landscapes/
 
 # Includes author profile in sidebar
 author: Andrew Wickert
