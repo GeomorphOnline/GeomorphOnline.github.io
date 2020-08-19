@@ -16,9 +16,12 @@ classes: wide
 #  image_description: "A description of the image"
 ---
 
-## Learning Goal
+# Introduction: Landscapes
 
-Understand what a landscape is
+## Learning Goals
+
+* Become acquainted with the course
+* Understand what a landscape is
 
 ## Pre-activity
 
