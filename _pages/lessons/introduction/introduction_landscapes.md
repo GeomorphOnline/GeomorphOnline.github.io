@@ -7,7 +7,7 @@ permalink: /lessons/introduction/what_is_a_landscape/
 author: Andrew Wickert
 author_profile: true
 
-classes: wide
+#classes: wide
 
 # If you want a header image
 #header:
