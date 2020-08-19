@@ -32,6 +32,10 @@ Test embedded YouTube
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/S64XZH_NnU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+This could also include a 360 spherical video in which users can pan around or for which they can wear VR goggles
+
+## Google Expeditions 3D/VR
+
 ## Post-activity
 
 ## PSet

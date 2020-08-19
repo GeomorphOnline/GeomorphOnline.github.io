@@ -19,10 +19,12 @@ excerpt: We may be distanced, but we're still on Earth's surface.<br />
 
 Online learning. It's weird, right? But it also makes me think about how education could be better. If we don't have to have our butts in seats and with writing implements in hand for a set period of time each day, maybe we can find a better way to learn. That's what I hope!
 
-I have laid out what I find to be the major topics in geomorphology into the graph on the "Course Graph" page. Click on it to expand and navigate it. Each of the nodes on the graph is a hyperlink. This will take you to a page on a particular topic The lines on the graph show the recommended prerequisite topics to understand a more advanced topic. Colors indicate general disciplinary areas within geomorphology. Square nodes are specific "lab" exercises.
+I have laid out what I find to be the major topics in geomorphology into the graph on the "Course Graph" page. Click on it to expand and navigate it. Each of the nodes on the graph is a hyperlink. This will take you to a page on a particular topic. The lines on the graph show the recommended prerequisite topics to understand a more advanced topic. Colors indicate general disciplinary areas within geomorphology. Square nodes are specific "lab" exercises.
 
 Pages for lessons may include links to:
 * Podcasts to introduce concepts and help you think about the topic
 * Recorded short lectures to go through images, videos, and/or equations
 * Recommended readings and questions for reflection and learning
 * Problem sets to test your skills
+
+They also may include general text on a topic. Some lessons will be short, and others longer, depending on what is needed to introduce a given topic.
