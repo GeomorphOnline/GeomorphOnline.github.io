@@ -1,7 +1,7 @@
 ---
 topic: introduction
 
-title: ""
+title: "Just another template page"
 layout: single
 permalink: /introduction/another_one/
 
