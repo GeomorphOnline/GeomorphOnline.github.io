@@ -22,8 +22,9 @@ author_profile: true
 
 ## Learning Goals
 
-* Become acquainted with the course
-* Understand what a landscape is
+* Become acquainted with the course and how topics and assignments are arranged
+* Learn about the basics of landscapes and landforms
+* Jump into interpreting a landscape with a VR tour of Grand Canyon
 
 ## Pre-activity
 
@@ -33,6 +34,10 @@ author_profile: true
 
 ## Video
 
+Need 2x videos:
+* Landscapes
+* Intro to course and structure (& syllabus)
+
 Test embedded YouTube
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/S64XZH_NnU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -41,8 +46,16 @@ This could also include a 360 spherical video in which users can pan around or f
 
 ## Google Expeditions 3D/VR
 
-## Post-activity
+[Explore the Grand Canyon](https://expeditions.gle/fdl/wmPf)
 
-## PSet
+This set of images has a set of questions that go along with them. They are interesting, and the geology ones can be quite relevant! However, we are not quite so concerned with them for the class.
 
-## Closing thoughts
+## Open-ended thinking assignment
+
+**Deliverable**
+
+Describe in your words and/or diagrams
+* The landforms that you see
+* Whether you can note zones of distinct geometries and processes
+* How the landscape is responding to the incision of Grand Canyon
+It's okay if you feel that you do not have the right vocabulary or background. In fact, it's expected! The idea here is to get the juices flowing and start developing your critical eye for landforms and landscape features. Just by looking closely, you should be able to see signs that show you how Grand Canyon developed and continues to form.
