@@ -1,7 +1,9 @@
 ---
+topic: hillslope
+
 title: ""
 layout: single
-permalink: /lessons/introduction/introduction_landscapes/
+permalink: /hillslope/hillslope_intro/
 
 # Includes author profile in sidebar
 author: Andrew Wickert
@@ -16,12 +18,9 @@ author_profile: true
 #  image_description: "A description of the image"
 ---
 
-# Introduction: Landscapes
+# Hillslopes
 
 ## Learning Goals
-
-* Become acquainted with the course
-* Understand what a landscape is
 
 ## Pre-activity
 

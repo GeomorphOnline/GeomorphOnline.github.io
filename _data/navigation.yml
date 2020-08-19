@@ -2,4 +2,11 @@
 main:
   - title: "Course Graph"
     url: /graph/
-
+  #- title: "Lessons"
+  #  url: /lessons/
+  - title: "Introduction"
+    url: /introduction/
+  - title: "Hillslope"
+    url: /hillslope/
+  - title: "Fluvial"
+    url: /fluvial/

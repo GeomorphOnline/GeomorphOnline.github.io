@@ -83,6 +83,27 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
+
+# Collections
+collections_dir: lessons
+collections:
+  introduction:
+    output: true
+    permalink: /:collection/:path/
+  fluvial:
+    output: true
+    permalink: /:collection/:path/
+  hillslope:
+    output: true
+    permalink: /:collection/:path/
+#collections:
+#  lessons:
+#    output: true
+#    permalink: /:collection/:path/
+#    fluvial: true
+#    sort_by: topic
+
+
 # Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
@@ -280,3 +301,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  - scope:
+      path: ""
+      type: fluvial
+    values:
+      layout: single
+      author_profile: false
+      share: true
