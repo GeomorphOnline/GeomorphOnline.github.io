@@ -18,31 +18,23 @@ author_profile: true
 #  image_description: "A description of the image"
 ---
 
-# Introduction: Landscapes
-
 ## Learning Goals
 
 * Become acquainted with the course and how topics and assignments are arranged
-* Learn about the basics of landscapes and landforms
+* Take a critical look at landscapes and landforms
 * Jump into interpreting a landscape with a VR tour of Grand Canyon
-
-## Pre-activity
 
 ## Podcast
 
-<iframe src="https://www.podbean.com/media/player/multi?playlist=http%3A%2F%2Fplaylist.podbean.com%2F9275608%2Fplaylist_multi.xml&amp;vjs=1&amp;size=430&amp;skin=1&amp;episode_list_bg=%23ffffff&amp;bg_left=%23000000&amp;bg_mid=%230c5056&amp;bg_right=%232a1844&amp;podcast_title_color=%23c4c4c4&amp;episode_title_color=%23ffffff&amp;auto=0&amp;share=1&amp;fonts=Helvetica&amp;download=1&amp;rtl=0&amp;show_playlist_recent_number=10" title="GeomorphOnline" width="100%" height="430" scrolling="no" style="border: none;"></iframe>
+<iframe title="Introduction: Reading Landscapes" height="122" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/kctr4-e7be3a?from=pb6admin&download=1&version=1&auto=0&share=1&download=1&rtl=0&fonts=Helvetica&skin=1&pfauth=&btn-skin=107"></iframe>
 
 ## Video
 
-Need 2x videos:
-* Landscapes
-* Intro to course and structure (& syllabus)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wQztytFSL7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Test embedded YouTube
+## Syllabus
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/S64XZH_NnU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-This could also include a 360 spherical video in which users can pan around or for which they can wear VR goggles
+Read the [syllabus](/syllabus/)!
 
 ## Google Expeditions 3D/VR
 
