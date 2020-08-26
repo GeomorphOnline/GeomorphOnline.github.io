@@ -8,6 +8,8 @@ main:
     url: /syllabus/
   - title: "Introduction"
     url: /introduction/
+  - title: "Topography"
+    url: /topobathy/
   - title: "Hillslope"
     url: /hillslope/
   - title: "Fluvial"
