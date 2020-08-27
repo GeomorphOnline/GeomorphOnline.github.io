@@ -21,6 +21,7 @@ author_profile: true
 ## Learning Goals
 
 * Know landform names, what they are, and a little bit about how they form
+* Understand that these names are what we use to describe landforms intuitively and have evolved with the English language over the course of time, but that they are often more "operational" definitions ("it looks like X") than rigorous definitions. Indeed Earth's surface hosts these forms and others, and contains more of a continuum of features than a set of discretely identifiable rubber-stamped forms.
 
 ## Video
 
@@ -34,3 +35,23 @@ This will allow you to project landforms onto a surface and move around them fro
 
 [Augmented Reality: major landforms](https://tour-repo.appspot.com/view_tour/Basic_Landforms)
 <!-- https://tour-repo.appspot.com/view_tour/Grand_Canyon -->
+
+## Additional Resources
+
+* [National Geographic Resource Library: Landforms](https://www.nationalgeographic.org/encyclopedia/landform/)
+
+Pages for specific landforms from National Geographic, with some short definitions of my own:
+* [Plateau](https://www.nationalgeographic.org/encyclopedia/plateau/): a high and relatively low-relief landscape. Examples include the Colorado Plateau in the southwestern USA, The Tibetan Plateau north of the Himalaya, and the Paleozoic Plateau above the incised upper Mississippi valley.
+* [Canyon](https://www.nationalgeographic.org/encyclopedia/canyon/): a deeply entrenched river valley with steep bedrock walls. The word **gorge** is often used for an especially steep and narrow canyon.
+* [Mesa](https://www.nationalgeographic.org/encyclopedia/mesa/): a flat-topped isolated hill
+* [Butte](https://www.nationalgeographic.org/encyclopedia/butte/): an isolated hill with high, steep sides
+* [Bluff](https://www.nationalgeographic.org/encyclopedia/bluff/): rocky cliffs and hills around a body of water, such as a lake or river.
+* [River](https://www.nationalgeographic.org/article/understanding-rivers/): naturally-flowing streams of water. These play a role in carving their own channels and valleys.
+* [Alluvial fan](https://www.nationalgeographic.org/encyclopedia/alluvial-fan/): a landform that is built where sediment from the mountains deposits as it meets a lowland basin.
+* [River delta](https://www.nationalgeographic.org/encyclopedia/delta/): the low-relief area where a river meets a body of slow-moving water and deposits its sediment.
+* [Beach](https://www.nationalgeographic.org/encyclopedia/beach/): strip of gently sloping vegetation-free land along a shore.
+* [Coastal plain](https://www.nationalgeographic.org/encyclopedia/coastal-plain/): flat-lying land next to an ocean.
+* [Isthmus](https://www.nationalgeographic.org/encyclopedia/isthmus/): a narrow strip of land that connects two landmasses.
+* (Aeolian) [Dune](https://www.nationalgeographic.org/encyclopedia/dune/): An organized mound whose shape relates to the flow that forms it. Note that the NatGeo page here refers only to those formed by wind, but that dunes are common on sand-bed rivers as well.
+* [Rift valley](https://www.nationalgeographic.org/encyclopedia/rift-valley/): a valley that forms due to spreading between Earth's tectonic plates; examples include Iceland's Þingvellir; East Africa's rift through Ethiopia, Kenya, and Tanzania (and extends into the Red Sea); and the Lake Superior basin and surrounding tectonically inactive Midcontinent Rift.
+* [Volcano](https://www.nationalgeographic.org/article/types-volcanic-cones/): a landform created through eruption of lava onto Earth's surface.
