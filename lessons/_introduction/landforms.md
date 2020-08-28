@@ -36,6 +36,18 @@ This will allow you to project landforms onto a surface and move around them fro
 [Augmented Reality: major landforms](https://tour-repo.appspot.com/view_tour/Basic_Landforms)
 <!-- https://tour-repo.appspot.com/view_tour/Grand_Canyon -->
 
+## Major landforms with mechanistically linked definitions
+
+Although there are many names for landforms, these **two generalized landforms** are centrally important in geomorphology. These definitions are also important in helping us to link landscape form and the underlying mechanics.
+
+### Hillslopes
+
+The world's land surface that is not beneath ice or water and is not part of a channel can be defined as a **hillslope**. These can range from nearly flat-lying plains to steep mountainsides. They may be modified by soil creep, aeolian (wind-forced) erosion and deposition, and mass-wasting processes (e.g., landslides).
+
+### Channels
+
+Channels are cut by liquid water and form the conduits through which water, sediment, and dissolved matter drains from landscapes.
+
 ## Additional Resources
 
 * [National Geographic Resource Library: Landforms](https://www.nationalgeographic.org/encyclopedia/landform/)
