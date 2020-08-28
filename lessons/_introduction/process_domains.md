@@ -1,9 +1,9 @@
 ---
 topic: introduction
 
-title: "Landforms"
+title: "Process Domains"
 layout: single
-permalink: /introduction/landforms/
+permalink: /introduction/process_domains/
 
 # Includes author profile in sidebar
 author: Andrew Wickert
