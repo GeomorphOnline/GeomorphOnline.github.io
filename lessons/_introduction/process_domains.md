@@ -29,7 +29,7 @@ author_profile: true
 
 This first video is a basic introduction to process domains as well as conceptual and mathematical models.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8McizDCj6qE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cg1UEKnZYBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Between this first and second video, reflect for a little bit and think of and/or write down what you think a few geomorphic process domains might be. Try to justify your decisions based on how you might be able to best isolate one important set of processes acting on the landscape from another.
 
