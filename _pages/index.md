@@ -21,6 +21,8 @@ Online learning. It's weird, right? But it also makes me think about how educati
 
 I have laid out what I find to be the major topics in geomorphology into the graph on the "Course Graph" page. Click on it to expand and navigate it. Each of the nodes on the graph is a hyperlink. This will take you to a page on a particular topic. The lines on the graph show the recommended prerequisite topics to understand a more advanced topic. Colors indicate general disciplinary areas within geomorphology. Square nodes are specific "lab" exercises.
 
+Of course, you might not want to see the whole map of knowledge laid out before you every time! Therefore, the [schedule](/schedule/) provides links to the relevant lessons for each week.
+
 Pages for lessons may include links to:
 * Podcasts to introduce concepts and help you think about the topic
 * Recorded short lectures to go through images, videos, and/or equations
