@@ -1,11 +1,13 @@
 # main links
 main:
-  - title: "Course Graph"
-    url: /graph/
   #- title: "Lessons"
   #  url: /lessons/
   - title: "Syllabus"
     url: /syllabus/
+  - title: "Schedule"
+    url: /schedule/
+  - title: "Course Graph"
+    url: /graph/
   - title: "Introduction"
     url: /introduction/
   - title: "Topography"
