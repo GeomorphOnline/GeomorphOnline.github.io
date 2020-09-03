@@ -99,6 +99,9 @@ collections:
   hillslope:
     output: true
     permalink: /:collection/:path/
+  soil:
+    output: true
+    permalink: /:collection/:path/
 #collections:
 #  lessons:
 #    output: true
