@@ -60,15 +60,21 @@ All grades will appear and be updated **on Canavs**.
 
 ## Assignments
 
-All problem sets and labs will be due **one week** from the date on which they are assigned. If this date falls on a weekend (e.g., last day of a field trip... which we won't have :( ), then they are due the first weekday after one week passes. After one week, late work will be worth half credit; after two weeks, it will not be worth anything. This is necessary to ensure that I am able to return assignments to students in a timely manner, and to ensure that you keep up with course material.
+All problem sets and labs will be due **one week** from the date on which they are assigned. For the purposes of online learning, this means that they are due on the **Friday following the week in which they are assigned.** Assignments are noted within the lessons as **deliverable** items. ~~If this date falls on a weekend (e.g., last day of a field trip... which we won't have :( ), then they are due the first weekday after one week passes.~~ If that Friday is a holiday, then they are due the first subsequent business day.
+
+We aim to return all assignments one week after their due date. All work handed in between the due date and the date at which we return graded assignments will be worth half credit. After we return graded assignments, we will no longer accept late work.
 
 Of course, **reasonable exceptions to these penalties and deadlines will be accepted** (e.g., family or medical emergency), with arrangements for late work designed to accommodate these real-life events without causing undue stress (see below). Late or missed work due to reasons that the students knew about beforehand (i.e.: scheduled events) will be accepted only if **arrangements are made before the assignment is due**; the definition of “beforehand” can be stretched for some circumstances (found out you broke your leg shortly before class) and not in others (scheduled absence due to a normal event, e.g., athletics, ROTC, ...). This requirement is to ensure that the instructors know all of your schedules as early as possible in the semester and are able to maintain the pace of the course while making reasonable accommodations.
 
+If there is a reasonable excuse that causes a student be less than one week late, such that they do not see the answers, we will award full credit. If a reasonable excuse causes the work to need to be handed in greater than or equal to one week late, we will handle the situation on a case-by-case basis.
+
 All completed assignments should be **submitted via Canvas**.
 
+<!--
 ## ~~Field trips~~
 
 ~~There are two field trips for this class. One runs Friday–Saturday, and the other runs Friday–Sunday. Vehicles will leave campus as soon as it is possible for students. These field trips are mandatory. If this presents a problem, please contact the instructor as soon as possible (ideally, the day that the sylllabus is handed out).~~
+-->
 
 ## Final Projects
 
@@ -124,11 +130,3 @@ There may be ungraded pre- and post-lesson activities and reflections.
 ### Problem sets / labs / assignments
 
 Deliverable (i.e., graded) lessons may be associated with specific problem sets and/or laboratory activities. The former will help you to understand some core concepts and equations. The latter are designed to help you visualize how landscapes evolve and to gain practice with topographic analyses and geomorphic modeling.
-
-## Schedule
-
-### Week 1
-
-
-
-### Week 2
