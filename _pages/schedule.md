@@ -79,7 +79,7 @@ Landlab
 
 Fault scarps
 
-## Week 10: Geochronology
+## Week 10: Terrain Analysis and Geochronology
 
 LSDTopoTools + data --OR-- OSL exercise
 
