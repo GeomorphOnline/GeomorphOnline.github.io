@@ -18,7 +18,7 @@ author_profile: true
 #  image_description: "A description of the image"
 ---
 
-*To better understand landscapes, we separate our conceptualization of landforms and the processes that form them into different "geomorphic process domains".
+*To better understand landscapes, we separate our conceptualization of landforms and the processes that form them into different "geomorphic process domains".*
 
 ## Learning Goals
 
