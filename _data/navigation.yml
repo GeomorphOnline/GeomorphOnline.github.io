@@ -18,6 +18,8 @@ main:
     url: /hillslope/
   - title: "Catchment Hydrology"
     url: /hydrology/
+  - title: "Hydraulics"
+    url: /hydraulics/
   - title: "Fluvial"
     url: /fluvial/
   - title: "Tectonic"

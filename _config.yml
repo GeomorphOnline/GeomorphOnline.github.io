@@ -99,6 +99,12 @@ collections:
   hillslope:
     output: true
     permalink: /:collection/:path/
+  hydrology:
+    output: true
+    permalink: /:collection/:path/
+  hydraulics:
+    output: true
+    permalink: /:collection/:path/
   fluvial:
     output: true
     permalink: /:collection/:path/
