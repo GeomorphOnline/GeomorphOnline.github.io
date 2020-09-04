@@ -18,6 +18,8 @@ author_profile: true
 #  image_description: "A description of the image"
 ---
 
+*Landforms are macro-scale basis of geomorphology; these are what we seek to explain and understand.*
+
 ## Learning Goals
 
 * Know landform names, what they are, and a little bit about how they form
