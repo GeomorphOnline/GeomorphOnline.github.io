@@ -12,7 +12,25 @@ main:
     url: /introduction/
   - title: "Topography"
     url: /topobathy/
+  - title: "Soil"
+    url: /soil/
   - title: "Hillslope"
     url: /hillslope/
+  - title: "Catchment Hydrology"
+    url: /hydrology/
   - title: "Fluvial"
     url: /fluvial/
+  - title: "Tectonic"
+    url: /tectonic/
+  - title: "Landscape Evolution"
+    url: /landscape-evolution/
+  - title: "Terrain Analysis"
+    url: /analysis/
+  - title: "Geochronology"
+    url: /geochronology/
+  - title: "Glacial"
+    url: /glacial/
+  - title: "Coastal"
+    url: /coastal/
+  - title: "Aeolian"
+    url: /aeolian/

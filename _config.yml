@@ -93,13 +93,34 @@ collections:
   topobathy:
     output: true
     permalink: /:collection/:path/
-  fluvial:
+  soil:
     output: true
     permalink: /:collection/:path/
   hillslope:
     output: true
     permalink: /:collection/:path/
-  soil:
+  fluvial:
+    output: true
+    permalink: /:collection/:path/
+  tectonic:
+    output: true
+    permalink: /:collection/:path/
+  landscape-evolution:
+    output: true
+    permalink: /:collection/:path/
+  terrain-analysis:
+    output: true
+    permalink: /:collection/:path/
+  geochronology:
+    output: true
+    permalink: /:collection/:path/
+  glacial:
+    output: true
+    permalink: /:collection/:path/
+  coastal:
+    output: true
+    permalink: /:collection/:path/
+  aeolian:
     output: true
     permalink: /:collection/:path/
 #collections:

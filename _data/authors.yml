@@ -25,4 +25,13 @@ Andrew Wickert:
     - label: "Google Scholar"
       icon: "fab fa-fw fa-google"
       url: https://scholar.google.com/citations?user=-cCwyPsAAAAJ&hl=en
-
+Shanti Penprase:
+  name             : "Shanti Penprase"
+  avatar           : "https://umn-earth-surface.github.io/assets/images/headshots/penprase_square.jpeg"
+  bio              : "Ph.D. Student<br/>Department of Earth & Environmental Sciences"
+  location         : Minneapolis, Minnesota, USA
+  email            : penpr001@umn.edu
+  links:
+    - label: "Google Scholar"
+      icon: "fab fa-fw fa-google"
+      url: https://scholar.google.com/citations?user=Kjo77TIAAAAJ&hl=en&oi=ao
