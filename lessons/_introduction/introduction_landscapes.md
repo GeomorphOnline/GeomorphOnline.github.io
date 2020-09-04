@@ -18,11 +18,18 @@ author_profile: true
 #  image_description: "A description of the image"
 ---
 
+*Geomorphologists study landforms and landscapes to learn how they change and evolve. This knowledge plays directly into our understanding of geology and natural landscapes, our ability to predict natural hazards and future land-surface change, and natural-resource management.*
+
 ## Learning Goals
 
 * Become acquainted with the course and how topics and assignments are arranged
 * Take a critical look at landscapes and landforms
 * Jump into interpreting a landscape with a VR tour of Grand Canyon
+
+## Syllabus and Schedule!
+
+* Read the [syllabus](/syllabus/)!
+* Look at the [course schedule](/schedule/) too.
 
 ## What is a landscape?
 
@@ -37,10 +44,6 @@ For a decent quick overview with some nice images, the [Wikipedia article on lan
 ## Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wQztytFSL7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Syllabus
-
-Read the [syllabus](/syllabus/)!
 
 ## Google Expeditions 3D/VR
 
