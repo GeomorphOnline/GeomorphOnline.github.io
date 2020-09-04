@@ -129,6 +129,9 @@ collections:
   aeolian:
     output: true
     permalink: /:collection/:path/
+  planetary:
+    output: true
+    permalink: /:collection/:path/
 #collections:
 #  lessons:
 #    output: true
