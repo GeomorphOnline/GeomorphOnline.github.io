@@ -3,7 +3,7 @@ topic: introduction
 
 title: "Just another template page"
 layout: single
-permalink: /introduction/another_one/
+permalink: /category/pagename/
 
 # Includes author profile in sidebar
 author: Andrew Wickert
