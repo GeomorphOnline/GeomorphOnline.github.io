@@ -9,7 +9,7 @@ permalink: /schedule/
 
 *This schedule will be updated over the course of the semester.*
 
-## Week 1: Introduction and Landforms
+## Week 1: Introduction: Landforms, Geomorphic Process Domains
 
 ***Sept. 7th***
 
@@ -17,68 +17,79 @@ permalink: /schedule/
 
 [Landforms](/introduction/landforms/)
 
+[Geomorphic Process Domains](/introduction/process_domains/)
 
-## Week 2: Geomorphic Process Domains and Transport Laws
+## Week 2: Background: Geomorphic Transport Laws; Mapping and Surveying
 
 ***Sept. 14th***
 
-[Process Domains](/introduction/process_domains/)
+[Geomorphic Transport Laws](/introduction/transport_laws)
 
-Transport Laws
-
-## Week 3: Mapping and Surveying
+## Week 3: Soils
 
 ***Sept. 21st***
 
-## Week 4: Soils
-
-***Sept. 28th***
-
-Soil and its global importance
+[Soil and its global importance](/soil/importance/)
 
 Definitions: soil and mobile regolith
 
-Soil horizonation
-
 Soil formation
+
+Soil horizonation
 
 Soil-production functions
 
+Soils, hillslopes, and channels
+
+## Week 4: Hillslopes
+
+***Sept. 28th***
+
 Hillslope mass balance
-
-## Week 5: Hillslopes Dynamics
-
-***Oct. 5th***
 
 Soil creep and hillslope diffusion
 
 Mass wasting
 
-## Week 6: Catchment Hydrology
+## Week 5: Catchment Hydrology
+
+***Oct. 5th***
+
+Rainfall--runoff virtual board game
+
+## Week 6: Open-channel flow and hydraulics
 
 ***Oct. 12th***
 
-## Week 7: Fluvial
+## Week 7: Fluvial I: Erosional river networks and bedrock incision
+
+Bedrock river long profiles
 
 ***Oct. 19th***
 
-## Week 8: Fluvial
+## Week 8: Landscape Evolution
 
 ***Oct. 26th***
 
-## Week 9: Tectonics and Surface Processes
+Landlab
+
+## Week 9: Tectonics and Terrain Analysis
 
 ***Nov. 2nd***
 
-## Week 10: Landscape Evolution
+Fault scarps
+
+## Week 10: Geochronology
+
+LSDTopoTools + data --OR-- OSL exercise
 
 ***Nov. 9th***
 
-## Week 11: Terrain Analysis
+## Week 11: Fluvial II: Sediment transport and alluvial rivers
 
 ***Nov. 16th***
 
-## Week 12: Quaternary Geochronology
+## Week 12: Coastal geomorphology
 
 ***Nov. 23rd***
 
@@ -88,7 +99,7 @@ Half week: Happy Thanksgiving!
 
 ***Nov. 30th***
 
-## Week 14: Bringing it all back: An eye for the landscape
+## Week 14: Aeolian, Planetary, and An Eye for the Landscape (Wrap-up)
 
 ***Dec. 7th***
 
