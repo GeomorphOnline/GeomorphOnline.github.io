@@ -51,8 +51,8 @@ Readings in the textbook will supplement your learning in class, but there will 
 
 ## Grade Distribution
 
-| Problem sets, lab reports, and lesson-response exercises   | 75%     |
-| Final project                                              | 25%     |
+| Problem sets, lab reports, and lesson-response exercises   | 80%     |
+| Final project                                              | 20%     |
 
 Note that this grade distribution *may change slightly* if the distribution of primary coursework vs. final project effort changes as we all learn together how to manage online learning. All changes will be to reflect proportional effort in the class.
 
