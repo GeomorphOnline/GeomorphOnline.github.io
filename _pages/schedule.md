@@ -25,19 +25,35 @@ permalink: /schedule/
 
 [Geomorphic Transport Laws](/introduction/transport_laws)
 
+[Topography and Bathymetry](/topobathy/topography_bathymetry/)
+
+Topographic Maps
+
+Land Surveying
+
+Remote Sensing
+
 ## Week 3: Soils
 
 ***Sept. 21st***
 
 [Soil and its global importance](/soil/importance/)
 
-Definitions: soil and mobile regolith
+Definitions: soil and mobile regolith (What is a soil?)
 
-Soil formation
+Soil-forming processes
 
 Soil horizonation
 
+Parent material
+
+Weathering
+
+Soils in erosional and depositional environments
+
 Soil-production functions
+
+Soil thickness through time
 
 Soils, hillslopes, and channels
 
