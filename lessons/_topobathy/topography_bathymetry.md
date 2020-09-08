@@ -43,3 +43,6 @@ author_profile: true
 
 Purely for your own fun! We will not be focusing too much on bathymetry in this class, but if you want to see the kinds of ships that take scientific measurements, check out this VR tour of the
 [Research Vessel Sonne](https://tour-repo.appspot.com/view_tour/Aboard_the_German_research_vessel_SONNE).
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

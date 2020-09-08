@@ -37,3 +37,6 @@ Submit short-answer thoughts on the following:
 2. Explain how humans can interact with soils in order to reduce soil erosion, restore soils, and/or adjust the pace of soil erosion in order to maintain agricultural production and sustainability.
 
 Reference one or more portions Dr. Montgomery's lecture in your answers.
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

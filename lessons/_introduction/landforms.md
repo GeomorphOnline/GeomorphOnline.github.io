@@ -69,3 +69,6 @@ Pages for specific landforms from National Geographic, with some short definitio
 * (Aeolian) [Dune](https://www.nationalgeographic.org/encyclopedia/dune/): An organized mound whose shape relates to the flow that forms it. Note that the NatGeo page here refers only to those formed by wind, but that dunes are common on sand-bed rivers as well.
 * [Rift valley](https://www.nationalgeographic.org/encyclopedia/rift-valley/): a valley that forms due to spreading between Earth's tectonic plates; examples include Iceland's Þingvellir; East Africa's rift through Ethiopia, Kenya, and Tanzania (and extends into the Red Sea); and the Lake Superior basin and surrounding tectonically inactive Midcontinent Rift.
 * [Volcano](https://www.nationalgeographic.org/article/types-volcanic-cones/): a landform created through eruption of lava onto Earth's surface.
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
