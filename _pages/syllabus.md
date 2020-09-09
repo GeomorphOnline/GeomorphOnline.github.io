@@ -22,13 +22,13 @@ Credit Hours: 4
 
 ### Instructor
 
-**Andrew Wickert**\
+[**Andrew Wickert**](/people/awickert/)\
 awickert@umn.edu\
 Office Hours: TBD
 
 ### TA
 
-**Shanti Penprase**\
+[**Shanti Penprase**](/people/spenprase/)\
 penpr001@umn.edu\
 Office Hours: TBD
 
