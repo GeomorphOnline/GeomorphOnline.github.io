@@ -61,5 +61,6 @@ Describe in your words and/or diagrams
 * How the landscape is responding to the incision of Grand Canyon
 It's okay if you feel that you do not have the right vocabulary or background. In fact, it's expected! The idea here is to get the juices flowing and start developing your critical eye for landforms and landscape features. Just by looking closely, you should be able to see signs that show you how Grand Canyon developed and continues to form.
 
+A response in the 3-paragraph range should probably suffice, but there is no hard length limit.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
