@@ -19,7 +19,6 @@ permalink: /schedule/
 [Landforms](/introduction/landforms/)
 
 [Geomorphic Process Domains](/introduction/process_domains/)
-***Note: one more lecture video needs to be added (expected addition Tuesday after Labor day).***
 
 
 # --- Below this line ---
