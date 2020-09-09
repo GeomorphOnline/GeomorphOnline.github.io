@@ -33,7 +33,7 @@ They also may include general text on a topic. Some lessons will be short, and o
 
 ## Licensing and copyright
 
-All original material on these pages is licensed as [Creative Commons Attribution Share-Alike 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0). Original media produced for the class is also licensed CC BY-SA 4.0, and may include some reproductions of published images under educational fair use. Media not produced explicitly for this class but linked and/or embedded is provided under the author's and/or publisher's stated copyright and/or license.
+All original material on these pages is licensed as [Creative Commons Attribution Share-Alike 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0). Original media produced for the class is also licensed CC BY-SA 4.0 with the exception of the YouTube videos, which are licensed under the YouTube standard license (may be played on YouTube only). The class materials may include some reproductions of published images under educational fair use. Media not produced explicitly for this class but linked and/or embedded is provided under the author's and/or publisher's stated copyright and/or license.
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
