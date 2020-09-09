@@ -24,13 +24,13 @@ permalink: /schedule/
 # --- Below this line ---
 # --- Course material still being built! ---
 
-## Week 2: Core concepts of form and process; Mapping
+## Week 2: Introduction: transport laws, form and process; Mapping and Topography
 
 ***Sept. 14th***
 
 [Geomorphic Transport Laws](/introduction/transport_laws)
 
-Form and Process
+[Form and Process](/introduction/form_and_process)
 
 [Topography and Bathymetry](/topobathy/topography_bathymetry/)
 
