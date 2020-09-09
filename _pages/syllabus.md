@@ -60,7 +60,7 @@ All grades will appear and be updated **on Canavs**.
 
 ## Assignments
 
-All problem sets and labs will be due **one week** from the date on which they are assigned. For the purposes of online learning, this means that they are due on the **Friday following the week in which they are assigned.** Assignments are noted within the lessons as **deliverable** items. ~~If this date falls on a weekend (e.g., last day of a field trip... which we won't have :( ), then they are due the first weekday after one week passes.~~ If that Friday is a holiday, then they are due the first subsequent business day.
+All problem sets and labs will be due **one week** from the date on which they are assigned. You may expect **1--2** assignments per week. For the purposes of online learning, this means that they are due on the **Friday following the week in which they are assigned.** Assignments are noted within the lessons as **deliverable** items. ~~If this date falls on a weekend (e.g., last day of a field trip... which we won't have :( ), then they are due the first weekday after one week passes.~~ If that Friday is a holiday, then they are due the first subsequent business day.
 
 We aim to return all assignments one week after their due date. All work handed in between the due date and the date at which we return graded assignments will be worth half credit. After we return graded assignments, we will no longer accept late work.
 
