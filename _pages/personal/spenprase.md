@@ -22,7 +22,4 @@ classes: wide
 ## Affiliations
 
 
-## Intro videos
-
-
 ## Etc
