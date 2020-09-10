@@ -59,6 +59,7 @@ Describe in your words and/or diagrams
 * The landforms that you see
 * Whether you can note zones of distinct geometries and processes
 * How the landscape is responding to the incision of Grand Canyon
+
 It's okay if you feel that you do not have the right vocabulary or background. In fact, it's expected! The idea here is to get the juices flowing and start developing your critical eye for landforms and landscape features. Just by looking closely, you should be able to see signs that show you how Grand Canyon developed and continues to form.
 
 A response in the 3-paragraph range should probably suffice, but there is no hard length limit.
