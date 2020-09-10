@@ -23,3 +23,4 @@ My research is focused on interactions between glaciers and rivers and understan
 I'm a third year Ph.D. candidate in the ESCI department. I love all things rivers, glaciers, baking, and yoga. When I'm not thinking about landscapes I love making bread with my sourdough starter ("the Yeastie Boys") and taking long walks with my black lab, Stella.
 
 ## Affiliations
+* [Department of Earth and Environmental Sciences](https://www.esci.umn.edu/)
