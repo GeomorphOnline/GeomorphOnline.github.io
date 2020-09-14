@@ -24,19 +24,21 @@ Credit Hours: 4
 
 [**Andrew Wickert**](/people/awickert/)\
 awickert@umn.edu\
-Office Hours: TBD
+Office Hours: Thursday 10-11 am
 
 ### TA
 
 [**Shanti Penprase**](/people/spenprase/)\
 penpr001@umn.edu\
-Office Hours: TBD
+Office Hours: Tuesday 10-11 am, Wednesday 12:30-1:30 pm
+
+**Office Hours are held on Gather, see the course announcements on Canvas or email Shanti for the link**
 
 ## Group meetings
 
-You will be assigned small groups to discuss problems and course work. We will schedule regular Zoom calls for these groups.
+You will be assigned small groups to discuss problems and course work. You will meet and work with your groups in the Gather "classroom".
 
-TBD pending scheduling poll
+See the Canvas announcement for group assignments. Email Shanti if you have questions.
 
 ## Texts and Readings
 
