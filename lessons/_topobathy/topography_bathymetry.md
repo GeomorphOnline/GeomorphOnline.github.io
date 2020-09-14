@@ -37,7 +37,7 @@ author_profile: true
 
 ## Assignment
 
-**Deliverable:** Zoom in on a specific section of the etopo1 topogrpahic/bathymetric map. Take a screenshot and describe what you see in a paragraph.
+**Deliverable:** Zoom in on a specific section of the etopo1 topogrpahic/bathymetric map. (To see it in its fill size, right-click and then "open image in new tab".) Take a screenshot and annotate it into different geomorphic process domains. Your chosen zone must include at least two separate process domains: no fair taking a capture of the Greenland Ice Sheet! You can do this in any software of your choice. Then, write a paragraph describing your decision-making process.
 
 ## Google Expeditions 3D/VR
 
