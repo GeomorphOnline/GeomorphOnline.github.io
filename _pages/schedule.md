@@ -21,12 +21,17 @@ permalink: /schedule/
 [Geomorphic Process Domains](/introduction/process_domains/)
 
 
-# --- Below this line ---
-# --- Course material still being built! ---
-
 ## Week 2: Introduction: transport laws, form and process; Mapping and Topography
 
 ***Sept. 14th***
+
+### Math/physics background
+
+[Conservation](/mathphysics/conservation)
+
+[Discharge, flux, and velocity](/mathphysics/discharge_flux_velocity)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 [Geomorphic Transport Laws](/introduction/transport_laws)
 
