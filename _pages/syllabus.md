@@ -32,7 +32,7 @@ Office Hours: Thursday 10-11 am
 penpr001@umn.edu\
 Office Hours: Tuesday 10-11 am, Wednesday 12:30-1:30 pm
 
-**Office Hours are held on Gather, see the course announcements on Canvas or email Shanti for the link**
+**Office Hours are held on Gather, see the course announcements on Canvas or email Shanti for the link.**
 
 ## Group meetings
 
