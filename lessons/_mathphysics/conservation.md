@@ -3,7 +3,7 @@ topic: mathphysics
 
 title: "Conservation"
 layout: single
-permalink: /introduction/conservation/
+permalink: /mathphysics/conservation/
 
 # Includes author profile in sidebar
 author: Andrew Wickert
