@@ -31,13 +31,13 @@ permalink: /schedule/
 
 [Discharge, flux, and velocity](/mathphysics/discharge_flux_velocity)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 ### Landforms and geomorphic change
 
 [Geomorphic Transport Laws](/introduction/transport_laws)
 
 [Form and Process](/introduction/form_and_process)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 ### Mapping and topography
 
