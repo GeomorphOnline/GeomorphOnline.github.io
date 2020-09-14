@@ -90,6 +90,9 @@ collections:
   introduction:
     output: true
     permalink: /:collection/:path/
+  mathphysics:
+    output: true
+    permalink: /:collection/:path/
   topobathy:
     output: true
     permalink: /:collection/:path/

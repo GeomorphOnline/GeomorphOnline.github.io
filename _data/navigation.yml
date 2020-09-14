@@ -10,6 +10,8 @@ main:
     url: /graph/
   - title: "Introduction"
     url: /introduction/
+  - title: "Math/Physics"
+    url: /mathphysics/
   - title: "Topography"
     url: /topobathy/
   - title: "Soil"
