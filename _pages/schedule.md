@@ -21,7 +21,7 @@ permalink: /schedule/
 [Geomorphic Process Domains](/introduction/process_domains/)
 
 
-## Week 2: Introduction: transport laws, form and process; Mapping and Topography
+## Week 2: Introduction: transport laws, form and process; Mapping and topography
 
 ***Sept. 14th***
 
@@ -33,9 +33,13 @@ permalink: /schedule/
 
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
+### Landforms and geomorphic change
+
 [Geomorphic Transport Laws](/introduction/transport_laws)
 
 [Form and Process](/introduction/form_and_process)
+
+### Mapping and topography
 
 [Topography and Bathymetry](/topobathy/topography_bathymetry/)
 
@@ -86,7 +90,7 @@ Hillslope diffusion
 Mass wasting
 
 
-## Week 5: Catchment Hydrology
+## Week 5: Catchment hydrology
 
 ***Oct. 5th***
 
@@ -187,12 +191,12 @@ Half week: Happy Thanksgiving!
 ***Nov. 30th***
 
 
-## Week 14: Aeolian, Planetary, and An Eye for the Landscape (Wrap-up)
+## Week 14: Aeolian, Planetary, and An eye for the landscape (Wrap-up)
 
 ***Dec. 7th***
 
 
-## Week 15: Final Project Presentations
+## Week 15: Final project presentations
 
 ***Dec. 14th***
 
