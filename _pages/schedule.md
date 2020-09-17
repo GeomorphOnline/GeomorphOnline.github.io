@@ -49,6 +49,10 @@ Land Surveying
 
 Remote Sensing
 
+### Due Friday
+
+Grand Canyon landscape observations
+
 
 ## Week 3: Soils
 
@@ -73,6 +77,12 @@ Soil-production functions
 Soil thickness through time
 
 Soils, hillslopes, and channels
+
+<!--### Due Friday
+
+QGIS + process domains
+
+Surveying-->
 
 
 ## Week 4: Hillslopes
