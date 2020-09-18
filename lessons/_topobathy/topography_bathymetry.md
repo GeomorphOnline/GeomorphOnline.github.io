@@ -39,6 +39,14 @@ author_profile: true
 
 **Deliverable:** Zoom in on a specific section of the etopo1 topogrpahic/bathymetric map. (To see it in its fill size, right-click and then "open image in new tab".) Take a screenshot and annotate it into different geomorphic process domains. Your chosen zone must include at least two separate process domains: no fair taking a capture of the Greenland Ice Sheet! You can do this in any software of your choice. Then, write a paragraph describing your decision-making process. -->
 
+## Video
+
+MinuteEarth and its companion, MinutePhysics, have fantastic quick descriptions of important observations and processes in the natural world. (They are also made in Minnesota!)
+
+After looking at Earth's hypsometric curve and thinking about why it has a double-humped structure (and perhaps jotting down a possible reason why), check out this video to see how it compares to other planets in our solar system:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KOv3FGVmRcA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Google Expeditions 3D/VR
 
 Purely for your own fun! We will not be focusing too much on bathymetry in this class, but if you want to see the kinds of ships that take scientific measurements, check out this VR tour of the
