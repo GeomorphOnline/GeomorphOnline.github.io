@@ -37,26 +37,26 @@ permalink: /schedule/
 
 [Form and Process](/introduction/form_and_process)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 ### Mapping and topography
 
 [Topography and Bathymetry](/topobathy/topography_bathymetry/)
 
-Topographic Maps
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-Land Surveying
+[Topographic Maps](/topobathy/topographic_maps/)
 
-Remote Sensing
+[Land Surveying](/topobathy/surveying/)
 
 ### Due Friday
 
 Grand Canyon landscape observations
 
 
-## Week 3: Soils
+## Week 3: Soils and GIS
 
 ***Sept. 21st***
+
+### Soils geomorphology
 
 [Soil and its global importance](/soil/importance/)
 
@@ -77,6 +77,13 @@ Soil-production functions
 Soil thickness through time
 
 Soils, hillslopes, and channels
+
+### Remote sensing in mapping + Geographic Information Systems (GIS)
+
+Remote Sensing
+
+GIS
+
 
 <!--### Due Friday
 
