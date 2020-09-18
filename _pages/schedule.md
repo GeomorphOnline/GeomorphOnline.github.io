@@ -41,8 +41,6 @@ permalink: /schedule/
 
 [Topography and Bathymetry](/topobathy/topography_bathymetry/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 [Topographic Maps](/topobathy/topographic_maps/)
 
 [Land Surveying](/topobathy/surveying/)
@@ -59,6 +57,8 @@ Grand Canyon landscape observations
 ### Soils geomorphology
 
 [Soil and its global importance](/soil/importance/)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 Definitions: soil and mobile regolith (What is a soil?)
 
@@ -84,6 +84,9 @@ Remote Sensing
 
 GIS
 
+### Due Friday
+
+Surveying assignment
 
 <!--### Due Friday
 
