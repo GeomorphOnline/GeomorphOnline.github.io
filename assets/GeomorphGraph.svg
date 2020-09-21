@@ -21,7 +21,7 @@
 <!-- Discharge, flux, and velocity -->
 <g id="node1" class="node">
 <title>Discharge, flux, and velocity</title>
-<g id="a_node1"><a xlink:href="https://GeomorphOnline.github.io/lessons/mathphysics/discharge_flux_velocity/" xlink:title="Discharge, flux, and velocity">
+<g id="a_node1"><a xlink:href="https://GeomorphOnline.github.io/mathphysics/discharge_flux_velocity/" xlink:title="Discharge, flux, and velocity">
 <ellipse fill="#c0c0c0" stroke="#c0c0c0" cx="3961.6932" cy="-1851.4012" rx="142.9746" ry="18"/>
 <text text-anchor="middle" x="3961.6932" y="-1847.7012" font-family="Verdana" font-size="14.00" fill="#000000">Discharge, flux, and velocity</text>
 </a>
@@ -45,7 +45,7 @@
 <!-- Conservation -->
 <g id="node2" class="node">
 <title>Conservation</title>
-<g id="a_node2"><a xlink:href="https://GeomorphOnline.github.io/lessons/mathphysics/conservation/" xlink:title="Conservation">
+<g id="a_node2"><a xlink:href="https://GeomorphOnline.github.io/mathphysics/conservation/" xlink:title="Conservation">
 <ellipse fill="#c0c0c0" stroke="#c0c0c0" cx="4193.6932" cy="-1851.4012" rx="71.4873" ry="18"/>
 <text text-anchor="middle" x="4193.6932" y="-1847.7012" font-family="Verdana" font-size="14.00" fill="#000000">Conservation</text>
 </a>
@@ -221,7 +221,7 @@
 <!-- Introduction: Landscapes -->
 <g id="node12" class="node">
 <title>Introduction: Landscapes</title>
-<g id="a_node12"><a xlink:href="https://GeomorphOnline.github.io/lessons/introduction/introduction_landscapes/" xlink:title="Introduction and Landscapes">
+<g id="a_node12"><a xlink:href="https://GeomorphOnline.github.io/introduction/introduction_landscapes/" xlink:title="Introduction and Landscapes">
 <ellipse fill="#228b22" stroke="#228b22" cx="3059.6932" cy="-1995.4012" rx="145.6742" ry="18"/>
 <text text-anchor="middle" x="3059.6932" y="-1991.7012" font-family="Verdana" font-size="14.00" fill="#ffffff">Introduction and Landscapes</text>
 </a>
@@ -308,7 +308,7 @@
 <!-- Soil&#45;forming processes -->
 <g id="node41" class="node">
 <title>Soil&#45;forming processes</title>
-<g id="a_node41"><a xlink:href="https://GeomorphOnline.github.io/lessons/soil/soil-forming_processes/" xlink:title="Soil&#45;forming processes">
+<g id="a_node41"><a xlink:href="https://GeomorphOnline.github.io/soil/soil-forming_processes/" xlink:title="Soil&#45;forming processes">
 <ellipse fill="#a0522d" stroke="#a0522d" cx="2029.6932" cy="-1266.5311" rx="117.7793" ry="18"/>
 <text text-anchor="middle" x="2029.6932" y="-1262.8311" font-family="Verdana" font-size="14.00" fill="#000000">Soil&#45;forming processes</text>
 </a>
@@ -714,7 +714,7 @@
 <!-- Soil and its global importance -->
 <g id="node36" class="node">
 <title>Soil and its global importance</title>
-<g id="a_node36"><a xlink:href="https://GeomorphOnline.github.io/lessons/soil/importance/" xlink:title="Soil and its global importance">
+<g id="a_node36"><a xlink:href="https://GeomorphOnline.github.io/soil/importance/" xlink:title="Soil and its global importance">
 <ellipse fill="#a0522d" stroke="#a0522d" cx="3371.6932" cy="-1995.4012" rx="148.6738" ry="18"/>
 <text text-anchor="middle" x="3371.6932" y="-1991.7012" font-family="Verdana" font-size="14.00" fill="#000000">Soil and its global importance</text>
 </a>
@@ -723,7 +723,7 @@
 <!-- What is a soil? -->
 <g id="node37" class="node">
 <title>What is a soil?</title>
-<g id="a_node37"><a xlink:href="https://GeomorphOnline.github.io/lessons/soil/what_is_soil/" xlink:title="What is a soil?">
+<g id="a_node37"><a xlink:href="https://GeomorphOnline.github.io/soil/what_is_soil/" xlink:title="What is a soil?">
 <ellipse fill="#a0522d" stroke="#a0522d" cx="2016.6932" cy="-1563.4012" rx="77.9862" ry="18"/>
 <text text-anchor="middle" x="2016.6932" y="-1559.7012" font-family="Verdana" font-size="14.00" fill="#000000">What is a soil?</text>
 </a>
@@ -732,7 +732,7 @@
 <!-- Soil composition and texture -->
 <g id="node38" class="node">
 <title>Soil composition and texture</title>
-<g id="a_node38"><a xlink:href="https://GeomorphOnline.github.io/lessons/soil/composition_texture/" xlink:title="Soil composition and texture">
+<g id="a_node38"><a xlink:href="https://GeomorphOnline.github.io/soil/composition_texture/" xlink:title="Soil composition and texture">
 <ellipse fill="#a0522d" stroke="#a0522d" cx="2016.6932" cy="-1491.4012" rx="143.7746" ry="18"/>
 <text text-anchor="middle" x="2016.6932" y="-1487.7012" font-family="Verdana" font-size="14.00" fill="#000000">Soil composition and texture</text>
 </a>
@@ -747,7 +747,7 @@
 <!-- Soil horizonation -->
 <g id="node39" class="node">
 <title>Soil horizonation</title>
-<g id="a_node39"><a xlink:href="https://GeomorphOnline.github.io/lessons/soil/horizonation/" xlink:title="Soil horizonation">
+<g id="a_node39"><a xlink:href="https://GeomorphOnline.github.io/soil/horizonation/" xlink:title="Soil horizonation">
 <ellipse fill="#a0522d" stroke="#a0522d" cx="2016.6932" cy="-1419.4012" rx="89.0842" ry="18"/>
 <text text-anchor="middle" x="2016.6932" y="-1415.7012" font-family="Verdana" font-size="14.00" fill="#000000">Soil horizonation</text>
 </a>
@@ -762,7 +762,7 @@
 <!-- Soil&#45;forming factors -->
 <g id="node40" class="node">
 <title>Soil&#45;forming factors</title>
-<g id="a_node40"><a xlink:href="https://GeomorphOnline.github.io/lessons/soil/soil-forming_factors/" xlink:title="Soil&#45;forming factors">
+<g id="a_node40"><a xlink:href="https://GeomorphOnline.github.io/soil/soil-forming_factors/" xlink:title="Soil&#45;forming factors">
 <ellipse fill="#a0522d" stroke="#a0522d" cx="2023.6932" cy="-1347.4012" rx="103.1819" ry="18"/>
 <text text-anchor="middle" x="2023.6932" y="-1343.7012" font-family="Verdana" font-size="14.00" fill="#000000">Soil&#45;forming factors</text>
 </a>
