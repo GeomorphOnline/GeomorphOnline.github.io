@@ -18,13 +18,15 @@ author_profile: true
 
 [Surveying notes PDF](/assets/notes/01_Surveying.pdf)
 
-[Surveying notes PDF with annotations from the video read-through](/assets/notes/01_Surveying_withNotes.pdf)
+[Surveying notes PDF with annotations from the video read-through](/assets/notes/01_Surveying_withNotes.pdf). *IMPORTANT: I created this walk-through before correcting Equation 3 (+ to -) and the following reference to table ~3~2, as well as before defining "standard deviation" as σ. Please use this as it helps, but refer to the above unannotated notes as the more definitive version.
 
 ## Videos
 
 ### Lecture notes run-through by Wickert:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yyRxw8VoJ8M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+*See comment above: my work through these notes is still valid, but the notes themselves are deprecated in a couple small but oh-so-critical spots for completing the problem set.*
 
 ### Other useful videos for further learning
 
