@@ -60,7 +60,7 @@ Complete the "pacing" exercise and calculate your pace (**Section 2.2**).
 ### Leveling (25 points)
 
 * **(10 pts)** Compute the solution for the leveling survey in **Section 4.1** of the notes.
-* **(15 pts)** Compute the error propagation in **Section 4.2** of the notes. Answer both questions (1) (10
+* **(15 pts)** Compute the error propagation in **Section 4.2** of the notes (**See Canvas announcement for corrections to Equation 2 and the text for this section. Use data from Table 2, not Table 3.**). Answer both questions (1) (10
 points) and (2) (5 points) from the end of this section
 
 ### Cross-section (10 points)
