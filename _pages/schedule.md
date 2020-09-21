@@ -58,15 +58,17 @@ Grand Canyon landscape observations
 
 [Soil and its global importance](/soil/importance/)
 
+[Definitions: soil and mobile regolith (What is a soil?)](/soil/what_is_soil/)
+
+[Soil composition and texture](/soil/composition_texture/)
+
+[Soil horizonation](/soil/horizonation/)
+
+[Soil-forming factors](/soil/soil-forming_factors/)
+
+[Soil-forming processes](/soil/soil-forming_processes/)
+
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
-Definitions: soil and mobile regolith (What is a soil?)
-
-Soil-forming processes
-
-Soil horizonation
-
-Parent material
 
 Weathering
 

@@ -10,6 +10,8 @@ author: Andrew Wickert
 author_profile: true
 ---
 
+*Soils are critical to civilization.*
+
 ## Learning Goals
 
 * Learn about what soils are and how soils form
