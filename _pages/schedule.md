@@ -68,9 +68,9 @@ Grand Canyon landscape observations
 
 [Soil-forming processes](/soil/soil-forming_processes/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
+[Weathering](/soil/weathering/)
 
-Weathering
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 Soils in erosional and depositional environments
 
