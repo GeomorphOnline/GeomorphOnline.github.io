@@ -88,7 +88,7 @@ GIS
 
 ### Due Friday
 
-Surveying assignment
+Nothing! (Assignments from the prior week due on Monday the 28th)
 
 <!--### Due Friday
 
@@ -100,6 +100,12 @@ Surveying-->
 ## Week 4: Hillslopes
 
 ***Sept. 28th***
+
+### Due Monday
+
+Surveying assignment
+
+### Hillslopes
 
 Hillslope processes: creep and mass wasting
 
