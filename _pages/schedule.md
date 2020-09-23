@@ -70,15 +70,13 @@ Grand Canyon landscape observations
 
 [Weathering](/soil/weathering/)
 
+[Soil-production functions](/soil/soil-production_functions)
+
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
-Soils in erosional and depositional environments
-
-Soil-production functions
 
 Soil thickness through time
 
-Soils, hillslopes, and channels
+<!-- Soils, hillslopes, and channels -->
 
 ### Remote sensing in mapping + Geographic Information Systems (GIS)
 
@@ -116,6 +114,12 @@ Soil creep
 Hillslope diffusion
 
 Mass wasting
+
+### Due Friday
+
+Short-answer thoughts (~1 paragraph each) on soils and soil sustainability following on from David Montgomery's Nobel Conference presentation
+
+GIS/soils "lab" (to be posted by Friday 9/25)
 
 
 ## Week 5: Catchment hydrology
