@@ -18,7 +18,7 @@ author_profile: true
 
 [Surveying notes PDF](/assets/notes/01_Surveying.pdf)
 
-[Surveying notes PDF with annotations from the video read-through](/assets/notes/01_Surveying_withNotes.pdf). *IMPORTANT: I created this walk-through before correcting Equation 3 (+ to -) and the following reference to table ~3~2, as well as before defining "standard deviation" as σ. Please use this as it helps, but refer to the above unannotated notes as the more definitive version.
+[Surveying notes PDF with annotations from the video read-through](/assets/notes/01_Surveying_withNotes.pdf). *IMPORTANT: I created this walk-through before correcting Equation 3 (+ to -) and the following reference to table ~3~2, as well as before defining "standard deviation" as σ. Please use this as it helps, but refer to the above unannotated notes as the more definitive version.*
 
 ## Videos
 
