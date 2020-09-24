@@ -70,17 +70,17 @@ Grand Canyon landscape observations
 
 [Weathering](/soil/weathering/)
 
-[Soil-production functions](/soil/soil-production_functions)
+[Soil-production functions](/soil/soil-production_functions/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
-Soil thickness through time
+[Soil thickness through time](/soil/soil_thickness_through_time/)
 
 <!-- Soils, hillslopes, and channels -->
 
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
+
 ### Remote sensing in mapping + Geographic Information Systems (GIS)
 
-Remote Sensing
+Remotely-sensed topography
 
 GIS
 
