@@ -47,7 +47,7 @@ permalink: /schedule/
 
 ### Due Friday
 
-Grand Canyon landscape observations
+[Grand Canyon landscape observations](/introduction/introduction_landscapes/)
 
 
 ## Week 3: Soils and GIS
@@ -101,7 +101,7 @@ Surveying-->
 
 ### Due Monday
 
-Surveying assignment
+[Surveying assignment](/topobathy/surveying/)
 
 ### Hillslopes
 
@@ -124,7 +124,7 @@ Mass wasting
 
 ### Due Monday
 
-[Introduction to QGIS "lab" wtih a focus on process domains and soils (to be posted by Friday 9/25)](/topobathy/intro_QGIS_process_domains_soils/)
+[Introduction to QGIS "lab" wtih a focus on process domains and soils](/topobathy/intro_QGIS_process_domains_soils/)
 
 
 ***Oct. 5th***
