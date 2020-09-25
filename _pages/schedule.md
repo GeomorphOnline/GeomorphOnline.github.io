@@ -82,7 +82,7 @@ Grand Canyon landscape observations
 
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-[Learning GIS: Lab exercise with soils and geomorphic process domains](/topobathy/Learning_GIS_soils_process_domains/)
+[Learning GIS: Lab exercise with soils and geomorphic process domains](/topobathy/intro_QGIS_process_domains_soils/)
 
 ### Due Friday
 
@@ -119,10 +119,13 @@ Mass wasting
 
 [Short-answer thoughts (~1 paragraph each) on soils and soil sustainability following on from David Montgomery's Nobel Conference presentation](/soil/importance/)
 
-[GIS/soils "lab" (to be posted by Friday 9/25)](/topobathy/Learning_GIS_soils_process_domains/)
-
 
 ## Week 5: Catchment hydrology
+
+### Due Monday
+
+[Introduction to QGIS "lab" wtih a focus on process domains and soils (to be posted by Friday 9/25)](/topobathy/intro_QGIS_process_domains_soils/)
+
 
 ***Oct. 5th***
 
