@@ -76,13 +76,13 @@ Grand Canyon landscape observations
 
 <!-- Soils, hillslopes, and channels -->
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 ### Remote sensing in mapping + Geographic Information Systems (GIS)
 
-Remotely-sensed topography
+[Remotely sensed topography](/topobathy/remotely_sensed_topography/)
 
-GIS
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
+
+[Learning GIS: Lab exercise with soils and geomorphic process domains](/topobathy/Learning_GIS_soils_process_domains/)
 
 ### Due Friday
 
@@ -117,9 +117,9 @@ Mass wasting
 
 ### Due Friday
 
-Short-answer thoughts (~1 paragraph each) on soils and soil sustainability following on from David Montgomery's Nobel Conference presentation
+[Short-answer thoughts (~1 paragraph each) on soils and soil sustainability following on from David Montgomery's Nobel Conference presentation](/soil/importance/)
 
-GIS/soils "lab" (to be posted by Friday 9/25)
+[GIS/soils "lab" (to be posted by Friday 9/25)](/topobathy/Learning_GIS_soils_process_domains/)
 
 
 ## Week 5: Catchment hydrology
