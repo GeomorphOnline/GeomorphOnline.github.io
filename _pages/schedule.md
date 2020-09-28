@@ -80,28 +80,24 @@ permalink: /schedule/
 
 [Remotely sensed topography](/topobathy/remotely_sensed_topography/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 [Learning GIS: Lab exercise with soils and geomorphic process domains](/topobathy/intro_QGIS_process_domains_soils/)
 
 ### Due Friday
 
 Nothing! (Assignments from the prior week due on Monday the 28th)
 
-<!--### Due Friday
-
-QGIS + process domains
-
-Surveying-->
-
 
 ## Week 4: Hillslopes
 
 ***Sept. 28th***
 
+***A note from the professor on 9/27: There might be enough material here that hillslopes start to "creep" :) into the following weeks. That's okay! I'll just condense hydrology/hydraulics or cut out some advanced topics; I'm trying to find how much can be reasonably included in an online course.***
+
 ### Due Monday
 
 [Surveying assignment](/topobathy/surveying/)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 ### Hillslopes
 
@@ -122,12 +118,13 @@ Mass wasting
 
 ## Week 5: Catchment hydrology
 
+***Oct. 5th***
+
 ### Due Monday
 
 [Introduction to QGIS "lab" wtih a focus on process domains and soils](/topobathy/intro_QGIS_process_domains_soils/)
 
-
-***Oct. 5th***
+### Hydrology
 
 Watershed
 
