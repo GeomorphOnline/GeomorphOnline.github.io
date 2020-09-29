@@ -46,5 +46,9 @@ From USGS Open-File Report 2006-1195: Typos for sizes: 33.1 mm --> 38.1 mm; 0.54
 
 Beyond sand is gravel, which comprises pebbles, cobbles, and boulders. These are not part of the soil classification, but are important to geomorphology.
 
+## Video
+
+Soil composition and texture are very important for soil classification. Although this is not a goal of the class, the following video does a really did a good job of building field classification of soils into a comprehensible procedure. (Only undefined term that I noticed: "peds" are naturally forming clumps of soil that are separated from one another by planes or zones of weakness: https://www.soil-net.com/legacy/advanced/soil_formation5.htm.)
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
