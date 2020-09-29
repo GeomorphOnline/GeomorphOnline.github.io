@@ -26,6 +26,8 @@ author_profile: true
 
 ### Introduction to course notes used in subsequent lessons
 
+You can download the [PDF of the hillslope course notes](/assets/notes/02_03_Hillslopes.pdf) to follow along. *There is a chance that I will update this version of the notes as I move through it; I will note any updates that are made. Such updates are most likely going to be small.*
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_sAhFQueE3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
