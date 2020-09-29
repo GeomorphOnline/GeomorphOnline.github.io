@@ -8,6 +8,8 @@ main:
     url: /schedule/
   - title: "Course Graph"
     url: /graph/
+  - title: "Field Trips"
+    url: /fieldtrip/
   - title: "Introduction"
     url: /introduction/
   - title: "Math/Physics"

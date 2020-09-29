@@ -111,7 +111,7 @@ Hillslope mass balance
 
 Hillslope diffusion
 
-Virtual field trip: Shadow Creek
+[Virtual field trip: Shadow Creek](/fieldtrip/Shadow_Creek/)
 
 ### Due Friday
 

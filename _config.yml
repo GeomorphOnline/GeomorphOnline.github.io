@@ -87,6 +87,9 @@ social:
 # Collections
 collections_dir: lessons
 collections:
+  fieldtrip:
+    output: true
+    permalink: /:collection/:path/
   introduction:
     output: true
     permalink: /:collection/:path/
