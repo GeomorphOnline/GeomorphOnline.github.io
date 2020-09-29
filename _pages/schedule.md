@@ -151,7 +151,7 @@ Landslide physics and statistics
 Editing Wikipedia and the procedure of the project
 
 
-***Probably going to be pushed back a week***
+***Hydrology probably going to be pushed back a week***
 
 ### Hydrology
 
@@ -174,6 +174,11 @@ River discharge and hydrographs
 Stream gauging
 
 Rainfall--runoff virtual board game
+
+### Due Friday
+
+[Short-answer responses to Shadow Creek VR Field Trip prompts](/fieldtrip/Shadow_Creek/)
+
 
 
 ## Week 6: Open-channel flow and hydraulics
