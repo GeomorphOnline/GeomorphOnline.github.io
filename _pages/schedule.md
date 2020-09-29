@@ -99,13 +99,15 @@ Nothing! (Assignments from the prior week due on Monday the 28th)
 
 ### Hillslopes
 
-[Introduction to Hillslopes and Hillslope Processes: Creep, Mass Wasting, and Diversity of Forms](hillslope_intro)
+[Introduction to Hillslopes and Hillslope Processes: Creep, Mass Wasting, and Diversity of Forms](/hillslope/hillslope_intro)
 
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-Hillslope mass balance
+Hillslope-creep processes
 
-Soil creep
+Hillslope creep: mathematical representation
+
+Hillslope mass balance
 
 Hillslope diffusion
 
@@ -122,7 +124,7 @@ Virtual field trip: Shadow Creek
 
 ### Due Monday
 
-[Introduction to QGIS "lab" wtih a focus on process domains and soils](/topobathy/intro_QGIS_process_domains_soils/)
+[Introduction to QGIS "lab" with a focus on process domains and soils](/topobathy/intro_QGIS_process_domains_soils/)
 
 ### Hillslopes: mass wasting
 
