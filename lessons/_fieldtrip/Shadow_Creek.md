@@ -29,11 +29,20 @@ These YouTube videos will be enabled for VR viewers or to view on a smartphone o
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G7v3bO031B0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
 ## Google Expeditions 3D/VR Field Trip
 
-Click on the image to enter. You may go through the field trip on your computer, but it can be more fun with a phone/tablet or a VR device (including the inexpensive cardboard viewers that work with smartphones).
+You may go through the field trip on your computer, but it can be more fun with a phone/tablet or a VR device (including the inexpensive cardboard viewers that work with smartphones).
+
+### From your computer
+
+Click on the image to enter. 
 
 [![VR field trip](https://lh3.googleusercontent.com/V4yGcCkIRry85BLk9cfQPqrZzQZQ35abXTlY5HI9uWkQozZOhgxcuYXRTXFhtQs=w576-h432-n-rw)](https://poly.google.com/view/fX_cRIAmFyt)
+
+### From a smartphone, tablet, or other device capable of running Google Expeditions
+
+[![VR field trip](https://lh3.googleusercontent.com/V4yGcCkIRry85BLk9cfQPqrZzQZQ35abXTlY5HI9uWkQozZOhgxcuYXRTXFhtQs=w576-h432-n-rw)](https://expeditions.gle/fdl/NqpE)
 
 
 ## Post-field-trip reflection (DELIVERABLE: 45 points total)
