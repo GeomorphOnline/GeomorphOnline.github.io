@@ -91,25 +91,21 @@ Nothing! (Assignments from the prior week due on Monday the 28th)
 
 ***Sept. 28th***
 
-***A note from the professor on 9/27: There might be enough material here that hillslopes start to "creep" :) into the following weeks. That's okay! I'll just condense hydrology/hydraulics or cut out some advanced topics; I'm trying to find how much can be reasonably included in an online course.***
-
 ### Due Monday
 
 [Surveying assignment](/topobathy/surveying/)
 
-### Hillslopes
+### Hillslope Creep and Diffusion
 
 [Introduction to Hillslopes and Hillslope Processes: Creep, Mass Wasting, and Diversity of Forms](/hillslope/hillslope_intro)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
+[Hillslope ("soil") creep](/hillslope/creep/)
 
-Hillslope-creep processes
+[Hillslope mass balance](/hillslope/mass_balance/)
 
-Hillslope creep: mathematical representation
+[Hillslope diffusion](/hillslope/diffusion/)
 
-Hillslope mass balance
-
-Hillslope diffusion
+### Field Trip
 
 [Virtual field trip: Shadow Creek](/fieldtrip/Shadow_Creek/)
 
@@ -118,7 +114,7 @@ Hillslope diffusion
 [Short-answer thoughts (~1 paragraph each) on soils and soil sustainability following on from David Montgomery's Nobel Conference presentation](/soil/importance/)
 
 
-## Week 5: Mass-wasting processes and catchment hydrology
+## Week 5: Hillslope--soil evolution, mass-wasting processes, and catchment hydrology
 
 ***Oct. 5th***
 
@@ -126,9 +122,33 @@ Hillslope diffusion
 
 [Introduction to QGIS "lab" with a focus on process domains and soils](/topobathy/intro_QGIS_process_domains_soils/)
 
-### Hillslopes: mass wasting
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
+
+### Hillslope--soil evolution and mass balance
+
+Aeolian erosion and/or deposition
+
+Weathering inputs
+
+Mobile-material thickness and regolith production rates
+
+Soil velocity profiles
+
+Steep hillslopes: nonlinear diffusion
 
 Mohr-Coulomb Failure
+
+
+### Hillslope mass wasting
+
+Mass wasting
+
+Mohr-Couolomb Failure
+
+Landslide physics and statistics
+
+
+***Probably going to be pushed back a week***
 
 ### Hydrology
 
