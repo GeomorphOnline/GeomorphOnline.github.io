@@ -42,7 +42,10 @@ Click on the image to enter.
 
 ### From a smartphone, tablet, or other device capable of running Google Expeditions
 
-*Note: pressing "view in VR" also allows you to (after pressing X) move your device to see where you are looking. This gives you some of the experience even if you don't have a headset.
+*Note: pressing "view in VR" also allows you to move your device to see where you are looking. This gives you some of the experience even if you don't have a headset.
+1. Place your phone down on a surface. It will pretend that it is in a VR viewer.
+2. Press the square/frame button.
+3. Enjoy!
 
 [![VR field trip](https://lh3.googleusercontent.com/V4yGcCkIRry85BLk9cfQPqrZzQZQ35abXTlY5HI9uWkQozZOhgxcuYXRTXFhtQs=w576-h432-n-rw)](https://expeditions.gle/fdl/NqpE)
 
