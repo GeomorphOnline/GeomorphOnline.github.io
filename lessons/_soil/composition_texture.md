@@ -16,6 +16,7 @@ author_profile: true
 
 * Know what the common composition of soil is (but that this varies!)
 * Recognize the soil ternary diagram and the textural names: sand, silt, clay, and loam (a mix)
+* Learn the basics of what goes into a soil classification
 
 ## Soil composition
 
@@ -46,7 +47,9 @@ From USGS Open-File Report 2006-1195: Typos for sizes: 33.1 mm --> 38.1 mm; 0.54
 
 Beyond sand is gravel, which comprises pebbles, cobbles, and boulders. These are not part of the soil classification, but are important to geomorphology.
 
-## Video
+## Video: Field Soil Classification
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S4MbLtDhruU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Soil composition and texture are very important for soil classification. Although this is not a goal of the class, the following video does a really did a good job of building field classification of soils into a comprehensible procedure. (Only undefined term that I noticed: "peds" are naturally forming clumps of soil that are separated from one another by planes or zones of weakness: https://www.soil-net.com/legacy/advanced/soil_formation5.htm.)
 
