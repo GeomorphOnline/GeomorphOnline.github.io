@@ -97,11 +97,11 @@ Nothing! (Assignments from the prior week due on Monday the 28th)
 
 [Surveying assignment](/topobathy/surveying/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 ### Hillslopes
 
-Hillslope processes: creep and mass wasting
+[Introduction to Hillslopes and Hillslope Processes: Creep, Mass Wasting, and Diversity of Forms](hillslope_intro)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 Hillslope mass balance
 
@@ -109,20 +109,24 @@ Soil creep
 
 Hillslope diffusion
 
-Mass wasting
+Virtual field trip: Shadow Creek
 
 ### Due Friday
 
 [Short-answer thoughts (~1 paragraph each) on soils and soil sustainability following on from David Montgomery's Nobel Conference presentation](/soil/importance/)
 
 
-## Week 5: Catchment hydrology
+## Week 5: Mass-wasting processes and catchment hydrology
 
 ***Oct. 5th***
 
 ### Due Monday
 
 [Introduction to QGIS "lab" wtih a focus on process domains and soils](/topobathy/intro_QGIS_process_domains_soils/)
+
+### Hillslopes: mass wasting
+
+Mohr-Coulomb Failure
 
 ### Hydrology
 
