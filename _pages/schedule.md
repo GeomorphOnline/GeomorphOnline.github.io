@@ -138,7 +138,6 @@ Steep hillslopes: nonlinear diffusion
 
 Mohr-Coulomb Failure
 
-
 ### Hillslope mass wasting
 
 Mass wasting
@@ -146,6 +145,10 @@ Mass wasting
 Mohr-Couolomb Failure
 
 Landslide physics and statistics
+
+### Final projects
+
+Editing Wikipedia and the procedure of the project
 
 
 ***Probably going to be pushed back a week***
