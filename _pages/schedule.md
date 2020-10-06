@@ -122,21 +122,19 @@ Nothing! (Assignments from the prior week due on Monday the 28th)
 
 [Introduction to QGIS "lab" with a focus on process domains and soils](/topobathy/intro_QGIS_process_domains_soils/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 ### Hillslope--soil evolution and mass balance
 
-Aeolian erosion and/or deposition
+[Aeolian erosion and/or deposition](/hillslope/aeolian/)
 
-Weathering inputs
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
+
+[Weathering inputs](/hillslope/weathering/)
 
 Mobile-material thickness and regolith production rates
 
 Soil velocity profiles
 
 Steep hillslopes: nonlinear diffusion
-
-Mohr-Coulomb Failure
 
 ### Hillslope mass wasting
 
