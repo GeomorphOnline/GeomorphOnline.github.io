@@ -126,11 +126,11 @@ Nothing! (Assignments from the prior week due on Monday the 28th)
 
 [Aeolian erosion and/or deposition](/hillslope/aeolian/)
 
+[Weathering inputs, dissolution, regolith (soil) production, and combining the equations](/hillslope/weathering_dissolution_combined/)
+
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-[Weathering inputs](/hillslope/weathering/)
-
-Mobile-material thickness and regolith production rates
+Parabolic hilltops and smoothing scarps
 
 Soil velocity profiles
 
