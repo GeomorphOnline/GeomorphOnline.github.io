@@ -140,15 +140,15 @@ Nothing! (Assignments from the prior week due on Monday the 28th)
 
 [Mass wasting](/hillslope/mass_wasting/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
+[Mohr-Couolomb Failure](/hillslope/mohr_coulomb/)
 
-Mohr-Couolomb Failure
-
+<!--
 Landslide physics and statistics
+-->
 
 ### Final projects
 
-Editing Wikipedia and the procedure of the project
+[Editing Wikipedia and the procedure of the project]()
 
 
 ### Due Friday
@@ -156,6 +156,8 @@ Editing Wikipedia and the procedure of the project
 [Short-answer responses to Shadow Creek VR Field Trip prompts](/fieldtrip/Shadow_Creek/)
 
 
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 ## Week 6: Hydrology and open-channel flow
 

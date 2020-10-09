@@ -29,5 +29,9 @@ author_profile: true
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FQpEeyWsVNo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Notes
+
+[PDF of the parabolic hilltop derivation from the above video](/assets/notes/parabolic_hilltops_derivation.pdf)
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
