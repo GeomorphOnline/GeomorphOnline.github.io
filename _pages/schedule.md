@@ -130,8 +130,6 @@ Nothing! (Assignments from the prior week due on Monday the 28th)
 
 [Parabolic hilltops](/hillslope/parabolic_hilltops/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 <!--
 ~Soil velocity profiles~
 
@@ -140,7 +138,9 @@ Nothing! (Assignments from the prior week due on Monday the 28th)
 
 ### Hillslope mass wasting
 
-Mass wasting
+[Mass wasting](/hillslope/mass_wasting/)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 Mohr-Couolomb Failure
 
