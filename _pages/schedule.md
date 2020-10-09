@@ -128,13 +128,15 @@ Nothing! (Assignments from the prior week due on Monday the 28th)
 
 [Weathering inputs, dissolution, regolith (soil) production, and combining the equations](/hillslope/weathering_dissolution_combined/)
 
+[Parabolic hilltops](/hillslope/parabolic_hilltops/)
+
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-Parabolic hilltops and smoothing scarps
+<!--
+~Soil velocity profiles~
 
-Soil velocity profiles
-
-Steep hillslopes: nonlinear diffusion
+~Steep hillslopes: nonlinear diffusion~
+-->
 
 ### Hillslope mass wasting
 
@@ -149,7 +151,16 @@ Landslide physics and statistics
 Editing Wikipedia and the procedure of the project
 
 
-***Hydrology probably going to be pushed back a week***
+### Due Friday
+
+[Short-answer responses to Shadow Creek VR Field Trip prompts](/fieldtrip/Shadow_Creek/)
+
+
+
+## Week 6: Hydrology and open-channel flow
+
+***Oct. 12th***
+
 
 ### Hydrology
 
@@ -173,15 +184,7 @@ Stream gauging
 
 Rainfall--runoff virtual board game
 
-### Due Friday
-
-[Short-answer responses to Shadow Creek VR Field Trip prompts](/fieldtrip/Shadow_Creek/)
-
-
-
-## Week 6: Open-channel flow and hydraulics
-
-***Oct. 12th***
+### Open-channel flow
 
 Continuity
 
