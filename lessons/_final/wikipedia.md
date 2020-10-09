@@ -32,24 +32,26 @@ For this year's final project, students will turn a undeveloped or nonexistent p
 The [Wikipedia Education Program](https://en.wikipedia.org/wiki/Wikipedia:Education_program/Students) has significant information for students that can help you to set up an account and learn how to manage your project.
 
 * Students enrolled in **ESCI 4701** will work in **pairs**.
-* Students enrolled in **ESCI 8701** will work in **alone**.
+* Students enrolled in **ESCI 8701** will work **alone**.
 
 ## Timeline: 2020
 
 ### Monday, 19 October (10 points)
 
-1. (1 point) Submit your proposed team
+1. (1 point) Submit your proposed team.
 
-2. (1 point) Submit the names of and (if applicable) URLs of your chosen top two articles.
+2. (1 point) Submit the names/topics of and (if applicable) URLs of your chosen top two articles.
 
 3. (6 points) For your top-choice article, your proposal must include a detailed response to the three following points:
   * Rationale for the importance of the article
   * Evidence that it either does not exist or requires substantial improvement
   * Your goals for your work on this article
-  
+
 4. (2 points) For your second-choice article, you should also address above, but you may include substantially less detail.
 
 The goal of this is to begin a conversation and ensure that you are on track with the final project.
+
+We will respond to these proposals and confirm which article you will be working on after submission.
 
 ### Monday, 02 November (10 points)
 
