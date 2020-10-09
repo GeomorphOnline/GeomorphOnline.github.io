@@ -138,6 +138,9 @@ collections:
   planetary:
     output: true
     permalink: /:collection/:path/
+  final:
+    output: true
+    permalink: /:collection/:path/
 #collections:
 #  lessons:
 #    output: true
