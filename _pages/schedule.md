@@ -146,9 +146,11 @@ Nothing! (Assignments from the prior week due on Monday the 28th)
 Landslide physics and statistics
 -->
 
-### Final projects
+### Problem set
 
-[Editing Wikipedia and the procedure of the project]()
+*Actually handed out on the following Tuesday; extra time given for completion*
+
+[Hillslopes problem set](/hillslope/pset/)
 
 
 ### Due Friday
@@ -162,7 +164,6 @@ Landslide physics and statistics
 ## Week 6: Hydrology and open-channel flow
 
 ***Oct. 12th***
-
 
 ### Hydrology
 
@@ -214,6 +215,10 @@ Prandtl mixing
 
 Law of the Wall
 
+### Final projects
+
+[Editing Wikipedia and the procedure of the project]()
+
 
 ## Week 7: Fluvial I: Erosional river networks and bedrock incision
 
@@ -221,6 +226,9 @@ Bedrock river long profiles
 
 ***Oct. 19th***
 
+### Due Friday
+
+[Hillslopes problem set](/hillslope/pset/)
 
 ## Week 8: Landscape Evolution
 
