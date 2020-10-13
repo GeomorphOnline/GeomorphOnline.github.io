@@ -14,6 +14,20 @@ layout: default
   {% endunless %}
 {% endif %}
 
+<script type="text/javascript">
+window.MathJax = {
+  tex: {
+    packages: ['base', 'ams']
+  },
+  loader: {
+    load: ['ui/menu', '[tex]/ams']
+  }
+};
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 <div id="main" role="main">
   {% include sidebar.html %}
 
