@@ -1,3 +1,20 @@
+<head>
+<!--MathJax-->
+<script type="text/javascript">
+window.MathJax = {
+  tex: {
+    packages: ['base', 'ams']
+  },
+  loader: {
+    load: ['ui/menu', '[tex]/ams']
+  }
+};
+</script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
 <meta charset="utf-8">
 
 {% include seo.html %}
@@ -35,19 +52,4 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
-
-<!--MathJax-->
-<script type="text/javascript">
-window.MathJax = {
-  tex: {
-    packages: ['base', 'ams']
-  },
-  loader: {
-    load: ['ui/menu', '[tex]/ams']
-  }
-};
-</script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
