@@ -58,7 +58,7 @@ We will respond to these proposals and confirm which article you will be working
 
 Submit an example of the text that you would include in your Wikipedia article edits to Canvas. This must be fully referenced using high-quality sources (scientific articles, textbooks, etc.) and include several sections relevant to the chosen topic. Points will be awarded/subtracted for good writing: organization, grammar, and style.
 
-This article on *Lord of the Rings* is considered a "Good Article" by Wikipedia (and by extension, our) standards: https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series). Note how the article includes many, relevant sections with extensive citations and applicable images and diagrams.
+This article on *Lord of the Rings* is considered a "Good Article" by Wikipedia (and by extension, our) standards: https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series). Note how the article includes many, relevant sections with extensive citations and applicable images and diagrams. *Note that becoming an official "Good Article" on Wikipedia requires a peer-review process that is beyond the scope of what we are requiring for the class, but which we would encourage you to do if you feel inspired by your work. Contributing to freely available global knowledge can be rewarding!*
 
 ### Monday, 23 November (60 points)
 
