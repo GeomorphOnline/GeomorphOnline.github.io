@@ -39,7 +39,7 @@ The [Wikipedia Education Program](https://en.wikipedia.org/wiki/Wikipedia:Educat
 ### Monday, 19 October (10 points)
 In a writeup (submitted via Canvas):
 
-1. (1 point) Submit your proposed team. **Students in ESCI 4701 should find and identify their partners using this Google Sheet**: (https://docs.google.com/spreadsheets/d/15gwpIMKyvwpebpdIjP0Gq6Rh90nEx4ebLWd7CL47I_U/edit?usp=sharing)
+1. (1 point) Submit your proposed team. **Students in ESCI 4701 should find and identify their partners using [this Google Sheet](https://docs.google.com/spreadsheets/d/15gwpIMKyvwpebpdIjP0Gq6Rh90nEx4ebLWd7CL47I_U/edit?usp=sharing).**
 
 2. (1 point) Submit the names/topics of and (if applicable) URLs of your chosen top two articles. If you are having a hard time thinking of articles to work on, Andy and I are happy to provide feedback on areas of interest and possible topics during our Office Hours.
 
