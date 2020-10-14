@@ -17,7 +17,7 @@ author_profile: true
 
 ## Videos
 
-[Anne Jefferson](https://www.kent.edu/geology/profile/anne-jefferson) is a hydrology professor at Kent State (and also an active [science blogger](https://all-geo.org/highlyallochthonous/author/ajefferson/). We're going to learn a bit of our hydrology from her: she's the real pro!
+[Anne Jefferson](https://www.kent.edu/geology/profile/anne-jefferson) is a hydrology professor at Kent State (and also an active [science blogger](https://all-geo.org/highlyallochthonous/author/ajefferson/)!). We're going to learn a bit of our hydrology from her: she's the real pro!
 
 In these lessons, Anne will teach us about the ways that water flows through catchments and to rivers.
 
