@@ -36,7 +36,8 @@ The [Wikipedia Education Program](https://en.wikipedia.org/wiki/Wikipedia:Educat
 
 ## Timeline: 2020
 
-### Monday, 19 October (10 points)
+### Friday, 23 October (10 points)
+
 In a writeup (submitted via Canvas):
 
 1. (1 point) Submit your proposed team. **Students in ESCI 4701 should find and identify their partners using [this Google Sheet](https://docs.google.com/spreadsheets/d/15gwpIMKyvwpebpdIjP0Gq6Rh90nEx4ebLWd7CL47I_U/edit?usp=sharing).**
@@ -54,7 +55,7 @@ The goal of this is to begin a conversation and ensure that you are on track wit
 
 We will respond to these proposals and confirm which article you will be working on after submission.
 
-### Monday, 02 November (10 points)
+### Friday, 06 November (10 points)
 
 Submit an example of the text that you would include in your Wikipedia article edits to Canvas. This must be fully referenced using high-quality sources (scientific articles, textbooks, etc.) and include several sections relevant to the chosen topic. Points will be awarded/subtracted for good writing: organization, grammar, and style.
 
@@ -77,7 +78,7 @@ When grading your Wikipedia article, points will be awarded for:
 
 We will provide edits to your pages after you submit your write ups.
 
-### Monday, 07 December (20 points)
+### Friday, 11 December (20 points)
 
 Edits on Wikipedia in response to instructor comments. Grade based on responsiveness, polish (this is your final product), and your ability to address  gaps in the original article.
 

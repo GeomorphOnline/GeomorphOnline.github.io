@@ -159,15 +159,19 @@ Landslide physics and statistics
 
 
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 ## Week 6: Hydrology and open-channel flow
 
 ***Oct. 12th***
 
+### Final Project information
+
+[Wikipedia Article: Final Projects](/final/wikipedia/)
+
 ### Hydrology
 
-Watershed
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
+
+[Catchment hydrology](/hydrology/introduction/)
 
 Precipitation
 
@@ -226,9 +230,13 @@ Bedrock river long profiles
 
 ***Oct. 19th***
 
+### Due Monday
+
 ### Due Friday
 
 [Hillslopes problem set](/hillslope/pset/)
+
+[Final project teams and proposals](/final/wikipedia/)
 
 ## Week 8: Landscape Evolution
 
@@ -251,6 +259,11 @@ LSDTopoTools + data --OR-- OSL exercise
 ***Nov. 9th***
 
 
+### Due Friday
+
+[Draft of text for the Wikipedia article (not yet live on Wikipedia)](/final/wikipedia/)
+
+
 ## Week 11: Fluvial II: Sediment transport and alluvial rivers
 
 ***Nov. 16th***
@@ -262,6 +275,10 @@ LSDTopoTools + data --OR-- OSL exercise
 
 Half week: Happy Thanksgiving!
 
+### Due Monday
+
+[Wikipedia article live edits](/final/wikipedia/)
+
 
 ## Week 13: Glacial processes
 
@@ -271,6 +288,11 @@ Half week: Happy Thanksgiving!
 ## Week 14: Aeolian, Planetary, and An eye for the landscape (Wrap-up)
 
 ***Dec. 7th***
+
+
+### Due Friday
+
+[Wikipedia article updates in response to comments](/final/wikipedia/)
 
 
 ## Week 15: Final project presentations
