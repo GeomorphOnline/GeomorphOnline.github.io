@@ -10,6 +10,8 @@ author: Andrew Wickert
 author_profile: true
 ---
 
+*Water flow through watersheds*
+
 ## Learning Goals
 
 * Know the basics of catchment hydrology and about how water moves through watersheds
