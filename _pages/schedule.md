@@ -169,10 +169,20 @@ Landslide physics and statistics
 
 ### Hydrology
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 [Catchment hydrology](/hydrology/introduction/)
 
+[Flow through catchments: overland and subsurface](/hydrology/flow/)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
+
+River discharge and hydrographs
+
+Stream gauging
+
+Rainfall--runoff virtual board game
+
+<!--
 Precipitation
 
 Evaporation
@@ -184,12 +194,12 @@ Runoff
 Infiltration and Overland Flow
 
 Surface water and groundwater
+-->
 
-River discharge and hydrographs
 
-Stream gauging
+## Week 7: Fluvial I: Erosional river networks and bedrock incision
 
-Rainfall--runoff virtual board game
+<!--
 
 ### Open-channel flow
 
@@ -219,12 +229,7 @@ Prandtl mixing
 
 Law of the Wall
 
-### Final projects
-
-[Editing Wikipedia and the procedure of the project]()
-
-
-## Week 7: Fluvial I: Erosional river networks and bedrock incision
+-->
 
 Bedrock river long profiles
 
