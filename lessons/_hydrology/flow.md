@@ -10,6 +10,8 @@ author: Andrew Wickert
 author_profile: true
 ---
 
+*Very little of the water in a river actually rains out onto it. Rather, it travels across and under the landscape to reach the stream.*
+
 ## Learning Goals
 
 * Know the four main ways that water moves through a watershed: overland flow (saturation excess or infiltration excess), interflow, and groundwater
