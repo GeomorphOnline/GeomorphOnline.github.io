@@ -14,8 +14,8 @@ author_profile: true
 
 ## Learning Goals
 
-* Know (and review) how water moves through a catchment, with a focus on its journey towards a river
-* Understand how a rainfall hyetograph can produce a discharge hydrograph
+* Know (and review) how water moves through a catchment, with a focus on its journey towards a river.
+* Understand how a rainfall hyetograph can produce a discharge hydrograph.
 * Know the definition of river discharge and its relationship both to mass balance through a watershed and flow through a channel.
 
 ## River discharge
