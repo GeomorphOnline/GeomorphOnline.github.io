@@ -159,7 +159,7 @@ Landslide physics and statistics
 
 
 
-## Week 6: Hydrology and open-channel flow
+## Week 6: Hydrology
 
 ***Oct. 12th***
 
@@ -174,11 +174,11 @@ Landslide physics and statistics
 
 [Flow through catchments: overland and subsurface](/hydrology/flow/)
 
+[Flow to rivers: discharge and hydrographs](/hydrology/hydrograph)
+
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-River discharge and hydrographs
-
-Stream gauging
+[Measuring river discharge: stream gauging](/hydrology/gauging)
 
 Rainfall--runoff virtual board game
 
@@ -246,6 +246,12 @@ Bedrock river long profiles
 ## Week 8: Landscape Evolution
 
 ***Oct. 26th***
+
+### Due Monday
+
+Rainfall--runoff virtual board game
+
+### Lab
 
 Landlab
 
