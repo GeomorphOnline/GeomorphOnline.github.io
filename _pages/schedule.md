@@ -176,9 +176,9 @@ Landslide physics and statistics
 
 [Flow to rivers: discharge and hydrographs](/hydrology/hydrograph)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 [Measuring river discharge: stream gauging](/hydrology/gauging)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 Rainfall--runoff virtual board game
 
