@@ -24,7 +24,13 @@ author_profile: true
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9MpyTopzon8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 *This lesson from Ohio University goes over the methods of stream gauging quite thoroughly! If you wonder why they are taking measurements at 20% and 80% of the flow depth, just wait to learn a bit about flow mechanics and the boundary-layer turbulent velocity profile given by the Law of the Wall.*
 
-### Example of gauging a small stream
+### How a USGS gauge works for measuring river stage
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BaSgOHYhj_o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+*[Prof. Gary Robbins, UConn](http://www.nre.uconn.edu/Faculty_and_Staff/Robbins.php)*
+
+### Example of measuring discharge in small stream
 
 Oh, the Geography Men. Don't let the initial jingle fool you; these two guys do a really professional job of explaining how river-discharge measurements work in practice.
 
