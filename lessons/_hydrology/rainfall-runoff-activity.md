@@ -29,6 +29,7 @@ In 2016 and 2019, Wickert used a board game with hex cells and counters (pennies
 ## Pre-activity survey (5 points)
 
 *The points awarded are solely for participation. The survey is included directly below.*
+A link to the pre-activity survey is also available [here](https://docs.google.com/forms/d/e/1FAIpQLSdvBzSSA-xoYpcKwcdaBfwNZx_9ErAt8QCRWBeQAbpt7ZHk2w/viewform?usp=sf_link).
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvBzSSA-xoYpcKwcdaBfwNZx_9ErAt8QCRWBeQAbpt7ZHk2w/viewform?embedded=true" width="640" height="1869" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
@@ -72,6 +73,7 @@ At the end of the Jupyter notebook lies a set of four questions (see the Jupyter
 ## Post-activity survey (5 points)
 
 *The points awarded are solely for participation.*
+A link to the post-activity survey is also available [here](https://docs.google.com/forms/d/e/1FAIpQLSey29EI0nA2z1gNw15G8-4iuZHo_jbIyPcCptIJEUVlYK8i2g/viewform?usp=sf_link).
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSey29EI0nA2z1gNw15G8-4iuZHo_jbIyPcCptIJEUVlYK8i2g/viewform?embedded=true" width="640" height="2682" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
