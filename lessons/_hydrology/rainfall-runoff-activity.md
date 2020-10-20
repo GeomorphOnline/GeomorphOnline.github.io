@@ -10,7 +10,7 @@ author: AndyJabariShanti
 author_profile: true
 ---
 
-*Relatively little of the water in a river actually rains out onto it. Rather, it travels across and under the landscape to reach the stream.*
+*Relatively little of the water in a river actually comes from rain directly falling onto it. Rather, rainfall travels across and under the landscape to reach the stream.*
 
 ## Learning Goals
 
@@ -24,32 +24,40 @@ The Earth-surface research group is evaluating the usefulness of this activity -
 
 ## Background
 
-In 2016 and 2019, Wickert used a board game with hex cells and counters (pennies work better than paper!) to teach about rainfall, runoff, and hydrographs. For 2020, Jabari Jones (Ph.D. candidadte at UMN) converted this game into an online activity using the [Python](https://www.python.org/) programming language, [Landlab](https://landlab.github.io/) toolkit for Earth-surface modeling, and [Jupyter](https://jupyter.org/), a tool for creating interactive and educational coding activities in a web browser.
+In 2016 and 2019, Wickert used a board game with hex cells and counters (pennies work better than paper!) to teach about rainfall, runoff, and hydrographs. For 2020, Jabari Jones (Ph.D. candidate at UMN) converted this game into an online activity using the [Python](https://www.python.org/) programming language, [Landlab](https://landlab.github.io/) toolkit for Earth-surface modeling, and [Jupyter](https://jupyter.org/), a tool for creating interactive and educational coding activities in a web browser.
 
 ## Pre-activity survey (5 points)
 
-*The points awarded are solely for participation.*
+*The points awarded are solely for participation. The survey is included directly below.*
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvBzSSA-xoYpcKwcdaBfwNZx_9ErAt8QCRWBeQAbpt7ZHk2w/viewform?embedded=true" width="640" height="1869" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 ## The activity
 
-[Link to rainfall--runoff "board game"](https://colab.research.google.com/drive/1TxPvv4lsNualcXC7c_jZj3DDlJvOYYj2?usp=sharing)
 
 ### Logistical items to check/know
 
-* Make sure that your browser opens the activity in Google CoLab; it is created to work properly with the settings and code packages available there.
+* Make sure that your browser opens the activity in Google CoLab; it is created to work properly with the settings and code packages available there. *You do not need to (and, in fact, should not) download the notebook to your computer to run it.*
 * Note that if you want to save your progress and return to it, you will have to save a copy of the Jupyter notebook in your own Google CoLab/Drive space.
 
-### Running the Jupyter notebook
 
-Jupyter notebooks provide an interactive way to link explanatory text and computer code. In order to run the different sections of the activity, which you should do in order, you will hit the "play" buttons next to each respective frame. Note that if you change something higher up in the notebook, you may have to re-run the remaining code between that section and the final section(s).
+*Click on the link below to access the activity:*
+**Remember to complete the pre- and post-activity surveys for this assignment (10 points total)**
+
+[Link to rainfall--runoff "board game"](https://colab.research.google.com/drive/1TxPvv4lsNualcXC7c_jZj3DDlJvOYYj2?usp=sharing)
+
+### How to use the Jupyter notebook
+
+Jupyter notebooks provide an interactive way to link explanatory text and computer code. In order to run the different sections of the activity, which you should do in order, you will hit the "play" buttons next to each respective frame (in the top left corner of each frame). Note that if you change something higher up in the notebook, you may have to re-run the remaining code between that section and the final section(s).
 
 All of the code is in Python, and uses the Landlab toolkit. Your job is to observe what the code does, and to make small changes to test how they impact this simple computer model of a real physical system. This is the same approach taken by scientists using research-grade code when trying to build intuition surrounding a complicated problem.
 
-### Questions
 
-At the end of the Jupyter notebook lies a set of four questions. Here are their point values for this class and some helpful tips
+### Questions (Helpful Tips)
+
+At the end of the Jupyter notebook lies a set of four questions (see the Jupyter notebook for the actual questions). You will be submitting responses to these questions and copies of your plots to Canvas as the deliverable for this assignment. Here are the point values each question for this class and some helpful tips for each:
+
+**Don't forget to complete the post-activity survey once you complete working with the notebook (this is worth 5 points!)**
 
 1. **Plotting** (10 points). The [Matplotlib gallery](https://matplotlib.org/gallery/index.html) is a fantastic cookbook that I (Wickert) use whenever I have a concept in mind about a plot/graph to make and am not sure how to do it in code. It includes this ["Simple plot"](https://matplotlib.org/gallery/lines_bars_and_markers/simple_plot.html#sphx-glr-gallery-lines-bars-and-markers-simple-plot-py), which should be a good start.
 2. (10 points, 5 per parameter). These predictions may be the same or may differ from those that you included in the survey.
