@@ -35,3 +35,15 @@ Shanti Penprase:
     - label: "Google Scholar"
       icon: "fab fa-fw fa-google"
       url: https://scholar.google.com/citations?user=Kjo77TIAAAAJ&hl=en&oi=ao
+AndyJabariShanti:
+  name             : "Andy Wickert, Jabari Jones, and Shanti Penprase"
+  bio              : "Collaborative effort from the Earth-surface research group"
+  location         : Minneapolis, Minnesota, USA
+  email            : awickert@umn.edu
+  links:
+    - label: "Group website"
+      icon: "fas fa-fw fa-link"
+      url: "https://umn-earth-surface.github.io/people"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/umn-earth-surface"
