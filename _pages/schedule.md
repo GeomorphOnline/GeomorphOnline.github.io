@@ -178,9 +178,7 @@ Landslide physics and statistics
 
 [Measuring river discharge: stream gauging](/hydrology/gauging)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
-Rainfall--runoff virtual board game
+[Rainfall--runoff virtual board game](/hydrology/rainfall-runoff-activity.md) *Note: Actually posted on Tuesday 20 Oct*
 
 <!--
 Precipitation
@@ -196,6 +194,8 @@ Infiltration and Overland Flow
 Surface water and groundwater
 -->
 
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 ## Week 7: Fluvial I: Erosional river networks and bedrock incision
 
@@ -235,8 +235,6 @@ Bedrock river long profiles
 
 ***Oct. 19th***
 
-### Due Monday
-
 ### Due Friday
 
 [Hillslopes problem set](/hillslope/pset/)
@@ -247,9 +245,9 @@ Bedrock river long profiles
 
 ***Oct. 26th***
 
-### Due Monday
+### Due Tuesday
 
-Rainfall--runoff virtual board game
+[Rainfall--runoff virtual board game](/hydrology/rainfall-runoff-activity.md)
 
 ### Lab
 
