@@ -178,7 +178,7 @@ Landslide physics and statistics
 
 [Measuring river discharge: stream gauging](/hydrology/gauging)
 
-[Rainfall--runoff virtual board game](/hydrology/rainfall-runoff-activity.md) *Note: Actually posted on Tuesday 20 Oct*
+[Rainfall--runoff virtual board game](/hydrology/rainfall-runoff-activity) *Note: Actually posted on Tuesday 20 Oct*
 
 <!--
 Precipitation
@@ -195,19 +195,41 @@ Surface water and groundwater
 -->
 
 
+## Week 7: Open-channel hydraulics
+
+[Introduction to open-channel flow](/hydraulics/introduction)
+
+[Continuity](/hydraulics/continuity)
+
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-## Week 7: Fluvial I: Erosional river networks and bedrock incision
+[Viscosity]
+
+[Laminar and turbulent flow]
+
+[Viscosity]
+
+[Steady and uniform flow]
+
+[Roughness]
+
+Shear velocity
+
+Chezy Equation
+
+Manning's Equation
+
+Prandtl mixing
+
+Law of the Wall
 
 <!--
 
-### Open-channel flow
+## Week 7: Fluvial I: Erosional river networks and bedrock incision
 
-Continuity
+## Week 7: Open-channel hydraulics
 
 Conceptual introduction
-
-Discharge through a rectangular channel
 
 Laminar flow
 
@@ -245,9 +267,11 @@ Bedrock river long profiles
 
 ***Oct. 26th***
 
+*(OR: Week 8: Fluvial I: Erosional river networks and bedrock incision?)*
+
 ### Due Tuesday
 
-[Rainfall--runoff virtual board game](/hydrology/rainfall-runoff-activity.md)
+[Rainfall--runoff virtual board game](/hydrology/rainfall-runoff-activity)
 
 ### Lab
 
