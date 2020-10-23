@@ -201,13 +201,11 @@ Surface water and groundwater
 
 [Continuity](/hydraulics/continuity)
 
+[Viscosity (with a background on elasticity)](/hydraulics/viscosity)
+
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-[Viscosity]
-
 [Laminar and turbulent flow]
-
-[Viscosity]
 
 [Steady and uniform flow]
 
