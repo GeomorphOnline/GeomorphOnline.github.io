@@ -203,13 +203,11 @@ Surface water and groundwater
 
 [Viscosity (with a background on elasticity)](/hydraulics/viscosity)
 
+[Laminar and turbulent flow](/hydraulics/laminar_turbulent)
+
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-[Laminar and turbulent flow]
-
-[Steady and uniform flow]
-
-[Roughness]
+[Steady and uniform flow](/hydraulics/steady_uniform)
 
 Shear velocity
 
@@ -222,6 +220,8 @@ Prandtl mixing
 Law of the Wall
 
 <!--
+
+[Roughness]
 
 ## Week 7: Fluvial I: Erosional river networks and bedrock incision
 
