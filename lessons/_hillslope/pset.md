@@ -206,7 +206,7 @@ What do you notice that is different between the sections of the landscape that 
 
 Regions of the landscape whose slopes are near or above the angle of repose can fail suddenly. Consider a 45-degree hillslope. What is the minimum cohesion ($$\sigma_c$$) that would be required to maintain this slope as barely stable (i.e., at incipient failure)?
 
-Recall the general equation for slope stability (see [the notes](/assets/notes/02_03_Hillslopes_revised.pdf) for more complete descriptions):
+Recall the general equation for slope stability (see [the notes](/assets/notes/02_03_Hillslopes.pdf) for more complete descriptions):
 
 $$\tau = \mu \sigma_\mathrm{eff} \cos \theta + \sigma_c$$
 
