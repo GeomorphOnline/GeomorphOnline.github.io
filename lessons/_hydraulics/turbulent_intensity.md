@@ -24,10 +24,11 @@ Zones of whirling flow in rivers (and in fluids in general) are known as "eddies
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cxzqMeRkV5o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-In the following video, a plate is moved to the right across the top of the flume, shearing the fluid and thereby producing turbulent eddies. Look at the cases wtih different Reynolds numbers, and think about what produces the higher intensity of turbulence. How do you think that these might relate to the amount of shear experienced by the fluid, and to the velocity perturbations experienced at a point?
+In the following video, a plate is moved to the right across the top of the flume, shearing the fluid and thereby producing turbulent eddies. Look at the cases with different Reynolds numbers, and think about what produces the higher intensity of turbulence. How do you think that these might relate to the amount of shear experienced by the fluid, and to the fluid velocity?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e1TbkLIDWys?start=45" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Thank especially about how this turbulence may impact flow velocities at a point! That is the topic of this lesson.
 
 ## Turbulence and flow velocity (and its variability)
 
