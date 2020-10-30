@@ -10,7 +10,7 @@ author: Andrew Wickert
 author_profile: true
 ---
 
-*Internal resistance to flow.*
+*The steady and uniform flow assumptions provide an essential simplification to understanding the mechanics of flow in rivers.*
 
 ## Learning Goals
 
