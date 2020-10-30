@@ -33,7 +33,7 @@ Note that we consider the question of steady, uniform flow purely in the downste
 
 ## Unsteady and nonuniform flow example: dam-breach experiment
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RcNqv0dm2lA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RcNqv0dm2lA?start=106" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Steady, uniform flow examples
 
