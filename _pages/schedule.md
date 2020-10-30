@@ -23,6 +23,8 @@ permalink: /schedule/
 
 ## Week 2: Introduction: transport laws, form and process; Mapping and topography
 
+[**Land surveying course notes PDF**](01_Surveying.pdf) (not used extensively in the online version of the course, but provided for your knowledge and potential later use)
+
 ***Sept. 14th***
 
 ### Math/physics background
@@ -89,6 +91,8 @@ Nothing! (Assignments from the prior week due on Monday the 28th)
 
 ## Week 4: Hillslopes
 
+[**Hillslope course notes PDF**](/assets/notes/02_03_Hillslopes.pdf)
+
 ***Sept. 28th***
 
 ### Due Monday
@@ -115,6 +119,8 @@ Nothing! (Assignments from the prior week due on Monday the 28th)
 
 
 ## Week 5: Hillslope--soil evolution, mass-wasting processes, and catchment hydrology
+
+[**Hillslope course notes PDF**](/assets/notes/02_03_Hillslopes.pdf)
 
 ***Oct. 5th***
 
@@ -195,7 +201,9 @@ Surface water and groundwater
 -->
 
 
-## Week 7: Open-channel hydraulics
+## Week 7: Open-channel hydraulics I
+
+[**Open-channel flow course notes PDF**](/assets/notes/05_Flow.pdf)
 
 [Introduction to open-channel flow](/hydraulics/introduction)
 
@@ -204,20 +212,6 @@ Surface water and groundwater
 [Viscosity (with a background on elasticity)](/hydraulics/viscosity)
 
 [Laminar and turbulent flow](/hydraulics/laminar_turbulent)
-
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
-[Steady and uniform flow](/hydraulics/steady_uniform)
-
-Shear velocity
-
-Chezy Equation
-
-Manning's Equation
-
-Prandtl mixing
-
-Law of the Wall
 
 <!--
 
@@ -251,9 +245,9 @@ Law of the Wall
 
 -->
 
-Bedrock river long profiles
+### Due Tuesday
 
-***Oct. 19th***
+[Rainfall--runoff virtual board game](/hydrology/rainfall-runoff-activity)
 
 ### Due Friday
 
@@ -261,31 +255,106 @@ Bedrock river long profiles
 
 [Final project teams and proposals](/final/wikipedia/)
 
-## Week 8: Landscape Evolution
+
+## Week 8: Open-channel hydraulics II
 
 ***Oct. 26th***
 
-*(OR: Week 8: Fluvial I: Erosional river networks and bedrock incision?)*
+[**Open-channel flow course notes PDF**](/assets/notes/05_Flow.pdf)
 
-### Due Tuesday
+[Steady and uniform flow](/hydraulics/steady_uniform)
 
-[Rainfall--runoff virtual board game](/hydrology/rainfall-runoff-activity)
+[Flow-velocity fluctuations and the intensity of turbulence](/hydraulics/turbulent_intensity/)
 
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
+
+[Shear Stress, Shear Velocity, and Turbulence](/hydraulics/shear_stress__shear_velocity/)
+
+[Flow velocity: Chézy Formula](chezy)
+
+[Flow velocity: Manning's Equation](manning)
+
+[Turbulence: Prandtl mixing](prandtl)
+
+[Flow velocity: Law of the Wall](law_of_the_wall)
+
+
+## Week 8: Fluvial I: Rivers in the Landscape
+
+### Fluvial geomorphology
+
+Types of rivers: Mechanistic (detachment- and transport-limited); observational (bedrock and alluvial)
+
+Base level
+
+Lane's Balance and the graded river
+
+Modes and qualitative rates of fluvial sediment transport
+
+Geomorphically effective discharge
+
+Drainage patterns
+
+Sediment and water supply
+
+The bedrock--alluvial transition
+
+### Problem set
+
+Flow and river morphology
+
+<!--
 ### Lab
 
+Landscape Evolution
+
 Landlab
+-->
 
-
-## Week 9: Tectonics and Terrain Analysis
+## Week 9: Fluvial II: Bedrock incision and landscape evolution
 
 ***Nov. 2nd***
 
-Fault scarps
+### River incision and tectonic uplift
+
+Mechanisms of bedrock erosion
+
+The stream-power law
+
+Impacts on river long profiles: climate, lithology, and tectonics
+
+### Landscape Evolution
+
+Coupling hillslope diffusion with the stream-power law
+
+Transience and steady state
+
+<!--
+### Terrain analysis
+
+Channel concavity and the steepness index
+
+Roles of tectonics, climate, and lithology in setting
+-->
+
+### Labs??
+
+Bedrock river long profiles + Landlab
+
+LSDTopoTools
 
 
-## Week 10: Terrain Analysis and Geochronology
 
-LSDTopoTools + data --OR-- OSL exercise
+## Week 10: Fluvial II: Sediment transport and alluvial rivers
+
+Alluvial river morphologies: uplands to mouths
+
+Initiation of sediment motion
+
+Rates of fluvial sediment transport
+
+
+LSDTopoTools + data --OR--
 
 ***Nov. 9th***
 
@@ -295,10 +364,19 @@ LSDTopoTools + data --OR-- OSL exercise
 [Draft of text for the Wikipedia article (not yet live on Wikipedia)](/final/wikipedia/)
 
 
-## Week 11: Fluvial II: Sediment transport and alluvial rivers
+## Week 11: Quaternary Geochronology
 
 ***Nov. 16th***
 
+Cosmogenic dating: exposure ages, burial ages, and/or catchment-averaged erosion rates
+
+OSL dating
+
+Radiocarbon?
+
+### Lab
+
+OSL exercise?
 
 ## Week 12: Coastal geomorphology
 
@@ -311,12 +389,12 @@ Half week: Happy Thanksgiving!
 [Wikipedia article live edits](/final/wikipedia/)
 
 
-## Week 13: Glacial processes
+## Week 13: Terrain Analysis and Geochronology
 
 ***Nov. 30th***
 
 
-## Week 14: Aeolian, Planetary, and An eye for the landscape (Wrap-up)
+## Week 14: Glacial processes
 
 ***Dec. 7th***
 
@@ -326,7 +404,7 @@ Half week: Happy Thanksgiving!
 [Wikipedia article updates in response to comments](/final/wikipedia/)
 
 
-## Week 15: Final project presentations
+## Week 15: Aeolian, Planetary, and An eye for the landscape (Wrap-up)
 
 ***Dec. 14th***
 
