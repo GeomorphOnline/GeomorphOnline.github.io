@@ -266,9 +266,9 @@ Law of the Wall
 
 [Flow-velocity fluctuations and the intensity of turbulence](/hydraulics/turbulent_intensity/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 [Shear Stress, Shear Velocity, and Turbulence](/hydraulics/shear_stress__shear_velocity/)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 [Flow velocity: Chézy Formula](chezy)
 
