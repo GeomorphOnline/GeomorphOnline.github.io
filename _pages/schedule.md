@@ -268,6 +268,8 @@ Law of the Wall
 
 [Shear Stress, Shear Velocity, and Turbulence](/hydraulics/shear_stress__shear_velocity/)
 
+[Flow-velocity profile](velocity_profile)
+
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 [Flow velocity: Chézy Formula](chezy)
