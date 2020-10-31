@@ -270,9 +270,9 @@ Law of the Wall
 
 [Flow-velocity profile](velocity_profile)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 [Flow velocity: Chézy Formula](chezy)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 [Flow velocity: Manning's Equation](manning)
 
