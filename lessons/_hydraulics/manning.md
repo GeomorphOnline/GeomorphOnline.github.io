@@ -30,7 +30,7 @@ $$\bar{u} = \frac{1}{n} h^{2/3} S^{1/2}$$
 
 ## Manning's formula and Manning's $$n$$ explained
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hDRFisWC8Js" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ajNcIKj3ALc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Manning's $$n$$ references
 
