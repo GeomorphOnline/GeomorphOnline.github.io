@@ -141,7 +141,7 @@ $$\frac{\partial z}{\partial t} = k_h \frac{\partial^2 z}{\partial x^2}$$
 
 We'll make the simplifying assumption that the entire landscape -- at least within the valleys and hills close to the Mississippi -- is eroding at the same rate. Let's call this rate $$\dot{\varepsilon}$$, with $$\varepsilon$$ standing for "erosion" and the dot indicating that it is a rate. Because this is *steady* in time and *uniform* in space, it is a constant.
 
-$$\dot{\varepsilon} = k_h \frac{\partial^2 z}{\partial x^2}$$
+$$\dot{\varepsilon} = k_h \frac{\mathrm{d}^2 z}{\mathrm{d} x^2}$$
 
 By using this and analyzing the topography, you will be able to estimate the whole-landscape erosion rate.
 
