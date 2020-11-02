@@ -55,7 +55,7 @@ The goal of this is to begin a conversation and ensure that you are on track wit
 
 We will respond to these proposals and confirm which article you will be working on after submission.
 
-### Friday, 06 November (10 points)
+### Wednesday, 11 November (10 points)
 
 Submit an example of the text that you would include in your Wikipedia article edits to Canvas. This must be fully referenced using high-quality sources (scientific articles, textbooks, etc.) and include several sections relevant to the chosen topic. Points will be awarded/subtracted for good writing: organization, grammar, and style.
 
