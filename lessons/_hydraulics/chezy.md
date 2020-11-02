@@ -23,13 +23,13 @@ For quick reference; see course notes and video for derivation:
 
 $$\bar{u} = C_z u_\tau$$
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hDRFisWC8Js" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## Course notes
 
 [Flow mechanics PDF](/assets/notes/05_Flow.pdf)
 
-## Chézy's formula, derived and explained
+## Chézy's formula explained
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hDRFisWC8Js" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br/>
 <br/>
