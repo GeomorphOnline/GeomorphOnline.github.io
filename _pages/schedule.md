@@ -282,7 +282,7 @@ Law of the Wall
 
 ***Nov. 2nd***
 
-### Problem set
+### Problem set: hydraulics and rivers
 
 [Problem Set: Floods, rating curves, and human interventions in channels]
 
@@ -315,6 +315,10 @@ The bedrock--alluvial transition
 
 ***Nov. 9th***
 
+### Due Wednesday
+
+[Draft of text for the Wikipedia article (not yet live on Wikipedia)](/final/wikipedia/)
+
 ### River incision and tectonic uplift
 
 Mechanisms of bedrock erosion
@@ -323,35 +327,22 @@ The stream-power law
 
 Impacts on river long profiles: climate, lithology, and tectonics
 
+ksn?
+
 ### Landscape Evolution
 
 Coupling hillslope diffusion with the stream-power law
 
 Transience and steady state
 
-### Labs??
+### Lab
 
 Landlab
 
 
-## Week 10: Fluvial II: Sediment transport and alluvial rivers
-
-
-LSDTopoTools + data --OR--
-
-
 <!--
-### Terrain analysis
-
-Channel concavity and the steepness index
-
-Roles of tectonics, climate, and lithology in setting
+## Week 11: Fluvial II: Sediment transport and alluvial rivers
 -->
-
-### Due Friday
-
-[Draft of text for the Wikipedia article (not yet live on Wikipedia)](/final/wikipedia/)
-
 
 ## Week 11: Quaternary Geochronology
 
@@ -367,6 +358,11 @@ Radiocarbon?
 
 OSL exercise?
 
+### Due Friday
+
+[Draft of text for the Wikipedia article (not yet live on Wikipedia)](/final/wikipedia/)
+
+
 ## Week 12: Coastal geomorphology
 
 ***Nov. 23rd***
@@ -378,10 +374,19 @@ Half week: Happy Thanksgiving!
 [Wikipedia article live edits](/final/wikipedia/)
 
 
-## Week 13: Terrain Analysis and Geochronology
+## Week 13: Terrain Analysis
 
 ***Nov. 30th***
 
+Channel concavity and the steepness index
+
+Roles of tectonics, climate, and lithology in setting landscape form
+
+Interplay of hydrology and topography
+
+## Lab
+
+LSDTopoTools + data
 
 ## Week 14: Glacial processes
 
