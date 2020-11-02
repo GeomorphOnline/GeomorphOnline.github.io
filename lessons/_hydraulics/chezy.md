@@ -23,6 +23,10 @@ For quick reference; see course notes and video for derivation:
 
 $$\bar{u} = C_z u_\tau$$
 
+For steady, uniform flow:
+
+$$\bar{u} = C_z \sqrt{g h S}$$
+
 ## Course notes
 
 [Flow mechanics PDF](/assets/notes/05_Flow.pdf)
