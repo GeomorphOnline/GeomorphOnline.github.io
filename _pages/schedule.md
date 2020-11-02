@@ -268,54 +268,52 @@ Law of the Wall
 
 [Shear Stress, Shear Velocity, and Turbulence](/hydraulics/shear_stress__shear_velocity/)
 
-[Flow-velocity profile](velocity_profile)
+[Flow velocity: Chézy Formula](/hydraulics/chezy/)
 
-[Flow velocity: Chézy Formula](chezy)
+[Flow velocity: Manning's Equation](/hydraulics/manning/)
+
+[Flow velocity: Darcy--Weisbach Friction Factor and Equation](/hydraulics/darcy-weisbach/)
+
+[Flow velocity: Prandtl Mixing and the Law of the Wall](/hydraulics/law_of_the_wall/)
 
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-[Flow velocity: Manning's Equation](manning)
+## Week 9: Fluvial I: Rivers in the Landscape
 
-[Turbulence: Prandtl mixing](prandtl)
+***Nov. 2nd***
 
-[Flow velocity: Law of the Wall](law_of_the_wall)
+### Problem set
 
-
-## Week 8: Fluvial I: Rivers in the Landscape
+[Problem Set: Floods, rating curves, and human interventions in channels]
 
 ### Fluvial geomorphology
 
 Types of rivers: Mechanistic (detachment- and transport-limited); observational (bedrock and alluvial)
 
-Base level
+Drainage patterns
 
-Lane's Balance and the graded river
+River-channel patterns
+
+Detachment-limited erosion rules: shear stress
 
 Modes and qualitative rates of fluvial sediment transport
 
-Geomorphically effective discharge
+Gravel and sand transport in rivers
 
-Drainage patterns
+Base level
 
 Sediment and water supply
 
+Lane's Balance and the graded river
+
+Geomorphically effective discharge
+
 The bedrock--alluvial transition
 
-### Problem set
 
-Flow and river morphology
+## Week 10: Bedrock incision and landscape evolution
 
-<!--
-### Lab
-
-Landscape Evolution
-
-Landlab
--->
-
-## Week 9: Fluvial II: Bedrock incision and landscape evolution
-
-***Nov. 2nd***
+***Nov. 9th***
 
 ### River incision and tectonic uplift
 
@@ -331,6 +329,17 @@ Coupling hillslope diffusion with the stream-power law
 
 Transience and steady state
 
+### Labs??
+
+Landlab
+
+
+## Week 10: Fluvial II: Sediment transport and alluvial rivers
+
+
+LSDTopoTools + data --OR--
+
+
 <!--
 ### Terrain analysis
 
@@ -338,28 +347,6 @@ Channel concavity and the steepness index
 
 Roles of tectonics, climate, and lithology in setting
 -->
-
-### Labs??
-
-Bedrock river long profiles + Landlab
-
-LSDTopoTools
-
-
-
-## Week 10: Fluvial II: Sediment transport and alluvial rivers
-
-Alluvial river morphologies: uplands to mouths
-
-Initiation of sediment motion
-
-Rates of fluvial sediment transport
-
-
-LSDTopoTools + data --OR--
-
-***Nov. 9th***
-
 
 ### Due Friday
 
