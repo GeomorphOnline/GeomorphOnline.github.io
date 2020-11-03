@@ -282,127 +282,143 @@ Law of the Wall
 
 ***Nov. 2nd***
 
-### Problem set: hydraulics and rivers
+[Rivers in the landscape] <!-- incl. Drainage patterns -->
 
-[Problem Set: Floods, rating curves, and human interventions in channels]
+[The fluvial system: river channels, valleys, terraces, and floodplains]
 
-### Fluvial geomorphology
+[Bedrock and alluvial rivers] <!-- incl. River-channel patterns -->
 
-Types of rivers: Mechanistic (detachment- and transport-limited); observational (bedrock and alluvial)
+[Transport- and detachment-limited rivers]
 
-Drainage patterns
+[Sediment in rivers and modes of sediment transport]
 
-River-channel patterns
+[Erosion of cohesive materials (e.g,. bedrock, clay)]
 
-Detachment-limited erosion rules: shear stress
+[Geomorphically effective discharge]
 
-Modes and qualitative rates of fluvial sediment transport
+[Flood frequency and self-formed channels]
 
-Gravel and sand transport in rivers
+### Assignment: hydraulics and rivers
 
-Base level
-
-Sediment and water supply
-
-Lane's Balance and the graded river
-
-Geomorphically effective discharge
-
-The bedrock--alluvial transition
+[Assignment: Floods, rating curves, and river channels and floodplains]
 
 
-## Week 10: Bedrock incision and landscape evolution
+## Week 10: Fluvial II: River longitudinal profiles and their evolution
 
 ***Nov. 9th***
+
+[River long profiles and channel concavity]
+
+[Lane's Balance and the graded river (transport-limited): impacts of water supply and sediment supply on river channels]
+
+[Base level]
+
+[Bedrock erosion (detachment-limited): mechanisms and the stream-power law] <!-- incl. impact of substrate -->
+
+[Bedrock river long-profile evolution]
+
+[Shear stress and sediment-transport rates]
+
+[The Exner Equation and alluvial-river long-profile evolution]
 
 ### Due Wednesday
 
 [Draft of text for the Wikipedia article (not yet live on Wikipedia)](/final/wikipedia/)
 
-### River incision and tectonic uplift
-
-Mechanisms of bedrock erosion
-
-The stream-power law
-
-Impacts on river long profiles: climate, lithology, and tectonics
-
-ksn?
-
-### Landscape Evolution
-
-Coupling hillslope diffusion with the stream-power law
-
-Transience and steady state
-
-### Lab
-
-Landlab
-
-
-<!--
-## Week 11: Fluvial II: Sediment transport and alluvial rivers
--->
-
-## Week 11: Quaternary Geochronology
+## Week 11: Fluvial+ III: Landscape evolution and river-profile analysis
 
 ***Nov. 16th***
 
-Cosmogenic dating: exposure ages, burial ages, and/or catchment-averaged erosion rates
+[Impacts on river long profiles: climate, lithology, and tectonics]
 
-OSL dating
+[The hillslope--channel transition]
 
-Radiocarbon?
+[The bedrock--alluvial transition]
 
-### Lab
+[Channel concavity and slope--area plots]
 
-OSL exercise?
+[Coupling hillslope diffusion with the stream-power law]
 
-### Due Friday
+[Uplift, erosion, and landscape steady state]
 
-[Draft of text for the Wikipedia article (not yet live on Wikipedia)](/final/wikipedia/)
+[Transient landscapes]
 
-
-## Week 12: Coastal geomorphology
-
-***Nov. 23rd***
-
-Half week: Happy Thanksgiving!
-
-### Due Monday
-
-[Wikipedia article live edits](/final/wikipedia/)
-
-
-## Week 13: Terrain Analysis
-
-***Nov. 30th***
-
+<!--
 Channel concavity and the steepness index
 
 Roles of tectonics, climate, and lithology in setting landscape form
 
 Interplay of hydrology and topography
+-->
 
-## Lab
+### Due Friday
 
-LSDTopoTools + data
+[Assignment: Floods, rating curves, and river channels and floodplains]
 
-## Week 14: Glacial processes
+<!--
+## Week 11: Fluvial II: Sediment transport and alluvial rivers
+-->
+
+## Week 12: Quaternary Geochronology
+
+***Nov. 23rd. Half week: Happy Thanksgiving!***
+
+[Cosmogenic radionuclides: exposure dating and erosion rates]
+
+[Luminescence dating: deposits]
+
+### Due Monday
+
+[Wikipedia article live edits](/final/wikipedia/)
+
+### Assignment
+
+[Assignment: Landscape Evolution with Landlab] <!-- will also include geochron estimates -->
+
+
+## Week 13: Glacial processes
+
+***Nov. 30th***
+
+[Assignment (short): Glaciers, climate, and sea-level impacts] <!-- will also include geochron estimates -->
+
+## Week 14: Coastal and Aeolian Processes
 
 ***Dec. 7th***
 
+[The world ocean and sea level]
+
+[River deltas]
+
+[Barrier islands]
+
+[Salt marshes and ecogeomorphic feedbacks]
+
+[Aeolian sediment transport]
+
+[Loess]
+
+[Sand dunes]
 
 ### Due Friday
 
 [Wikipedia article updates in response to comments](/final/wikipedia/)
 
+[Assignment: Landscape Evolution with Landlab]
 
-## Week 15: Aeolian, Planetary, and An eye for the landscape (Wrap-up)
+## Week 15: Planetary Geomorphology; Summary and wrap up
 
-***Dec. 14th***
+***Dec. 14th. Half week: December 16th is the last day of classes***
 
-Half week: December 16th is the last day of classes
+[Planetary Geomorphology]
 
+[Semester recap: what we've learned]
+
+### Due Friday
+
+[Assignment (short): Glaciers, climate, and sea-level impacts] (Yes, we're still giving you until Friday if you so choose.)
+
+<br/>
+<br/>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
