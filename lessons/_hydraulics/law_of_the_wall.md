@@ -33,7 +33,7 @@ $$u(z) = \frac{u_\tau}{\kappa} \ln\left(\frac{z}{z_0}\right)$$
 
 Covers both laminar (i.e., viscous) and turbulent transfer of momentum through a flow, and defines the eddy viscosity (though I only note that exact term in passing at the end).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rhVyWRdH_Ck" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yjr2LlPKoXU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Law of the Wall
 
