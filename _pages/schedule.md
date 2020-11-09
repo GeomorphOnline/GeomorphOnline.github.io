@@ -288,9 +288,9 @@ Law of the Wall
 
 <!-- [Transport- and detachment-limited rivers](/fluvial/transport_or_detachment_limited/) -->
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 [Sediment in rivers and modes of sediment transport](/fluvial/sediment_and_transport_modes/)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 [Alluvial river-channel motion and patterns](/fluvial/alluvial_river_patterns_dynamics)
 
