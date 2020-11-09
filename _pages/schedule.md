@@ -276,50 +276,50 @@ Law of the Wall
 
 [Flow velocity: Prandtl Mixing and the Law of the Wall](/hydraulics/law_of_the_wall/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 ## Week 9: Fluvial I: Rivers in the Landscape
 
 ***Nov. 2nd***
 
-[Rivers in the landscape] <!-- incl. Drainage patterns -->
+<!-- [Rivers in the landscape](rivers_in_the_landscape) --> <!-- incl. Drainage patterns -->
 
-[The fluvial system: river channels, valleys, terraces, and floodplains]
+[The fluvial system](/fluvial/fluvial_system/) <!-- : river channels, valleys, terraces, and floodplains -->
 
-[Bedrock and alluvial rivers] <!-- incl. River-channel patterns -->
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-[Transport- and detachment-limited rivers]
+[Bedrock and alluvial rivers](/fluvial/bedrock_alluvial/) <!-- incl. River-channel patterns -->
 
-[Sediment in rivers and modes of sediment transport]
+[Transport- and detachment-limited rivers](/fluvial/transport_or_detachment_limited/)
 
-[Erosion of cohesive materials (e.g,. bedrock, clay)]
+[Sediment in rivers and modes of sediment transport](/fluvial/sediment_and_transport_modes/)
 
-[Geomorphically effective discharge]
+[Detachment-limited Erosion of cohesive materials (e.g., bedrock, clay)](/fluvial/detachment_limited_erosion/)
 
-[Flood frequency and self-formed channels]
+[Geomorphically effective discharge](/fluvial/geomorphically_effective_discharge/)
+
+[Flood frequency and self-formed channels](/fluvial/flood_frequency__channel_morphology/fluvial/)
 
 ### Assignment: hydraulics and rivers
 
-[Assignment: Floods, rating curves, and river channels and floodplains]
+[Assignment: Floods, rating curves, and river channels and floodplains](/fluvial/pset/)
 
 
 ## Week 10: Fluvial II: River longitudinal profiles and their evolution
 
 ***Nov. 9th***
 
-[River long profiles and channel concavity]
+[River long profiles and channel concavity](/fluvial/long_profiles__concavity/)
 
-[Lane's Balance and the graded river (transport-limited): impacts of water supply and sediment supply on river channels]
+[Lane's Balance and the graded river (transport-limited): impacts of water supply and sediment supply on river channels](/fluvial/lanes_balance/)
 
-[Base level]
+[Base level](/fluvial/base_level/)
 
-[Bedrock erosion (detachment-limited): mechanisms and the stream-power law] <!-- incl. impact of substrate -->
+[Bedrock erosion (detachment-limited): mechanisms and the stream-power law](/fluvial/bedrock_erosion__stream_power/) <!-- incl. impact of substrate -->
 
-[Bedrock river long-profile evolution]
+[Bedrock river long-profile evolution](/fluvial/bedrock_long_profile/)
 
-[Shear stress and sediment-transport rates]
+[Shear stress and sediment-transport rates](/fluvial/sediment_transport/)
 
-[The Exner Equation and alluvial-river long-profile evolution]
+[The Exner Equation and alluvial-river long-profile evolution](/fluvial/exner_equation__alluvial_long_profile/)
 
 ### Due Wednesday
 
