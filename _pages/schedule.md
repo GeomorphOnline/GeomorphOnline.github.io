@@ -284,13 +284,15 @@ Law of the Wall
 
 [The fluvial system](/fluvial/fluvial_system/) <!-- : river channels, valleys, terraces, and floodplains -->
 
+[Bedrock and alluvial rivers; detachment- and transport-limited evolution](/fluvial/bedrock_alluvial/) <!-- incl. River-channel patterns -->
+
+<!-- [Transport- and detachment-limited rivers](/fluvial/transport_or_detachment_limited/) -->
+
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-[Bedrock and alluvial rivers](/fluvial/bedrock_alluvial/) <!-- incl. River-channel patterns -->
-
-[Transport- and detachment-limited rivers](/fluvial/transport_or_detachment_limited/)
-
 [Sediment in rivers and modes of sediment transport](/fluvial/sediment_and_transport_modes/)
+
+[Alluvial river-channel motion and patterns](/fluvial/alluvial_river_patterns_dynamics)
 
 [Detachment-limited Erosion of cohesive materials (e.g., bedrock, clay)](/fluvial/detachment_limited_erosion/)
 
@@ -418,7 +420,5 @@ Interplay of hydrology and topography
 
 [Assignment (short): Glaciers, climate, and sea-level impacts] (Yes, we're still giving you until Friday if you so choose.)
 
-<br/>
-<br/>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
