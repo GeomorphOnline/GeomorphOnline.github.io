@@ -61,6 +61,10 @@ Submit an example of the text that you would include in your Wikipedia article e
 
 This article on *Lord of the Rings* is considered a "Good Article" by Wikipedia (and by extension, our) standards: https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series). Note how the article includes many, relevant sections with extensive citations and applicable images and diagrams. *Note that becoming an official "Good Article" on Wikipedia requires a peer-review process that is beyond the scope of what we are requiring for the class, but which we would encourage you to do if you feel inspired by your work. Contributing to freely available global knowledge can be rewarding!*
 
+For this assignment, you should submit several sections on your topic that are referenced and well-written and give us a good sense of "where you're going". In addition to this, you should also be submitting a clear description/outline of how you plan to structure the rest of your article before submission on 11/23 (which should be a full, polished version of your text).
+
+The length of this submission and the number of sections are up to you but should be enough to fully delve into your chosen subject (part of the feedback you will be receiving on this draft is our thoughts on the number of sections and types of things you plan to discuss in your articles).
+
 ### Monday, 23 November (60 points)
 
 Create a Wikipedia account and edit your article. When complete and ready for grading, submit via Canvas a writeup including:
