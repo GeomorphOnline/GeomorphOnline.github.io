@@ -290,15 +290,15 @@ Law of the Wall
 
 [Sediment in rivers and modes of sediment transport](/fluvial/sediment_and_transport_modes/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
+[Alluvial river-channel motion and patterns](/fluvial/alluvial_river_patterns_dynamics/)
 
-[Alluvial river-channel motion and patterns](/fluvial/alluvial_river_patterns_dynamics)
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 [Detachment-limited Erosion of cohesive materials (e.g., bedrock, clay)](/fluvial/detachment_limited_erosion/)
 
-[Geomorphically effective discharge](/fluvial/geomorphically_effective_discharge/)
+<!-- [Geomorphically effective discharge](/fluvial/geomorphically_effective_discharge/) -->
 
-[Flood frequency and self-formed channels](/fluvial/flood_frequency__channel_morphology/fluvial/)
+[Flood frequency, self-formed channels, and geomorphically effective discharge](/fluvial/geomorphically_effective_discharge/)
 
 ### Assignment: hydraulics and rivers
 
