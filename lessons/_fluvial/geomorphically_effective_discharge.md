@@ -10,11 +10,13 @@ author: Andrew Wickert
 author_profile: true
 ---
 
-*.*
+*Streamflow statistics and river-channel form are closely linked.*
 
 ## Learning Goals
+* Relate stage and discharge.
 * Know the basics of flood-frequency analysis
 * Know that the geomorphically-effective flood of the recurrence interval that moves the most material. For most rivers, this is the 1--2-year return-interval flood, and corresponds to the bankfull flood.
+* Realize that river channels self-adjust to carry the geomorphically effective flood: the form of the landscape responds to the dominant hydrological driver!
 
 ## Measuring river discharge
 
