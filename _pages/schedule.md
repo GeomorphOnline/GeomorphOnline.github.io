@@ -296,9 +296,9 @@ Law of the Wall
 
 <!-- [Geomorphically effective discharge](/fluvial/geomorphically_effective_discharge/) -->
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
+[Streamflow and channel adjustment](/fluvial/geomorphically_effective_discharge/)
 
-[Streamflow and flood frequency, self-formed channels, and geomorphically effective discharge](/fluvial/geomorphically_effective_discharge/)
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 ### Assignment: hydraulics and rivers
 
