@@ -315,7 +315,8 @@ Law of the Wall
 
 [River long profiles and channel concavity](/fluvial/long_profiles__concavity/)
 
-[Bedrock erosion (detachment-limited): mechanisms and the stream-power law](/fluvial/bedrock_erosion__stream_power/) <!-- incl. impact of substrate -->
+<!--
+[Bedrock erosion (detachment-limited): mechanisms and the stream-power law](/fluvial/bedrock_erosion__stream_power/) --> <!-- incl. impact of substrate -->
 
 [The stream-power law and detachment-limited river long-profile evolution](/fluvial/bedrock_long_profile/)
 
@@ -337,7 +338,7 @@ Law of the Wall
 
 [The bedrock--alluvial transition]
 
-[Channel concavity and slope--area plots]
+[Channel concavity index and slope--area plots]
 
 [Coupling hillslope diffusion with the stream-power law]
 
