@@ -10,7 +10,7 @@ author: Andrew Wickert
 author_profile: true
 ---
 
-*Streamflow statistics and river-channel form are closely linked.*
+*Base level is the lowest elevation to which a river flows, and dictates the lowest elevation to which it can erode.*
 
 ## Learning Goals
 * Know that base level is the elevation to which a river flows. The river cannot erode more than a channel depth below its base level.
