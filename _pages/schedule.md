@@ -292,13 +292,13 @@ Law of the Wall
 
 [Alluvial river-channel motion and patterns](/fluvial/alluvial_river_patterns_dynamics/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
-[Detachment-limited Erosion of cohesive materials (e.g., bedrock, clay)](/fluvial/detachment_limited_erosion/)
+[Bedrock rivers and detachment-limited erosion](/fluvial/detachment_limited_erosion/)
 
 <!-- [Geomorphically effective discharge](/fluvial/geomorphically_effective_discharge/) -->
 
-[Flood frequency, self-formed channels, and geomorphically effective discharge](/fluvial/geomorphically_effective_discharge/)
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
+
+[Streamflow and flood frequency, self-formed channels, and geomorphically effective discharge](/fluvial/geomorphically_effective_discharge/)
 
 ### Assignment: hydraulics and rivers
 
@@ -309,19 +309,19 @@ Law of the Wall
 
 ***Nov. 9th***
 
-[River long profiles and channel concavity](/fluvial/long_profiles__concavity/)
+[Base level](/fluvial/base_level/)
 
 [Lane's Balance and the graded river (transport-limited): impacts of water supply and sediment supply on river channels](/fluvial/lanes_balance/)
 
-[Base level](/fluvial/base_level/)
+[River long profiles and channel concavity](/fluvial/long_profiles__concavity/)
 
 [Bedrock erosion (detachment-limited): mechanisms and the stream-power law](/fluvial/bedrock_erosion__stream_power/) <!-- incl. impact of substrate -->
 
-[Bedrock river long-profile evolution](/fluvial/bedrock_long_profile/)
+[The stream-power law and detachment-limited river long-profile evolution](/fluvial/bedrock_long_profile/)
 
-[Shear stress and sediment-transport rates](/fluvial/sediment_transport/)
+[Sediment-transport rates](/fluvial/sediment_transport/)
 
-[The Exner Equation and alluvial-river long-profile evolution](/fluvial/exner_equation__alluvial_long_profile/)
+[The Exner Equation and alluvial-river long-profile evolution](/fluvial/exner_equation__alluvial_long_profile/) <!-- Note:  -->
 
 ### Due Wednesday
 
