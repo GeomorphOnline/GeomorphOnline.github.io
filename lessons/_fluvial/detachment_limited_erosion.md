@@ -54,6 +54,8 @@ Both are described in the video lecture immediately below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SsawtdXRHoA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Note: I mention that data from all three types of rock are plotting together. This is a bit misleading if you don't read the *y* axis: the erosion rate is normalized by the tensile strength. Erosion was still faster for the mudstone than for the andesite!
+
 <br/>
 <br/>
 
