@@ -292,58 +292,67 @@ Law of the Wall
 
 [Alluvial river-channel motion and patterns](/fluvial/alluvial_river_patterns_dynamics/)
 
+
+## Week 10: Fluvial II: Channel adjustment and evolution
+
+***Nov. 9th***
+
 [Bedrock rivers and detachment-limited erosion](/fluvial/detachment_limited_erosion/)
 
 <!-- [Geomorphically effective discharge](/fluvial/geomorphically_effective_discharge/) -->
 
 [Streamflow and channel adjustment](/fluvial/geomorphically_effective_discharge/)
 
-
-### Assignment: hydraulics and rivers
-
-[Problem Set: Rating curves, flood management, and geomorphically effective discharge](/hydraulics/pset_rating_curves/)
-
-
-## Week 10: Fluvial II: River longitudinal profiles and their evolution
-
-***Nov. 9th***
-
 [Base level](/fluvial/base_level/)
 
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
+<!--
 [River long profiles and channel concavity](/fluvial/long_profiles__concavity/)
 
-<!--
 [Bedrock erosion (detachment-limited): mechanisms and the stream-power law](/fluvial/bedrock_erosion__stream_power/) --> <!-- incl. impact of substrate -->
 
-[The stream-power law and detachment-limited river long-profile evolution](/fluvial/bedrock_long_profile/)
-
+<!--
 [Bed-load sediment-transport rates](/fluvial/sediment_transport/)
 
 [Lane's Balance, the Exner Equation, and the graded river (transport-limited): impacts of water supply and sediment supply on alluvial river long-profile evolution](/fluvial/lanes_balance/)
+-->
+
+[Lane's Balance and the Graded River](/fluvial/lanes_balance/)
+
+[The stream-power law and detachment-limited river long-profile evolution](/fluvial/bedrock_long_profile/)
 
 ### Due Wednesday
 
 [Draft of text for the Wikipedia article (not yet live on Wikipedia)](/final/wikipedia/)
 
+### Assignment: hydraulics and rivers
+
+[Problem Set: Rating curves, flood management, and geomorphically effective discharge](/hydraulics/pset_rating_curves/)
+
 ## Week 11: Fluvial+ III: Landscape evolution and river-profile analysis
 
 ***Nov. 16th***
 
-[Impacts on river long profiles: climate, lithology, and tectonics]
+[Channel concavity and the steepness index](/fluvial/concavity_steepness/)
 
+<!--
 [The hillslope--channel transition]
 
-[Channel concavity and the steepness index]
-
 [The bedrock--alluvial transition]
+-->
 
-[Coupling hillslope diffusion with the stream-power law]
+[Landscape evolution: Coupling hillslope diffusion with the stream-power law](/fluvial/landscape_evolution/)
 
+[Landscape steady state](/fluvial/landscape_steady_state/)
+
+[Detachment-limited river long-profile analysis: hillslope vs. fluvial processes, and the impact of climate, lithology, and tectonics](/fluvial/long-profile_analysis)
+
+<!--
 [Uplift, erosion, and landscape steady state]
 
 [Transient landscapes]
+-->
 
 <!--
 Channel concavity and the steepness index
