@@ -80,10 +80,10 @@ $$C_f$$ is the Darcy--Weisbach friction factor. It varies with flow depth, but f
 <!-- You want to validate your calculations with field measurements, but you are on a contract, so you don't have much staff time or money to create an extremely detailed survey. -->
 
 In order to calculate flow velocity in the channel with the provided information, you need to use the Law of the Wall. However, the formulation above provides the velocity as a function of elevation.
-
+### Part A
 Using the Law of the Wall and the Mean Value Theorem, solve for the mean flow velocity $$\bar{u}$$. When applying the Mean value Theorem, recall that flow velocity is assumed to go to 0 at a small elevation $$z = z_0$$ (due to the fact that we do not take into account the laminar sublayer). Consider a flow of arbitrary depth $$h$$, and express the solution with respect to this depth.
-
-You are quite clever, and after solving for mean velocity, realize that at some depth within the channel, the water flow velocity will be exactly equal to its mean. Because you are often working on contracts with limited time, knowing that you or your staff could measure flow velocity at only one flow depth would save you effort in the field. Based on knowing the mean velocity and your work from above, solve for the elevation within the flow at whihc the local flow velocity will equal the mean flow velocity as a function of the flow depth, $$h$$.
+### Part B
+You are quite clever, and after solving for mean velocity, realize that at some depth within the channel, the water flow velocity will be exactly equal to its mean. Because you are often working on contracts with limited time, knowing that you or your staff could measure flow velocity at only one flow depth would save you effort in the field. Based on knowing the mean velocity and your work from above, solve for the elevation within the flow at which the local flow velocity will equal the mean flow velocity as a function of the flow depth, $$h$$.
 
 <!-- However, you are quite clever and realize that at some depth within the channel, the water flow velocity will be exactly equal to the mean velocity.
 
@@ -93,15 +93,15 @@ Using the Law of the Wall and the Mean Value Theorem, find the depth $$z$$ at wh
 -->
 
 ## 2. Stage--discharge relationship (30 points)
-
+### Part A
 Using the above information on the river and floodplain and your now-obtained equation for mean flow velocity, calculate the relationship between river stage and discharge for stages of up to 4 meters above the river bed. Show your work. Note that we have provided the information to use the Law of the Wall for flows in (and above) the channel, and to use Manning's Equation on the floodplain.
 
 Show your work, including equations (as applicable) and provide a plot with stage on the *y* axis and discharge on the *x* axis.
 
 On your plot, mark the location of the bankfull discharge. Note the numerical value of this discharge.
-
+### Part B
 Describe in a few sentences why you think this plot has the shape that it does? What does this tell you about how stage and discharge vary? Do you note anything special at the bankfull stage (and discharge)?
-
+### Part C
 Finally, many of the following questions are going to require you to convert discharge into stage. You might, however, notice that you have used multiple equations to compute the stage--discharge relationship and that stage appears in multiple terms -- including within a logarithm! Empirical stage--discharge rating curves, on the other hand, often use a simple power--law fit of the type $$h = \lambda_1 Q^\lambda_2$$, where $\lambda_1$ and $\lambda_2$ are the coefficient and exponent of an empirical fit, respectively. This equation is simpler, and may be easily inverted (i.e., you can easily rearrange it to solve for $$h$$ or $$Q$$). Do this, and plot this fit and the fit parameters as well. You can use this equation to help you answer the questions below.
 
 ## 3. Flood risk and the flood-frequency curve (20 points)
@@ -111,9 +111,9 @@ Based on regional meteorological data, comparisons with nearby streams, and a ki
 $$Q = 170 \log_{10}(5 P_R),$$
 
 where $$P_R$$ indicates the *return period* of that flood in years.
-
+### Part A
 First, calculate the return period of the bankfull flow.
-
+### Part B
 Second, plot the flood *stage* against *return period* for the 1--500 year floods based on the rating curve that you constructed in Question (2). This now gives you a mechanism to address questions related to flooding hazards and levee heights.
 
 
@@ -122,17 +122,17 @@ Second, plot the flood *stage* against *return period* for the 1--500 year flood
 *If you want some background on this analysis, you can see the [original paper by Wolman and Miller (1960)](http://geomorphology.sese.asu.edu/Papers/Wolman_and_Miller_1960.pdf). They use stress, whereas we use discharge to connect the geomorphic change to the hydrology.*
 
 Before building the levees, you want to see how they might impact flow and sediment in the channel and beyond the current reach of river. You start by considering the current natural flows in the channel and how they have shaped the channel.
-
+### Part A
 Knowing the depth--slope product, you can compute basal shear stress as a function of flow depth, $$\tau_b(h)$$. Based on your stage--discharge curve, you can translate this into a basal shear stress as a function of river discharge, $$\tau_b(Q)$$.
-
+### Part B
 Using this, plot the bed-load (i.e., sand) sediment discharge (*y* axis) vs. water discharge (*x* axis) for the 0.3--200-year floods. Be sure to consider sediment discharge across the whole channel:
 
 $$Q_s = q_s b.$$
 
 Consider the floodplain to be covered in thick enough vegetation that no significant erosion or sediment transport will be possible. This is in part a simplifying assumption, but is usually not a terrible one for moderate-sized floods.
-
+### Part C
 Next, on another set of axes, plot the relative proportion of time that the river is at a certain flood stage (*y* axis) vs. water discharge (*x* axis). To represent the relative proportion of time that the river is at a certain flood stage in a simple way, we can just use the reciprocal of the flow return period ($$1/P$$). I write *relative* because this is not normalized to anything meaningful, but can help us to compare the frequency of one flow to another in this time series.
-
+### Part D
 Now, multiply these together (i.e., $$Q_s/P$$) to obtain the amount of net sediment transport performed by events of different recurrence intervals. This will show you the relative geomorphic effectiveness of each flood: you should see that larger ones have a higher sediment-transport capacity but occur much more rarely. Plot this (sediment discharge times ) on the *y* axis and water discharge on the *x* axis.
 
 Using this last plot, pick the the most geomorphically effective discharge; it should appear as a peak in the plot of $$Q_s/P$$ vs. $$Q$$. How does this compare to the bankfull discharge?
@@ -143,7 +143,7 @@ Now, multiply these together. This will give you the rate of sediment transport 
 
 
 ## 5. Levee height (20 points)
-
+### Part A
 The citizens living in the valley hired you to estimate the minimum height of a levee needed to protect against a 200-year flood. (They had discussed protecting against a 100-year flood, as is common. However, due to increasing heavy rains with climate change, they are not sure that the future storms will follow the historical statistics, and want to play it safe.) How tall should this levee be such that the 200-year flood stage will be exactly at its crest?
 
 Note 1: Engineers would design with a bit of a factor of safety atop this; here we are not considering the "little extra to be sure".
@@ -151,7 +151,7 @@ Note 1: Engineers would design with a bit of a factor of safety atop this; here 
 Note 2: Once the levees are installed, the channel will no longer be able to spill out onto its floodplain. Therefore, you will have to recalculate your stage--discharge relationship to consider the flows through the channel alone. You needn't worry about those that are greater than 2 meters; this is why you are building levees!
 
 Show the new stage--discharge relationship and describe provide the minimum levee height to contain the 200-year flood.
-
+### Part B
 Finally, as a brief thought exercise, write 2--3 sentences about what you think this levee will do to shear stress and sediment transport within this reach of the river.
 
 
