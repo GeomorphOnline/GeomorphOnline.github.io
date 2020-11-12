@@ -298,11 +298,10 @@ Law of the Wall
 
 [Streamflow and channel adjustment](/fluvial/geomorphically_effective_discharge/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 ### Assignment: hydraulics and rivers
 
-[Assignment: Floods, rating curves, and river channels and floodplains](/fluvial/pset/)
+[Problem Set: Rating curves, flood management, and geomorphically effective discharge](/hydraulics/pset_rating_curves/)
 
 
 ## Week 10: Fluvial II: River longitudinal profiles and their evolution
@@ -311,7 +310,7 @@ Law of the Wall
 
 [Base level](/fluvial/base_level/)
 
-[Lane's Balance and the graded river (transport-limited): impacts of water supply and sediment supply on river channels](/fluvial/lanes_balance/)
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 [River long profiles and channel concavity](/fluvial/long_profiles__concavity/)
 
@@ -320,9 +319,9 @@ Law of the Wall
 
 [The stream-power law and detachment-limited river long-profile evolution](/fluvial/bedrock_long_profile/)
 
-[Sediment-transport rates](/fluvial/sediment_transport/)
+[Bed-load sediment-transport rates](/fluvial/sediment_transport/)
 
-[The Exner Equation and alluvial-river long-profile evolution](/fluvial/exner_equation__alluvial_long_profile/) <!-- Note:  -->
+[Lane's Balance, the Exner Equation, and the graded river (transport-limited): impacts of water supply and sediment supply on alluvial river long-profile evolution](/fluvial/lanes_balance/)
 
 ### Due Wednesday
 
@@ -336,9 +335,9 @@ Law of the Wall
 
 [The hillslope--channel transition]
 
-[The bedrock--alluvial transition]
+[Channel concavity and the steepness index]
 
-[Channel concavity index and slope--area plots]
+[The bedrock--alluvial transition]
 
 [Coupling hillslope diffusion with the stream-power law]
 
@@ -353,10 +352,6 @@ Roles of tectonics, climate, and lithology in setting landscape form
 
 Interplay of hydrology and topography
 -->
-
-### Due Friday
-
-[Assignment: Floods, rating curves, and river channels and floodplains]
 
 <!--
 ## Week 11: Fluvial II: Sediment transport and alluvial rivers
@@ -373,6 +368,12 @@ Interplay of hydrology and topography
 ### Due Monday
 
 [Wikipedia article live edits](/final/wikipedia/)
+
+### Due Wednesday (Don't work over Thanksgiving!)
+
+*(But we can offer an extension if you really need it.)*
+
+[Problem Set: Rating curves, flood management, and geomorphically effective discharge](/hydraulics/pset_rating_curves/)
 
 ### Assignment
 
