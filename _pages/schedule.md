@@ -305,8 +305,6 @@ Law of the Wall
 
 [Base level](/fluvial/base_level/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 <!--
 [River long profiles and channel concavity](/fluvial/long_profiles__concavity/)
 
@@ -319,6 +317,8 @@ Law of the Wall
 -->
 
 [Lane's Balance and the Graded River](/fluvial/lanes_balance/)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 [The stream-power law and detachment-limited river long-profile evolution](/fluvial/bedrock_long_profile/)
 
