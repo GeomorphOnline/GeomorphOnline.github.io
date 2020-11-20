@@ -334,7 +334,7 @@ Law of the Wall
 
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-[Landscape evolution: Coupling hillslope diffusion with the stream-power law](/fluvial/landscape_evolution/)
+[Landscape evolution: Coupling hillslope diffusion with the stream-power law](/landscape-evolution/base_equation/)
 
 [Landscape steady state](/fluvial/landscape_steady_state/)
 
