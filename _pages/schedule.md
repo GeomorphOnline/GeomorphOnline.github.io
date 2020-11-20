@@ -318,10 +318,6 @@ Law of the Wall
 
 [Lane's Balance and the Graded River](/fluvial/lanes_balance/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
-[The stream-power law and detachment-limited river long-profile evolution](/fluvial/bedrock_long_profile/)
-
 ### Due Wednesday
 
 [Draft of text for the Wikipedia article (not yet live on Wikipedia)](/final/wikipedia/)
@@ -334,7 +330,15 @@ Law of the Wall
 
 ***Nov. 16th***
 
-[Channel concavity and the steepness index](/fluvial/concavity_steepness/)
+[The stream-power law and detachment-limited river long-profile evolution](/fluvial/stream-power/)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
+
+[Landscape evolution: Coupling hillslope diffusion with the stream-power law](/fluvial/landscape_evolution/)
+
+[Landscape steady state](/fluvial/landscape_steady_state/)
+
+[Channel concavity, the steepness index, and river-profile analysis](/fluvial/concavity_steepness/)
 
 <!--
 [The hillslope--channel transition]
@@ -342,11 +346,9 @@ Law of the Wall
 [The bedrock--alluvial transition]
 -->
 
-[Landscape evolution: Coupling hillslope diffusion with the stream-power law](/fluvial/landscape_evolution/)
-
-[Landscape steady state](/fluvial/landscape_steady_state/)
-
+<!--
 [Detachment-limited river long-profile analysis: hillslope vs. fluvial processes, and the impact of climate, lithology, and tectonics](/fluvial/long-profile_analysis)
+-->
 
 <!--
 [Uplift, erosion, and landscape steady state]
