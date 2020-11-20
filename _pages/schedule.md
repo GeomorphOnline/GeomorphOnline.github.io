@@ -332,9 +332,9 @@ Law of the Wall
 
 [The stream-power law and detachment-limited river long-profile evolution](/fluvial/stream-power/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 [Landscape evolution: Coupling hillslope diffusion with the stream-power law](/landscape-evolution/base_equation/)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 [Landscape steady state](/fluvial/landscape_steady_state/)
 
