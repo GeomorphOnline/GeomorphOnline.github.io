@@ -334,9 +334,9 @@ Law of the Wall
 
 [Landscape evolution: Coupling hillslope diffusion with the stream-power law](/landscape-evolution/base_equation/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
+[Landscape steady state and tectonic uplift](/landscape-evolution/steady_state/)
 
-[Landscape steady state](/fluvial/landscape_steady_state/)
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 [Channel concavity, the steepness index, and river-profile analysis](/fluvial/concavity_steepness/)
 
