@@ -376,15 +376,9 @@ Interplay of hydrology and topography
 
 [Luminescence dating: deposits]
 
-### Due Monday
+### Due Wednesday
 
 [Wikipedia article live edits](/final/wikipedia/)
-
-### Due Wednesday (Don't work over Thanksgiving!)
-
-*(But we can offer an extension if you really need it.)*
-
-[Problem Set: Rating curves, flood management, and geomorphically effective discharge](/hydraulics/pset_rating_curves/)
 
 ### Assignment
 
@@ -394,6 +388,16 @@ Interplay of hydrology and topography
 ## Week 13: Glacial processes
 
 ***Nov. 30th***
+
+### Due Wednesday
+
+[Problem Set: Rating curves, flood management, and geomorphically effective discharge](/hydraulics/pset_rating_curves/)
+
+### Lectures
+
+TBD
+
+### Assignment
 
 [Assignment (short): Glaciers, climate, and sea-level impacts] <!-- will also include geochron estimates -->
 
