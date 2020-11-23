@@ -84,7 +84,11 @@ In order to calculate flow velocity in the channel with the provided information
 
 ### Part A
 
-Using the Law of the Wall and the Mean Value Theorem, solve for the mean flow velocity $$\bar{u}$$. When applying the Mean value Theorem, recall that flow velocity is assumed to go to 0 at a small elevation $$z = z_0$$ (due to the fact that we do not take into account the laminar sublayer). Consider a flow of arbitrary depth $$h$$, and express the solution with respect to this depth.
+Using the Law of the Wall and the mean-value theorem (MVT), solve for the mean flow velocity $$\bar{u}$$. When applying the MVT, recall that flow velocity is assumed to go to 0 at a small elevation $$z = z_0$$ (due to the fact that we do not take into account the laminar sublayer). Consider a flow of arbitrary depth $$h$$, and express the solution with respect to this depth.
+
+As a reminder of your calculus days, the MVT provides the average value of a function, $$f(x)$$, over a a range of the independent variable ($$x$$) extending from $$x_0$$ to $$x_1$$:
+
+$$\overline{f(x)} = \frac{1}{x_1-x_0} \int_{x_0}^{x_1}{f(x) \mathrm{d}x}$$
 
 ### Part B
 
