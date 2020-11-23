@@ -84,7 +84,7 @@ In order to calculate flow velocity in the channel with the provided information
 
 ### Part A
 
-Using the Law of the Wall and the mean-value theorem (MVT), solve for the mean flow velocity $$\bar{u}$$. When applying the MVT, recall that flow velocity is assumed to go to 0 at a small elevation $$z = z_0$$ (due to the fact that we do not take into account the laminar sublayer). Consider a flow of arbitrary depth $$h$$, and express the solution with respect to this depth.
+Using the Law of the Wall and the mean-value theorem (MVT), solve for the mean (i.e., vertically averaged) flow velocity $$\bar{u}$$. (Note that this is the vertically averaged $$\bar{u}$$ that is used, e.g., for Manning's Equation. It is not the time-averaged $$\bar{u}$$ that is used for the Reynolds, i.e., turbulent, decomposition. Your goal is to find the vertically averaged velocity in order to connect flow depth and discharge.) When applying the MVT, recall that flow velocity is assumed to go to 0 at a small elevation $$z = z_0$$ (due to the fact that we do not take into account the laminar sublayer). Consider a flow of arbitrary depth $$h$$, and express the solution with respect to this depth.
 
 As a reminder of your calculus days, the MVT provides the average value of a function, $$f(x)$$, over a a range of the independent variable ($$x$$) extending from $$x_0$$ to $$x_1$$:
 
