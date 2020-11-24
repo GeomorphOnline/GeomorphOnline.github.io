@@ -18,13 +18,14 @@ author_profile: true
 #  image_description: "A description of the image"
 ---
 
+*Optically Stimulated Luminescence (OSL) dating is one of the most commonly used geochronological tools for geomorphologists. Not only does it allow us to determine how much time has passed since a grain was last exposed to sunlight (a useful premise for those interested in surface processes), its wide applicability to aeolian, fluvial, and glacial settings makes it particularly useful for understanding how landscapes evolve over time.*
+
 ## Learning Goals
 * Understanding the basics of OSL analysis and how the method is used in geomorphology.
 * Explain the applicability of OSL in a variety of landscape settings including glacial, fluvial, and aeolian landscapes.
 * Recognize complexities of applying geochronological methods, particularly in reassessing and fine tuning analytical approaches.
 
 ## Video
-*Optically Stimulated Luminescence (OSL) dating is one of the most commonly used geochronological tools for geomorphologists. Not only does it allow us to determine how much time has past since a grain was last exposed to sunlight (a useful premise for those interested in surface processes), its wide applicability to aeolian, fluvial, and glacial settings makes it particularly useful for understanding how landscapes evolve over time.*
 
 
 
