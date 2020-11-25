@@ -31,7 +31,7 @@ author_profile: true
 
 ## OSL Mini-Activity
 
-Now that you've learned about OSL and some of Shanti's applications of it to her research, now it's your turn to work with some (hypothetical) OSL data and answer the following questions about OSL to check your understanding of the content.
+Now that you've learned about OSL and some of Shanti's applications of it to her research, now it's your turn to work with some (hypothetical) OSL data and answer the following questions about OSL to check your understanding of the content. (Answering these questions will become part of your upcoming problem set.)
 
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCIb3BIqj-NnFlpgb2uDFBfe5KvYOo87lRfUFnxICdJKnjMQ/viewform?embedded=true" width="640" height="1230" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
