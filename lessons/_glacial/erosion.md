@@ -49,10 +49,7 @@ Because glaciers are large and because they're on the Earth's surface, gravity a
 
 This process, known as glacier mass balance is (as the name would imply) a balance between melting (*ablation*) and growing (*accumulation*) ice and allows for the glacier to flow continuously.
 
-This short, very high quality video that gives an overview of glacier mass balance, including accumulation, ablation, and where these two processes are equal (what we call the *the Equilibrium Line Altitude (ELA)*).
-
-<iframe title="Soils and Hillslopes: Diffusion, Mass Balance, and Mass Wasting" height="122" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player" src="https://timeforgeography.co.uk/videos_list/glaciation/glacier-mass-balance/"></iframe>
-
+[This short, very high quality video](https://timeforgeography.co.uk/videos_list/glaciation/glacier-mass-balance/) gives an overview of glacier mass balance, including accumulation, ablation, and where these two processes are equal (what we call the *the Equilibrium Line Altitude (ELA)*).
 
 
 ## Google Expeditions Augmented Reality (AR)
