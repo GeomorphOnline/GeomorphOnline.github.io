@@ -372,7 +372,7 @@ Interplay of hydrology and topography
 
 <!-- [Cosmogenic radionuclides: exposure dating and erosion rates] -->
 
-[Luminescence dating: deposits](OSL)
+[Luminescence dating: deposits](/geochronology/OSL/)
 
 ### Due Wednesday
 
