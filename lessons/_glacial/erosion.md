@@ -45,14 +45,14 @@ Glaciers are, generally, quite large (though that is becoming increasingly not t
 ![Perito Moreno_large](/assets/images/glacial/PeritoMorenoGlacier_Shanti.jpg)
 >The Perito Moreno glacier is approximately 19 miles long and covers roughly 97 square miles with ice. Here's a picture of me as scale to show just how large this glacier really is.
 
-Because glaciers are large and because they're on the Earth's surface, gravity acts upon them and causes them to flow. However, you may have noticed that glaciers do not simply slip downhill, leaving no ice behind as they do so. Instead, as glaciers flow, ice closer to the edge of the glacier (what we call the *terminus*) melts while, near the top of the glacier (the *head*) ongoing snowfall allows for the generation of new glacial ice.
+Because glaciers are large and because they're on the Earth's surface, gravity acts upon them and causes them to flow. However, you may have noticed that glaciers do not simply slip downhill, leaving no ice behind as they do so. Instead, as glaciers flow, ice closer to the end of the glacier (what we call the **terminus**) melts while, near the top (**head**) of the glacier ongoing snowfall allows for the generation of new glacial ice.
 
-This process, known as glacier mass balance is (as the name would imply) a balance between melting (*ablation*) and growing (*accumulation*) ice and allows for the glacier to flow continuously.
+This process, known as **glacier mass balance** is (as the name would imply) a balance between melting (**ablation**) and growing (**accumulation**) ice and allows for the glacier to flow continuously.
 
-[This short, very high quality video](https://timeforgeography.co.uk/videos_list/glaciation/glacier-mass-balance/) gives an overview of glacier mass balance, including accumulation, ablation, and where these two processes are equal (what we call the *the Equilibrium Line Altitude (ELA)*).
+**[This short, very high quality video](https://timeforgeography.co.uk/videos_list/glaciation/glacier-mass-balance/)** gives an overview of glacier mass balance, including accumulation, ablation, and the altitude on the ice where these two processes are equal (what we call the **the Equilibrium Line Altitude (ELA)**).
 
 
-## Google Expeditions Augmented Reality (AR)
+## Glacier block diagram, basal shear stress, etc.
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
