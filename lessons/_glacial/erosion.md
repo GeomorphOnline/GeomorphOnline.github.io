@@ -42,7 +42,7 @@ There's a lot more to glaciers and glacial geology than we can possibly cover in
 
 ## Glacier Mass Balance
 Glaciers are, generally, quite large (though that is becoming increasingly not the case, due to climate warming). As someone that has been fortunate to work on a glacier, I can confirm this simple fact.
-![Perito Moreno_large](/assets/images/glacial/PeritoMorenoGlacier_Shanti.JPG)
+![Perito Moreno_large](/assets/images/glacial/PeritoMorenoGlacier_Shanti.jpg)
 >The Perito Moreno glacier is approximately 19 miles long and covers roughly 97 square miles with ice. Here's a picture of me as scale to show just how large this glacier really is.
 
 Because glaciers are large and because they're on the Earth's surface, gravity acts upon them and causes them to flow. However, you may have noticed that glaciers do not simply slip downhill, leaving no ice behind as they do so. Instead, as glaciers flow, ice closer to the edge of the glacier (what we call the *terminus*) melts while, near the top of the glacier (the *head*) ongoing snowfall allows for the generation of new glacial ice.
