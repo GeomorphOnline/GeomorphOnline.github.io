@@ -395,7 +395,11 @@ Interplay of hydrology and topography
 
 ### Lectures
 
-TBD
+[Glacial Erosion and Sliding]
+
+[Glacial Landforms]
+
+[Paraglacial Environments]
 
 ### Assignment
 
