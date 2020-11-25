@@ -27,7 +27,9 @@ author_profile: true
 
 ## Overview
 
-Glaciers. You've definitely heard of them and, at this time of year in Minnesota, can probably imagine what it would be like to actually visit one. But, what are they and how do they work to shape landscapes and landscape processes? In this "week" of our course I'll be taking you through the basics of glacial processes and how these processes, in turn, shape landscapes. 
+Glaciers. You've definitely heard of them and, at this time of year in Minnesota, can probably imagine what it would be like to actually visit one. But, what are they and how do they work to shape landscapes and landscape processes? In this "week" of our course I'll be taking you through the basics of glacial processes and how these processes, in turn, shape landscapes.
+
+![Perito Moreno](/assets/images/glacial/PeritoMoreno_walking.JPG)
 
 We'll begin by learning a bit about glacial erosion and glacial sliding so that we can understand what goes on directly within and around the ice to shape landscapes. Then, we'll move to an overview of glacial landforms, to see the direct implications of glacial erosion and sliding on the landscape as the glacier moves through it (from small, centimeter-scale scratch marks to miles-long moraine complexes). Finally, we'll learn about paraglacial landscape evolution, or the non-glacial processes that are directly triggered by glaciation. These processes can extend far beyond the ice margin and persist long after the glacial ice has melted. In fact, Minnesota is still currently experiencing many processes that could be described as paraglacial that were triggered by the Laurentide Ice Sheet (which covered much of Canada and parts of Minnesota at the Last Glacial Maximum (around 20,000 years ago)).
 
