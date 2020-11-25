@@ -38,11 +38,22 @@ Then, we'll move to an overview of glacial landforms, to see the direct implicat
 
 Finally, we'll learn about paraglacial landscape evolution, or the non-glacial processes that are directly triggered by glaciation. These processes can extend far beyond the ice margin and persist long after the glacial ice has melted. In fact, Minnesota is still currently experiencing many processes that could be described as paraglacial that were triggered by the Laurentide Ice Sheet, which covered much of Canada and parts of Minnesota at the Last Glacial Maximum (around 20,000 years ago).
 
-There's a lot more to glaciers and glacial geology than we can possibly cover in this short week. But, my hope is that you'll come away from this week with a new appreciation of the massive geomorphic power of glaciation and how landscapes– past, present, and future– are shaped by glacial processes. 
+There's a lot more to glaciers and glacial geology than we can possibly cover in this short week. But, my hope is that you'll come away from this week with a new appreciation of the massive geomorphic power of glaciation and how landscapes– past, present, and future– are shaped by glacial processes.
 
 ## Glacier Mass Balance
-A short, very high quality video that gives an overview of glacier mass balance, including accumulation, ablation, and the Equilibrium Line Altitude (ELA).
-https://timeforgeography.co.uk/videos_list/glaciation/glacier-mass-balance/
+Glaciers are, generally, quite large (though that is becoming increasingly not the case, due to climate warming). As someone that has been fortunate to work on a glacier, I can confirm this simple fact.
+![Perito Moreno_large](/assets/images/glacial/PeritoMorenoGlacier_Shanti.JPG)
+>The Perito Moreno glacier is approximately 19 miles long and covers roughly 97 square miles with ice. Here's a picture of me as scale to show just how large this glacier really is.
+
+Because glaciers are large and because they're on the Earth's surface, gravity acts upon them and causes them to flow. However, you may have noticed that glaciers do not simply slip downhill, leaving no ice behind as they do so. Instead, as glaciers flow, ice closer to the edge of the glacier (what we call the *terminus*) melts while, near the top of the glacier (the *head*) ongoing snowfall allows for the generation of new glacial ice.
+
+This process, known as glacier mass balance is (as the name would imply) a balance between melting (*ablation*) and growing (*accumulation*) ice and allows for the glacier to flow continuously.
+
+This short, very high quality video that gives an overview of glacier mass balance, including accumulation, ablation, and where these two processes are equal (what we call the *the Equilibrium Line Altitude (ELA)*).
+
+<iframe title="Soils and Hillslopes: Diffusion, Mass Balance, and Mass Wasting" height="122" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player" src="https://timeforgeography.co.uk/videos_list/glaciation/glacier-mass-balance/"></iframe>
+
+
 
 ## Google Expeditions Augmented Reality (AR)
 
