@@ -336,9 +336,7 @@ Law of the Wall
 
 [Landscape steady state and tectonic uplift](/landscape-evolution/steady_state/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
-[Channel concavity, the steepness index, and river-profile analysis](/fluvial/concavity_steepness/)
+[Hack's Law, channel concavity, the steepness index, and river-profile analysis](/fluvial/concavity_steepness/)
 
 <!--
 [The hillslope--channel transition]
@@ -372,13 +370,15 @@ Interplay of hydrology and topography
 
 ***Nov. 23rd. Half week: Happy Thanksgiving!***
 
-[Cosmogenic radionuclides: exposure dating and erosion rates]
+<!-- [Cosmogenic radionuclides: exposure dating and erosion rates] -->
 
-[Luminescence dating: deposits]
+[Luminescence dating: deposits](OSL)
 
 ### Due Wednesday
 
 [Wikipedia article live edits](/final/wikipedia/)
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 ### Assignment
 
