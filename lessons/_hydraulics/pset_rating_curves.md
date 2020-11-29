@@ -91,7 +91,9 @@ As a reminder of your calculus days, the MVT provides the average value of a fun
 
 $$\overline{f(x)} = \frac{1}{x_1-x_0} \int_{x_0}^{x_1}{f(x) \mathrm{d}x}$$
 
-And here's a hint that will help you to create a simpler solution and solve Part B. After you finish your initial solution, think about the flow depth with respect to the roughness from grains and bedforms. In most natural streams, $$h \gg z_0$$. Therefore, look for places (hint: likely two) where you can remove a number that will be small because of this.
+*Here's a hint that will help you to create a simpler solution and solve Part B. After you finish your initial solution, think about the flow depth with respect to the roughness from grains and bedforms. In most natural streams, $$h \gg z_0$$. Therefore, look for places (hint: likely two) where you can remove a number that will be small because of this.*
+
+*And here's a second hint: the first hint gives the equivalent of solving the Mean Value Theorem from $$0$$ to $$h$$ instead of from $$z_0$$ to $$h$$.*
 
 ### Part B
 
