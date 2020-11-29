@@ -108,11 +108,11 @@ Using the Law of the Wall and the Mean Value Theorem, find the depth $$z$$ at wh
 
 ### Part A
 
-Using the above information on the river and floodplain and your now-obtained equation for mean flow velocity, calculate the relationship between river stage and discharge for stages of up to 4 meters above the river bed. Show your work. Note that we have provided the information to use the Law of the Wall for flows in (and above) the channel, wherein your work in 1A, above may help. For the floodplain, we provide information necessary to use Manning's Equation. Therefore, you will have to combine both approaches as shown in the figure below:
+Using the above information on the river and floodplain and your now-obtained equation for mean flow velocity, calculate the relationship between river stage and discharge for stages of up to 4 meters above the river bed. Note that we have provided the information to use the Law of the Wall for flows in (and above) the channel, wherein your work in 1A, above may help. For the floodplain, we provide information necessary to use Manning's Equation. Therefore, you will have to combine both approaches as shown in the figure below:
 
 ![Flow equations: channel and floodplain](/assets/images/hydraulics/pset_equation_zones.png)
 
-Show your work, including equations (as applicable) and provide a plot with stage on the *y* axis and discharge on the *x* axis.
+Show your work, including equations (as applicable) and provide a plot with stage on the *y* axis and discharge on the *x* axis. A spreadsheet (or writing a bit of computer code) may be a good way to do this, but is certainly not the only way!
 
 On your plot, mark the location of the bankfull discharge. Note the numerical value of this discharge.
 
