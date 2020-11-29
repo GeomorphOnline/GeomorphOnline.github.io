@@ -139,7 +139,7 @@ First, calculate the return period of the bankfull flow.
 
 ### Part B
 
-Second, plot the flood *stage* against *return period* for the 1--500 year floods based on the rating curve that you constructed in Question (2). This now gives you a mechanism to address questions related to flooding hazards and levee heights.
+Second, plot the flood *stage* against *return period* for the 1--500 year floods (or, to make it easier for you for Question 4, the 0.3--200-year floods -- we'll accept either) based on the rating curve that you constructed in Question (2). This now gives you a mechanism to address questions related to flooding hazards and levee heights.
 
 
 ## 4. Geomorphically effective discharge for natural flow (40 points)
