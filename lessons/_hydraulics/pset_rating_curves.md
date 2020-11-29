@@ -35,8 +35,9 @@ Approximately rectangular.
 * 2 m deep
 * Slope of 0.0005
 * Sandy bed with bedforms; the combination of flow resistance against these and the individual sand grains gives a bed-roughness length $z_0 = 1$ mm (Law of the Wall)
-### Floodplain characteristics
 * Median sand grain size $$D_{50}$$ = 0.5 mm
+
+### Floodplain characteristics
 
 * Perfectly planar
 * Slope of 0.0007 (slightly steeper than the channel because of the lack of sinuosity)
@@ -89,6 +90,8 @@ Using the Law of the Wall and the mean-value theorem (MVT), solve for the mean (
 As a reminder of your calculus days, the MVT provides the average value of a function, $$f(x)$$, over a a range of the independent variable ($$x$$) extending from $$x_0$$ to $$x_1$$:
 
 $$\overline{f(x)} = \frac{1}{x_1-x_0} \int_{x_0}^{x_1}{f(x) \mathrm{d}x}$$
+
+And here's a hint that will help you to create a simpler solution and solve Part B. After you finish your initial solution, think about the flow depth with respect to the roughness from grains and bedforms. In most natural streams, $$h \gg z_0$$. Therefore, look for places (hint: likely two) where you can remove a number that will be small because of this.
 
 ### Part B
 
