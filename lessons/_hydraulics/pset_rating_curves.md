@@ -133,6 +133,10 @@ $$Q = 170 \log_{10}(5 P_R),$$
 
 where $$P_R$$ indicates the *return period* of that flood in years.
 
+**NOTE: THE ABOVE EQUATION GIVES AN UNREALISTIC HYDROLOGY. IF YOU HAVE ALREADY USED IT, DON'T WORRY; YOU WILL GET ANSWERS AND YOUR WORK WILL BE GRADED FAIRLY, BUT THE LEVEE HEIGHTS CALCULATED BELOW WILL BE HUGE. IF YOU HAVE NOT YET GONE THROUGH THIS QUESTION, I SUGGEST YOU USE THE FOLLOWING EQUATION:**
+
+$$Q = 30 \log_{10}(500 P_R),$$
+
 ### Part A
 
 First, calculate the return period of the bankfull flow.
@@ -170,6 +174,8 @@ Now, multiply these together (i.e., $$Q_s/P$$) to obtain the amount of net sedim
 
 Using this last plot, pick the the most geomorphically effective discharge; it should appear as a peak in the plot of $$Q_s/P$$ vs. $$Q$$. How does this compare to the bankfull discharge?
 
+*Hint: this number may not, as expected, correspond to bankfull discharge. Indeed, you may need to extend the range of floods that you are considering to find where this optimum lies. You can think about how this could relate to human modifications to the river channel.*
+
 <!-- Then, on another set of axes, plot the frequency of each flood (*y* axis), which is the reciprocal of its return period, against water discharge (*x* axis).
 
 Now, multiply these together. This will give you the rate of sediment transport modulated by the frequency of the flood event, and will show you the relative effectiveness of each flood in moving sediment. Plot this (sediment discharge times ) on the *y* axis and water discharge on the *x* axis. -->
@@ -178,13 +184,14 @@ Now, multiply these together. This will give you the rate of sediment transport 
 ## 5. Levee height (30 points)
 
 ### Part A
+
 The citizens living in the valley hired you to estimate the minimum height of a levee needed to protect against a 200-year flood. (They had discussed protecting against a 100-year flood, as is common. However, due to increasing heavy rains with climate change, they are not sure that the future storms will follow the historical statistics, and want to play it safe.) How tall should this levee be such that the 200-year flood stage will be exactly at its crest?
 
 Note 1: Engineers would design with a bit of a factor of safety atop this; here we are not considering the "little extra to be sure".
 
-Note 2: Once the levees are installed, the channel will no longer be able to spill out onto its floodplain. Therefore, you will have to recalculate your stage--discharge relationship to consider the flows through the channel alone. You needn't worry about those that are greater than 2 meters; this is why you are building levees!
+Note 2: Once the levees are installed, the channel will no longer be able to spill out onto its floodplain. Therefore, you will have to recalculate your stage--discharge relationship to consider the flows through the channel alone. You needn't worry about those that are greater than 2 meters spilling out onto the floodplain; this is why you are building levees!
 
-Show the new stage--discharge relationship and describe provide the minimum levee height to contain the 200-year flood.
+Show the new stage--discharge relationship and describe provide the minimum levee height to contain the 200-year flood. Again, a spreadsheet may help here.
 
 ### Part B
 
