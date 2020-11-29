@@ -170,7 +170,7 @@ Now, multiply these together (i.e., $$Q_s/P$$) to obtain the amount of net sedim
 
 Using this last plot, pick the the most geomorphically effective discharge; it should appear as a peak in the plot of $$Q_s/P$$ vs. $$Q$$. How does this compare to the bankfull discharge?
 
-*Hint: this number may not, as expected, correspond to bankfull discharge. Indeed, you may need to extend the range of floods that you are considering to find where this optimum lies. You can think about how this could relate to human modifications to the river channel.*
+*Hint: this number may not, as expected, correspond to bankfull discharge. Indeed, you may need to extend the range of floods that you are considering to find where this optimum lies. You can think about how this could relate to human modifications to the river channel. Also think about about how close a bankfull discharge may be to that given here: is it in the ballpark or not?*
 
 <!-- Then, on another set of axes, plot the frequency of each flood (*y* axis), which is the reciprocal of its return period, against water discharge (*x* axis).
 
