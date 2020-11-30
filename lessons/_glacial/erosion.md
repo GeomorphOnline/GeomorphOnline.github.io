@@ -54,7 +54,7 @@ Throughout the next few "lectures", I'll be using images and data from the field
 
 Following this (geologically brief) period of colder temperatures, global temperatures have since seen a considerable increase in temperature, augmented greatly by post-Industrial Revolution carbon emissions.
 
-Since then the ice has retreated. But it's been retreating for a long time. Ice weights a lot and, as a result, the crust rebounds when the ice retreats. This is called **glacial isostatic adjustment**, or the movement of crust in relation to the motion of glacial ice.
+Since then the ice has retreated. This retreat is part of ongoing ice retreat since the Last Glacial Maximum. However, ice weighs a lot and, as a result, the crust rebounds when the ice retreats. This is called **glacial isostatic adjustment**, or the movement of crust in relation to the motion of glacial ice. The overall focus of this research is to understand the changes in the ice and surrounding environment of the Southern Patagonian Ice Field since the Little Ice Age.
 
 The photos I show here will mostly be related to more general glacial topics. However, I will take some time to explain a bit about my research in the context of these topics, in hopes of giving you more real-world context of how glacial processes look like in-person.
 
@@ -70,16 +70,15 @@ This process, known as **glacier mass balance** is (as the name would imply) a b
 
 **[This short, very high quality video](https://timeforgeography.co.uk/videos_list/glaciation/glacier-mass-balance/)** gives an overview of glacier mass balance, including accumulation, ablation, and the altitude on the ice where these two processes are equal (what we call the **the Equilibrium Line Altitude (ELA)**).
 
-## 3D Rendering- Reclus Glacier
-Overview of glacial features and glacier flow on a 3D rendering of the Reclus Glacier in Chile. 3D rendering courtesy of Camilo Rada.
+## 3D Rendering- Amalia Glacier
+Overview of glacial features and glacier flow on a 3D rendering of the Amalia Glacier on the Reclus Volcano in Chile. 3D rendering courtesy of Camilo Rada.
 
-**INSERT VIDEO (Reclus)**
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yA4Eiu6K1M0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Glacier Block Diagram and Basal Shear Stress
 Mini-lecture using a block diagram to derive the equation for basal shear stress for a sliding glacier.
 
-**INSERT VIDEO (Basal Shear Stress)**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6UG2VGP43QY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Glacial Erosional Mechanisms
 
