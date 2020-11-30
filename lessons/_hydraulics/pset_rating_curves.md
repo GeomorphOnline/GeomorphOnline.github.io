@@ -218,7 +218,7 @@ The study's authors note the benefits of "setback" levees. Provide an argument f
 
 ### Part B
 
-The study's authors also show how water levels change for a given discharge after levees are built -- that is, the rating curve changes. We will first focus on the zone right where the levees were built (their panel **B**). In answering Questions 2 and 5, you should have already constructed pre- and post-levee rating curves. Now, plot these atop each other, and in 1-2 sentences, describe the differences and why they occur.
+The study's authors also show how water levels change for a given discharge after levees are built -- that is, the rating curve changes. We will first focus on the zone right where the levees were built (their panel **B**). In answering Questions 2 and 5, you should have already constructed pre- and post-levee rating curves. Now, plot these side-by-side or atop each other, and in 1-2 sentences, describe the difference and why it occurs.
 
 ### Part C
 
@@ -234,8 +234,14 @@ $$l_{bw} = \frac{\Delta h}{S},$$
 
 where $$\Delta h$$ is the difference in stage between the pre- and post-flood levees.
 
-Using the two rating curves that you plotted together in Part B, calculate and plot the distance upstream over which you expect water levels to increase as a result of the levees (i.e, the backwater length) on the $$y$$ axis, and the river discharge on the $$x$$ axis. Comment on this plot and its implications for river management; you may use the ProPublica material as a guide.
+***Old text: this is more work. You can do this, but need not:***
+*Using the two rating curves that you plotted together in Part B, calculate and plot the distance upstream over which you expect water levels to increase as a result of the levees (i.e, the backwater length) on the $$y$$ axis, and the river discharge on the $$x$$ axis. Comment on this plot and its implications for river management; you may use the ProPublica material as a guide.*
 
+***Updated, easier approach:*** For the 1-, 10-, 50-, and 100-year floods, calculate the length of the backwater that is created as a result of the emplacement of the levees. This is the distance upstream over which you expect water levels to increase as a result of the levees' presence. Describe in words what this result means, as well as its implications for river and flood management; you may use the ProPublica material as a guide.
+
+*Hint: in answering this question, it may be useful to create a table with columns: Return Period, Discharge, Depth with levees, Depth without levees, Differential depth (optional), backwater length.*
+
+*Hint 2: because of the difficulty of inverting the Law of the Wall, you can just estimate these water depths based on nearby values in your spreadsheet.*
 
 <br/>
 <br/>
