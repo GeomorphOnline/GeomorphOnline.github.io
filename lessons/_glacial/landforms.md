@@ -21,6 +21,9 @@ author_profile: true
 ## Learning Goals
 * Some landforms and how they look in the landscape
 
+In February 2020, a group of us went to Patagonia to study glaciers. 
+
+
 Walk through of 3D model from Camilo?
 ## Video
 
