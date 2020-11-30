@@ -41,15 +41,22 @@ Finally, we'll learn about paraglacial landscape evolution, or the non-glacial p
 There's a lot more to glaciers and glacial geology than we can possibly cover in this short week. But, my hope is that you'll come away from this week with a new appreciation of the massive geomorphic power of glaciation and how landscapes– past, present, and future– are shaped by glacial processes.
 
 ## My Research in the Southern Patagonian Ice Field
-Throughout the next few "lectures", I'll be using images and data from the fieldwork I was able to complete with Andy and several others from our research group from February to March 2020. The focus of this research is to understand the ice dynamics and environmental response to glaciation since the Little Ice Age. The Little Ice Age was a period of cooling that took place from the 1400s-1700s. These cool temperatures were nowhere near the level of the formal Ice Age (hence, the use of the world "Little"), but temperatures were unusually low during this period, compared to the present. In fact, temperatures got so cold during this time that the River Thames in London would regularly freeze over, allowing for regular "Frost Fairs" directly on the river ice. Paintings of these fairs are quite common.
+Throughout the next few "lectures", I'll be using images and data from the fieldwork I was able to complete with Andy and several others from our research group from February to March 2020 in Southern Patagonia, Argentina. Most of my photos are of the [Perito Moreno glacier](https://en.wikipedia.org/wiki/Perito_Moreno_Glacier), [Fitz Roy](https://en.wikipedia.org/wiki/Fitz_Roy), [the Santa Cruz River](https://en.wikipedia.org/wiki/Santa_Cruz_River_(Argentina)), and [Upsala Glacier](https://en.wikipedia.org/wiki/Upsala_Glacier). All of these features are closely related to (or a part of) the [Southern Patagonian Ice Field](https://en.wikipedia.org/wiki/Southern_Patagonian_Ice_Field).
 
-**Painting of Frost Fair**
+![South America Tip](/assets/images/glacial/SATip.jpg)
+>A Google Satellite view of the tip of South America and the location of our fieldwork in Southern Argentina. Note the Southern Patagonian Ice Field, just west of the dropped pin.
+
+ The focus of this research is to understand the ice dynamics and environmental response to glaciation since the Little Ice Age. The Little Ice Age was a period of cooling that took place from the 1400s-1700s. These cool temperatures were nowhere near the level of the formal Ice Age (hence, the use of the world "Little"), but temperatures were unusually low during this period, compared to the present. In fact, temperatures got so cold during this time that the River Thames in London would regularly freeze over, allowing for regular "Frost Fairs" directly on the river ice. Paintings of these fairs are quite common.
+
+![Frost Fair](/assets/images/glacial/Thomas_Wyke-_Thames_frost_fair.jpeg)
+>Thames Frost Fair, 1683-84 by Thomas Wyke, courtesy of Wikipedia.
+
 
 Following this (geologically brief) period of colder temperatures, global temperatures have since seen a considerable increase in temperature, augmented greatly by post-Industrial Revolution carbon emissions.
 
-Since then the ice has retreated. But it's been retreating for a long time. Ice weights a lot and, as a result, the crust rebounds when the ice retreats. This is called glacial isostatic adjustment, or the movement of crust in relation to the motion of glacial ice.
+Since then the ice has retreated. But it's been retreating for a long time. Ice weights a lot and, as a result, the crust rebounds when the ice retreats. This is called **glacial isostatic adjustment**, or the movement of crust in relation to the motion of glacial ice.
 
-The photos I show here will mostly be related to more general glacial topics. However, I will take some times to explain a bit about my research in the context of these topics, in hopes of giving you more real-world context of how glacial processes look like in person.
+The photos I show here will mostly be related to more general glacial topics. However, I will take some time to explain a bit about my research in the context of these topics, in hopes of giving you more real-world context of how glacial processes look like in-person.
 
 
 ## Glacier Mass Balance
@@ -65,6 +72,7 @@ This process, known as **glacier mass balance** is (as the name would imply) a b
 
 ## 3D Rendering- Reclus Glacier
 Overview of glacial features and glacier flow on a 3D rendering of the Reclus Glacier in Chile. 3D rendering courtesy of Camilo Rada.
+
 **INSERT VIDEO (Reclus)**
 
 
@@ -81,6 +89,10 @@ Ice motion performs erosional work on the glacial bed and, as a result, generate
 
 **Glacial quarrying**, in comparison, is when rock chunks (greater than 1 cm) are picked up from the bed as the glacier flows, leaving behind small indents from where the fragments were taken. As a result, glacial quarrying *generally makes the bed rougher* and is a key generator of bed roughness. This is similar to sandpaper moving across wood surface with many knots and chunks that can get picked up.
 
+
+![Wood Knot](/assets/images/glacial/Wood_Knot.jpeg)
+>A knot in a wood plank. If this piece of wood were sanded, this knot would likely get picked up, leaving behind a large hole and, overall, increasing the roughness of this piece of wood. Image courtesy of Wikipedia.
+
 With both of these processes bed roughness can alter glacier sliding speed and glacial stability. Thus, the ice-bed interface plays an important role in determining the overall behavior of the glacier.
 
 *Another, additionally important mechanism for glacial erosion is the process of dissolution, where ice flowing over a carbonate bed is able to dissolve the rock directly using subglacial water. This can have huge implications in the right geologic setting but, because it is limited to certain lithologies, it's not a main topic of our discussion here*
@@ -93,6 +105,9 @@ The ice-bed interface is also important in determining how a glacier will behave
 A **cold ice-bed interface** does not allow the ice to flow as well, as ice can freeze directly to the bed, causing the ice to be held in place there. This inhibits glacial flow and, as a result, glacial erosion.
 
 A **warm ice-bed interface** can allow for subglacial water to build up between the ice and the bed, acting essentially as a lubricant to allow the ice to flow more easily and rapidly. Too much water at the bed will allow the glacier to flow so quickly that erosion is diminished. However, with the right balance of subglacial water, a glacier is able to flow at a pace that maximizes glacial erosion. Subglacial water also plays a major role in a glacier's hydrology (something we won't get into in too much detail here, but a very interesting topic!).
+
+![Perito Moreno_side](/assets/images/glacial/PeritoMoreno_side.JPG)
+>A picture of the side of the Perito Moreno glacier. Water flowing along and underneath the ice allows for faster glacial sliding rates.
 
 ## Tying It All Together
 So far we've talked about glacial sliding, basal shear stress, and the mechanisms of glacial erosion. Now we'll move to our next section where we'll talk about the result of this glacial erosion on the landscape in the generation of **glacial landforms**.
