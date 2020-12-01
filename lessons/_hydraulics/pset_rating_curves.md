@@ -156,6 +156,8 @@ $$Q = 170 \log_{10}(5 P_R),$$
 
 where $$P_R$$ indicates the *return period* of that flood in years.
 
+*Important note: This equation is not dimensionally consistent! This means that no theory should be able to explain it; it is just an arbitrarty observed relationship between two variables. Therefore, $$Q$$ is volumetric water discharge [m<sup>3</sup>/s] whereas $$P_R$$ is return period [1/yr]. There's a lot of empiricism in observational hydrology. Maybe one of you will help to find the deeper meaning and answer behind this!*
+
 ### Part A
 
 First, calculate the return period of the bankfull flow.
