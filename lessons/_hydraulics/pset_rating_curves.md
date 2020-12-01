@@ -31,17 +31,17 @@ You have been tasked with understanding the flow and channel dynamics in a reach
 
 Approximately rectangular.
 
-* 50 m wide
-* 2 m deep
-* Slope of 0.0005
+* 50 m wide ($$b$$)
+* 2 m deep (this is the bankfull flow depth, referred to in the notes as $$h_{bf}$$)
+* Slope of 0.0005 ($$S$$)
 * Sandy bed with bedforms; the combination of flow resistance against these and the individual sand grains gives a bed-roughness length $z_0 = 1$ mm (Law of the Wall)
-* Median sand grain size $$D_{50}$$ = 0.5 mm
+* Median sand grain size $$D_{50}$$ = 0.5 mm. You may use this in place of the generic grain size, $$D$$, wherever it is requested.
 
 ### Floodplain characteristics
 
 * Perfectly planar
-* Slope of 0.0007 (slightly steeper than the channel because of the lack of sinuosity)
-* 1 km wide valley floor (note: this *includes* the width of the channel; subtract the channel width to find the width of the floodplain alone)
+* Slope of 0.0007 (slightly steeper than the channel because of the lack of sinuosity). This is also "$$S$$", but here is used only with the Manning Equation for flow velocity over the floodplain. The channel slope, above, should be used for sediment-transport calculations.
+* 1 km wide valley floor, $$B$$. (Note: this *includes* the width of the channel; subtract the channel width to find the width of the floodplain alone)
 * Mostly covered in light brush and trees; this is a place with strong flow seasonality, with little to no flow during winter, so overbank events will happen during summer. Recall the [Manning's *n* table](http://www.fsl.orst.edu/geowater/FX3/help/8_Hydraulic_Reference/Mannings_n_Tables.htm) <!-- use the typical value of 0.060 -->
 
 ### Important equations to recall
@@ -54,17 +54,29 @@ $$u(z) = \frac{u_\tau}{\kappa} \ln\left(\frac{z}{z_0}\right)$$
 
 $$\bar{u} = \frac{1}{n} h^{2/3} S^{1/2}$$
 
+Here, $$\bar{u}$$ refers to the vertically averaged velocity. In Question 1, you will solve for $$\bar{u}$$ by manipulating the Law of the Wall, above. These two expressions are based on different ways of calculating $$\bar{u}$$. They needn't look identical, and indeed will not!
+
 #### Depth--slope product
+
+In all questions except for 6, we will assume that there is steady, uniform flow. Because of this:
 
 $$\bar{\tau_b} = \rho g h S$$
 
+Also recall that:
+
+$$u_\tau = \sqrt{ \frac{\tau_b}{\rho} }$$
+
 #### Enegelund--Hansen sand-transport formula (new!)
 
-This formula relates dimensionless basal shear stress to sand-transport rate as:
+This formula relates dimensionless basal shear stress, $$\tau_b^* $$, to dimensionless discharge of sand per unit width of channel, $$q_s^* $$, as:
 
 $$q_s^* = \frac{0.05}{C_f} ( \tau_b^* )^{5/2}$$
 
-Here, $$^* $$ indicates a term that is nondimensionalized. In this case:
+Here, $$^* $$ indicates a term that is nondimensionalized. This means that we have multiplied or divided the dimensional terms for sediment discharge per unit width ($$q_s$$) and basal shear stress ($$\tau_b$$) to create new terms in which all the units cancel out.
+
+Why would we cancel out the units? Well, if we didn't, we would need to balance units of stress to the 5/2 power with those of sediment discharge. By nondimensionalizing, we are able to create any arbitrary mathematical relationship between these variables, and know that this will remain dimensionally consistent.
+
+In this case:
 
 $$q_s^* = \frac{q_s}{\left(\frac{\rho_s - \rho}{\rho}\right)^{1/2} g^{1/2} D^{3/2}},$$
 
@@ -76,6 +88,13 @@ Here, $$\rho_s = 2650$$ kg m<sup>-3</sup> is sediment (i.e., quartz) density, $$
 
 $$C_f$$ is the Darcy--Weisbach friction factor. It varies with flow depth, but for the sake of not getting too bogged down in equations and being able to focus on the core concepts here, I have calculated $$C_f = 0.05$$ to be a reasonable (and very convenient!) estimate.
 
+$$\tau_b^* $$ provides a good demonstration of why we nondimensionalize. Conceptually, extra shear stress pushes on the grains and increases the possibility that they be entrained in the flow. On the other hand, grains that are heavier -- which scales with their submerged density ($$\rho_s - \rho$$), diameter ($$D$$), and the gravitational acceleration ($$g$$) -- are more stable. Thus one can also view $$\tau_b^* $$ as:
+
+$$\tau_b^* = \frac{\text{Strength of flow pushing grains to move}}{\text{Grain stability}}.$$
+
+As you can see, ***nondimensionalization is our way of lumping opposing drivers in the same term in order to create intuitive variables that may be combined easily with one another***.
+
+You'll just have to trust me for now that this conceptual argument works in terms of the formal physics as well. Alternatively, you can read the derivation of the force balance on a grain written by [Wiberg and Smith, 1987](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/WR023i008p01471)).
 
 ## 1. Mean flow velocity (20 points)
 
