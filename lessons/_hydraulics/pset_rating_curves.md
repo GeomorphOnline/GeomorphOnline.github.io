@@ -29,19 +29,19 @@ You have been tasked with understanding the flow and channel dynamics in a reach
 
 ### Channel characteristics
 
-Approximately rectangular.
+Approximately rectangular. Units given in square brackets at the end of each bullet point; all equations are desgined for SI units.
 
-* 50 m wide ($$b$$)
-* 2 m deep (this is the bankfull flow depth, referred to in the notes as $$h_{bf}$$)
-* Slope of 0.0005 ($$S$$)
-* Sandy bed with bedforms; the combination of flow resistance against these and the individual sand grains gives a bed-roughness length $z_0 = 1$ mm (Law of the Wall)
-* Median sand grain size $$D_{50}$$ = 0.5 mm. You may use this in place of the generic grain size, $$D$$, wherever it is requested.
+* 50 m wide ($$b$$) [m]
+* 2 m deep (this is the bankfull flow depth, referred to in the notes as $$h_{bf}$$) [m]
+* Slope of 0.0005 ($$S$$) [--]
+* Sandy bed with bedforms; the combination of flow resistance against these and the individual sand grains gives a bed-roughness length $z_0 = 1$ mm (Law of the Wall) [mm]
+* Median sand grain size $$D_{50}$$ = 0.5 mm. You may use this in place of the generic grain size, $$D$$, wherever it is requested. [mm]
 
 ### Floodplain characteristics
 
 * Perfectly planar
-* Slope of 0.0007 (slightly steeper than the channel because of the lack of sinuosity). This is also "$$S$$", but here is used only with the Manning Equation for flow velocity over the floodplain. The channel slope, above, should be used for sediment-transport calculations.
-* 1 km wide valley floor, $$B$$. (Note: this *includes* the width of the channel; subtract the channel width to find the width of the floodplain alone)
+* Slope of 0.0007 (slightly steeper than the channel because of the lack of sinuosity). This is also "$$S$$", but here is used only with the Manning Equation for flow velocity over the floodplain. The channel slope, above, should be used for sediment-transport calculations. [--]
+* 1 km wide valley floor, $$B$$. (Note: this *includes* the width of the channel; subtract the channel width to find the width of the floodplain alone) [km]
 * Mostly covered in light brush and trees; this is a place with strong flow seasonality, with little to no flow during winter, so overbank events will happen during summer. Recall the [Manning's *n* table](http://www.fsl.orst.edu/geowater/FX3/help/8_Hydraulic_Reference/Mannings_n_Tables.htm) <!-- use the typical value of 0.060 -->
 
 ### Important equations to recall
@@ -80,7 +80,7 @@ In this case:
 
 $$q_s^* = \frac{q_s}{\left(\frac{\rho_s - \rho}{\rho}\right)^{1/2} g^{1/2} D^{3/2}},$$
 
-where $$q_s$$ is sediment discharge per unit channel width, and
+where $$q_s$$ is sediment discharge per unit channel width [m<sup>2</sup>/s], and
 
 $$\tau_b^* = \frac{\tau_b}{\left(\rho_s - \rho\right) g D}.$$
 
@@ -104,7 +104,7 @@ In order to calculate flow velocity in the channel with the provided information
 
 ### Part A
 
-Using the Law of the Wall and the mean-value theorem (MVT), solve for the mean (i.e., vertically averaged) flow velocity $$\bar{u}$$. (Note that this is the vertically averaged $$\bar{u}$$ that is used, e.g., for Manning's Equation. It is not the time-averaged $$\bar{u}$$ that is used for the Reynolds, i.e., turbulent, decomposition. Your goal is to find the vertically averaged velocity in order to connect flow depth and discharge.) When applying the MVT, recall that flow velocity is assumed to go to 0 at a small elevation $$z = z_0$$ (due to the fact that we do not take into account the laminar sublayer). Consider a flow of arbitrary depth $$h$$, and express the solution with respect to this depth.
+Using the Law of the Wall and the mean-value theorem (MVT), solve for the mean (i.e., vertically averaged) flow velocity $$\bar{u}$$ [m/s]. *Note that this is the vertically averaged $$\bar{u}$$ that is used, e.g., for Manning's Equation. It is not the time-averaged $$\bar{u}$$ that is used for the Reynolds, i.e., turbulent, decomposition. Your goal is to find the vertically averaged velocity in order to connect flow depth [m] and discharge [m<sup>3</sup>/s].* When applying the MVT, recall that flow velocity is assumed to go to 0 at a small elevation $$z = z_0$$ [m] (due to the fact that we do not take into account the laminar sublayer). Consider a flow of arbitrary depth $$h$$ [m], and express the solution with respect to this depth.
 
 As a reminder of your calculus days, the MVT provides the average value of a function, $$f(x)$$, over a a range of the independent variable ($$x$$) extending from $$x_0$$ to $$x_1$$:
 
