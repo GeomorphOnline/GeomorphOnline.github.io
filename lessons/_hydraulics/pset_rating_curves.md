@@ -171,6 +171,8 @@ Second, plot the flood *stage* against *return period* for the 1--500 year flood
 
 Before building the levees, you want to see how they might impact flow and sediment in the channel and beyond the current reach of river. You start by considering the current natural flows in the channel and how they have shaped the channel.
 
+As is typical, the levees that you are considering will lie immediately adjacent to the channel. So long as they are not overtopped, no water will flow onto the floodplain.
+
 ### Part A
 
 Knowing the depth--slope product, you can compute basal shear stress as a function of flow depth, $$\tau_b(h)$$. Based on your stage--discharge curve, you can translate this into a basal shear stress as a function of river discharge, $$\tau_b(Q)$$.
