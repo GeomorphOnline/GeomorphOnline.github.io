@@ -31,16 +31,16 @@ You have been tasked with understanding the flow and channel dynamics in a reach
 
 Approximately rectangular.
 
-* 50 m wide
-* 2 m deep
-* Slope of 0.0005
+* 50 m wide ($$b$$)
+* 2 m deep (this is the bankfull flow depth, referred to in the notes as $$h_{bf}$$)
+* Slope of 0.0005 ($$S$$)
 * Sandy bed with bedforms; the combination of flow resistance against these and the individual sand grains gives a bed-roughness length $z_0 = 1$ mm (Law of the Wall)
-* Median sand grain size $$D_{50}$$ = 0.5 mm
+* Median sand grain size $$D_{50}$$ = 0.5 mm. You may use this in place of the generic grain size, $$D$$, wherever it is requested.
 
 ### Floodplain characteristics
 
 * Perfectly planar
-* Slope of 0.0007 (slightly steeper than the channel because of the lack of sinuosity)
+* Slope of 0.0007 (slightly steeper than the channel because of the lack of sinuosity). This is also "$$S$$", but here is used only with the Manning Equation for flow velocity over the floodplain. The channel slope, above, should be used for sediment-transport calculations.
 * 1 km wide valley floor (note: this *includes* the width of the channel; subtract the channel width to find the width of the floodplain alone)
 * Mostly covered in light brush and trees; this is a place with strong flow seasonality, with little to no flow during winter, so overbank events will happen during summer. Recall the [Manning's *n* table](http://www.fsl.orst.edu/geowater/FX3/help/8_Hydraulic_Reference/Mannings_n_Tables.htm) <!-- use the typical value of 0.060 -->
 
@@ -54,17 +54,28 @@ $$u(z) = \frac{u_\tau}{\kappa} \ln\left(\frac{z}{z_0}\right)$$
 
 $$\bar{u} = \frac{1}{n} h^{2/3} S^{1/2}$$
 
+Here, $$\bar{u}$$ refers to the vertically averaged velocity. In Question 1, you will solve for $$\bar{u}$$ by manipulating the Law of the Wall, above. These two expressions are based on different ways of calculating $$\bar{u}$$. They needn't look identical, and indeed will not!
+
 #### Depth--slope product
+
+In all questions except for 6, we will assume that there is steady, uniform flow. Because of this:
 
 $$\bar{\tau_b} = \rho g h S$$
 
+Also recall that:
+
+$$u_\tau = \sqrt{ \frac{\tau_b}{\rho} \right) }
+
 #### Enegelund--Hansen sand-transport formula (new!)
 
-This formula relates dimensionless basal shear stress to sand-transport rate as:
+This formula relates dimensionless basal shear stress, $$\tau_b^* $$, to dimensionless discharge of sand per unit width of channel, $$q_s^* $$, as:
 
 $$q_s^* = \frac{0.05}{C_f} ( \tau_b^* )^{5/2}$$
 
-Here, $$^* $$ indicates a term that is nondimensionalized. In this case:
+Here, $$^* $$ indicates a term that is nondimensionalized. This means that we have multiplied or divided the dimensional 
+
+
+In this case:
 
 $$q_s^* = \frac{q_s}{\left(\frac{\rho_s - \rho}{\rho}\right)^{1/2} g^{1/2} D^{3/2}},$$
 
@@ -92,8 +103,6 @@ As a reminder of your calculus days, the MVT provides the average value of a fun
 $$\overline{f(x)} = \frac{1}{x_1-x_0} \int_{x_0}^{x_1}{f(x) \mathrm{d}x}$$
 
 *Here's a hint that will help you to create a simpler solution and solve Part B. After you finish your initial solution, think about the flow depth with respect to the roughness from grains and bedforms. In most natural streams, $$h \gg z_0$$. Therefore, look for places (hint: likely two) where you can remove a number that will be small because of this.*
-
-*And here's a second hint: the first hint gives the equivalent of solving the Mean Value Theorem from $$0$$ to $$h$$ instead of from $$z_0$$ to $$h$$.*
 
 ### Part B
 
