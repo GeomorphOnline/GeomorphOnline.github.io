@@ -109,7 +109,7 @@ A **warm ice-bed interface** can allow for subglacial water to build up between 
 >A picture of the side of the Perito Moreno glacier. Water flowing along and underneath the ice allows for faster glacial sliding rates.
 
 ## Tying It All Together
-So far we've talked about glacial sliding, basal shear stress, and the mechanisms of glacial erosion. Now we'll move to our next section where we'll talk about the result of this glacial erosion on the landscape in the generation of **glacial landforms**.
+So far we've talked about glacial sliding, basal shear stress, and the mechanisms of glacial erosion. Now we'll move to our next section where we'll talk about the result of this glacial erosion and glacial deposition on the landscape in the generation of **glacial landforms**.
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

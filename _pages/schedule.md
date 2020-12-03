@@ -378,7 +378,6 @@ Interplay of hydrology and topography
 
 [Wikipedia article live edits](/final/wikipedia/)
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 ### Assignment
 
@@ -389,14 +388,15 @@ Interplay of hydrology and topography
 
 ***Nov. 30th***
 
+[Glacial Erosion](/glacial/erosion/)
+
 ### Due Wednesday
 
 [Problem Set: Rating curves, flood management, and geomorphically effective discharge](/hydraulics/pset_rating_curves/)
 
 ### Lectures
 
-[Glacial Erosion and Sliding]
-
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 [Glacial Landforms]
 
 [Paraglacial Environments]
