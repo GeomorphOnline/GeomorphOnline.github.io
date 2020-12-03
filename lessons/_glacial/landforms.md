@@ -51,7 +51,6 @@ Minnesota is a prime example of this, with its own complex glacial history. Most
 **Glacial erosional landforms** are formed by the process of glacial erosion. Both glacial abrasion and quarrying are highly efficient at scraping and moving material around. As glaciers erode, they can leave telltale signs of their erosion on the landscape. However, the material that glaciers transport cannot be carried indefinitely by the ice and will, eventually, be deposited. **Glacial depositional landforms** are comprised of material that has been deposited by a glacier.
 
 ## Glacial Erosional Landforms
-
 ### Outcrop Scale
 **Glacial polish** is bedrock that has been scoured and polished by glacial erosion. These smooth bedrock faces are often marked with many other glacial erosional markings including glacial striations.
 
@@ -108,8 +107,8 @@ Here is a video I took on top of a moraine near Upsala Glacier. You can see the 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lyuXtJhHWdQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-##Erratics
 
+## Erratics
 **Glacial erratics** are pieces of bedrock and debris that get picked up and deposited elsewhere by glacial ice. These rocks vary widely in size and can be quite large. When they are deposited, they are often deposited in an area with an entirely different rock type, making them quite distinctive on the landscape. In the YouTube clip above, you can see a member of our team sitting atop a glacial erratic. This boulder is large enough for him to sit on yet was still carried by glacial ice.
 
 Below are a number of "future" glacial erratics. These rocks are currently being transported by the Perito Moreno glacier and will ultimately be deposited, far from where they originated.
