@@ -29,9 +29,14 @@ Erosion and subsequent deposition by a glacier has massive power to rework and r
 ## Glacial Erosional Landforms
 *Glacial erosional landforms are, as the name would imply, formed by the process of glacial erosion. In this short video I describe a number of glacial erosional landforms through images from my fieldwork in Argentina to highlight what these landforms look like in a real-world, field setting.*
 
+![Glacial Striations and Polish](/assets/images/glacial/GlacialStriationsPolish.jpg)
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/106Btcey-q8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Glacial Depositional Landforms
+
+
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
