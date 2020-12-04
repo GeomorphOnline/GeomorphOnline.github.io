@@ -19,6 +19,7 @@ author_profile: true
 ---
 
 ## Learning Goals
+* Linkages to other Environments
 
 ## Video
 
