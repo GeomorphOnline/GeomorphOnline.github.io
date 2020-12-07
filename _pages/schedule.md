@@ -378,11 +378,10 @@ Interplay of hydrology and topography
 
 [Wikipedia article live edits](/final/wikipedia/)
 
-
+<!--
 ### Assignment
 
-[Assignment: Landscape Evolution with Landlab] <!-- will also include geochron estimates -->
-
+[Assignment: Landscape Evolution with Landlab] --> <!-- will also include geochron estimates -->
 
 ## Week 13: Glacial processes
 
@@ -394,14 +393,16 @@ Interplay of hydrology and topography
 
 [Paraglacial Environments](/glacial/paraglacial/)
 
-### Due Wednesday
+### Due Thursday
 
 [Problem Set: Rating curves, flood management, and geomorphically effective discharge](/hydraulics/pset_rating_curves/)
 
 
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
-### Assignment
+### Assignments
+
+[Problem set: River incision, tectonics, and landscape evolution](/landscape-evolution/pset/) <!-- will also include geochron estimates -->
 
 [Assignment (short): Glaciers, climate, and sea-level impacts] <!-- will also include geochron estimates -->
 
