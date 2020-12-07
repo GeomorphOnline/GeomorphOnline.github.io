@@ -10,7 +10,7 @@ author: Andrew Wickert
 author_profile: true
 ---
 
-*.*
+*Tectonics, river incision, and landscape evolution.*
 
 ## Learning Goals
 
@@ -72,7 +72,11 @@ By measuring / eyeballing this plot, provide the approximate $$k_s$$ (steepness 
 
 Another local colleague tells you that she measured uplift rates and concavities in several regional streams and found that the stream-power erosion-rate coefficient, $$K$$, should have a value of $$\times 10^{-6}$$. Your stream has a similar lithology and climate. Based on this information and your measured $$k_s$$, quantify the change in the external driver (which you identified in 3.A) that drove the river's adjustment from the initial to the final long profile. To do so, provide this value for both the initial and final profiles, and comment on its magnitude of change.
 
-### 6. Faults in the landscape (10 points)
+### 6. Climate impacts (10 points)
+
+Imagine a different future that it becomes much drier. How would this affect the stream-power erosion coefficient, $$K$$, and the steady-state height of the mountain range?
+
+### 7. Faults in the landscape (10 points)
 
 Based on what you know about both hillslope and fluvial processes, draw a straight line across this map that you think should represent the dominant fault. Note that $$k_{sn}$$ is a concavity-normalized version of $$k_s$$, but that it provides essentially the same information as that which you were analyzing above. Make a note of where you think that relative uplift rate is higher vs. lower across this fault. (You may want to open the figure in a new tab to get a big version.)
 
