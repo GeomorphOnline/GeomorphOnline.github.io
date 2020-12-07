@@ -398,17 +398,19 @@ Interplay of hydrology and topography
 [Problem Set: Rating curves, flood management, and geomorphically effective discharge](/hydraulics/pset_rating_curves/)
 
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
+## Week 14: Coastal and Aeolian Processes
+
+***Dec. 7th***
 
 ### Assignments
 
 [Problem set: River incision, tectonics, and landscape evolution](/landscape-evolution/pset/) <!-- will also include geochron estimates -->
 
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
+
 [Assignment (short): Glaciers, climate, and sea-level impacts] <!-- will also include geochron estimates -->
 
-## Week 14: Coastal and Aeolian Processes
-
-***Dec. 7th***
+### Course materials
 
 [The world ocean and sea level]
 
@@ -424,12 +426,6 @@ Interplay of hydrology and topography
 
 [Sand dunes]
 
-### Due Friday
-
-[Wikipedia article updates in response to comments](/final/wikipedia/)
-
-[Assignment: Landscape Evolution with Landlab]
-
 ## Week 15: Planetary Geomorphology; Summary and wrap up
 
 ***Dec. 14th. Half week: December 16th is the last day of classes***
@@ -439,6 +435,10 @@ Interplay of hydrology and topography
 [Semester recap: what we've learned]
 
 ### Due Friday
+
+[Wikipedia article updates in response to comments](/final/wikipedia/)
+
+[Problem set: River incision, tectonics, and landscape evolution](/landscape-evolution/pset/)
 
 [Assignment (short): Glaciers, climate, and sea-level impacts] (Yes, we're still giving you until Friday if you so choose.)
 
