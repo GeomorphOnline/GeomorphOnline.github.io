@@ -126,7 +126,7 @@ From rules of logarithms:
 
 $$\log_{10}(S) = \log_{10}(k_s) - \theta \log_{10}(A).$$
 
-This has the form of our very old friend from algebra, $$y = mx + b$$, with a $$y$$-intercept of $$k_s$$ and a slope of $$-\theta$$.
+This has the form of our very old friend from algebra, $$y = mx + b$$, with a $$y$$-intercept of $$\log_{10}(k_s)$$ and a slope of $$-\theta$$.
 
 ![Channel concavity](/assets/images/landscape-evolution/Wang2017_ESurf_Channel_Concavity.png)
 
