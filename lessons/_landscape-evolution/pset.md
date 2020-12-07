@@ -10,7 +10,7 @@ author: Andrew Wickert
 author_profile: true
 ---
 
-*Tectonics, river incision, and landscape evolution.*
+*Interactions between climate, tectonics, and Earth-surface processes set the form of landscapes.*
 
 ## Learning Goals
 
