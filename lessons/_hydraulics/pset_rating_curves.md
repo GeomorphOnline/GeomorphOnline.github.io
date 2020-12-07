@@ -29,19 +29,19 @@ You have been tasked with understanding the flow and channel dynamics in a reach
 
 ### Channel characteristics
 
-Approximately rectangular.
+Approximately rectangular. Units given in square brackets at the end of each bullet point; all equations are desgined for SI units.
 
-* 50 m wide ($$b$$)
-* 2 m deep (this is the bankfull flow depth, referred to in the notes as $$h_{bf}$$)
-* Slope of 0.0005 ($$S$$)
-* Sandy bed with bedforms; the combination of flow resistance against these and the individual sand grains gives a bed-roughness length $z_0 = 1$ mm (Law of the Wall)
-* Median sand grain size $$D_{50}$$ = 0.5 mm. You may use this in place of the generic grain size, $$D$$, wherever it is requested.
+* 50 m wide ($$b$$) [m]
+* 2 m deep (this is the bankfull flow depth, referred to in the notes as $$h_{bf}$$) [m]
+* Slope of 0.0005 ($$S$$) [--]
+* Sandy bed with bedforms; the combination of flow resistance against these and the individual sand grains gives a bed-roughness length $z_0 = 1$ mm (Law of the Wall) [mm]
+* Median sand grain size $$D_{50}$$ = 0.5 mm. You may use this in place of the generic grain size, $$D$$, wherever it is requested. [mm]
 
 ### Floodplain characteristics
 
 * Perfectly planar
-* Slope of 0.0007 (slightly steeper than the channel because of the lack of sinuosity). This is also "$$S$$", but here is used only with the Manning Equation for flow velocity over the floodplain. The channel slope, above, should be used for sediment-transport calculations.
-* 1 km wide valley floor (note: this *includes* the width of the channel; subtract the channel width to find the width of the floodplain alone)
+* Slope of 0.0007 (slightly steeper than the channel because of the lack of sinuosity). This is also "$$S$$", but here is used only with the Manning Equation for flow velocity over the floodplain. The channel slope, above, should be used for sediment-transport calculations. [--]
+* 1 km wide valley floor, $$B$$. (Note: this *includes* the width of the channel; subtract the channel width to find the width of the floodplain alone) [km]
 * Mostly covered in light brush and trees; this is a place with strong flow seasonality, with little to no flow during winter, so overbank events will happen during summer. Recall the [Manning's *n* table](http://www.fsl.orst.edu/geowater/FX3/help/8_Hydraulic_Reference/Mannings_n_Tables.htm) <!-- use the typical value of 0.060 -->
 
 ### Important equations to recall
@@ -64,7 +64,7 @@ $$\bar{\tau_b} = \rho g h S$$
 
 Also recall that:
 
-$$u_\tau = \sqrt{ \frac{\tau_b}{\rho} \right) }
+$$u_\tau = \sqrt{ \frac{\tau_b}{\rho} }$$
 
 #### Enegelund--Hansen sand-transport formula (new!)
 
@@ -72,14 +72,15 @@ This formula relates dimensionless basal shear stress, $$\tau_b^* $$, to dimensi
 
 $$q_s^* = \frac{0.05}{C_f} ( \tau_b^* )^{5/2}$$
 
-Here, $$^* $$ indicates a term that is nondimensionalized. This means that we have multiplied or divided the dimensional 
+Here, $$^* $$ indicates a term that is nondimensionalized. This means that we have multiplied or divided the dimensional terms for sediment discharge per unit width ($$q_s$$) and basal shear stress ($$\tau_b$$) to create new terms in which all the units cancel out.
 
+Why would we cancel out the units? Well, if we didn't, we would need to balance units of stress to the 5/2 power with those of sediment discharge. By nondimensionalizing, we are able to create any arbitrary mathematical relationship between these variables, and know that this will remain dimensionally consistent.
 
 In this case:
 
 $$q_s^* = \frac{q_s}{\left(\frac{\rho_s - \rho}{\rho}\right)^{1/2} g^{1/2} D^{3/2}},$$
 
-where $$q_s$$ is sediment discharge per unit channel width, and
+where $$q_s$$ is sediment discharge per unit channel width [m<sup>2</sup>/s], and
 
 $$\tau_b^* = \frac{\tau_b}{\left(\rho_s - \rho\right) g D}.$$
 
@@ -87,6 +88,13 @@ Here, $$\rho_s = 2650$$ kg m<sup>-3</sup> is sediment (i.e., quartz) density, $$
 
 $$C_f$$ is the Darcy--Weisbach friction factor. It varies with flow depth, but for the sake of not getting too bogged down in equations and being able to focus on the core concepts here, I have calculated $$C_f = 0.05$$ to be a reasonable (and very convenient!) estimate.
 
+$$\tau_b^* $$ provides a good demonstration of why we nondimensionalize. Conceptually, extra shear stress pushes on the grains and increases the possibility that they be entrained in the flow. On the other hand, grains that are heavier -- which scales with their submerged density ($$\rho_s - \rho$$), diameter ($$D$$), and the gravitational acceleration ($$g$$) -- are more stable. Thus one can also view $$\tau_b^* $$ as:
+
+$$\tau_b^* = \frac{\text{Strength of flow pushing grains to move}}{\text{Grain stability}}.$$
+
+As you can see, ***nondimensionalization is our way of lumping opposing drivers in the same term in order to create intuitive variables that may be combined easily with one another***.
+
+You'll just have to trust me for now that this conceptual argument works in terms of the formal physics as well. Alternatively, you can read the derivation of the force balance on a grain written by [Wiberg and Smith, 1987](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/WR023i008p01471)).
 
 ## 1. Mean flow velocity (20 points)
 
@@ -96,7 +104,7 @@ In order to calculate flow velocity in the channel with the provided information
 
 ### Part A
 
-Using the Law of the Wall and the mean-value theorem (MVT), solve for the mean (i.e., vertically averaged) flow velocity $$\bar{u}$$. (Note that this is the vertically averaged $$\bar{u}$$ that is used, e.g., for Manning's Equation. It is not the time-averaged $$\bar{u}$$ that is used for the Reynolds, i.e., turbulent, decomposition. Your goal is to find the vertically averaged velocity in order to connect flow depth and discharge.) When applying the MVT, recall that flow velocity is assumed to go to 0 at a small elevation $$z = z_0$$ (due to the fact that we do not take into account the laminar sublayer). Consider a flow of arbitrary depth $$h$$, and express the solution with respect to this depth.
+Using the Law of the Wall and the mean-value theorem (MVT), solve for the mean (i.e., vertically averaged) flow velocity $$\bar{u}$$ [m/s]. *Note that this is the vertically averaged $$\bar{u}$$ that is used, e.g., for Manning's Equation. It is not the time-averaged $$\bar{u}$$ that is used for the Reynolds, i.e., turbulent, decomposition. Your goal is to find the vertically averaged velocity in order to connect flow depth [m] and discharge [m<sup>3</sup>/s].* When applying the MVT, recall that flow velocity is assumed to go to 0 at a small elevation $$z = z_0$$ [m] (due to the fact that we do not take into account the laminar sublayer). Consider a flow of arbitrary depth $$h$$ [m], and express the solution with respect to this depth.
 
 As a reminder of your calculus days, the MVT provides the average value of a function, $$f(x)$$, over a a range of the independent variable ($$x$$) extending from $$x_0$$ to $$x_1$$:
 
@@ -146,6 +154,8 @@ $$Q = 170 \log_{10}(5 P_R),$$
 
 where $$P_R$$ indicates the *return period* of that flood in years.
 
+*Important note: This equation is not dimensionally consistent! This means that no theory should be able to explain it; it is just an arbitrarty observed relationship between two variables. Therefore, $$Q$$ is volumetric water discharge [m<sup>3</sup>/s] whereas $$P_R$$ is return period [1/yr]. There's a lot of empiricism in observational hydrology. Maybe one of you will help to find the deeper meaning and answer behind this!*
+
 ### Part A
 
 First, calculate the return period of the bankfull flow.
@@ -160,6 +170,8 @@ Second, plot the flood *stage* against *return period* for the 1--500 year flood
 *If you want some background on this analysis, you can see the [original paper by Wolman and Miller (1960)](http://geomorphology.sese.asu.edu/Papers/Wolman_and_Miller_1960.pdf). They use stress, whereas we use discharge to connect the geomorphic change to the hydrology.*
 
 Before building the levees, you want to see how they might impact flow and sediment in the channel and beyond the current reach of river. You start by considering the current natural flows in the channel and how they have shaped the channel.
+
+As is typical, the levees that you are considering will lie immediately adjacent to the channel. So long as they are not overtopped, no water will flow onto the floodplain.
 
 ### Part A
 
