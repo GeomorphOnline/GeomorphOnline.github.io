@@ -390,16 +390,16 @@ Interplay of hydrology and topography
 
 [Glacial Erosion](/glacial/erosion/)
 
+[Glacial Landforms](/glacial/landforms/)
+
+[Paraglacial Environments](/glacial/paraglacial/)
+
 ### Due Wednesday
 
 [Problem Set: Rating curves, flood management, and geomorphically effective discharge](/hydraulics/pset_rating_curves/)
 
-### Lectures
 
 ***--- <font color="red">Below this line, Course material still being built!</font> ---***
-[Glacial Landforms]
-
-[Paraglacial Environments]
 
 ### Assignment
 
