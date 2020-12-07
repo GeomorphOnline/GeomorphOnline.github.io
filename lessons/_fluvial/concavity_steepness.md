@@ -104,7 +104,7 @@ $$\theta = \frac{m}{n}$$
 
 The **steepness index** increases with uplift rate and decreases with erodibility. Rapidly uplifting hard rock requires the steepest channels to erode at a pace that is comparable to the rest of the river system.
 
-$$\k_s = \frac{U}{K}$$
+$$k_s = \frac{U}{K}$$
 
 Therefore, we expect **knickpoints**, steep zones in rivers, to occur where **rocks are hard** and/or **tectonic uplift is fast**.
 
