@@ -110,6 +110,27 @@ Therefore, we expect **knickpoints**, steep zones in rivers, to occur where **ro
 
 If we also have a geological map, we can control for the effects of lithology, and thereby relate river-profile shapes to rates of tectonic uplift.
 
+## Finding the concavity and steepness indices from a log--log plot
+
+Above, we showed that we can learn something about landscape evolution and bedrock incision from river long profiles and their steepness indices and concavity indices. But how do we find these terms from a set of data? Let's go back to the equation that describes channel long-profile shape.
+
+$$S = k_s A^{-\theta}.$$
+
+We can measure slope ($$S$$) and drainage area ($$A$$). There remain two parameters to fit.
+
+By taking the log of both sides of the equation, we can make inroads into turning it into a linear form:
+
+$$\log_{10}(S) = \log_{10} \left(k_s A^{-\theta} \right).$$
+
+From rules of logarithms:
+
+$$\log_{10}(S) = \log_{10}(k_s) - \theta \log_{10}(A).$$
+
+This has the form of our very old friend from algebra, $$y = mx + b$$, with a $$y$$-intercept of $$k_s$$ and a slope of $$-\theta$$.
+
+![Channel concavity](/assets/images/landscape-evolution/Wang2017_ESurf_Channel_Concavity.png)
+
+In the figure above, [Wang et al. (2017)](https://esurf.copernicus.org/articles/5/145/2017/) analyze the concavity and steepness of a river along the tectonically active California coast. Their "colluvial channel" here represents the hillslopes and associated processes of creep, landslide, and debris flow. These are logarithmic axes, and demonstrate how one would fit the slope and $$y$$ intercept to obtain $$-\theta$$ and $$k_s$$, respectively.
 
 <br/>
 <br/>
