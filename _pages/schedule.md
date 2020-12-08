@@ -406,9 +406,9 @@ Interplay of hydrology and topography
 
 [Problem set: River incision, tectonics, and landscape evolution](/landscape-evolution/pset/) <!-- will also include geochron estimates -->
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
+[Assignment (short): OSL and Glacial Processes](/glacial/assignment/) <!-- will also include geochron estimates -->
 
-[Assignment (short): Glaciers, climate, and sea-level impacts] <!-- will also include geochron estimates -->
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 ### Course materials
 
@@ -432,7 +432,7 @@ Interplay of hydrology and topography
 
 ### Due Monday
 
-[Assignment (short): Glaciers, climate, and sea-level impacts](/glacial/assignment/)
+[Assignment (short): OSL and Glacial Processes](/glacial/assignment/)
 
 ### Lessons
 
