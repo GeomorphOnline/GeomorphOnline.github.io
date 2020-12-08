@@ -19,8 +19,7 @@ author_profile: true
 ---
 *Now that you've learned a little bit about geochronological dating and glacial processes, let's apply these in a short, descriptive assignment.*
 
-## OSL and Glacial Processes Assignment (25 points)
-### Due 12/14 via Canvas
+## OSL and Glacial Processes Assignment (25 points) Due 12/14 via Canvas
 
 ### Part 1: Optically Stimulated Luminescence Dating (5 points)
 Watch the Optically Stimulated Luminescence Dating lecture and answer the questions included in the Google Form at the bottom of the page. **You must complete these questions by the assignment deadline in order for your points to be included.**
