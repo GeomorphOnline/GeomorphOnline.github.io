@@ -408,10 +408,17 @@ Interplay of hydrology and topography
 
 [Assignment (short): OSL and Glacial Processes](/glacial/assignment/) <!-- will also include geochron estimates -->
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
 ### Course materials
 
+*There will be no assignments on material from here to the end of the course. All this is meant for your fun and learning pleasure, and strikes a lighter tone than some of the rest of the course.*
+
+[Ice sheets, sea level, global change, and life lessons from Jerry Mitrovica](/glacial/sea-level_fingerprints/)
+
+[River deltas](/coastal/deltas)
+
+[Loess and dunes]
+
+<!--
 [The world ocean and sea level]
 
 [River deltas]
@@ -425,6 +432,9 @@ Interplay of hydrology and topography
 [Loess]
 
 [Sand dunes]
+-->
+
+***--- <font color="red">Below this line, Course material still being built!</font> ---***
 
 ## Week 15: Planetary Geomorphology; Summary and wrap up
 
