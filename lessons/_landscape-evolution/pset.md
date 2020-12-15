@@ -70,7 +70,7 @@ By measuring / eyeballing this plot, provide the approximate $$k_s$$ (steepness 
 
 #### 5.B (10 points)
 
-Another local colleague tells you that she measured uplift rates and concavities in several regional streams and found that the stream-power erosion-rate coefficient, $$K$$, should have a value of $$\times 10^{-6}$$. Your stream has a similar lithology and climate. Based on this information and your measured $$k_s$$, quantify the change in the external driver (which you identified in 3.A) that drove the river's adjustment from the initial to the final long profile. To do so, provide this value for both the initial and final profiles, and comment on its magnitude of change.
+Another local colleague tells you that she measured uplift rates and concavities in several regional streams and found that the stream-power erosion-rate coefficient, $$K$$, should have a value of $$1 \times 10^{-6}$$. Your stream has a similar lithology and climate. Based on this information and your measured $$k_s$$, quantify the change in the external driver (which you identified in 3.A) that drove the river's adjustment from the initial to the final long profile. To do so, provide this value for both the initial and final profiles, and comment on its magnitude of change.
 
 ### 6. Climate impacts (10 points)
 
