@@ -416,7 +416,7 @@ Interplay of hydrology and topography
 
 [River deltas](/coastal/deltas)
 
-[Loess and dunes]
+<!-- [Loess and dunes] -->
 
 <!--
 [The world ocean and sea level]
@@ -434,9 +434,7 @@ Interplay of hydrology and topography
 [Sand dunes]
 -->
 
-***--- <font color="red">Below this line, Course material still being built!</font> ---***
-
-## Week 15: Planetary Geomorphology; Summary and wrap up
+## Week 15: Final Assignment Hand-in and Group Work
 
 ***Dec. 14th. Half week: December 16th is the last day of classes***
 
@@ -444,11 +442,13 @@ Interplay of hydrology and topography
 
 [Assignment (short): OSL and Glacial Processes](/glacial/assignment/)
 
+<!--
 ### Lessons
 
 [Planetary Geomorphology]
 
 [Semester recap: what we've learned]
+-->
 
 ### Due Friday
 
