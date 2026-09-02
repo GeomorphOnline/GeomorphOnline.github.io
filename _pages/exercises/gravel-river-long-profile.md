@@ -21,9 +21,9 @@ This model evolves a **single-segment gravel river** through time. Press
 **▶ Run**, then drag the sliders *while the simulation runs* and watch the long
 profile respond:
 
-- **Water discharge $$Q$$** — more water lowers the equilibrium slope, giving a
+- **Water discharge $Q$** — more water lowers the equilibrium slope, giving a
   gentler profile.
-- **Bed-load sediment input $$Q_s$$** — more sediment steepens it.
+- **Bed-load sediment input $Q_s$** — more sediment steepens it.
 - **Base level** — raising or lowering the downstream boundary aggrades or
   incises the profile.
 
