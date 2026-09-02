@@ -9,7 +9,21 @@
      }
    });
  </script>
- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+ <!--
+   Loaded from cdnjs rather than cdn.mathjax.org. That host was retired in 2017
+   and now serves only a small shim that rewrites the script tag to this exact
+   cdnjs URL, so every equation on the site has been arriving via an
+   unmaintained redirect. This removes the hop; it is still MathJax 2, so the
+   MathJax.Hub.Config blocks above, the $...$ inline delimiters and the
+   automatic equation numbering all behave exactly as before.
+
+   MathJax 2 is end-of-life (3 and 4 exist). Moving to it is a separate job:
+   the configuration API changed completely -- MathJax.Hub.Config({tex2jax:
+   {inlineMath: ...}}) becomes window.MathJax = {tex: {inlineMath: ...}}, and
+   equationNumbers: {autoNumber: "all"} becomes tex: {tags: "all"} -- and every
+   lesson page carrying maths would need checking afterwards.
+ -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 
 <meta charset="utf-8">
