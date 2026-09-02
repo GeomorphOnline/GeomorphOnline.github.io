@@ -34,7 +34,7 @@ release it was branched from, and is indistinguishable by filename.
 | | |
 |---|---|
 | model | [GRLP](https://github.com/MNiMORPH/GRLP) **v2.1.0** (tag), the release `pip install grlp` gives |
-| application source | GRLP `demo/responsive-figure` @ `1d9d2533a9fb` (`interactive_demo/grlp_panel.py`) |
+| application source | GRLP `demo/responsive-figure` @ `7afd3d3` (`interactive_demo/grlp_panel.py`) |
 | built | 2026-09-02 |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 
