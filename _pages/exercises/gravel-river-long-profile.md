@@ -42,6 +42,11 @@ These are the three controls of Lane's balance, played out dynamically. Use
   tall (a slab of blank space). The app is served from this same origin, so the
   page is allowed to measure it.
 
+  The measurement collapses the frame first. Panel's layout stretches to fill
+  whatever height the frame has, so measuring a tall frame just reports back
+  the height we last set -- an earlier version of this grew a little taller
+  every time the observer fired.
+
   height="760" below is only the value before the script runs, and the fallback
   if it cannot: with scripting off the frame stays scrollable rather than
   clipping the model.
@@ -54,37 +59,47 @@ These are the three controls of Lane's balance, played out dynamically. Use
 (function () {
   var frame = document.getElementById('grlp-demo');
   var observer = null;
+  var adjusting = false;
+
+  function document_of(frame) {
+    try {
+      return frame.contentDocument || frame.contentWindow.document;
+    } catch (e) {
+      return null;                 // different origin: keep the fallback height
+    }
+  }
 
   function fit() {
-    var doc;
-    try {
-      doc = frame.contentDocument || frame.contentWindow.document;
-    } catch (e) {
-      return;                      // different origin: keep the fallback height
-    }
+    // Ignore the resize events our own adjustment causes, or this feeds back.
+    if (adjusting) { return; }
+    var doc = document_of(frame);
     if (!doc || !doc.body) { return; }
-    var height = Math.max(doc.body.scrollHeight, doc.body.offsetHeight,
-                          doc.documentElement.scrollHeight,
-                          doc.documentElement.offsetHeight);
-    if (height <= 0) { return; }
-    var wanted = height + 8;                      // 8px: no rounding scrollbar
-    // Only act on a real change. We resize the element whose size we are
-    // observing, so reacting to sub-pixel differences could oscillate.
-    if (Math.abs(wanted - frame.clientHeight) < 4) { return; }
-    frame.style.height = wanted + 'px';
+
+    adjusting = true;
+    var previous = frame.style.height;
+    // Collapse before measuring. Panel's layout stretches to fill the frame,
+    // so measuring while the frame is tall just reports back the height we
+    // last set -- which is how an earlier version of this grew without bound.
+    // Against a zero-height frame, scrollHeight is the content's own height.
+    frame.style.height = '0px';
+    var height = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
+    frame.style.height = height > 0 ? Math.ceil(height) + 'px'
+                                    : (previous || '760px');
+    // Release only after the browser has processed our two writes, so the
+    // observer callbacks they trigger are the ones being ignored.
+    if (typeof requestAnimationFrame === 'function') {
+      requestAnimationFrame(function () { adjusting = false; });
+    } else {
+      setTimeout(function () { adjusting = false; }, 0);
+    }
   }
 
   function watch() {
     fit();
     // Panel renders asynchronously, and the first render waits on Pyodide
-    // downloading -- tens of seconds. Watch the body instead of measuring once.
+    // downloading -- tens of seconds. Watch the body rather than measure once.
     if (typeof ResizeObserver === 'undefined') { return; }
-    var doc;
-    try {
-      doc = frame.contentDocument || frame.contentWindow.document;
-    } catch (e) {
-      return;
-    }
+    var doc = document_of(frame);
     if (!doc || !doc.body) { return; }
     if (observer) { observer.disconnect(); }
     observer = new ResizeObserver(fit);
