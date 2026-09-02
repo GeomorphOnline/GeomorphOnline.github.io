@@ -34,11 +34,18 @@ release it was branched from, and is indistinguishable by filename.
 | | |
 |---|---|
 | model | [GRLP](https://github.com/MNiMORPH/GRLP) **v2.1.0** (tag), the release `pip install grlp` gives |
-| application source | GRLP `master` @ `fc3df36ce05b` (`interactive_demo/grlp_panel.py`) |
+| application source | GRLP `demo/responsive-figure` @ `1d9d2533a9fb` (`interactive_demo/grlp_panel.py`) |
 | built | 2026-09-02 |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 
+| browser requirements | `numpy`, `scipy` |
+
 Verified at build time: every module in the shipped wheel is byte-identical to
 the `v2.1.0` tag.
+
+`networkx` is deliberately *not* requested. GRLP gained its river-network code
+after v2.1.0, so the tagged release neither imports it nor declares it as a
+dependency; asking for it made every reader download about 1 MB of wheel that
+was never used.
 
 Do not hand-edit anything here except this file.
