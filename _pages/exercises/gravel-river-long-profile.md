@@ -35,9 +35,70 @@ These are the three controls of Lane's balance, played out dynamically. Use
 
 *(To be written.)*
 
-<iframe src="{{ '/exercises/apps/grlp_panel.html' | relative_url }}"
-        width="100%" height="760" style="border: none;"
+<!--
+  The frame sizes itself to its contents. A fixed height cannot work here: the
+  plot scales with width, so its height depends on the reader's window, and
+  anything we hard-code is either too short (scroll bar, figure cut off) or too
+  tall (a slab of blank space). The app is served from this same origin, so the
+  page is allowed to measure it.
+
+  height="760" below is only the value before the script runs, and the fallback
+  if it cannot: with scripting off the frame stays scrollable rather than
+  clipping the model.
+-->
+<iframe id="grlp-demo" src="{{ '/exercises/apps/grlp_panel.html' | relative_url }}"
+        width="100%" height="760" style="border: none; display: block;"
         title="Gravel-river long-profile model"></iframe>
+
+<script>
+(function () {
+  var frame = document.getElementById('grlp-demo');
+  var observer = null;
+
+  function fit() {
+    var doc;
+    try {
+      doc = frame.contentDocument || frame.contentWindow.document;
+    } catch (e) {
+      return;                      // different origin: keep the fallback height
+    }
+    if (!doc || !doc.body) { return; }
+    var height = Math.max(doc.body.scrollHeight, doc.body.offsetHeight,
+                          doc.documentElement.scrollHeight,
+                          doc.documentElement.offsetHeight);
+    if (height <= 0) { return; }
+    var wanted = height + 8;                      // 8px: no rounding scrollbar
+    // Only act on a real change. We resize the element whose size we are
+    // observing, so reacting to sub-pixel differences could oscillate.
+    if (Math.abs(wanted - frame.clientHeight) < 4) { return; }
+    frame.style.height = wanted + 'px';
+  }
+
+  function watch() {
+    fit();
+    // Panel renders asynchronously, and the first render waits on Pyodide
+    // downloading -- tens of seconds. Watch the body instead of measuring once.
+    if (typeof ResizeObserver === 'undefined') { return; }
+    var doc;
+    try {
+      doc = frame.contentDocument || frame.contentWindow.document;
+    } catch (e) {
+      return;
+    }
+    if (!doc || !doc.body) { return; }
+    if (observer) { observer.disconnect(); }
+    observer = new ResizeObserver(fit);
+    observer.observe(doc.body);
+  }
+
+  frame.addEventListener('load', watch);
+  window.addEventListener('resize', fit);
+  if (frame.contentDocument
+      && frame.contentDocument.readyState === 'complete') {
+    watch();                       // already loaded from cache
+  }
+})();
+</script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
 runtime – about 60 MB. It runs smoothly after that, and the download is cached,
