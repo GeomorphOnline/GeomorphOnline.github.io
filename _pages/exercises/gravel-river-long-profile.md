@@ -21,10 +21,10 @@ This model evolves a **single-segment gravel river** through time. Press
 **▶ Run**, then drag the sliders *while the simulation runs* and watch the long
 profile respond:
 
-- **Water discharge $Q$** — more water lowers the equilibrium slope, giving a
+- **Water discharge $Q$** – more water lowers the equilibrium slope, giving a
   gentler profile.
-- **Bed-load sediment input $Q_s$** — more sediment steepens it.
-- **Base level** — raising or lowering the downstream boundary aggrades or
+- **Bed-load sediment input $Q_s$** – more sediment steepens it.
+- **Base level** – raising or lowering the downstream boundary aggrades or
   incises the profile.
 
 These are the three controls of Lane's balance, played out dynamically. Use
@@ -39,7 +39,7 @@ These are the three controls of Lane's balance, played out dynamically. Use
         title="Gravel-river long-profile model"></iframe>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
-runtime — about 60 MB. It runs smoothly after that, and the download is cached,
+runtime – about 60 MB. It runs smoothly after that, and the download is cached,
 so returning to the page is fast. Nothing is sent to a server: the model runs on
 your own machine, inside the browser tab.
 
