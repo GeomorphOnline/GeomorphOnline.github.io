@@ -4,6 +4,7 @@ layout: single
 permalink: /exercises/gravel-river-long-profile/
 author_profile: false
 sitemap: false
+classes: wide
 ---
 
 <!--
