@@ -22,4 +22,23 @@ artesian pins `panel` and `bokeh` to whatever versions the build environment
 has, so a rebuild does not silently pull new 35 MB wheels into git history.
 Upgrading them is a deliberate act.
 
+## Provenance
+
+Record what each application was built from, so a result a student reports can
+be reproduced years later. A wheel's version number is not sufficient evidence
+on its own: a build from a modified working tree carries the same version as the
+release it was branched from, and is indistinguishable by filename.
+
+### grlp_panel — gravel-river long profile
+
+| | |
+|---|---|
+| model | [GRLP](https://github.com/MNiMORPH/GRLP) **v2.1.0** (tag), the release `pip install grlp` gives |
+| application source | GRLP `master` @ `fc3df36ce05b` (`interactive_demo/grlp_panel.py`) |
+| built | 2026-09-02 |
+| panel / bokeh | 1.9.4 / 3.9.2 |
+
+Verified at build time: every module in the shipped wheel is byte-identical to
+the `v2.1.0` tag.
+
 Do not hand-edit anything here except this file.
