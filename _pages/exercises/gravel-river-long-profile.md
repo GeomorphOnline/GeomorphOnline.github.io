@@ -42,6 +42,11 @@ These are the three controls of Lane's balance, played out dynamically. Use
   tall (a slab of blank space). The app is served from this same origin, so the
   page is allowed to measure it.
 
+  Wider than the app's design width, the frame is SCALED rather than stretched,
+  so the text, the slider handles and the plot all enlarge together. Stretching
+  alone grows the figure while the controls keep their physical size, and they
+  end up small and fiddly beside it.
+
   The measurement collapses the frame first. Panel's layout stretches to fill
   whatever height the frame has, so measuring a tall frame just reports back
   the height we last set -- an earlier version of this grew a little taller
@@ -61,32 +66,72 @@ These are the three controls of Lane's balance, played out dynamically. Use
   var observer = null;
   var adjusting = false;
 
+  // The width the app is laid out for (DESIGN_WIDTH in grlp_panel.py). Wider
+  // than this we SCALE the whole app rather than stretch it, so the text, the
+  // slider handles and the plot all enlarge together. Stretching alone grows
+  // the figure while the controls keep their physical size, and they end up
+  // small and fiddly beside it.
+  var DESIGN_WIDTH = 900;
+
   function document_of(frame) {
     try {
       return frame.contentDocument || frame.contentWindow.document;
     } catch (e) {
-      return null;                 // different origin: keep the fallback height
+      return null;                 // different origin: leave everything alone
     }
   }
 
+  function available_width() {
+    // Measure the PARENT, never the frame. Once the frame is zoomed, its own
+    // clientWidth is reported in its local coordinates -- it would read back
+    // DESIGN_WIDTH, give a factor of 1, and oscillate. The parent is not
+    // zoomed, so its width is the honest one.
+    var host = frame.parentElement;
+    if (host && host.clientWidth) { return host.clientWidth; }
+    return frame.getBoundingClientRect().width;
+  }
+
+  function scale_factor(width) {
+    // Below the design width, stay at 1 and let the app lay itself out
+    // responsively -- a phone should reflow, not render a shrunken 900 px page.
+    if (!width || width <= DESIGN_WIDTH) { return 1; }
+    return width / DESIGN_WIDTH;
+  }
+
   function fit() {
-    // Ignore the resize events our own adjustment causes, or this feeds back.
-    if (adjusting) { return; }
+    if (adjusting) { return; }     // ignore the events our own writes cause
     var doc = document_of(frame);
     if (!doc || !doc.body) { return; }
 
     adjusting = true;
+
+    // Zoom the frame itself, not its contents. `zoom` scales layout as well as
+    // paint, so the frame's interior measures DESIGN_WIDTH across and the plot
+    // re-renders at full resolution instead of being upscaled and blurred.
+    // Because the interior keeps its own coordinates, the height we read below
+    // needs no conversion.
+    var available = available_width();
+    var factor = scale_factor(available);
+    if (factor === 1) {
+      frame.style.zoom = '';
+      frame.style.width = '100%';
+    } else {
+      // Give the frame an explicit DESIGN_WIDTH in its own coordinates: a
+      // percentage width would resolve against the parent and then be scaled
+      // up by the zoom, overflowing the page. DESIGN_WIDTH x factor is exactly
+      // the space available.
+      frame.style.zoom = factor;
+      frame.style.width = DESIGN_WIDTH + 'px';
+    }
+
     var previous = frame.style.height;
-    // Collapse before measuring. Panel's layout stretches to fill the frame,
-    // so measuring while the frame is tall just reports back the height we
-    // last set -- which is how an earlier version of this grew without bound.
-    // Against a zero-height frame, scrollHeight is the content's own height.
+    // Collapse before measuring: Panel's layout fills whatever height it is
+    // given, so measuring a tall frame reports back the height we last set.
     frame.style.height = '0px';
     var height = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
     frame.style.height = height > 0 ? Math.ceil(height) + 'px'
                                     : (previous || '760px');
-    // Release only after the browser has processed our two writes, so the
-    // observer callbacks they trigger are the ones being ignored.
+
     if (typeof requestAnimationFrame === 'function') {
       requestAnimationFrame(function () { adjusting = false; });
     } else {
