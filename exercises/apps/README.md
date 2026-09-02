@@ -48,4 +48,27 @@ after v2.1.0, so the tagged release neither imports it nor declares it as a
 dependency; asking for it made every reader download about 1 MB of wheel that
 was never used.
 
+### corestone_panel — why a corestone survives
+
+| | |
+|---|---|
+| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `3be20b9` (no release yet) |
+| application source | corestone `master` @ `3be20b9` (`interactive_demo/corestone_panel.py`) |
+| artesian | `main` @ `f154e7f`, shipped as a wheel because the app imports `artesian.live` |
+| built | 2026-09-02 |
+| panel / bokeh | 1.9.4 / 3.9.2 |
+| browser requirements | `numpy`, `scipy` |
+
+Built from a clean tree at a pushed commit, checked with `git status` before
+building. There is no tagged release to build from yet, so the commit is the
+provenance; `pip install corestone` does not give a reader the same code.
+
+`artesian` is shipped here, which `grlp_panel` does not do: that app predates
+`artesian.live` and hand-rolls its own play/pause. Anything written from
+`examples/hillslope.py` imports `artesian.live` and needs the wheel, or it
+dies in the browser with `ModuleNotFoundError`.
+
+**Every parameter in the corestone model is a placeholder.** None is measured.
+The exercise teaches the mechanism; no number it produces is a rate.
+
 Do not hand-edit anything here except this file.
