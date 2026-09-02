@@ -6,3 +6,39 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/*
+   Full-bleed pages
+   ==========================================================================
+   `classes: wide` drops the right-hand padding the theme reserves for a table
+   of contents, but .page keeps `float: right` and `width: calc(100% - 300px)`,
+   so the space on the *left* stays reserved for a sidebar. On a page whose job
+   is to host an interactive model, and which therefore sets
+   `author_profile: false` and defines no sidebar navigation, that space is
+   simply empty.
+
+   Add `full-bleed` alongside `wide` in a page's `classes:` to reclaim it. It is
+   opt-in per page: ordinary lessons keep the sidebar and the narrower measure,
+   which is easier to read for prose.
+*/
+
+.full-bleed {
+  .page {
+    @include breakpoint($large) {
+      float: none;
+      width: 100%;
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  .sidebar {
+    @include breakpoint($large) {
+      display: none;
+    }
+  }
+}
