@@ -85,10 +85,10 @@ was never used.
 
 | | |
 |---|---|
-| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `a99d641` (no release yet) |
-| application source | corestone `master` @ `a99d641` (`interactive_demo/corestone_panel.py`) |
+| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `e0e16b2` (no release yet) |
+| application source | corestone `master` @ `e0e16b2` (`interactive_demo/corestone_panel.py`) |
 | artesian | `main` @ `2195eef`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-03 (rebuilt: design width on the frame) |
+| built | 2026-09-03 (rebuilt: square section restored) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 
