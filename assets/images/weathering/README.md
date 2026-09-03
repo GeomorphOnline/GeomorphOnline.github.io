@@ -1,4 +1,4 @@
-# Weathering images — where each one came from
+# Weathering images – where each one came from
 
 Every file here is reproduced under a licence that permits it. The licence is
 named in the caption on the page as well, because attribution that lives only
@@ -7,7 +7,7 @@ Commons.
 
 If you add one: check the licence on the Commons page yourself, look at the
 image, and record it here. A picture that shows the wrong mechanism is worse
-than no picture — see the note on Minnesota at the end.
+than no picture – see the note on Minnesota at the end.
 
 ## corestones-lost-creek-colorado.jpg
 
@@ -20,7 +20,7 @@ Granite corestones and joint-bounded blocks, Lost Creek Wilderness, Colorado.
 
 ## corestones-vedauwoo-wyoming.jpg
 
-Turtle Rock, Vedauwoo — weathered Sherman Granite, Medicine Bow-Routt National
+Turtle Rock, Vedauwoo – weathered Sherman Granite, Medicine Bow-Routt National
 Forest, Albany County, Wyoming.
 
 - Photographer: Carol M. Highsmith, for the Library of Congress
@@ -31,7 +31,7 @@ Forest, Albany County, Wyoming.
 
 ## corestone-formation-usgs.jpg
 
-"Weathering of joint blocks and stages in the formation of corestones" — the
+"Weathering of joint blocks and stages in the formation of corestones" – the
 mechanism this exercise models, drawn.
 
 - Source publication: Huber, N.K., 1987, *The geologic story of Yosemite
@@ -40,7 +40,7 @@ mechanism this exercise models, drawn.
 - Licence: **public domain** (work of the U.S. Geological Survey)
 - Source: <https://commons.wikimedia.org/wiki/File:Weathering_of_joint_blocks_and_stages_in_the_formation_of_corestones.jpg>
 - NOTE: the Commons credit calls this "Professional Paper No. 1595". That is
-  wrong — 1595 is a *Bulletin*, confirmed against the USGS publication record
+  wrong – 1595 is a *Bulletin*, confirmed against the USGS publication record
   and its DOI. The citation above is the corrected one; do not copy Commons'.
 - Processing: resized to 1280 px wide, JPEG quality 82.
 
@@ -54,11 +54,30 @@ Galicia, Spain. A coin gives the scale.
 - Source: <https://commons.wikimedia.org/wiki/File:Concentric_spheroidal_weathering_in_granite.JPG>
 - Processing: re-encoded at JPEG quality 82; not resized (1024 px original).
 
+## corestones-quarry-minnesota.jpg
+
+Corestones in a quarry, southwestern Minnesota. Weathered in place; moved
+within the quarry by machinery, which is why they sit in a line on a gravel
+floor rather than in the grus they formed in. The caption says so, because the
+arrangement is not natural and a reader would otherwise take it for natural.
+
+- Photographer: Andy Wickert. His own work on his own site, so no external
+  licence is needed and the caption simply credits him. Say the word if it
+  should carry CC BY 4.0 so others may reuse it.
+- The two people in it are colleagues, included with their agreement.
+- EXIF from the original, recorded here because the web copy is stripped:
+  Sony E5803 (Xperia Z5 Compact), 2017-10-07 10:16:21 local, 1920x1080,
+  1/2500 s, f/2.0, ISO 40, 4.23 mm. **No GPS** – and note that Google Photos
+  strips location from shared-link downloads, so that is a fact about the copy
+  retrieved, not necessarily about the original.
+- Processing: JPEG quality 82, not resized. EXIF dropped on re-encode.
+
 ## Considered and rejected
 
 - **Morton Outcrops Scientific and Natural Area, Minnesota** (Morton Gneiss,
   CC BY-SA 4.0, Tim Kiser). Rejected after looking at it. The outcrop is
-  glacially scoured, so its roundness is ice, not weathering — the opposite of
-  what this page teaches. Southwestern Minnesota's crystalline exposures are
-  generally stripped rather than deeply weathered, which is why the search for
-  a corestone photograph there came up empty on Commons.
+  glacially scoured, so its roundness is ice, not weathering – the opposite of
+  what this page teaches. Nothing suitable for Minnesota turned up on Commons;
+  the quarry photograph above came from Andy instead. Note that settling
+  whether those blocks were weathered in place or transported took asking him
+  – the photograph alone does not show it, which is the same test Morton failed.
