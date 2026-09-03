@@ -23,7 +23,7 @@ with the same minerals, that has sat at the same temperature as the **grus**
 falling apart around it.
 
 What differs is the *water*. Rain enters at the surface and runs down the
-**joints** — the fracture network that tectonics put in the rock long before
+**joints** – the fracture network that tectonics put in the rock long before
 any weathering began. Along the way it dissolves the granite it touches, and as
 it does so it approaches saturation. Water that has taken all the solute it can
 hold stops weathering rock, however soluble that rock is. So weathering is a
@@ -35,16 +35,18 @@ Press **▶ Run** and watch. The left panel shows how much capacity the water ha
 left, $1 - C/C_{eq}$: dark green is hungry water, white is water at saturation.
 The right panel shows how much of the rock has gone.
 
-- **Joint orientation** and **joint spacing** set the fracture network — the
+- **Joint orientation** and **joint spacing** set the fracture network – the
   input from tectonics, fixed before weathering starts.
 - **Infiltration rate** sets how fast rain is delivered.
+- **Temperature** does two things at once, and they are worth separating. See
+  below.
 
 Each slider rebuilds the rock and restarts the clock, because each one is a
 property of the starting state rather than something you can change halfway
 through.
 
 Watch the *order* in which the rock goes: the joints first, then the faces of
-each block, then — last — the middles. And watch the corners: a corner sheds
+each block, then – last – the middles. And watch the corners: a corner sheds
 its solute into two joints where a face sheds into one, so corners retreat
 faster. That is what rounds a block into a corestone.
 
@@ -77,18 +79,44 @@ your own machine, inside the browser tab.
 ## Under the hood
 
 The model is [corestone](https://github.com/MNiMORPH/corestone). Rock dissolves
-at an Arrhenius rate multiplied by how far the pore water is from saturation,
+at a rate set by temperature, multiplied by how far the pore water is from
+saturation,
 
 $$R = k(T)\,A\,(1 - C/C_{eq})$$
 
-and the solute it produces is carried by steady groundwater flow and spread by
-diffusion,
+where $A$ is the reactive surface area. The rate constant $k$ follows the
+**Arrhenius equation**,
+
+$$k(T) = k_0 \exp\!\left(-\frac{E_a}{R_g T}\right)$$
+
+with $E_a$ the activation energy and $R_g$ the gas constant: warming the rock
+makes the reaction go faster, steeply.
+
+**That is only half of what temperature does, and in this model it is the
+smaller half.** The solubility $C_{eq}$ depends on temperature too, through the
+van 't Hoff relation,
+
+$$C_{eq}(T) = C_0 \exp\!\left(-\frac{\Delta H_r}{R_g T}\right)$$
+
+so warm water can hold more before it stops dissolving anything. Move the
+temperature slider and watch which one you are seeing. Almost everywhere in
+this section the water reaches saturation long before it runs out of rock to
+attack, so what limits weathering is how much each litre can carry away, not
+how fast the reaction runs. The distance over which water approaches
+saturation goes as $C_{eq}/k$, so its temperature dependence is set by the
+*difference* $(E_a - \Delta H_r)$ and not by the activation energy alone.
+
+Both are worth trying against intuition: raise the temperature and the rock
+does not simply dissolve proportionally faster.
+
+The solute the reaction produces is carried by steady groundwater flow and
+spread by diffusion,
 
 $$\nabla\cdot(q c) - \nabla\cdot(D \nabla c) = r\,(1 - c)$$
 
 Water is routed by a Darcy solve on a conductance field where the joints
 conduct and the intact granite barely does, so flow along a joint is not a
-special case — it is what the head field does when a low-resistance path
+special case – it is what the head field does when a low-resistance path
 exists. The diffusive term is what lets a block weather *inward*: without it a
 block interior saturates and stays untouched for ever, and the model would give
 dissolved joints beside pristine blocks with no rind in between.
