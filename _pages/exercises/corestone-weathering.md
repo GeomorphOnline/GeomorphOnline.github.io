@@ -105,7 +105,7 @@ faster. That is what rounds a block into a corestone.
   browser on an iPad -- that is what it sees. Without the attribute the
   demo is never scaled: it sits at its own width inside a wider frame.
 
-  height="530" is the demo's measured height at its design width, not a
+  height="590" is the demo's measured height at its design width, not a
   guess: it is what the reader looks at while ~60 MB of Pyodide arrives,
   and the script only replaces it once the app has rendered. Too small and
   the figures are clipped during the whole load, which is what 400 did.
@@ -125,7 +125,7 @@ faster. That is what rounds a block into a corestone.
   The stylesheet, the iframe and the script below are the whole embed.
   The stylesheet has to come FIRST and cannot be left to the script:
   the script cannot size a frame whose document has not loaded, and
-  these demos pull about 60 MB of Pyodide before that happens. Without
+  these demos pull about 70 MB of Pyodide before that happens. Without
   it the reader spends that whole time looking at the browser's default
   iframe, ~300 px wide, stretched to the fallback height below -- which
   is what "stuck loading" looked like.
@@ -149,7 +149,7 @@ faster. That is what rounds a block into a corestone.
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
-runtime – about 60 MB. It runs smoothly after that, and the download is cached,
+runtime – about 70 MB. It runs smoothly after that, and the download is cached,
 so returning to the page is fast. Nothing is sent to a server: the model runs on
 your own machine, inside the browser tab.
 
