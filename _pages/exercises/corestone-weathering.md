@@ -127,7 +127,7 @@ faster. That is what rounds a block into a corestone.
 <link rel="stylesheet"
       href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
 <iframe src="{{ '/exercises/apps/corestone_panel.html' | relative_url }}" data-artesian data-design-width="900" scrolling="no"
-        height="555" title="Fracture-controlled granite weathering model"></iframe>
+        height="590" title="Fracture-controlled granite weathering model"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
