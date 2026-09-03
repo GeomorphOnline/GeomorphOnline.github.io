@@ -55,6 +55,14 @@ faster. That is what rounds a block into a corestone.
 *(To be written.)*
 
 <!--
+  The stylesheet, the iframe and the script below are the whole embed.
+  The stylesheet has to come FIRST and cannot be left to the script:
+  the script cannot size a frame whose document has not loaded, and
+  these demos pull about 60 MB of Pyodide before that happens. Without
+  it the reader spends that whole time looking at the browser's default
+  iframe, ~300 px wide, stretched to the fallback height below -- which
+  is what "stuck loading" looked like.
+
   The iframe and the script below are the whole embed. artesian emits
   artesian-embed.js beside the compiled apps, shared by every exercise
   in that directory, and it does the work that used to be copied into
@@ -67,8 +75,10 @@ faster. That is what rounds a block into a corestone.
   rather than honouring a percentage width -- which sent both of these
   exercises off the side of the page, invisibly on every desktop.
 -->
+<link rel="stylesheet"
+      href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}">
 <iframe src="{{ '/exercises/apps/corestone_panel.html' | relative_url }}" data-artesian
-        height="900" title="Fracture-controlled granite weathering model"></iframe>
+        height="400" title="Fracture-controlled granite weathering model"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python

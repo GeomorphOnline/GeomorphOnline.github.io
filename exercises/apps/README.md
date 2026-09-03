@@ -30,9 +30,16 @@ design width, scales the demo rather than stretching it. A page embeds an
 exercise with
 
 ```html
-<iframe src="/exercises/apps/<app>.html" data-artesian height="900"></iframe>
+<link rel="stylesheet" href="/exercises/apps/artesian-embed.css">
+<iframe src="/exercises/apps/<app>.html" data-artesian height="400"></iframe>
 <script src="/exercises/apps/artesian-embed.js"></script>
 ```
+
+The stylesheet is not optional and has to come first. The script cannot size a
+frame whose document has not loaded, and these demos pull about 60 MB of
+Pyodide before that happens; without the stylesheet the reader spends that
+whole time looking at the browser's default iframe, about 300 px wide,
+stretched to the fallback height. That is what "stuck loading" looked like.
 
 and nothing else. Both pages used to carry their own copy of that logic, about
 ninety lines each, which is how they both came to have the same bug: an iframe
@@ -78,7 +85,7 @@ was never used.
 | model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `9f519fd` (no release yet) |
 | application source | corestone `master` @ `9f519fd` (`interactive_demo/corestone_panel.py`) |
 | artesian | `main` @ `44c31d8`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-03 (rebuilt: temperature slider, wider section) |
+| built | 2026-09-03 (rebuilt: embed stylesheet) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 

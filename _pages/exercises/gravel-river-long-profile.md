@@ -36,6 +36,14 @@ These are the three controls of Lane's balance, played out dynamically. Use
 *(To be written.)*
 
 <!--
+  The stylesheet, the iframe and the script below are the whole embed.
+  The stylesheet has to come FIRST and cannot be left to the script:
+  the script cannot size a frame whose document has not loaded, and
+  these demos pull about 60 MB of Pyodide before that happens. Without
+  it the reader spends that whole time looking at the browser's default
+  iframe, ~300 px wide, stretched to the fallback height below -- which
+  is what "stuck loading" looked like.
+
   The iframe and the script below are the whole embed. artesian emits
   artesian-embed.js beside the compiled apps, shared by every exercise
   in that directory, and it does the work that used to be copied into
@@ -48,6 +56,8 @@ These are the three controls of Lane's balance, played out dynamically. Use
   rather than honouring a percentage width -- which sent both of these
   exercises off the side of the page, invisibly on every desktop.
 -->
+<link rel="stylesheet"
+      href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}">
 <iframe src="{{ '/exercises/apps/grlp_panel.html' | relative_url }}" data-artesian
         height="760" title="Gravel-river long-profile model"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}"></script>
