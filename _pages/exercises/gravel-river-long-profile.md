@@ -36,6 +36,13 @@ These are the three controls of Lane's balance, played out dynamically. Use
 *(To be written.)*
 
 <!--
+  data-design-width is the width the app lays itself out for, and it is
+  ALSO recorded inside the compiled page. Two places on purpose: the
+  script cannot read the compiled page while this page lays itself out,
+  because an iframe starts on a blank document, and on WebKit -- every
+  browser on an iPad -- that is what it sees. Without the attribute the
+  demo is never scaled: it sits at its own width inside a wider frame.
+
   The stylesheet, the iframe and the script below are the whole embed.
   The stylesheet has to come FIRST and cannot be left to the script:
   the script cannot size a frame whose document has not loaded, and
@@ -58,7 +65,7 @@ These are the three controls of Lane's balance, played out dynamically. Use
 -->
 <link rel="stylesheet"
       href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}">
-<iframe src="{{ '/exercises/apps/grlp_panel.html' | relative_url }}" data-artesian
+<iframe src="{{ '/exercises/apps/grlp_panel.html' | relative_url }}" data-artesian data-design-width="900"
         height="760" title="Gravel-river long-profile model"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}"></script>
 

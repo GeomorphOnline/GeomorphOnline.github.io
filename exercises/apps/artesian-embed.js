@@ -25,6 +25,20 @@
   }
 
   function design_width(frame) {
+    // THE ATTRIBUTE FIRST, and that ordering is the whole point. Reading the
+    // width out of the compiled page keeps the number in one place, which is
+    // tidy, but it requires the frame's document to be readable at the moment
+    // the page lays itself out -- and it is not. An iframe starts on a blank
+    // document; on WebKit, which is every browser on an iPad, that is what a
+    // page script sees. No meta tag, no design width, and a demo that is never
+    // scaled: it sits at its own layout width inside a wider frame with blank
+    // space around it.
+    //
+    // This is not hypothetical. Both GeomorphOnline exercises worked on an
+    // iPad while each page hardcoded its own design width, and broke in the
+    // commit that replaced that with reading the meta tag.
+    var attr = parseFloat(frame.getAttribute('data-design-width'));
+    if (attr > 0) { return attr; }
     var doc = document_of(frame);
     if (doc) {
       var meta = doc.querySelector('meta[name="artesian-design-width"]');
@@ -33,8 +47,7 @@
         if (declared > 0) { return declared; }
       }
     }
-    var attr = parseFloat(frame.getAttribute('data-design-width'));
-    return attr > 0 ? attr : 0;    // 0 : fit, but never scale
+    return 0;                      // 0 : fit, but never scale
   }
 
   function available_width(frame) {

@@ -49,8 +49,11 @@ No desktop engine shows it. Rebuilding any app here rewrites the script and
 fixes every exercise at once.
 
 The design width is read from a `DESIGN_WIDTH` constant in the app's source and
-recorded in its compiled page, so a page never repeats the number. Both
-exercises now do this; neither page carries a width.
+recorded in its compiled page, AND carried on each frame as
+`data-design-width`. Two places on purpose, and the attribute wins: the script
+cannot read the compiled page while the exercise page lays itself out, because
+an iframe starts on a blank document, and on WebKit -- every browser on an iPad
+-- that is what it sees. Without the attribute the demo is never scaled.
 
 ## Provenance
 
@@ -84,8 +87,8 @@ was never used.
 |---|---|
 | model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `a99d641` (no release yet) |
 | application source | corestone `master` @ `a99d641` (`interactive_demo/corestone_panel.py`) |
-| artesian | `main` @ `a9de485`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-03 (rebuilt: follow the live frame document) |
+| artesian | `main` @ `2195eef`, shipped as a wheel because the app imports `artesian.live` |
+| built | 2026-09-03 (rebuilt: design width on the frame) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 
