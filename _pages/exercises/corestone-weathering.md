@@ -98,6 +98,10 @@ faster. That is what rounds a block into a corestone.
    alt="Diagram: jointed solid rock weathering to rounded corestones in weathered rock, with an inset showing one, two and three weathering surfaces"
    caption="The same argument, drawn: water enters along the joints, and a block loses its corners first because more of its surface is exposed there. From Huber, N.K., 1987, *The geologic story of Yosemite National Park*, [U.S. Geological Survey Bulletin 1595](https://doi.org/10.3133/b1595); public domain." %}
 
+{% include figure image_path="/assets/images/weathering/corestones-quarry-minnesota.jpg"
+   alt="Large rounded granite boulders on a gravel quarry floor, with two people sitting on them for scale"
+   caption="And in Minnesota: corestones in a quarry, southwestern Minnesota. These weathered in place, but the machines have moved them – the rounding is the rock's, the arrangement is the excavator's. Whatever crumbled around them is gone; these are what would not. Two colleagues give the scale. Photo: Andy Wickert." %}
+
 ## What to do
 
 *(To be written.)*
