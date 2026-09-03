@@ -57,8 +57,12 @@ surface rather than staying in the joints.
 
 **▶** animates from fresh rock and keeps going until you pause it – there is
 no end. That matters at the slow settings: at 0.05 m/yr and 0 °C the section
-is only a quarter dissolved after 200 kyr, so give it longer. **View results at** with **Show** asks a different question – what does
-the rock look like at 50 kyr? – and answers it directly, without the animation.
+is only a quarter dissolved after 200 kyr, and little more than half at
+500 kyr, so give it longer. **View results at** with **Show** asks a
+different question – what does the rock look like at 50 kyr? – and answers
+it directly, without the animation. It reaches 500 kyr, which is long
+enough for the default settings, and for a cold one, to dissolve
+completely; anything slower than that is **▶**'s job.
 
 Use **Show** to compare: set a time, press it, change one slider, press it
 again. It always rebuilds from fresh rock, so the answer depends only on the
