@@ -60,8 +60,30 @@
   function manage(frame) {
     var adjusting = false;
     var observer = null;
+    var observed = null;           // the document the observer is attached to
+
+    function attach() {
+      // An iframe does not start empty: it starts with a BLANK document, whose
+      // readyState is already 'complete'. Observing that one attaches to a body
+      // that is about to be thrown away and will never resize again, and
+      // reading the design width from it finds no meta tag -- so the demo is
+      // never scaled and the height is whatever the blank document had. That
+      // is what an iPad showed, and no desktop engine did, because there the
+      // real document arrives before the script looks.
+      //
+      // So the observer follows the CURRENT document, and re-attaches whenever
+      // it changes.
+      if (typeof ResizeObserver === 'undefined') { return; }
+      var doc = document_of(frame);
+      if (!doc || !doc.body || doc === observed) { return; }
+      if (observer) { observer.disconnect(); }
+      observer = new ResizeObserver(fit);
+      observer.observe(doc.body);
+      observed = doc;
+    }
 
     function fit() {
+      attach();                    // the document may have been replaced
       if (adjusting) { return; }   // ignore the events our own writes cause
       var doc = document_of(frame);
       if (!doc || !doc.body) { return; }
@@ -113,18 +135,10 @@
     }
 
     function watch() {
-      fit();
       // Panel renders asynchronously, and the first render waits on Pyodide
       // downloading -- tens of seconds. Watch the body rather than measure
-      // once.
-      if (typeof ResizeObserver !== 'undefined') {
-        var doc = document_of(frame);
-        if (doc && doc.body) {
-          if (observer) { observer.disconnect(); }
-          observer = new ResizeObserver(fit);
-          observer.observe(doc.body);
-        }
-      }
+      // once; fit() attaches to whichever document is current.
+      fit();
       // And re-measure a few times anyway. `adjusting` suppresses the observer
       // callbacks our own writes cause, but it cannot tell those from a real
       // one arriving in the same moment, so a render that lands inside that
