@@ -47,12 +47,8 @@ These are the three controls of Lane's balance, played out dynamically. Use
   iPad is WebKit underneath, and WebKit sizes an iframe to its content
   rather than honouring a percentage width -- which sent both of these
   exercises off the side of the page, invisibly on every desktop.
-
-  grlp_panel was built before artesian recorded the design width in
-  the compiled page, so it is given here instead. Drop the
-  data-design-width attribute when that app is next rebuilt.
 -->
-<iframe src="{{ '/exercises/apps/grlp_panel.html' | relative_url }}" data-artesian data-design-width="900"
+<iframe src="{{ '/exercises/apps/grlp_panel.html' | relative_url }}" data-artesian
         height="760" title="Gravel-river long-profile model"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}"></script>
 

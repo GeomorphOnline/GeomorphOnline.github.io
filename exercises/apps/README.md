@@ -42,9 +42,8 @@ No desktop engine shows it. Rebuilding any app here rewrites the script and
 fixes every exercise at once.
 
 The design width is read from a `DESIGN_WIDTH` constant in the app's source and
-recorded in its compiled page, so a page never repeats the number.
-`grlp_panel` predates that and carries `data-design-width="900"` on its frame
-instead; drop the attribute when it is next rebuilt.
+recorded in its compiled page, so a page never repeats the number. Both
+exercises now do this; neither page carries a width.
 
 ## Provenance
 
