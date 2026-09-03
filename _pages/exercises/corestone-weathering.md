@@ -31,9 +31,16 @@ race between how fast the joints deliver fresh water and how fast the rock
 dissolves into it, and a corestone is simply the place the water never reached,
 or reached already saturated.
 
-Press **▶ Run** and watch. The left panel shows how much capacity the water has
-left, $1 - C/C_{eq}$: dark green is hungry water, white is water at saturation.
-The right panel shows how much of the rock has gone.
+Press **▶ Run** and watch. The left panel is **where the water goes** – its
+speed, as a multiple of the rainfall falling on the surface, on a logarithmic
+scale because it spans four orders of magnitude. The right panel is **what the
+water has taken**. Cause on the left, effect on the right.
+
+Watch the left panel change. At the start the joints carry about twenty times
+the rainfall rate while the rock between them is nearly stagnant, at a
+thousandth of it. As that rock dissolves it opens, and the water spreads into
+it – which is why the weathering runs away downward from the surface rather
+than staying in the joints.
 
 - **Joint orientation** and **joint spacing** set the fracture network – the
   input from tectonics, fixed before weathering starts.
