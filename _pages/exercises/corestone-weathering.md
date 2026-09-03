@@ -240,9 +240,20 @@ found it rises three to four orders of magnitude, from 9 × 10⁻⁹ – 8 × 10
 cm s⁻¹ in the parent rock to 9 × 10⁻⁵ – 9 × 10⁻⁴ cm s⁻¹ in the most weathered
 samples, driven by the cracking that follows oxidative dissolution of biotite.
 The model uses the mid-points of those ranges: 5 × 10⁻¹⁰ and 5 × 10⁻⁶ m s⁻¹.
-For comparison, saprolite over granite is usually 10⁻⁷ – 10⁻⁵ m s⁻¹
-(Dewandel et al. 2006; Raj 2021), and intact granitic matrix 10⁻¹¹ – 10⁻¹²
-m s⁻¹.
+Those are *matrix* conductivities, deliberately. Goodfellow et al. note that
+their values sit one to three orders of magnitude below field measurements on
+weathering granitoids, and attribute the difference to their having measured
+the matrix directly. A field value already contains the fractures; here the
+fractures are not a correction to be folded in, they are the joints, and the
+model draws them separately.
+
+For comparison, Dewandel et al. (2006) give saprolite over granite as about
+10⁻⁶ m s⁻¹, and Raj (2021) measured 7 × 10⁻⁷ – 1 × 10⁻⁵ m s⁻¹ through a
+weathering profile on biotite granite in Malaysia. At the other end,
+Rukavičková et al. (2021) tested eight granitoids in the Bohemian Massif and
+found the *matrix* most often at 10⁻¹¹ – 10⁻¹² m s⁻¹ while the *fractured*
+rock around it ran 10⁻⁸ – 10⁻⁷ – the same split between matrix and fracture
+that this model is built on, measured in the field.
 
 Not measured, and simply chosen so the demo behaves on a human timescale: the
 conductivity of a jointed cell, the reference dissolution length, the
@@ -281,6 +292,11 @@ rock weathered at all.
   Lumpur – Karak Highway in Peninsular Malaysia. *Bulletin of the Geological
   Society of Malaysia* **71**, 1–11.
   [doi:10.7186/bgsm71202101](https://doi.org/10.7186/bgsm71202101)
+- Rukavičková, L., Holeček, J., Holečková, P., Najser, J., Gvoždík, L. &
+  Pačes, T. (2021). Comparison of hydraulic conductivity of rock matrix and
+  fractured blocks of granitic rocks. *International Journal of Rock Mechanics
+  and Mining Sciences* **144**, 104743.
+  [doi:10.1016/j.ijrmms.2021.104743](https://doi.org/10.1016/j.ijrmms.2021.104743)
 - Wickert, A.D. & Schildgen, T.F. (2019). Long-profile evolution of
   transport-limited gravel-bed rivers. *Earth Surface Dynamics* **7**,
   17–43. [doi:10.5194/esurf-7-17-2019](https://doi.org/10.5194/esurf-7-17-2019)
