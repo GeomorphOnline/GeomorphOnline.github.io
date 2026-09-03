@@ -61,9 +61,8 @@ within the quarry by machinery, which is why they sit in a line on a gravel
 floor rather than in the grus they formed in. The caption says so, because the
 arrangement is not natural and a reader would otherwise take it for natural.
 
-- Photographer: Andy Wickert. His own work on his own site, so no external
-  licence is needed and the caption simply credits him. Say the word if it
-  should carry CC BY 4.0 so others may reuse it.
+- Photographer: Andy Wickert
+- Licence: **CC BY 4.0**, granted by him for reuse.
 - The two people in it are colleagues, included with their agreement.
 - EXIF from the original, recorded here because the web copy is stripped:
   Sony E5803 (Xperia Z5 Compact), 2017-10-07 10:16:21 local, 1920x1080,
