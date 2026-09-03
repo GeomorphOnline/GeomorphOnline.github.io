@@ -22,6 +22,10 @@ made of tougher stuff. **They are not.** A **corestone** is the same granite,
 with the same minerals, that has sat at the same temperature as the **grus**
 falling apart around it.
 
+{% include figure image_path="/assets/images/weathering/corestones-lost-creek-colorado.jpg"
+   alt="Rounded granite boulders stacked on vertically jointed granite, Lost Creek Wilderness, Colorado"
+   caption="Granite in the Lost Creek Wilderness, Colorado. The straight vertical partings are joints; every block between them has had its corners taken off. Photo: [Adam Baker](https://commons.wikimedia.org/wiki/File:Boulders,_Lost_Creek_Wilderness.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)." %}
+
 What differs is the *water*. Rain enters at the surface and runs down the
 **joints** – the fracture network that tectonics put in the rock long before
 any weathering began. Along the way it dissolves the granite it touches, and as
@@ -30,6 +34,10 @@ hold stops weathering rock, however soluble that rock is. So weathering is a
 race between how fast the joints deliver fresh water and how fast the rock
 dissolves into it, and a corestone is simply the place the water never reached,
 or reached already saturated.
+
+{% include figure image_path="/assets/images/weathering/corestones-vedauwoo-wyoming.jpg"
+   alt="A pile of rounded granite blocks, Turtle Rock at Vedauwoo, Wyoming"
+   caption="Turtle Rock at Vedauwoo, Wyoming: Sherman Granite, weathered along its joints until what is left is a pile of rounded blocks. Photo: Carol M. Highsmith, [Library of Congress](https://lccn.loc.gov/2015632858), public domain." %}
 
 Press **▶ Run** and watch. The left panel is **where the water goes** – its
 speed in metres per year, on a logarithmic scale because it spans four orders
@@ -78,6 +86,10 @@ Watch the *order* in which the rock goes: the joints first, then the faces of
 each block, then – last – the middles. And watch the corners: a corner sheds
 its solute into two joints where a face sheds into one, so corners retreat
 faster. That is what rounds a block into a corestone.
+
+{% include figure image_path="/assets/images/weathering/corestone-formation-usgs.jpg"
+   alt="Diagram: jointed solid rock weathering to rounded corestones in weathered rock, with an inset showing one, two and three weathering surfaces"
+   caption="The same argument, drawn: water enters along the joints, and a block loses its corners first because more of its surface is exposed there. From Huber, N.K., 1987, *The geologic story of Yosemite National Park*, [U.S. Geological Survey Bulletin 1595](https://doi.org/10.3133/b1595); public domain." %}
 
 ## What to do
 
@@ -183,6 +195,10 @@ special case – it is what the head field does when a low-resistance path
 exists. The diffusive term is what lets a block weather *inward*: without it a
 block interior saturates and stays untouched for ever, and the model would give
 dissolved joints beside pristine blocks with no rind in between.
+
+{% include figure image_path="/assets/images/weathering/weathering-rinds-galicia.jpg"
+   alt="Concentric weathering rinds in granite seen from above, with a coin for scale"
+   caption="The rind, in the field: concentric shells of weathered granite around a core the water has not finished with, Estaca de Bares, Galicia. The coin gives the scale. Photo: [PePeEfe](https://commons.wikimedia.org/wiki/File:Concentric_spheroidal_weathering_in_granite.JPG), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)." %}
 
 **The rock conducts better as it dissolves, and that changes everything.**
 Weathering opens connected porosity, so water is drawn into the weathered zone,
