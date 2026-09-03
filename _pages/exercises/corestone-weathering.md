@@ -48,17 +48,15 @@ The right panel shows how much of the rock has gone.
   whole number of cells can tile the section exactly, and which ones those
   are depends on the grid.
 
-**Show result** jumps straight to the state at **Run to**, from fresh rock,
-without animating. It is the quickest way to compare: set a time, press it,
-change one slider, press it again. The answer depends only on the settings and
-the time, never on what you pressed before.
+**▶** animates from fresh rock and keeps going until there is nothing left to
+watch. **View results at** with **Show** asks a different question – what does
+the rock look like at 50 kyr? – and answers it directly, without the animation.
 
-**Run to** sets where the clock stops. Leave it at 200 kyr to watch the whole
-thing; set it to a shorter time and the run halts exactly there, which is how
-to compare two settings *at the same age* rather than at whatever moment you
-happened to press pause. Changing a slider above rebuilds the rock and
-restarts the clock; changing **Run to** does not, so you can also carry a run
-further by raising it and pressing play again.
+Use **Show** to compare: set a time, press it, change one slider, press it
+again. It always rebuilds from fresh rock, so the answer depends only on the
+settings and the time and never on what you pressed before it. Two settings
+seen at the same age is a comparison; two settings seen at whatever moment you
+happened to press pause is not.
 
 Each slider rebuilds the rock and restarts the clock, because each one is a
 property of the starting state rather than something you can change halfway

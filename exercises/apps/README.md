@@ -97,10 +97,10 @@ was never used.
 
 | | |
 |---|---|
-| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `22155f3` (no release yet) |
-| application source | corestone `master` @ `22155f3` (`interactive_demo/corestone_panel.py`) |
+| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `a279b03` (no release yet) |
+| application source | corestone `master` @ `a279b03` (`interactive_demo/corestone_panel.py`) |
 | artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-03 (rebuilt: cell-size control) |
+| built | 2026-09-03 (rebuilt: View results at) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 
