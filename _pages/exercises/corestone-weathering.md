@@ -40,6 +40,13 @@ The right panel shows how much of the rock has gone.
 - **Infiltration rate** sets how fast rain is delivered.
 - **Temperature** does two things at once, and they are worth separating. See
   below.
+- **Cell size** is the numerical grid, not the rock: 5 cm, 2.5 cm or 2 cm
+  across the same 3 m section. Finer resolves the weathering rind more
+  sharply and costs about eighteen times the computing at 2 cm, so use
+  **Show result** rather than watching it animate. Note that fewer joint
+  orientations and spacings are available at 2 cm – only patterns that fit a
+  whole number of cells can tile the section exactly, and which ones those
+  are depends on the grid.
 
 **Show result** jumps straight to the state at **Run to**, from fresh rock,
 without animating. It is the quickest way to compare: set a time, press it,
