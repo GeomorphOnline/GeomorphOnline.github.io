@@ -12,6 +12,10 @@
 (function () {
   'use strict';
 
+  // When to re-measure after a frame loads, in milliseconds. Not a poll: the
+  // ResizeObserver does the work, and these only catch an update it dropped.
+  var RETRIES = [250, 1000, 3000, 10000, 30000];
+
   function document_of(frame) {
     try {
       return frame.contentDocument || frame.contentWindow.document;
@@ -113,12 +117,24 @@
       // Panel renders asynchronously, and the first render waits on Pyodide
       // downloading -- tens of seconds. Watch the body rather than measure
       // once.
-      if (typeof ResizeObserver === 'undefined') { return; }
-      var doc = document_of(frame);
-      if (!doc || !doc.body) { return; }
-      if (observer) { observer.disconnect(); }
-      observer = new ResizeObserver(fit);
-      observer.observe(doc.body);
+      if (typeof ResizeObserver !== 'undefined') {
+        var doc = document_of(frame);
+        if (doc && doc.body) {
+          if (observer) { observer.disconnect(); }
+          observer = new ResizeObserver(fit);
+          observer.observe(doc.body);
+        }
+      }
+      // And re-measure a few times anyway. `adjusting` suppresses the observer
+      // callbacks our own writes cause, but it cannot tell those from a real
+      // one arriving in the same moment, so a render that lands inside that
+      // window is dropped and the frame keeps whatever height it had when the
+      // app was still laying itself out -- blank space under the demo, on a
+      // machine fast enough to hit it. A few later measurements cost nothing
+      // and make that self-correcting rather than permanent.
+      for (var i = 0; i < RETRIES.length; i++) {
+        setTimeout(fit, RETRIES[i]);
+      }
     }
 
     frame.style.border = frame.style.border || 'none';

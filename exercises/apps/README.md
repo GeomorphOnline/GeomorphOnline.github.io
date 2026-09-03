@@ -82,10 +82,10 @@ was never used.
 
 | | |
 |---|---|
-| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `9f519fd` (no release yet) |
-| application source | corestone `master` @ `9f519fd` (`interactive_demo/corestone_panel.py`) |
-| artesian | `main` @ `44c31d8`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-03 (rebuilt: embed stylesheet) |
+| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `a99d641` (no release yet) |
+| application source | corestone `master` @ `a99d641` (`interactive_demo/corestone_panel.py`) |
+| artesian | `main` @ `da046cb`, shipped as a wheel because the app imports `artesian.live` |
+| built | 2026-09-03 (rebuilt: re-measure after settling) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 
