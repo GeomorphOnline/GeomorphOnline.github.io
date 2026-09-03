@@ -76,10 +76,10 @@ was never used.
 
 | | |
 |---|---|
-| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `a2ad11a` (no release yet) |
-| application source | corestone `master` @ `a2ad11a` (`interactive_demo/corestone_panel.py`) |
+| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `e47c58f` (no release yet) |
+| application source | corestone `master` @ `e47c58f` (`interactive_demo/corestone_panel.py`) |
 | artesian | `main` @ `44c31d8`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-03 (rebuilt for the embed script) |
+| built | 2026-09-03 (rebuilt: a third off the demo height) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 
