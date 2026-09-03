@@ -50,13 +50,14 @@ surface rather than staying in the joints.
 - **Cell size** is the numerical grid, not the rock: 5 cm, 2.5 cm or 2 cm
   across the same 3 m section. Finer resolves the weathering rind more
   sharply and costs about eighteen times the computing at 2 cm, so use
-  **Show result** rather than watching it animate. Note that fewer joint
+  **Show** rather than watching it animate. Note that fewer joint
   orientations and spacings are available at 2 cm – only patterns that fit a
   whole number of cells can tile the section exactly, and which ones those
   are depends on the grid.
 
-**▶** animates from fresh rock and keeps going until there is nothing left to
-watch. **View results at** with **Show** asks a different question – what does
+**▶** animates from fresh rock and keeps going until you pause it – there is
+no end. That matters at the slow settings: at 0.05 m/yr and 0 °C the section
+is only a quarter dissolved after 200 kyr, so give it longer. **View results at** with **Show** asks a different question – what does
 the rock look like at 50 kyr? – and answers it directly, without the animation.
 
 Use **Show** to compare: set a time, press it, change one slider, press it
