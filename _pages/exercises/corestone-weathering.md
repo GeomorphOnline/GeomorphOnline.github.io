@@ -41,6 +41,11 @@ The right panel shows how much of the rock has gone.
 - **Temperature** does two things at once, and they are worth separating. See
   below.
 
+**Show result** jumps straight to the state at **Run to**, from fresh rock,
+without animating. It is the quickest way to compare: set a time, press it,
+change one slider, press it again. The answer depends only on the settings and
+the time, never on what you pressed before.
+
 **Run to** sets where the clock stops. Leave it at 200 kyr to watch the whole
 thing; set it to a shorter time and the run halts exactly there, which is how
 to compare two settings *at the same age* rather than at whatever moment you
