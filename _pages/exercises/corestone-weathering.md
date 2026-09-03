@@ -100,7 +100,7 @@ faster. That is what rounds a block into a corestone.
 
 {% include figure image_path="/assets/images/weathering/corestones-quarry-minnesota.jpg"
    alt="Large rounded granite boulders on a gravel quarry floor, with two people sitting on them for scale"
-   caption="And in Minnesota: corestones in a quarry, southwestern Minnesota. These weathered in place, but the machines have moved them – the rounding is the rock's, the arrangement is the excavator's. Whatever crumbled around them is gone; these are what would not. Two colleagues give the scale. Photo: Andy Wickert, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)." %}
+   caption="And in Minnesota: corestones in a sand-and-gravel pit in the southwest of the state. These weathered in place; the machines moved them only because they were in the way of the Glacial River Warren sand and gravel being mined around them. So the rounding is the rock's and the arrangement is the excavator's – and the material they sit in is outwash, not the grus they formed in. Kerry Callaghan (University of Illinois Chicago) and Fiona Clubb (Durham University) give the scale. Photo: Andy Wickert, 2017, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)." %}
 
 ## What to do
 

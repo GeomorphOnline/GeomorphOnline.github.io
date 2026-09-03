@@ -56,19 +56,27 @@ Galicia, Spain. A coin gives the scale.
 
 ## corestones-quarry-minnesota.jpg
 
-Corestones in a quarry, southwestern Minnesota. Weathered in place; moved
-within the quarry by machinery, which is why they sit in a line on a gravel
-floor rather than in the grus they formed in. The caption says so, because the
-arrangement is not natural and a reader would otherwise take it for natural.
+Corestones in a sand-and-gravel pit, southwestern Minnesota. They weathered in
+place; the machinery moved them because they were in the way of the Glacial
+River Warren sand and gravel being mined around them. Two things follow that
+the caption has to say, because a reader would otherwise take both for natural:
+the line they sit in is the excavator's, and the material around them is
+outwash rather than the grus they weathered out of.
 
 - Photographer: Andy Wickert
 - Licence: **CC BY 4.0**, granted by him for reuse.
-- The two people in it are colleagues, included with their agreement.
+- The two people in it are Kerry Callaghan (University of Illinois Chicago)
+  and Fiona Clubb (Durham University), included with their agreement.
 - EXIF from the original, recorded here because the web copy is stripped:
-  Sony E5803 (Xperia Z5 Compact), 2017-10-07 10:16:21 local, 1920x1080,
-  1/2500 s, f/2.0, ISO 40, 4.23 mm. **No GPS** – and note that Google Photos
-  strips location from shared-link downloads, so that is a fact about the copy
-  retrieved, not necessarily about the original.
+  Sony E5803 (Xperia Z5 Compact), original filename IMG_20171007_101620.jpg,
+  2017-10-07 10:16:21 GMT-05:00, 1920x1080, 1/2500 s, f/2.0, ISO 40, 4.23 mm.
+- **No location, and it is not recoverable from what was shared.** The file has
+  no GPS IFD, no "GPS" bytes and no XMP; Google Photos' own info panel for the
+  item shows date, camera and exposure but no place, and there is no map or
+  geocode in the page. So this is not a download stripping it: Google never had
+  one. Only the camera-roll original could still carry it. The pit is therefore
+  recorded as "southwestern Minnesota" on Andy's word, which is the authority
+  here anyway -- he was standing in it.
 - Processing: JPEG quality 82, not resized. EXIF dropped on re-encode.
 
 ## Considered and rejected
