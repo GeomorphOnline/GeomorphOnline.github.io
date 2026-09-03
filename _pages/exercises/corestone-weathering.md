@@ -41,6 +41,13 @@ The right panel shows how much of the rock has gone.
 - **Temperature** does two things at once, and they are worth separating. See
   below.
 
+**Run to** sets where the clock stops. Leave it at 200 kyr to watch the whole
+thing; set it to a shorter time and the run halts exactly there, which is how
+to compare two settings *at the same age* rather than at whatever moment you
+happened to press pause. Changing a slider above rebuilds the rock and
+restarts the clock; changing **Run to** does not, so you can also carry a run
+further by raising it and pressing play again.
+
 Each slider rebuilds the rock and restarts the clock, because each one is a
 property of the starting state rather than something you can change halfway
 through.
@@ -102,7 +109,7 @@ faster. That is what rounds a block into a corestone.
 <link rel="stylesheet"
       href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
 <iframe src="{{ '/exercises/apps/corestone_panel.html' | relative_url }}" data-artesian data-design-width="900" scrolling="no"
-        height="530" title="Fracture-controlled granite weathering model"></iframe>
+        height="555" title="Fracture-controlled granite weathering model"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
