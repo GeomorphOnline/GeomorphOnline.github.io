@@ -1,13 +1,13 @@
 # Weathering images – where each one came from
 
-Every file here is reproduced under a licence that permits it. The licence is
-named in the caption on the page as well, because attribution that lives only
-in a repository is not attribution. Retrieved 2026-09-03 from Wikimedia
-Commons.
+Four of these came from Wikimedia Commons on 2026-09-03, each under a licence
+that permits reproduction; the fifth is Andy's own photograph. Every one is
+credited in its caption on the page as well, because attribution that lives
+only in a repository is not attribution.
 
-If you add one: check the licence on the Commons page yourself, look at the
-image, and record it here. A picture that shows the wrong mechanism is worse
-than no picture – see the note on Minnesota at the end.
+If you add one: check the licence yourself, look at the image, and record it
+here. A picture that shows the wrong mechanism is worse than no picture, and
+the mechanism is often not visible in the picture – see both Minnesota entries.
 
 ## corestones-lost-creek-colorado.jpg
 
