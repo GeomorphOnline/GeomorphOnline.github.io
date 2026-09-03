@@ -52,10 +52,10 @@ was never used.
 
 | | |
 |---|---|
-| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `3be20b9` (no release yet) |
-| application source | corestone `master` @ `3be20b9` (`interactive_demo/corestone_panel.py`) |
+| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `a2ad11a` (no release yet) |
+| application source | corestone `master` @ `a2ad11a` (`interactive_demo/corestone_panel.py`) |
 | artesian | `main` @ `f154e7f`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-02 |
+| built | 2026-09-03 (rebuilt for the iPad width fix) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 

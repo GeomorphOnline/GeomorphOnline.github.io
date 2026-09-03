@@ -72,11 +72,19 @@ faster. That is what rounds a block into a corestone.
   if it cannot: with scripting off the frame stays scrollable rather than
   clipping the model.
 
+  The width is `1px` with `min-width: 100%`, never `width: 100%`. Every browser
+  on an iPad is WebKit underneath -- Firefox and Chrome there are skins on
+  Safari's engine -- and WebKit sizes an iframe to its content instead of
+  honouring a percentage width. With an app that stretches to fit, that is a
+  loop with no fixed point, and the demo ran off the side of the page. The app
+  also caps itself at DESIGN_WIDTH now, so the loop is closed from both ends.
+
   DESIGN_WIDTH below must match DESIGN_WIDTH in corestone_panel.py. Nothing
   enforces that; see the "known wart" in the corestone handoff note.
 -->
 <iframe id="corestone-demo" src="{{ '/exercises/apps/corestone_panel.html' | relative_url }}"
-        width="100%" height="900" style="border: none; display: block;"
+        height="900"
+        style="border: none; display: block; width: 1px; min-width: 100%;"
         title="Fracture-controlled granite weathering model"></iframe>
 
 <script>
@@ -129,13 +137,22 @@ faster. That is what rounds a block into a corestone.
     var factor = scale_factor(available);
     if (factor === 1) {
       frame.style.zoom = '';
-      frame.style.width = '100%';
+      // NOT width: 100%. Every browser on an iPad is WebKit, and WebKit sizes
+      // an iframe to its CONTENT rather than honouring a percentage width. An
+      // app that stretches to fit then has nothing to fit to -- it is as wide
+      // as the frame, the frame is as wide as it, and the pair runs away past
+      // the edge of the page. `width: 1px` with `min-width: 100%` is the
+      // long-standing way to say "exactly the width available, no more":
+      // WebKit honours the min-width and stops expanding.
+      frame.style.width = '1px';
+      frame.style.minWidth = '100%';
     } else {
       // Give the frame an explicit DESIGN_WIDTH in its own coordinates: a
       // percentage width would resolve against the parent and then be scaled
       // up by the zoom, overflowing the page.
       frame.style.zoom = factor;
       frame.style.width = DESIGN_WIDTH + 'px';
+      frame.style.minWidth = '0';        // or the min-width above wins
     }
 
     var previous = frame.style.height;
