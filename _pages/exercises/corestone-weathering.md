@@ -32,15 +32,15 @@ dissolves into it, and a corestone is simply the place the water never reached,
 or reached already saturated.
 
 Press **▶ Run** and watch. The left panel is **where the water goes** – its
-speed, as a multiple of the rainfall falling on the surface, on a logarithmic
-scale because it spans four orders of magnitude. The right panel is **what the
-water has taken**. Cause on the left, effect on the right.
+speed in metres per year, on a logarithmic scale because it spans four orders
+of magnitude. The right panel is **what the water has taken**. Cause on the
+left, effect on the right.
 
-Watch the left panel change. At the start the joints carry about twenty times
-the rainfall rate while the rock between them is nearly stagnant, at a
-thousandth of it. As that rock dissolves it opens, and the water spreads into
-it – which is why the weathering runs away downward from the surface rather
-than staying in the joints.
+Watch the left panel change. At the default settings the joints start out
+carrying about 6 m/yr while the rock between them creeps along at 0.0003 m/yr
+– twenty thousand times slower. As that rock dissolves it opens, and the water
+spreads into it, which is why the weathering runs away downward from the
+surface rather than staying in the joints.
 
 - **Joint orientation** and **joint spacing** set the fracture network – the
   input from tectonics, fixed before weathering starts.
