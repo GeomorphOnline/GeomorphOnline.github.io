@@ -36,137 +36,25 @@ These are the three controls of Lane's balance, played out dynamically. Use
 *(To be written.)*
 
 <!--
-  The frame sizes itself to its contents. A fixed height cannot work here: the
-  plot scales with width, so its height depends on the reader's window, and
-  anything we hard-code is either too short (scroll bar, figure cut off) or too
-  tall (a slab of blank space). The app is served from this same origin, so the
-  page is allowed to measure it.
+  The iframe and the script below are the whole embed. artesian emits
+  artesian-embed.js beside the compiled apps, shared by every exercise
+  in that directory, and it does the work that used to be copied into
+  each page: sizing the frame to its content (no fixed height can work,
+  since the plot's height follows the reader's window) and SCALING the
+  demo above its design width rather than stretching it.
 
-  Wider than the app's design width, the frame is SCALED rather than stretched,
-  so the text, the slider handles and the plot all enlarge together. Stretching
-  alone grows the figure while the controls keep their physical size, and they
-  end up small and fiddly beside it.
+  Do not reintroduce width="100%" on the frame. Every browser on an
+  iPad is WebKit underneath, and WebKit sizes an iframe to its content
+  rather than honouring a percentage width -- which sent both of these
+  exercises off the side of the page, invisibly on every desktop.
 
-  The measurement collapses the frame first. Panel's layout stretches to fill
-  whatever height the frame has, so measuring a tall frame just reports back
-  the height we last set -- an earlier version of this grew a little taller
-  every time the observer fired.
-
-  height="760" below is only the value before the script runs, and the fallback
-  if it cannot: with scripting off the frame stays scrollable rather than
-  clipping the model.
+  grlp_panel was built before artesian recorded the design width in
+  the compiled page, so it is given here instead. Drop the
+  data-design-width attribute when that app is next rebuilt.
 -->
-<iframe id="grlp-demo" src="{{ '/exercises/apps/grlp_panel.html' | relative_url }}"
-        height="760"
-        style="border: none; display: block; width: 1px; min-width: 100%;"
-        title="Gravel-river long-profile model"></iframe>
-
-<script>
-(function () {
-  var frame = document.getElementById('grlp-demo');
-  var observer = null;
-  var adjusting = false;
-
-  // The width the app is laid out for (DESIGN_WIDTH in grlp_panel.py). Wider
-  // than this we SCALE the whole app rather than stretch it, so the text, the
-  // slider handles and the plot all enlarge together. Stretching alone grows
-  // the figure while the controls keep their physical size, and they end up
-  // small and fiddly beside it.
-  var DESIGN_WIDTH = 900;
-
-  function document_of(frame) {
-    try {
-      return frame.contentDocument || frame.contentWindow.document;
-    } catch (e) {
-      return null;                 // different origin: leave everything alone
-    }
-  }
-
-  function available_width() {
-    // Measure the PARENT, never the frame. Once the frame is zoomed, its own
-    // clientWidth is reported in its local coordinates -- it would read back
-    // DESIGN_WIDTH, give a factor of 1, and oscillate. The parent is not
-    // zoomed, so its width is the honest one.
-    var host = frame.parentElement;
-    if (host && host.clientWidth) { return host.clientWidth; }
-    return frame.getBoundingClientRect().width;
-  }
-
-  function scale_factor(width) {
-    // Below the design width, stay at 1 and let the app lay itself out
-    // responsively -- a phone should reflow, not render a shrunken 900 px page.
-    if (!width || width <= DESIGN_WIDTH) { return 1; }
-    return width / DESIGN_WIDTH;
-  }
-
-  function fit() {
-    if (adjusting) { return; }     // ignore the events our own writes cause
-    var doc = document_of(frame);
-    if (!doc || !doc.body) { return; }
-
-    adjusting = true;
-
-    // Zoom the frame itself, not its contents. `zoom` scales layout as well as
-    // paint, so the frame's interior measures DESIGN_WIDTH across and the plot
-    // re-renders at full resolution instead of being upscaled and blurred.
-    // Because the interior keeps its own coordinates, the height we read below
-    // needs no conversion.
-    var available = available_width();
-    var factor = scale_factor(available);
-    if (factor === 1) {
-      frame.style.zoom = '';
-      // NOT width: 100%. Every browser on an iPad is WebKit, and WebKit sizes
-      // an iframe to its CONTENT rather than honouring a percentage width, so
-      // a stretch-to-fit app and the frame grow off the side of the page
-      // together. `width: 1px` with `min-width: 100%` says "the width
-      // available, no more", which WebKit does honour.
-      frame.style.width = '1px';
-      frame.style.minWidth = '100%';
-    } else {
-      // Give the frame an explicit DESIGN_WIDTH in its own coordinates: a
-      // percentage width would resolve against the parent and then be scaled
-      // up by the zoom, overflowing the page. DESIGN_WIDTH x factor is exactly
-      // the space available.
-      frame.style.zoom = factor;
-      frame.style.width = DESIGN_WIDTH + 'px';
-      frame.style.minWidth = '0';        // or the min-width above wins
-    }
-
-    var previous = frame.style.height;
-    // Collapse before measuring: Panel's layout fills whatever height it is
-    // given, so measuring a tall frame reports back the height we last set.
-    frame.style.height = '0px';
-    var height = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
-    frame.style.height = height > 0 ? Math.ceil(height) + 'px'
-                                    : (previous || '760px');
-
-    if (typeof requestAnimationFrame === 'function') {
-      requestAnimationFrame(function () { adjusting = false; });
-    } else {
-      setTimeout(function () { adjusting = false; }, 0);
-    }
-  }
-
-  function watch() {
-    fit();
-    // Panel renders asynchronously, and the first render waits on Pyodide
-    // downloading -- tens of seconds. Watch the body rather than measure once.
-    if (typeof ResizeObserver === 'undefined') { return; }
-    var doc = document_of(frame);
-    if (!doc || !doc.body) { return; }
-    if (observer) { observer.disconnect(); }
-    observer = new ResizeObserver(fit);
-    observer.observe(doc.body);
-  }
-
-  frame.addEventListener('load', watch);
-  window.addEventListener('resize', fit);
-  if (frame.contentDocument
-      && frame.contentDocument.readyState === 'complete') {
-    watch();                       // already loaded from cache
-  }
-})();
-</script>
+<iframe src="{{ '/exercises/apps/grlp_panel.html' | relative_url }}" data-artesian data-design-width="900"
+        height="760" title="Gravel-river long-profile model"></iframe>
+<script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
 runtime – about 60 MB. It runs smoothly after that, and the download is cached,

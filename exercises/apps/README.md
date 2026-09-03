@@ -22,6 +22,30 @@ artesian pins `panel` and `bokeh` to whatever versions the build environment
 has, so a rebuild does not silently pull new 35 MB wheels into git history.
 Upgrading them is a deliberate act.
 
+## artesian-embed.js
+
+Emitted by every build and **shared by every exercise here**, like the panel and
+bokeh wheels. It sizes each demo's frame to its content and, above the app's
+design width, scales the demo rather than stretching it. A page embeds an
+exercise with
+
+```html
+<iframe src="/exercises/apps/<app>.html" data-artesian height="900"></iframe>
+<script src="/exercises/apps/artesian-embed.js"></script>
+```
+
+and nothing else. Both pages used to carry their own copy of that logic, about
+ninety lines each, which is how they both came to have the same bug: an iframe
+at `width: 100%` runs off the side of the page on an iPad, because every
+browser there is WebKit underneath and WebKit sizes an iframe to its content.
+No desktop engine shows it. Rebuilding any app here rewrites the script and
+fixes every exercise at once.
+
+The design width is read from a `DESIGN_WIDTH` constant in the app's source and
+recorded in its compiled page, so a page never repeats the number.
+`grlp_panel` predates that and carries `data-design-width="900"` on its frame
+instead; drop the attribute when it is next rebuilt.
+
 ## Provenance
 
 Record what each application was built from, so a result a student reports can
@@ -54,8 +78,8 @@ was never used.
 |---|---|
 | model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `a2ad11a` (no release yet) |
 | application source | corestone `master` @ `a2ad11a` (`interactive_demo/corestone_panel.py`) |
-| artesian | `main` @ `f154e7f`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-03 (rebuilt for the iPad width fix) |
+| artesian | `main` @ `44c31d8`, shipped as a wheel because the app imports `artesian.live` |
+| built | 2026-09-03 (rebuilt for the embed script) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 
