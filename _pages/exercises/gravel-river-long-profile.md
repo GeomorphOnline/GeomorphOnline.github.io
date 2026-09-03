@@ -57,7 +57,8 @@ These are the three controls of Lane's balance, played out dynamically. Use
   clipping the model.
 -->
 <iframe id="grlp-demo" src="{{ '/exercises/apps/grlp_panel.html' | relative_url }}"
-        width="100%" height="760" style="border: none; display: block;"
+        height="760"
+        style="border: none; display: block; width: 1px; min-width: 100%;"
         title="Gravel-river long-profile model"></iframe>
 
 <script>
@@ -114,7 +115,13 @@ These are the three controls of Lane's balance, played out dynamically. Use
     var factor = scale_factor(available);
     if (factor === 1) {
       frame.style.zoom = '';
-      frame.style.width = '100%';
+      // NOT width: 100%. Every browser on an iPad is WebKit, and WebKit sizes
+      // an iframe to its CONTENT rather than honouring a percentage width, so
+      // a stretch-to-fit app and the frame grow off the side of the page
+      // together. `width: 1px` with `min-width: 100%` says "the width
+      // available, no more", which WebKit does honour.
+      frame.style.width = '1px';
+      frame.style.minWidth = '100%';
     } else {
       // Give the frame an explicit DESIGN_WIDTH in its own coordinates: a
       // percentage width would resolve against the parent and then be scaled
@@ -122,6 +129,7 @@ These are the three controls of Lane's balance, played out dynamically. Use
       // the space available.
       frame.style.zoom = factor;
       frame.style.width = DESIGN_WIDTH + 'px';
+      frame.style.minWidth = '0';        // or the min-width above wins
     }
 
     var previous = frame.style.height;
