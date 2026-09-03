@@ -172,14 +172,75 @@ exists. The diffusive term is what lets a block weather *inward*: without it a
 block interior saturates and stays untouched for ever, and the model would give
 dissolved joints beside pristine blocks with no rind in between.
 
+**The rock conducts better as it dissolves, and that changes everything.**
+Weathering opens connected porosity, so water is drawn into the weathered zone,
+which weathers it faster still. The conductivity of the matrix is interpolated
+geometrically between intact granite and fully dissolved rock,
+
+$$k(M) = k_\mathrm{matrix}^{M}\, k_\mathrm{grus}^{\,1-M}$$
+
+where $M$ is the fraction of the soluble phase remaining, and the head is
+re-solved as the rock changes. Watch what that does with depth: the shallow
+blocks are destroyed while the deeper ones survive and taper, because water
+opens the rock it passes on the way down and arrives at depth already
+saturated. That is a weathering *profile*, and it is what a real saprolite
+looks like. Held fixed – as this model did until it was checked – the section
+weathers at nearly the same rate at every depth, which no outcrop does.
+
 The section is **periodic left to right**. It has no side walls, because a
 no-flow wall forces the lateral flow to vanish there and manufactures a
 drainage divide down the middle of the domain. That is also why the joint
 orientation and spacing sliders snap: only certain angles and spacings let the
 joint pattern close on itself across the seam.
 
-**Every parameter in the model is a placeholder.** None of them is measured
-against a real granite, so the demo teaches the *mechanism* and no number that
-comes out of it should be read as a rate. It is compiled to WebAssembly with
+## Where the numbers come from
+
+**Two are measured. The rest are placeholders**, and the difference matters if
+you are tempted to read a rate off the screen.
+
+Measured: the two ends of the matrix conductivity, $k_\mathrm{matrix}$ and
+$k_\mathrm{grus}$. Goodfellow et al. (2016) measured the hydraulic
+conductivity of granodiorite *matrix* across a range of weathering grades and
+found it rises three to four orders of magnitude, from 9 × 10⁻⁹ – 8 × 10⁻⁸
+cm s⁻¹ in the parent rock to 9 × 10⁻⁵ – 9 × 10⁻⁴ cm s⁻¹ in the most weathered
+samples, driven by the cracking that follows oxidative dissolution of biotite.
+The model uses the mid-points of those ranges: 5 × 10⁻¹⁰ and 5 × 10⁻⁶ m s⁻¹.
+For comparison, saprolite over granite is usually 10⁻⁷ – 10⁻⁵ m s⁻¹
+(Dewandel et al. 2006; Raj 2021), and intact granitic matrix 10⁻¹¹ – 10⁻¹²
+m s⁻¹.
+
+Not measured, and simply chosen so the demo behaves on a human timescale: the
+conductivity of a jointed cell, the reference dissolution length, the
+activation energy $E_a$, the reaction enthalpy $\Delta H_r$, the diffusivity
+and dispersivity, and the thresholds separating rock from grus. **No number
+this model produces is a rate for any real granite.**
+
+That is not a disclaimer to skim. Until this exercise was checked against the
+literature, the intact-granite conductivity in it was 10⁻⁸ m s⁻¹ – between
+twelve and a hundred times too high – and the flow field never changed as the
+rock weathered at all.
+
+## References
+
+- Goodfellow, B.W., Hilley, G.E., Webb, S.M., Sklar, L.S., Moon, S. & Olson,
+  C.A. (2016). The chemical, mechanical, and hydrological evolution of
+  weathering granitoid. *Journal of Geophysical Research: Earth Surface*
+  **121**, 1410–1435. [doi:10.1002/2016JF003822](https://doi.org/10.1002/2016JF003822)
+- Dewandel, B., Lachassagne, P., Wyns, R., Maréchal, J.C. & Krishnamurthy,
+  N.S. (2006). A generalized 3-D geological and hydrogeological conceptual
+  model of granite aquifers controlled by single or multiphase weathering.
+  *Journal of Hydrology* **330**, 260–284.
+  [doi:10.1016/j.jhydrol.2006.03.026](https://doi.org/10.1016/j.jhydrol.2006.03.026)
+- Raj, J.K. (2021). Saturated hydraulic conductivity (Ks) of earth materials in
+  the weathering profile over a porphyritic biotite granite at the Kuala
+  Lumpur – Karak Highway in Peninsular Malaysia. *Bulletin of the Geological
+  Society of Malaysia* **71**, 1–11.
+  [doi:10.7186/bgsm71202101](https://doi.org/10.7186/bgsm71202101)
+- Wickert, A.D. & Schildgen, T.F. (2019). Long-profile evolution of
+  transport-limited gravel-bed rivers. *Earth Surface Dynamics* **7**,
+  17–43. [doi:10.5194/esurf-7-17-2019](https://doi.org/10.5194/esurf-7-17-2019)
+  – the companion exercise.
+
+The model is compiled to WebAssembly with
 [artesian](https://github.com/MNiMORPH/artesian) and runs via
 [Pyodide](https://pyodide.org).
