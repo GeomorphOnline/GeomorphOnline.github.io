@@ -43,6 +43,13 @@ These are the three controls of Lane's balance, played out dynamically. Use
   browser on an iPad -- that is what it sees. Without the attribute the
   demo is never scaled: it sits at its own width inside a wider frame.
 
+  The ?v= on the stylesheet and the script is the first eight characters
+  of each file's SHA-1. GitHub Pages serves them with max-age=600 and
+  no way to set a header, so without it a reader who visited in the last
+  ten minutes silently gets the old one -- which cost most of a morning
+  to diagnose, twice, because it looks exactly like a fix not working.
+  BUMP THESE whenever artesian is rebuilt into exercises/apps.
+
   The stylesheet, the iframe and the script below are the whole embed.
   The stylesheet has to come FIRST and cannot be left to the script:
   the script cannot size a frame whose document has not loaded, and
@@ -64,10 +71,10 @@ These are the three controls of Lane's balance, played out dynamically. Use
   exercises off the side of the page, invisibly on every desktop.
 -->
 <link rel="stylesheet"
-      href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}">
+      href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=e23dc239">
 <iframe src="{{ '/exercises/apps/grlp_panel.html' | relative_url }}" data-artesian data-design-width="900"
         height="760" title="Gravel-river long-profile model"></iframe>
-<script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}"></script>
+<script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=6b38e05a"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
 runtime – about 60 MB. It runs smoothly after that, and the download is cached,

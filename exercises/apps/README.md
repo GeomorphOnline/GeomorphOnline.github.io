@@ -30,10 +30,22 @@ design width, scales the demo rather than stretching it. A page embeds an
 exercise with
 
 ```html
-<link rel="stylesheet" href="/exercises/apps/artesian-embed.css">
-<iframe src="/exercises/apps/<app>.html" data-artesian height="400"></iframe>
-<script src="/exercises/apps/artesian-embed.js"></script>
+<link rel="stylesheet" href="/exercises/apps/artesian-embed.css?v=HASH">
+<iframe src="/exercises/apps/<app>.html" data-artesian
+        data-design-width="900" height="530"></iframe>
+<script src="/exercises/apps/artesian-embed.js?v=HASH"></script>
 ```
+
+`?v=` is the first eight characters of the file's SHA-1, and **must be bumped
+whenever a rebuild changes these two files**. GitHub Pages serves them with
+`max-age=600` and gives no way to set a header, so without it a reader who
+visited in the last ten minutes silently gets the old script. That failure is
+indistinguishable from a fix not working, and it cost most of a morning here,
+twice.
+
+`height` should be the demo's measured height at its design width: it is what
+the reader looks at while ~60 MB of Pyodide arrives, since the script cannot
+replace it until the app has rendered.
 
 The stylesheet is not optional and has to come first. The script cannot size a
 frame whose document has not loaded, and these demos pull about 60 MB of
