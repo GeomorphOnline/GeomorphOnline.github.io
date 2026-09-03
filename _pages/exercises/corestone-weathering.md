@@ -57,8 +57,10 @@ surface rather than staying in the joints.
   below.
 - **Cell size** is the numerical grid, not the rock: 5 cm, 2.5 cm or 2 cm
   across the same 3 m section. Finer resolves the weathering rind more
-  sharply and costs about eighteen times the computing at 2 cm, so use
-  **Show** rather than watching it animate. Note that fewer joint
+  sharply and costs about fifteen times the computing at 2 cm, so use
+  **Show** rather than watching it animate: at 2.5 cm and 2 cm a single
+  frame costs more than the animation has to give it, and **▶** slows down
+  instead of keeping time. Note that fewer joint
   orientations and spacings are available at 2 cm – only patterns that fit a
   whole number of cells can tile the section exactly, and which ones those
   are depends on the grid.
