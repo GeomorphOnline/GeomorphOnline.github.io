@@ -9,6 +9,10 @@
 iframe[data-artesian] {
   border: 0;
   display: block;
+  /* The frame is sized to its content and so has nothing to scroll. Where it
+     can, a touch drag pans the demo off the edge of its own frame with no
+     obvious way back -- an iPad needs only a pixel or two of rounding. */
+  overflow: hidden;
   /* NOT width: 100%. WebKit sizes an iframe to its content rather than
      honouring a percentage, and a stretch-to-fit app then grows with it off
      the side of the page. min-width is honoured where width is not. */

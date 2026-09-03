@@ -74,6 +74,11 @@ faster. That is what rounds a block into a corestone.
   to diagnose, twice, because it looks exactly like a fix not working.
   BUMP THESE whenever artesian is rebuilt into exercises/apps.
 
+  scrolling="no" because the frame is sized to its content and so has
+  nothing to scroll. Where it can scroll, a touch drag pans the demo off
+  the edge of its own frame with no obvious way back -- which is what an
+  iPad did, on a rounding difference of a pixel or two.
+
   The stylesheet, the iframe and the script below are the whole embed.
   The stylesheet has to come FIRST and cannot be left to the script:
   the script cannot size a frame whose document has not loaded, and
@@ -95,10 +100,10 @@ faster. That is what rounds a block into a corestone.
   exercises off the side of the page, invisibly on every desktop.
 -->
 <link rel="stylesheet"
-      href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=e23dc239">
-<iframe src="{{ '/exercises/apps/corestone_panel.html' | relative_url }}" data-artesian data-design-width="900"
+      href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
+<iframe src="{{ '/exercises/apps/corestone_panel.html' | relative_url }}" data-artesian data-design-width="900" scrolling="no"
         height="530" title="Fracture-controlled granite weathering model"></iframe>
-<script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=6b38e05a"></script>
+<script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
 runtime – about 60 MB. It runs smoothly after that, and the download is cached,

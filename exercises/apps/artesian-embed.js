@@ -166,6 +166,13 @@
 
     frame.style.border = frame.style.border || 'none';
     frame.style.display = 'block';
+    // The frame is sized to its content, so it has nothing to scroll -- and if
+    // it can scroll, a touch drag pans the demo off the edge of its own frame
+    // and there is no obvious way to get it back. Reported on an iPad, where a
+    // rounding difference of a pixel or two is enough to make the inner
+    // document scrollable. Set in the page's HTML as well, since some engines
+    // only honour it before the frame loads.
+    frame.setAttribute('scrolling', 'no');
     frame.addEventListener('load', watch);
     window.addEventListener('resize', fit);
     var doc = document_of(frame);

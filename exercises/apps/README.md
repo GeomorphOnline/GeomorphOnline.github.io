@@ -32,7 +32,7 @@ exercise with
 ```html
 <link rel="stylesheet" href="/exercises/apps/artesian-embed.css?v=HASH">
 <iframe src="/exercises/apps/<app>.html" data-artesian
-        data-design-width="900" height="530"></iframe>
+        data-design-width="900" height="530" scrolling="no"></iframe>
 <script src="/exercises/apps/artesian-embed.js?v=HASH"></script>
 ```
 
@@ -99,8 +99,8 @@ was never used.
 |---|---|
 | model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `e0e16b2` (no release yet) |
 | application source | corestone `master` @ `e0e16b2` (`interactive_demo/corestone_panel.py`) |
-| artesian | `main` @ `2195eef`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-03 (rebuilt: square section restored) |
+| artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
+| built | 2026-09-03 (rebuilt: non-scrolling frame) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 
