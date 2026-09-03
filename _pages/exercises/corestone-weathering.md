@@ -66,7 +66,12 @@ surface rather than staying in the joints.
   are depends on the grid.
 
 **▶** animates from fresh rock and keeps going until you pause it – there is
-no end. That matters at the slow settings: at 0.05 m/yr and 0 °C the section
+no end. It advances the clock at the same rate whatever the sliders say –
+250 model years per frame, about 7500 years per second – so a setting that
+takes four times as long in the model takes four times as long to watch. Cold
+rock is not slow to watch by accident; it is slow because it is slow. (At
+2.5 cm and 2 cm the arithmetic cannot keep up, and that is the one case where
+the guarantee lapses.) That matters at the slow settings: at 0.05 m/yr and 0 °C the section
 is only a quarter dissolved after 200 kyr, and little more than half at
 500 kyr, so give it longer. **View results at** with **Show** asks a
 different question – what does the rock look like at 50 kyr? – and answers
