@@ -177,7 +177,7 @@ Weathering opens connected porosity, so water is drawn into the weathered zone,
 which weathers it faster still. The conductivity of the matrix is interpolated
 geometrically between intact granite and fully dissolved rock,
 
-$$k(M) = k_\mathrm{matrix}^{M}\, k_\mathrm{grus}^{\,1-M}$$
+$$k(M) = k_\mathrm{matrix}^{M}\, k_\mathrm{weathered}^{\,1-M}$$
 
 where $M$ is the fraction of the soluble phase remaining, and the head is
 re-solved as the rock changes. Watch what that does with depth: the shallow
@@ -199,7 +199,7 @@ joint pattern close on itself across the seam.
 you are tempted to read a rate off the screen.
 
 Measured: the two ends of the matrix conductivity, $k_\mathrm{matrix}$ and
-$k_\mathrm{grus}$. Goodfellow et al. (2016) measured the hydraulic
+$k_\mathrm{weathered}$. Goodfellow et al. (2016) measured the hydraulic
 conductivity of granodiorite *matrix* across a range of weathering grades and
 found it rises three to four orders of magnitude, from 9 × 10⁻⁹ – 8 × 10⁻⁸
 cm s⁻¹ in the parent rock to 9 × 10⁻⁵ – 9 × 10⁻⁴ cm s⁻¹ in the most weathered
@@ -212,8 +212,18 @@ m s⁻¹.
 Not measured, and simply chosen so the demo behaves on a human timescale: the
 conductivity of a jointed cell, the reference dissolution length, the
 activation energy $E_a$, the reaction enthalpy $\Delta H_r$, the diffusivity
-and dispersivity, and the thresholds separating rock from grus. **No number
-this model produces is a rate for any real granite.**
+and the dispersivity. **No number this model produces is a rate for any real
+granite.**
+
+The colour bar reads *none* to *all* of the soluble phase, and deliberately
+not *rock* to *grus*. The model tracks one number per cell – how much of the
+soluble phase has gone – and the weathering grades are not that. Fresh rock,
+saprock, saprolite and grus are distinguished by fabric and mineralogy, and a
+**corestone is a shape**: a rounded block surrounded by weathered rock, which
+no per-cell threshold can recognise. This page used to report "grus X %,
+corestone Y %" from two cut-offs that were never justified, and under which
+intact bedrock at depth counted as corestone. What you see instead is the
+mean fraction dissolved, which needs no cut-off.
 
 That is not a disclaimer to skim. Until this exercise was checked against the
 literature, the intact-granite conductivity in it was 10⁻⁸ m s⁻¹ – between
