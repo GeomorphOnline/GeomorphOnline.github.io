@@ -123,20 +123,27 @@ is the only thing that does.
 browser executes have been removed with `artesian`'s `--strip-wheels`:
 
 ```
-source maps          217 files
-TypeScript sources    74 files
-its own test suite   185 files
-                     ---
-                     476 files      30.33 MB -> 20.96 MB
+panel   source maps, .ts sources, its own test suite, and its dist bundles
+        1167 files      30.33 MB -> 9.43 MB
+bokeh   its static/js bundles
+          13 files       6.41 MB -> 1.95 MB
 ```
 
-That is 9.4 MB off every reader's first visit, for all three exercises at once,
-since the wheel is shared. Nothing executable was removed: no runtime `.js`,
-`.css` or `.py`, and the wheel's `METADATA`, `WHEEL` and `RECORD` are intact.
-The wheel says so for itself, in `panel-1.9.4.dist-info/ARTESIAN-STRIPPED.txt`.
+**Self-hosted payload: 36.85 MB -> 11.48 MB**, for every exercise at once,
+since the wheels are shared.
 
-`bokeh` was offered the same treatment and had nothing matching, so its wheel
-is byte-identical to PyPI's.
+The large part of that is the JavaScript each package vendors: 96 % of panel's
+wheel and 78 % of bokeh's, against 0.6 and 0.7 MB of Python. **A compiled demo
+never loads it.** The page takes bokeh from `cdn.bokeh.org` and `panel.min.js`
+from `cdn.holoviz.org`, and contains no reference to `panel/dist` or
+`static/js` at all -- those bundles exist for serving a page yourself, which is
+the one thing a compiled demo does not do. `artesian` checks that premise
+against the built app rather than trusting it, and refuses to strip if any app
+reaches into those directories.
+
+No Python was removed, and each wheel's `METADATA`, `WHEEL` and `RECORD` are
+intact. Each says so for itself, in its own
+`*.dist-info/ARTESIAN-STRIPPED.txt`.
 
 Recorded here because a filename that asserts a provenance its contents do not
 have is exactly the trap described in the section above, and the reason the
