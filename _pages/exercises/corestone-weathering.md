@@ -284,6 +284,32 @@ timescale: the conductivity of a jointed cell, the reference dissolution
 length, the diffusivity and the dispersivity. **No number this model produces
 is a rate for any real granite.**
 
+### Every parameter, and where it came from
+
+| | symbol | value | where it came from |
+|---|---|---|---|
+| Reference temperature | $T_\mathrm{ref}$ | 285 K (11.85 °C) | **normalisation.** Both temperature factors are exactly 1 here, which is why the slider opens at 12 °C |
+| Activation energy | $E_a$ | 69.8 kJ mol⁻¹ | **measured.** Oligoclase, neutral mechanism, Palandri & Kharaka (2004) Table 13 |
+| Reaction enthalpy | $\Delta H_r$ | 32.9 kJ mol⁻¹ | **measured.** Quartz dissolution at 25 °C, LLNL thermodynamic database |
+| Intact matrix conductivity | $k_\mathrm{matrix}$ | 5 × 10⁻¹⁰ m s⁻¹ | **measured.** Mid-point of Goodfellow et al. (2016) parent granodiorite |
+| Weathered conductivity | $k_\mathrm{weathered}$ | 5 × 10⁻⁶ m s⁻¹ | **measured.** Mid-point of their most weathered samples |
+| Joint conductivity | $k_\mathrm{fracture}$ | 1 × 10⁻⁵ m s⁻¹ | *placeholder* – a joint has to out-conduct the rock, and this does |
+| Saturation length | $L_\mathrm{ref}$ | 0.50 m | *placeholder* – set so a 3 m section weathers on a watchable timescale |
+| Water per rock volume | $\tau_\mathrm{ref}$ | 6700 | *placeholder* – volumes of saturated water needed to remove one volume of soluble phase |
+| Aqueous diffusivity | $D$ | 1 × 10⁻⁹ m² s⁻¹ | order of magnitude for a dissolved ion |
+| Matrix tortuosity | | 10 | *placeholder* |
+| Dispersivity | | 0.05 m | *placeholder* |
+
+**$k_0$ and $C_0$ are not in the table because the model never evaluates
+them.** Both equations above are written in the textbook form, with an absolute
+pre-exponential factor, but nothing here needs one: every rate is taken
+relative to the reference state, so what enters the arithmetic is
+$k(T)/k(T_\mathrm{ref})$ and $C_{eq}(T)/C_{eq}(T_\mathrm{ref})$, in which
+$k_0$ and $C_0$ cancel. That is why $L_\mathrm{ref}$ can be a free choice
+without the thermodynamics being wrong – the model has a *normalisation*
+where a research model would need an absolute solubility. It is also why
+$C_{eq}$ never appears on its own anywhere in the code.
+
 The colour bar reads *none* to *all* of the soluble phase, and deliberately
 not *rock* to *grus*. The model tracks one number per cell – how much of the
 soluble phase has gone – and the weathering grades are not that. Fresh rock,
