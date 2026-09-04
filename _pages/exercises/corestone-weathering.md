@@ -234,8 +234,8 @@ joint pattern close on itself across the seam.
 
 ## Where the numbers come from
 
-**Two are measured. The rest are placeholders**, and the difference matters if
-you are tempted to read a rate off the screen.
+**Four are measured. The rest are placeholders**, and the difference matters
+if you are tempted to read a rate off the screen.
 
 Measured: the two ends of the matrix conductivity, $k_\mathrm{matrix}$ and
 $k_\mathrm{weathered}$. Goodfellow et al. (2016) measured the hydraulic
@@ -259,11 +259,30 @@ found the *matrix* most often at 10⁻¹¹ – 10⁻¹² m s⁻¹ while the *fra
 rock around it ran 10⁻⁸ – 10⁻⁷ – the same split between matrix and fracture
 that this model is built on, measured in the field.
 
-Not measured, and simply chosen so the demo behaves on a human timescale: the
-conductivity of a jointed cell, the reference dissolution length, the
-activation energy $E_a$, the reaction enthalpy $\Delta H_r$, the diffusivity
-and the dispersivity. **No number this model produces is a rate for any real
-granite.**
+The other two are the temperature terms. The dissolving phase here is
+**plagioclase** – not because it is the most abundant mineral in a granite,
+which it often is not, but because it sets the pace: at 25 °C and near-neutral
+pH it dissolves 3.7 times faster than K-feldspar, and given equal surface
+areas it still carries about four fifths of the dissolution. What makes grus is
+the phase that goes, not the phase that survives. So the activation energy is
+oligoclase's, $E_a$ = 69.8 kJ mol⁻¹ (Palandri & Kharaka 2004, neutral
+mechanism; K-feldspar would be 38.0).
+
+The reaction enthalpy $\Delta H_r$ is not a property of the dissolving mineral
+at all – it is a statement about *what saturates*. Here the ceiling on the
+solute is dissolved silica, so $\Delta H_r$ = 32.9 kJ mol⁻¹ is quartz's, and
+quartz does not dissolve in this model for a reason rather than by decree: the
+water is already at its saturation, so its driving force $(1 - C/C_{eq})$ is
+zero. Read the ceiling differently – as the solution being buffered by
+kaolinite, the clay that weathering actually makes – and $\Delta H_r$ turns
+*negative* for calcium-rich plagioclase, and warming the rock would slow its
+weathering down. That is a real regime. It is not this one, and which of the
+two you are in is decided by what stops the reaction, not by the mineral.
+
+Still not measured, and simply chosen so the demo behaves on a human
+timescale: the conductivity of a jointed cell, the reference dissolution
+length, the diffusivity and the dispersivity. **No number this model produces
+is a rate for any real granite.**
 
 The colour bar reads *none* to *all* of the soluble phase, and deliberately
 not *rock* to *grus*. The model tracks one number per cell – how much of the
@@ -291,6 +310,10 @@ rock weathered at all.
   model of granite aquifers controlled by single or multiphase weathering.
   *Journal of Hydrology* **330**, 260–284.
   [doi:10.1016/j.jhydrol.2006.03.026](https://doi.org/10.1016/j.jhydrol.2006.03.026)
+- Palandri, J.L. & Kharaka, Y.K. (2004). A compilation of rate parameters of
+  water–mineral interaction kinetics for application to geochemical modeling.
+  *U.S. Geological Survey Open-File Report* **2004-1068**, 64 pp.
+  [pubs.usgs.gov/of/2004/1068](https://pubs.usgs.gov/of/2004/1068/)
 - Raj, J.K. (2021). Saturated hydraulic conductivity (Ks) of earth materials in
   the weathering profile over a porphyritic biotite granite at the Kuala
   Lumpur – Karak Highway in Peninsular Malaysia. *Bulletin of the Geological
