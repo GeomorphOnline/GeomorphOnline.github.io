@@ -350,10 +350,6 @@ rock weathered at all.
   fractured blocks of granitic rocks. *International Journal of Rock Mechanics
   and Mining Sciences* **144**, 104743.
   [doi:10.1016/j.ijrmms.2021.104743](https://doi.org/10.1016/j.ijrmms.2021.104743)
-- Wickert, A.D. & Schildgen, T.F. (2019). Long-profile evolution of
-  transport-limited gravel-bed rivers. *Earth Surface Dynamics* **7**,
-  17–43. [doi:10.5194/esurf-7-17-2019](https://doi.org/10.5194/esurf-7-17-2019)
-  – the companion exercise.
 
 The model is compiled to WebAssembly with
 [artesian](https://github.com/MNiMORPH/artesian) and runs via
