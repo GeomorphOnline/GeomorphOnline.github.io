@@ -156,10 +156,10 @@ The exercise teaches the mechanism; no number it produces is a rate.
 
 | | |
 |---|---|
-| model | hillcreep `master` @ `98fd0a0` (no release, **and no remote — see below**) |
-| application source | hillcreep `master` @ `98fd0a0` (`interactive_demo/hillcreep_panel.py`) |
+| model | hillcreep `master` @ `4b02dc8` (no release, **and no remote — see below**) |
+| application source | hillcreep `master` @ `98fd0a0` (`interactive_demo/hillcreep_panel.py`, unchanged since) |
 | artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-04 (rebuilt: boundary mask refreshed on a rate change) |
+| built | 2026-09-04 (rebuilt against the shared-transport-law refactor; behaviour re-verified) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy` |
 | design width / measured height | 900 px / 903 px |
@@ -204,5 +204,26 @@ is zip timestamps only), so that rewrite was deliberately left uncommitted.
 defaults are chosen so that the surface creep velocity lands inside the range
 that has actually been measured, which is a weaker claim than being calibrated
 to a site, and the exercise says so.
+
+### scarp_panel — dating a fault scarp
+
+| | |
+|---|---|
+| model | hillcreep `master` @ `4b02dc8` (no release, **and no remote — see below**) |
+| application source | hillcreep `master` @ `4b02dc8` (`interactive_demo/scarp_panel.py`) |
+| artesian | `main` @ `5a7c1ed`, shipped as a wheel because the app imports `artesian.live` |
+| built | 2026-09-04 |
+| panel / bokeh | 1.9.4 / 3.9.2 |
+| browser requirements | `numpy` |
+| design width / measured height | 900 px / 835 px |
+
+Companion to `hillcreep_panel`: the same transport law with different edges —
+no rivers, no flux across either end, so the scarp's volume is constant. Shares
+the `hillcreep` wheel with the hillslope exercise, so it adds about 30 KB.
+
+The two apps are built from the same wheel, so **rebuilding either one
+rebuilds the model both of them run**. After changing the model, rebuild and
+re-verify *both*; the hillslope demo was re-driven in a browser after the
+refactor that introduced this one, for exactly that reason.
 
 Do not hand-edit anything here except this file.
