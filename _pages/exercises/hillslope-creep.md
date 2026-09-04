@@ -141,10 +141,16 @@ rivers stop cutting down and start filling their valleys.
 
 Watch two things at once: the read-out, which reports how many metres of
 hillslope the sediment has buried, and the lower panel, where creep stops
-wherever the alluvium has covered the ground — the river is holding that
-surface flat, so nothing there is creeping.
+wherever the alluvium has covered the ground — while a river is *aggrading* it
+is actively regrading its floodplain, holding it flat, so nothing there creeps.
 
-Now drag $\dot\varepsilon$ back to a positive value and keep running. The
+Now set $\dot\varepsilon$ to exactly **zero** and keep running. The rivers stop,
+and with them the regrading: the floodplain is abandoned, and the step where it
+abuts the hillslope relaxes. Watch the sharp break at the edge of the fill
+soften into a smooth S-shape running all the way from the river to the divide.
+That is a scarp degrading, and it is the same diffusion that shapes the hill.
+
+Then drag $\dot\varepsilon$ to a positive value and keep running. The
 sediment does not disappear: the rivers cut down through their own fill and
 leave it standing on either side as a **fill terrace**. Watch what happens to
 that terrace over the next few tens of thousands of years. Why does it start
@@ -226,11 +232,16 @@ also what this version gives up — see below.
 
 **Aggradation** is handled as a level set, and deposition is permanent. The
 alluvial surface is one flat elevation; ground lying below it is raised to it
-and held there by the river, so the fill stays flat and the exposed hillslope
-gets shorter. Nothing is ever lowered back, which is what makes the next part
-work: when base level falls, that sediment stands *above* the new river level
-as a **fill terrace**, is released by the river, and starts to degrade
-diffusively like any other topography.
+and held there, so the fill stays flat and the exposed hillslope gets shorter.
+
+The hold lasts only as long as the river is **aggrading**, because that is what
+holding a floodplain flat consists of — actively regrading it. A river that has
+stopped, or that is cutting down, has abandoned that surface, and it becomes
+ordinary topography that diffuses like everything else. So a static base level
+relaxes the fill edge into a sigmoid, and a falling one leaves the sediment
+standing above the river as a **fill terrace** that then degrades.
+
+Nothing is ever lowered back: what was deposited stays.
 
 Mass is deliberately not conserved within the hillslope. It should not be —
 the river is delivering material from outside it.
@@ -276,9 +287,9 @@ Stated plainly, because each is a real limitation and not a disclaimer:
   up and down as it is disturbed and as the surface lowers.
 - **Both rivers share one rate**, so the divide stays in the middle. Incise one
   side faster and the divide would migrate towards it.
-- **Alluvium is held perfectly flat while the river is at its level**, and
-  creeps like hillslope soil once the river drops below it. A real valley fill
-  has transport of its own in both states, and its own grain size.
+- **Alluvium is held perfectly flat while the river aggrades**, and creeps like
+  hillslope soil the moment it stops. A real valley fill has transport of its
+  own in both states, and its own grain size.
 - **No sediment volume is tracked**, only a level. So the model cannot run out
   of sediment, and cannot tell you how much the river had to supply.
 
