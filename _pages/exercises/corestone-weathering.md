@@ -271,8 +271,9 @@ joint pattern close on itself across the seam.
 
 ## Where the numbers come from
 
-**Five are measured. The rest are placeholders**, and the difference matters
-if you are tempted to read a rate off the screen.
+**Nothing in the chemistry or the flow is fitted any more**, which means the
+weathering *timescale* is no longer something this model was told – it is
+something it predicts. That is a claim you can check, and it is checked below.
 
 Measured: the two ends of the matrix conductivity, $k_\mathrm{matrix}$ and
 $k_\mathrm{weathered}$. Goodfellow et al. (2016) measured the hydraulic
@@ -331,11 +332,11 @@ is a rate for any real granite.**
 | Intact matrix conductivity | $k_\mathrm{matrix}$ | 5 × 10⁻¹⁰ m s⁻¹ | **measured.** Mid-point of Goodfellow et al. (2016) parent granodiorite |
 | Weathered conductivity | $k_\mathrm{weathered}$ | 5 × 10⁻⁶ m s⁻¹ | **measured.** Mid-point of their most weathered samples |
 | Joint aperture | $a$ | 100 µm | **measured.** The *hydraulic* aperture, an order or two below the opening you can see: Rukavičková et al. (2021) inverted through the cubic law give 20–67 µm at borehole depth, and laboratory granite fractures reach 250 µm unstressed. The joint conductivity follows from it, so it is the same joint at every cell size |
-| Saturation length | $L_\mathrm{ref}$ | 0.50 m | *placeholder* – set so a 3 m section weathers on a watchable timescale |
-| Water per rock volume | $\tau_\mathrm{ref}$ | 6700 | *placeholder* – volumes of saturated water needed to remove one volume of soluble phase |
-| Aqueous diffusivity | $D$ | 1 × 10⁻⁹ m² s⁻¹ | order of magnitude for a dissolved ion |
-| Matrix tortuosity | | 10 | *placeholder* |
-| Dispersivity | | 0.05 m | *placeholder* |
+| Saturation length | $L_\mathrm{ref}$ | 0.457 m | **derived.** $qC_{eq}/kA$, with $A$ = 900 m² m⁻³ for 2 mm grains at 30 % plagioclase |
+| Water per rock volume | $\tau_\mathrm{ref}$ | 47 744 | **derived.** $M_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation |
+| Aqueous diffusivity | $D$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured**, and of the right species: dissolved silica (Rebreanu et al. 2008; Wollast & Garrels 1971). Scaled by Stokes–Einstein |
+| Matrix tortuosity | | 10 | Right for *weathered* rock (porosity ~0.3), and **wrong for fresh** granite, which is nearer 10⁴. The one place the model knowingly cheats |
+| Dispersivity | | 0.05 m | A fiftieth of the section. Gelhar et al. (1992) put it near a tenth of the transport scale with orders of magnitude of scatter; this is the conservative end |
 
 **$k_0$ and $C_0$ are not in the table because the model never evaluates
 them.** Both equations above are written in the textbook form, with an absolute
@@ -346,6 +347,35 @@ $k_0$ and $C_0$ cancel. That is why $L_\mathrm{ref}$ can be a free choice
 without the thermodynamics being wrong – the model has a *normalisation*
 where a research model would need an absolute solubility. It is also why
 $C_{eq}$ never appears on its own anywhere in the code.
+
+### Does it get the timescale right?
+
+Because nothing in the chemistry or the flow is fitted, how long weathering
+takes is a *result*, and a result can be checked. At the default settings –
+1 m joints, 0.30 m yr⁻¹, 12 °C – this model dissolves 90 % of a 3 m section in
+**1170 kyr**, which is a weathering front advancing at about **2.6 m Myr⁻¹**.
+
+Measured granite regoliths, from cosmogenic and solute budgets:
+
+| site | front | climate |
+|---|---|---|
+| Panola, Georgia | 7 m Myr⁻¹ | temperate |
+| Davis Run, Virginia | 4 m Myr⁻¹ | temperate |
+| Rio Icacos, Puerto Rico | 43–45 m Myr⁻¹ | tropical |
+
+The model runs at 12 °C, so the temperate pair is the comparison, and it lands
+**within a factor of two of them with nothing tuned**. The tropical site being
+an order of magnitude faster is the direction the temperature slider moves
+too.
+
+Take that as a consistency check and not an accuracy claim. Two of the inputs
+– 2 mm grains and 30 % plagioclase – are ordinary values rather than
+measurements of any particular rock, and the reactive surface area they imply
+is *geometric* rather than the much larger BET area, which is a genuine open
+question in the field (White & Brantley 2003). What it does establish is that
+the numbers are not free to be anything: an earlier version of this exercise
+was calibrated to weather seven times faster, which works out at 17.9 m Myr⁻¹,
+three times the temperate field rate – and nothing was checking.
 
 The colour bar reads *none* to *all* of the soluble phase, and deliberately
 not *rock* to *grus*. The model tracks one number per cell – how much of the
@@ -377,16 +407,46 @@ rock weathered at all.
   water–mineral interaction kinetics for application to geochemical modeling.
   *U.S. Geological Survey Open-File Report* **2004-1068**, 64 pp.
   [pubs.usgs.gov/of/2004/1068](https://pubs.usgs.gov/of/2004/1068/)
+- Gelhar, L.W., Welty, C. & Rehfeldt, K.R. (1992). A critical review of data
+  on field-scale dispersion in aquifers. *Water Resources Research* **28**,
+  1955–1974. [doi:10.1029/92WR00607](https://doi.org/10.1029/92WR00607)
+  – the dispersivity.
+- Huber, N.K. (1987). *The geologic story of Yosemite National Park.*
+  U.S. Geological Survey Bulletin **1595**, 64 pp.
+  [doi:10.3133/b1595](https://doi.org/10.3133/b1595) – the corestone diagram.
 - Raj, J.K. (2021). Saturated hydraulic conductivity (Ks) of earth materials in
   the weathering profile over a porphyritic biotite granite at the Kuala
   Lumpur – Karak Highway in Peninsular Malaysia. *Bulletin of the Geological
   Society of Malaysia* **71**, 1–11.
   [doi:10.7186/bgsm71202101](https://doi.org/10.7186/bgsm71202101)
+- Rebreanu, L., Vanderborght, J.-P. & Chou, L. (2008). The diffusion
+  coefficient of dissolved silica revisited. *Marine Chemistry* **112**,
+  230–233.
+  [doi:10.1016/j.marchem.2008.08.004](https://doi.org/10.1016/j.marchem.2008.08.004)
+  – the aqueous diffusivity, confirming Wollast & Garrels (1971).
 - Rukavičková, L., Holeček, J., Holečková, P., Najser, J., Gvoždík, L. &
   Pačes, T. (2021). Comparison of hydraulic conductivity of rock matrix and
   fractured blocks of granitic rocks. *International Journal of Rock Mechanics
   and Mining Sciences* **144**, 104743.
   [doi:10.1016/j.ijrmms.2021.104743](https://doi.org/10.1016/j.ijrmms.2021.104743)
+
+- White, A.F. & Brantley, S.L. (2003). The effect of time on the weathering of
+  silicate minerals: why do weathering rates differ in the laboratory and
+  field? *Chemical Geology* **202**, 479–506.
+  [doi:10.1016/j.chemgeo.2003.03.001](https://doi.org/10.1016/j.chemgeo.2003.03.001)
+  – why a laboratory rate constant is paired with a geometric surface area
+  here rather than a BET one.
+- White, A.F., Bullen, T.D., Schulz, M.S., Blum, A.E., Huntington, T.G. &
+  Peters, N.E. (2001). Differential rates of feldspar weathering in granitic
+  regoliths. *Geochimica et Cosmochimica Acta* **65**, 847–869.
+  [doi:10.1016/S0016-7037(00)00577-9](https://doi.org/10.1016/S0016-7037\(00\)00577-9)
+  – the Panola and Davis Run weathering front rates.
+- Wollast, R. & Garrels, R.M. (1971). Diffusion coefficient of silica in
+  seawater. *Nature Physical Science* **229**, 94.
+  [doi:10.1038/physci229094a0](https://doi.org/10.1038/physci229094a0)
+- The enthalpies for $\Delta H_r$ and the silica saturation concentrations are
+  from the LLNL thermodynamic database as distributed with
+  [PHREEQC](https://www.usgs.gov/software/phreeqc-version-3) (`llnl.dat`).
 
 The model is compiled to WebAssembly with
 [artesian](https://github.com/MNiMORPH/artesian) and runs via
