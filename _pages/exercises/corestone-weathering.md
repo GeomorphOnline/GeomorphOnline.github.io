@@ -195,6 +195,43 @@ saturation goes as $C_{eq}/k$, so its temperature dependence is set by the
 Both are worth trying against intuition: raise the temperature and the rock
 does not simply dissolve proportionally faster.
 
+That difference has a name and a use. $(E_a - \Delta H_r)$ = 36.9 kJ mol⁻¹
+here is the **apparent activation energy of weathering** – it is what a field
+study measuring weathering against temperature actually recovers, and it is
+*not* $E_a$. The length scale is only about half as temperature-sensitive as
+the rate constant alone would suggest. And the sign is not guaranteed: if the
+ceiling rose with temperature faster than the rate did, warming would
+*lengthen* the saturation length and slow the weathering down.
+
+### Which limit are you in?
+
+One dimensionless number decides what the pictures mean. Divide the depth of
+the section by the saturation length, and you have counted how many e-foldings
+of saturation a parcel of water undergoes on its way down – the **Damköhler
+number**. Here it is **6** at the reference temperature.
+
+- **Da ≫ 1 – saturation-limited.** The water fills up long before it runs out
+  of rock. What limits weathering is how much each litre can carry away, so
+  dissolution happens where fresh water arrives and nowhere else. **This is
+  the regime that makes corestones**: at Da = 6 the water leaving the base is
+  within a quarter of a percent of saturation, which is precisely what
+  shelters a block interior.
+- **Da ≪ 1 – reaction-limited.** Water crosses the whole section barely
+  touched, the rate constant sets the pace everywhere at once, and the section
+  dissolves uniformly. **No corestones** – nothing can shelter a block
+  interior from water that is undersaturated everywhere.
+
+Corestones are a saturation-limited phenomenon, and the number tells you so
+before you look at a single picture. (Chemists call this limit
+*transport-limited*, for the transport of solute. That name is avoided here
+because in geomorphology it means something else entirely – an erosion rate set
+by the capacity to move sediment – and nothing in this model moves sediment.)
+
+Note what the Damköhler number is made of: a depth divided by a length. It is
+a property of *how much rock you are looking at*, not of the rock. The same
+granite, the same water and the same temperature, viewed one metre at a time
+instead of three, gives Da = 2 and a weaker limit.
+
 The solute the reaction produces is carried by steady groundwater flow and
 spread by diffusion,
 
