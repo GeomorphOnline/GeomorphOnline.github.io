@@ -72,12 +72,12 @@ takes four times as long in the model takes four times as long to watch. Cold
 rock is not slow to watch by accident; it is slow because it is slow. (At
 2.5 cm and 2 cm the arithmetic cannot keep up, and that is the one case where
 the guarantee lapses.) That matters at the slow settings: at 0.05 m/yr and 0 °C the section
-is only a fifth dissolved after 200 kyr, and not quite half at
+is only a fifth dissolved after 200 kyr, and about two fifths at
 500 kyr, so give it longer. **View results at** with **Show** asks a
 different question – what does the rock look like at 50 kyr? – and answers
-it directly, without the animation. It reaches 500 kyr, which is long
-enough for the default settings, and for a cold one, to dissolve
-completely; anything slower than that is **▶**'s job.
+it directly, without the animation. It reaches 500 kyr – long enough for
+the default settings to dissolve completely, and to bring a cold section to
+96 %; anything slower than that is **▶**'s job.
 
 Use **Show** to compare: set a time, press it, change one slider, press it
 again. It always rebuilds from fresh rock, so the answer depends only on the
