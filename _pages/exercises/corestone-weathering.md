@@ -353,7 +353,7 @@ $C_{eq}$ never appears on its own anywhere in the code.
 Because nothing in the chemistry or the flow is fitted, how long weathering
 takes is a *result*, and a result can be checked. At the default settings –
 1 m joints, 0.30 m yr⁻¹, 12 °C – this model dissolves 90 % of a 3 m section in
-**1170 kyr**, which is a weathering front advancing at about **2.6 m Myr⁻¹**.
+**1191 kyr**, which is a weathering front advancing at about **2.5 m Myr⁻¹**.
 
 Measured granite regoliths, from cosmogenic and solute budgets:
 
