@@ -35,9 +35,18 @@ Soil does not slide downhill as a slab. It creeps fastest at the surface and
 more slowly with depth, and the decline is roughly exponential. You can see
 this directly: set a segmented rod into a vertical hole, come back years later
 and dig it up, and it comes out bent — displaced most at the top, hardly at all
-at its base. Laboratory hillslopes instrumented down to the grain scale show
-the same profile (Deshpande et al., 2021), with surface creep of order
-10⁻⁹ m s⁻¹, about 30 mm yr⁻¹.
+at its base.
+
+{% include figure image_path="/assets/images/hillslope/hooke-bevens-creek-creep-profiles.png"
+   alt="Six soil creep profiles from 0 to 42 cm depth, each showing displacement concentrated in the uppermost centimetres and decreasing to nothing with depth"
+   caption="Exactly that experiment. Segmented wooden dowels were set into vertical holes at the Bevens Creek creep stations, Minnesota River Valley, in 1968 and dug up 9.5 years later; the horizontal axis is how far each segment had moved, in centimetres. Read two things off it. **The whole soil is 42 cm deep**, and most of the movement is in the top 5–15 cm — that is the e-folding depth. And the surface moved 1.0–8.0 cm in 9.5 years, which is **1.1–8.4 mm per year**. Measurements by Roger Hooke." %}
+
+Laboratory hillslopes instrumented down to the grain scale show the same
+exponential shape (Deshpande et al., 2021).
+
+**Every number in these models comes from that figure.** The sliders open at a
+0.10 m e-folding depth and produce 5 mm yr⁻¹ of surface creep, which is where
+Hooke's stations sit.
 
 Two numbers describe that bent rod:
 
@@ -127,8 +136,8 @@ $k_u \Delta z_u$, which is what Part 2 is about. Morphologic dating is only as
 good as the diffusivity someone measured somewhere else.
 
 **4. Same age, different ground.** Set $k_u = 0.040$ with
-$\Delta z_u = 0.25$ m, then $k_u = 0.010$ with $\Delta z_u = 1.00$ m. Both give
-$k_\mathrm{hs} = 0.01$ m²/yr, so both scarps degrade identically. Look at the
+$\Delta z_u = 0.05$ m, then $k_u = 0.010$ with $\Delta z_u = 0.20$ m. Both give
+$k_\mathrm{hs} = 0.002$ m²/yr, so both scarps degrade identically. Look at the
 lower panel in each. What is different about the ground, and would surveying
 the scarp ever tell you?
 
@@ -156,10 +165,10 @@ material moving left, red is moving right, and white is the divide, where
 nothing moves sideways at all.
 
 That lower panel has to have its own axis. At the default settings the hill
-stands 6.25 m above the rivers while the creep dies away over 0.5 m — a ratio
-of about 12 to 1, and 50 to 1 on a hillslope of realistic length. Drawn to the
-same vertical scale as the topography, all of the motion would be a smear one
-pixel tall.
+stands 6.25 m above the rivers while the creep dies away over 0.10 m — a ratio
+of over 60 to 1. Drawn to the same vertical scale as the topography, all of the
+motion would be a smear well under one pixel tall. The depth axis reaches
+0.40 m, which is the window Hooke plotted.
 
 Three sliders: $k_u$ and $\Delta z_u$ as before, plus $\dot\varepsilon$, the
 rate at which the rivers cut down. Set it **negative** and they aggrade
@@ -179,23 +188,23 @@ the steady form directly, instead of waiting out the 100 000-year relaxation.
 **1. Build a diffusivity.** Press **▶ Run** at the default settings and let the
 hill grow until it stops changing — about ten seconds. Note $k_\mathrm{hs}$,
 the height of the crest, and the surface creep velocity above the lower panel.
-Now double $\Delta z_u$ to 1.0 m. What happened to $k_\mathrm{hs}$? To the
+Now double $\Delta z_u$ to 0.20 m. What happened to $k_\mathrm{hs}$? To the
 hill? Write down *why* the hill got flatter, in terms of how much soil is now
 in motion.
 
 **2. Two hills that are the same, and are not.** Press **Flatten**, set
-$k_u = 0.010$ and $\Delta z_u = 1.00$, and press **Jump to equilibrium**.
+$k_u = 0.010$ and $\Delta z_u = 0.20$, and press **Jump to equilibrium**.
 Record the crest height and the surface velocity. Now set $k_u = 0.040$ and
-$\Delta z_u = 0.25$ and jump again.
+$\Delta z_u = 0.05$ and jump again.
 
-$k_\mathrm{hs}$ is 0.0100 m² yr⁻¹ in both cases, and the two hillslopes are the
-same shape to within a couple of centimetres. **The surface is moving four
-times faster in the second one.** Look at the lower panel in each and describe
+$k_\mathrm{hs}$ is 0.0020 m² yr⁻¹ in both cases, and both hillslopes stand at
+exactly 6.25 m. **The surface is moving four times faster in the second one** —
+2.5 mm yr⁻¹ against 10 mm yr⁻¹. Look at the lower panel in each and describe
 the difference. Then answer: if you surveyed only the topography of these two
 hillslopes, could you tell them apart? If you drove a rod into the soil, could
 you?
 
-**3. Predict, then test.** Go back to $\Delta z_u = 0.50$ m and try
+**3. Predict, then test.** Go back to $\Delta z_u = 0.10$ m and try
 $k_u = 0.010$, then $k_u = 0.050$, jumping to equilibrium each time. Before
 each, predict what will happen to the steady surface creep velocity.
 
@@ -207,9 +216,9 @@ of the hillslope, not by $k_u$:
 $$u_s = \frac{\dot\varepsilon\, x'}{\Delta z_u}$$
 
 with $x'$ the distance from the divide. There is no $k_u$ in it. What $k_u$
-sets is **how steep the hill has to get** to carry that flux: 11.83 m of relief
+sets is **how steep the hill has to get** to carry that flux: 12.50 m of relief
 at $k_u = 0.010$ against 2.50 m at $k_u = 0.050$, with the surface creeping at
-about 5 mm yr⁻¹ in both. Verify this, then explain it.
+exactly 5 mm yr⁻¹ in both. Verify this, then explain it.
 
 **4. Bury it.** Return to the defaults and press **Jump to equilibrium**. Drag
 $\dot\varepsilon$ to its most negative value — watch the arrows turn over — and
@@ -235,8 +244,8 @@ $k_\mathrm{hs}$ directly. Suppose someone picks $k_\mathrm{hs} = 0.5$ m² yr⁻�
 for a 1 km hillslope whose rivers incise at 0.2 mm yr⁻¹ — values that give a
 50 m hill and relax over a few hundred thousand years, so they look entirely
 reasonable. Use $u_s = \dot\varepsilon\, x' / \Delta z_u$ to work out what
-surface creep velocity those numbers require at the toe, taking
-$\Delta z_u = 0.5$ m, and compare it with the measured rates quoted above.
+surface creep velocity those numbers require at the toe, taking Hooke's
+$\Delta z_u = 0.10$ m, and compare it with his measured 1.1–8.4 mm yr⁻¹.
 What does the comparison tell you — about the hillslope, or about the
 parameters? This is what factoring $k_\mathrm{hs}$ buys: a choice that was
 arbitrary becomes checkable.
@@ -312,20 +321,24 @@ are closed and the volume is constant to machine precision.
 
 | | symbol | value | where it came from |
 |---|---|---|---|
-| Surface creep velocity at unit slope | $k_u$ | 0.02 m yr⁻¹ | **chosen to match measurement.** Gives 5 mm yr⁻¹ at the hillslope toe, inside the measured range |
-| Creep e-folding depth | $\Delta z_u$ | 0.5 m | **chosen.** Of the order of a soil profile |
-| Diffusivity | $k_\mathrm{hs}$ | 0.01 m² yr⁻¹ | **computed**, $= k_u \Delta z_u$ |
+| Creep e-folding depth | $\Delta z_u$ | 0.10 m | **measured.** Hooke's profiles: motion in the top 5–15 cm of a 42 cm soil |
+| Surface creep velocity at unit slope | $k_u$ | 0.02 m yr⁻¹ | **measured, via $k_u = u_s/S$.** Hooke's 5 mm yr⁻¹ at the 14° toe slope below |
+| Diffusivity | $k_\mathrm{hs}$ | 0.002 m² yr⁻¹ | **computed**, $= k_u \Delta z_u$. Within the range fitted to real hillslopes |
 | *Scarp:* height | | 5 m | **chosen.** Readable against a 240 m domain and resolved by a 1 m grid |
 | *Scarp:* initial face angle | $\theta$ | 30° | **chosen**, and deliberately outside what creep produces |
 | *Hillslope:* width | $L$ | 100 m | **chosen.** Divide to channel, soil-mantled, humid terrain |
-| *Hillslope:* river incision rate | $\dot\varepsilon$ | 0.05 mm yr⁻¹ | **chosen.** A slowly lowering base level |
+| *Hillslope:* river incision rate | $\dot\varepsilon$ | 0.01 mm yr⁻¹ | **forced,** not chosen: $u_s = \dot\varepsilon L/2\Delta z_u$ with Hooke's two numbers leaves no freedom |
 | *Hillslope:* steady crest | | 6.25 m | **computed**, $\dot\varepsilon L^2 / 8k_\mathrm{hs}$ |
 | *Hillslope:* steady toe slope | | 0.25 (14.0°) | **computed.** Below where a linear creep law breaks down |
 | *Hillslope:* steady $u_s$ at the toe | | 5.00 mm yr⁻¹ | **computed**, $\dot\varepsilon L / 2\Delta z_u$ |
 
-The slider range spans surface creep of roughly 1 to 25 mm yr⁻¹ — the range
-that has actually been measured on creeping hillslopes. **No number these
-models produce is a rate for any particular hillslope or scarp.**
+At the default incision rate the sliders span surface creep of **1.25 to
+10 mm yr⁻¹**, which brackets Hooke's measured 1.1–8.4 almost exactly. That is
+not a coincidence — it is where the defaults came from.
+
+**No number these models produce is a rate for any particular hillslope or
+scarp.** But the parameters are no longer free: two of the three are read off a
+figure, and the third follows from them.
 
 ## What these models do not do
 
@@ -334,8 +347,9 @@ models produce is a rate for any particular hillslope or scarp.**
   Bonneville and Lahontan and found transport must rise *faster* than linearly
   with slope, adopting $k_0(1+5s^2)$. A 30° face is exactly where that matters,
   and real scarp-dating practice does not use a purely linear law. On the
-  hillslope the same limit shows up differently: push $\dot\varepsilon = 0.10$
-  mm yr⁻¹ with $\Delta z_u = 0.25$ m and the steady slope reaches 45°, where
+  hillslope the same limit shows up differently: push $\dot\varepsilon = 0.010$
+  mm yr⁻¹ with $k_u = 0.010$ and $\Delta z_u = 0.05$ m and the steady slope
+  reaches 45°, where
   hillslopes fail in landslides rather than creep. Nothing warns you, because
   the honest answer is a mass-wasting model, not a warning label.
 - **There is no bedrock and no soil thickness.** The bottom of each lower panel
