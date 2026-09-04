@@ -67,17 +67,17 @@ surface rather than staying in the joints.
 
 **▶** animates from fresh rock and keeps going until you pause it – there is
 no end. It advances the clock at the same rate whatever the sliders say –
-250 model years per frame, about 7500 years per second – so a setting that
-takes four times as long in the model takes four times as long to watch. Cold
-rock is not slow to watch by accident; it is slow because it is slow. (At
+1000 model years per frame, about 30 000 years per second – so a setting that
+takes eight times as long in the model takes eight times as long to watch.
+Cold rock is not slow to watch by accident; it is slow because it is slow. (At
 2.5 cm and 2 cm the arithmetic cannot keep up, and that is the one case where
 the guarantee lapses.) That matters at the slow settings: at 0.05 m/yr and 0 °C the section
-is only a fifth dissolved after 200 kyr, and about two fifths at
-500 kyr, so give it longer. **View results at** with **Show** asks a
-different question – what does the rock look like at 50 kyr? – and answers
-it directly, without the animation. It reaches 500 kyr – long enough for
-the default settings to dissolve completely, and to bring a cold section to
-96 %; anything slower than that is **▶**'s job.
+is only an eighth dissolved after 1000 kyr, and a quarter after 2000, so
+give it longer. **View results at** with **Show** asks a
+different question – what does the rock look like at 500 kyr? – and answers
+it directly, without the animation. It reaches 4000 kyr – long enough for the
+default settings to dissolve completely, and for a cold section too; anything
+slower than that is **▶**'s job.
 
 Use **Show** to compare: set a time, press it, change one slider, press it
 again. It always rebuilds from fresh rock, so the answer depends only on the
@@ -208,13 +208,13 @@ ceiling rose with temperature faster than the rate did, warming would
 One dimensionless number decides what the pictures mean. Divide the depth of
 the section by the saturation length, and you have counted how many e-foldings
 of saturation a parcel of water undergoes on its way down – the **Damköhler
-number**. Here it is **6** at the reference temperature.
+number**. Here it is **6.6** at the reference temperature.
 
 - **Da ≫ 1 – saturation-limited.** The water fills up long before it runs out
   of rock. What limits weathering is how much each litre can carry away, so
   dissolution happens where fresh water arrives and nowhere else. **This is
-  the regime that makes corestones**: at Da = 6 the water leaving the base is
-  within a quarter of a percent of saturation, which is precisely what
+  the regime that makes corestones**: at Da = 6.6 the water leaving the base
+  is within a seventh of a percent of saturation, which is precisely what
   shelters a block interior.
 - **Da ≪ 1 – reaction-limited.** Water crosses the whole section barely
   touched, the rate constant sets the pace everywhere at once, and the section
@@ -230,7 +230,7 @@ by the capacity to move sediment – and nothing in this model moves sediment.)
 Note what the Damköhler number is made of: a depth divided by a length. It is
 a property of *how much rock you are looking at*, not of the rock. The same
 granite, the same water and the same temperature, viewed one metre at a time
-instead of three, gives Da = 2 and a weaker limit.
+instead of three, gives Da = 2.2 and a weaker limit.
 
 The solute the reaction produces is carried by steady groundwater flow and
 spread by diffusion,
