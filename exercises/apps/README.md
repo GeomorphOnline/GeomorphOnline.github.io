@@ -156,10 +156,10 @@ The exercise teaches the mechanism; no number it produces is a rate.
 
 | | |
 |---|---|
-| model | hillcreep `master` @ `4b02dc8` (no release, **and no remote — see below**) |
-| application source | hillcreep `master` @ `98fd0a0` (`interactive_demo/hillcreep_panel.py`, unchanged since) |
+| model | hillcreep `master` @ `598c51d` (no release, **and no remote — see below**) |
+| application source | hillcreep `master` @ `598c51d` (`interactive_demo/hillcreep_panel.py`) |
 | artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-04 (rebuilt against the shared-transport-law refactor; behaviour re-verified) |
+| built | 2026-09-04 (rebuilt: rivers drawn as direction arrows) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy` |
 | design width / measured height | 900 px / 903 px |
@@ -209,8 +209,8 @@ to a site, and the exercise says so.
 
 | | |
 |---|---|
-| model | hillcreep `master` @ `4b02dc8` (no release, **and no remote — see below**) |
-| application source | hillcreep `master` @ `4b02dc8` (`interactive_demo/scarp_panel.py`) |
+| model | hillcreep `master` @ `598c51d` (no release, **and no remote — see below**) |
+| application source | hillcreep `master` @ `4b02dc8` (`interactive_demo/scarp_panel.py`, unchanged since) |
 | artesian | `main` @ `5a7c1ed`, shipped as a wheel because the app imports `artesian.live` |
 | built | 2026-09-04 |
 | panel / bokeh | 1.9.4 / 3.9.2 |
@@ -220,6 +220,14 @@ to a site, and the exercise says so.
 Companion to `hillcreep_panel`: the same transport law with different edges —
 no rivers, no flux across either end, so the scarp's volume is constant. Shares
 the `hillcreep` wheel with the hillslope exercise, so it adds about 30 KB.
+
+Both exercises now live on **one page**,
+`_pages/exercises/hillslope-creep.md`, with the scarp first because it is the
+simpler boundary problem. That means a reader can boot **two Pyodide runtimes
+in one tab**, so both frames carry `loading="lazy"` and the second does not
+start until they scroll to it. Verified with both frames on one page: the
+shared `artesian-embed.js` sizes both correctly (835 and 903 px design heights
+scaled to 1021 and 1104 at a 1100 px column) with no console errors.
 
 The two apps are built from the same wheel, so **rebuilding either one
 rebuilds the model both of them run**. After changing the model, rebuild and
