@@ -67,6 +67,35 @@ cannot read the compiled page while the exercise page lays itself out, because
 an iframe starts on a blank document, and on WebKit -- every browser on an iPad
 -- that is what it sees. Without the attribute the demo is never scaled.
 
+## A rebuilt wheel keeps its name, and browsers keep the old one
+
+**Open hazard. It bit twice on 2026-09-04 and will bite every reader after
+every redeploy that does not change a version number.**
+
+A model wheel here is named from its version — `hillcreep-0.1.0.dev0-py3-none-any.whl`
+— and that version does not move between builds. GitHub Pages serves wheels
+with `cache-control: max-age=600`, so a reader who has the page open, or who
+returns within ten minutes, reinstalls the **previous** wheel under the same
+name and runs the old model. Verified: the wheel deployed at `9bf2313` and the
+one at `d268d9a` have identical filenames and different bytes, and the older one
+reproduces exactly the behaviour a reader reported as a bug in the new one.
+
+There is nothing in the page, the console or the model output to say so. The
+only tell is behaviour that does not match the source.
+
+**A `?v=` cache-buster does not work here**, unlike the one on
+`artesian-embed.js`. The compiled page passes wheels to `micropip.install` as
+requirement *strings*, and micropip decides "this is a wheel URL rather than a
+package name" by testing whether the string ends in `.whl`. Append `?v=hash`
+and that test fails, so micropip would try to resolve the whole thing as a
+package name on PyPI. Checked, not assumed.
+
+What does work is changing the **filename**, which means changing the version:
+micropip parses name and version out of it. Until that is automated:
+
+- after redeploying, hard-reload (Ctrl-Shift-R) before judging the demo, and
+- if a reader reports behaviour that contradicts the source, suspect this first.
+
 ## Provenance
 
 Record what each application was built from, so a result a student reports can
