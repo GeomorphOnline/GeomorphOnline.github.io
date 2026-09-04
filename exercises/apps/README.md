@@ -97,11 +97,24 @@ package name" by testing whether the string ends in `.whl`. Append `?v=hash`
 and that test fails, so micropip would try to resolve the whole thing as a
 package name on PyPI. Checked, not assumed.
 
-What does work is changing the **filename**, which means changing the version:
-micropip parses name and version out of it. Until that is automated:
+### The rule: bump the model's version on every deploy
 
-- after redeploying, hard-reload (Ctrl-Shift-R) before judging the demo, and
-- if a reader reports behaviour that contradicts the source, suspect this first.
+Changing the **filename** is what works, because micropip parses name and
+version out of it, and `artesian build` prunes the superseded wheel by itself.
+So:
+
+> **Before rebuilding a model into this directory, bump its version** — even
+> if nothing else changed. For `hillcreep` that is `src/hillcreep/_version.py`.
+
+It failed twice on 2026-09-04, escalating each time. First it shipped a
+superseded transport rule to a reader who reported it as a bug. Then it broke a
+brand-new demo outright: the scarp app raised `ImportError: cannot import name
+'Scarp'` because the cached wheel predated the module. **The deployed wheel was
+correct both times.** Only the filename was wrong, and nothing anywhere said
+so.
+
+A hard reload rescues one reader. Bumping the version rescues all of them, and
+is the only thing that does.
 
 ## The shared panel wheel is stripped, and is not PyPI's
 
@@ -184,7 +197,7 @@ The exercise teaches the mechanism; no number it produces is a rate.
 
 | | |
 |---|---|
-| model | hillcreep `master` @ `598c51d` (no release, **and no remote — see below**) |
+| model | hillcreep `master` @ `a07e7c0`, version 0.1.0.dev2 (no release, **and no remote — see below**) |
 | application source | hillcreep `master` @ `598c51d` (`interactive_demo/hillcreep_panel.py`) |
 | artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
 | built | 2026-09-04 (rebuilt: rivers drawn as direction arrows) |
@@ -237,7 +250,7 @@ to a site, and the exercise says so.
 
 | | |
 |---|---|
-| model | hillcreep `master` @ `598c51d` (no release, **and no remote — see below**) |
+| model | hillcreep `master` @ `a07e7c0`, version 0.1.0.dev2 (no release, **and no remote — see below**) |
 | application source | hillcreep `master` @ `4b02dc8` (`interactive_demo/scarp_panel.py`, unchanged since) |
 | artesian | `main` @ `5a7c1ed`, shipped as a wheel because the app imports `artesian.live` |
 | built | 2026-09-04 |
