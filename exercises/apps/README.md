@@ -120,16 +120,19 @@ The exercise teaches the mechanism; no number it produces is a rate.
 
 | | |
 |---|---|
-| model | hillcreep `master` @ `b905c68` (no release, **and no remote — see below**) |
-| application source | hillcreep `master` @ `b905c68` (`interactive_demo/hillcreep_panel.py`) |
+| model | hillcreep `master` @ `059b34d` (no release, **and no remote — see below**) |
+| application source | hillcreep `master` @ `059b34d` (`interactive_demo/hillcreep_panel.py`) |
 | artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-04 |
+| built | 2026-09-04 (rebuilt: aggradation, equilibrium button, k_hs read-out) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy` |
-| design width / measured height | 900 px / 860 px |
+| design width / measured height | 900 px / 903 px |
 
 Built from a clean tree, checked with `git status` before building (0 modified
-files).
+files). The measured height moved from 860 to 903 px when the equilibrium
+button and the read-out added a control row and a line of text; re-measure
+after any change that adds or removes a row, since the page's `height`
+attribute is what a reader looks at for the whole 70 MB load.
 
 **Provenance gap, stated rather than glossed: `hillcreep` has no git remote.**
 The commit above is real and the tree was clean, but it exists only on Andy's
