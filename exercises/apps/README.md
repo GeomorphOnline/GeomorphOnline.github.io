@@ -120,10 +120,10 @@ The exercise teaches the mechanism; no number it produces is a rate.
 
 | | |
 |---|---|
-| model | hillcreep `master` @ `059b34d` (no release, **and no remote — see below**) |
-| application source | hillcreep `master` @ `059b34d` (`interactive_demo/hillcreep_panel.py`) |
+| model | hillcreep `master` @ `20da918` (no release, **and no remote — see below**) |
+| application source | hillcreep `master` @ `20da918` (`interactive_demo/hillcreep_panel.py`) |
 | artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-04 (rebuilt: aggradation, equilibrium button, k_hs read-out) |
+| built | 2026-09-04 (rebuilt: aggradation deposits permanently, leaving fill terraces) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy` |
 | design width / measured height | 900 px / 903 px |
@@ -140,6 +140,17 @@ machine, so nobody else can fetch `b905c68` and confirm what a student ran.
 Every other entry in this file names a commit that is at least *fetchable*.
 Pushing the repository closes this; until then the provenance is a local
 commit, which is weaker than it looks.
+
+**Check that a rebuild actually rebuilt.** `artesian build` prints
+`built …/<app>.html` and exits 0 even when `panel convert` refused the app,
+because its guard checks that the page *exists* rather than that it was just
+written — and a previous build's page satisfies that. Its URL-rewriting step
+then touches that stale page, so the timestamp looks fresh too. Reproduced here
+on 2026-09-04: a deliberately broken app printed `Failed to convert …` to
+stderr, printed `built …` to stdout, exited 0, and left the previous build in
+place. The `.js` is the tell — `panel convert` writes it and the rewriting step
+does not, so an unchanged `hillcreep_panel.js` after a source change means the
+build did not happen. Grep the `.js` for something you just changed.
 
 `numpy` is the only browser requirement. The model deliberately does not import
 `scipy` — the whole solver is one explicit second difference — which saves the
