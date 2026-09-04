@@ -326,17 +326,17 @@ is a rate for any real granite.**
 
 | | symbol | value | where it came from |
 |---|---|---|---|
-| Reference temperature | $T_\mathrm{ref}$ | 285 K (11.85 °C) | **normalisation.** Both temperature factors are exactly 1 here, which is why the slider opens at 12 °C |
-| Activation energy | $E_a$ | 69.8 kJ mol⁻¹ | **measured.** Oligoclase, neutral mechanism, Palandri & Kharaka (2004) Table 13 |
-| Reaction enthalpy | $\Delta H_r$ | 32.9 kJ mol⁻¹ | **measured.** Quartz dissolution at 25 °C, LLNL thermodynamic database |
-| Intact matrix conductivity | $k_\mathrm{matrix}$ | 5 × 10⁻¹⁰ m s⁻¹ | **measured.** Mid-point of Goodfellow et al. (2016) parent granodiorite |
-| Weathered conductivity | $k_\mathrm{weathered}$ | 5 × 10⁻⁶ m s⁻¹ | **measured.** Mid-point of their most weathered samples |
-| Joint aperture | $a$ | 100 µm | **measured.** Hydraulic aperture, not the visible opening. Rukavičková et al. (2021) give 20–67 µm at borehole depth; laboratory fractures reach 250 µm unstressed. The conductivity follows by the cubic law (Witherspoon et al. 1980) |
-| Saturation length | $L_\mathrm{ref}$ | 0.457 m | **derived.** $qC_{eq}/kA$, with $A$ = 900 m² m⁻³ for 2 mm grains at 30 % plagioclase |
-| Water per rock volume | $\tau_\mathrm{ref}$ | 47 744 | **derived.** $M_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation |
-| Aqueous diffusivity | $D$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured**, and of the right species: dissolved silica (Rebreanu et al. 2008; Wollast & Garrels 1971). Scaled by Stokes–Einstein |
-| Matrix tortuosity | | 10⁴ → 10 | **the cost of the detour.** A molecule diffusing through rock cannot go straight; it must follow the pore network around every grain. Tortuosity is how much that slows it, so the diffusivity in rock is the free-water value divided by it. Fresh granite has almost no connected porosity: 10⁴. Weathered rock is full of holes: 10. It follows $M$, like the conductivity |
-| Dispersivity | $\alpha$ | 2 mm | **one grain.** Water threading the rock takes many paths, of different lengths and speeds, and a solute front smears out because of it. The dispersivity is how far those paths wander from one another – at the pore scale, one grain across |
+| Reference temperature | $T_\mathrm{ref}$ | 285 K (11.85 °C) | **Normalisation.** Both temperature factors are 1 here; the slider opens on it |
+| Activation energy | $E_a$ | 69.8 kJ mol⁻¹ | **Measured.** Oligoclase, neutral mechanism (Palandri & Kharaka 2004) |
+| Reaction enthalpy | $\Delta H_r$ | 32.9 kJ mol⁻¹ | **Measured.** Quartz dissolution at 25 °C (LLNL database) |
+| Intact matrix conductivity | $k_\mathrm{matrix}$ | 5 × 10⁻¹⁰ m s⁻¹ | **Measured.** Parent granodiorite (Goodfellow et al. 2016) |
+| Weathered conductivity | $k_\mathrm{weathered}$ | 5 × 10⁻⁶ m s⁻¹ | **Measured.** Their most weathered samples |
+| Joint aperture | $a$ | 100 µm | **Measured.** Hydraulic aperture, not the visible gap; the conductivity follows by the cubic law |
+| Saturation length | $L_\mathrm{ref}$ | 0.457 m | **Derived.** How far water gets before it saturates: $qC_{eq}/kA$, for 2 mm grains |
+| Water per rock volume | $\tau_\mathrm{ref}$ | 47 744 | **Derived.** Volumes of saturated water to remove one volume of rock: $M_0/C_{eq}$ |
+| Aqueous diffusivity | $D$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **Measured.** Dissolved silica (Rebreanu et al. 2008), scaled by Stokes–Einstein |
+| Matrix tortuosity |  | 10⁴ → 10 | **Measured range.** The detour a molecule makes around grains. Fresh rock is a maze; weathered rock is not |
+| Dispersivity | $\alpha$ | 2 mm | **One grain.** How far the flow paths wander from each other |
 
 **$k_0$ and $C_0$ are not in the table because the model never evaluates
 them.** Both equations above are written in the textbook form, with an absolute
