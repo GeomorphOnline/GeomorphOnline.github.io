@@ -271,7 +271,7 @@ joint pattern close on itself across the seam.
 
 ## Where the numbers come from
 
-**Four are measured. The rest are placeholders**, and the difference matters
+**Five are measured. The rest are placeholders**, and the difference matters
 if you are tempted to read a rate off the screen.
 
 Measured: the two ends of the matrix conductivity, $k_\mathrm{matrix}$ and
@@ -317,8 +317,8 @@ weathering down. That is a real regime. It is not this one, and which of the
 two you are in is decided by what stops the reaction, not by the mineral.
 
 Still not measured, and simply chosen so the demo behaves on a human
-timescale: the conductivity of a jointed cell, the reference dissolution
-length, the diffusivity and the dispersivity. **No number this model produces
+timescale: the reference dissolution length, the matrix tortuosity and the
+dispersivity. **No number this model produces
 is a rate for any real granite.**
 
 ### Every parameter, and where it came from
@@ -330,7 +330,7 @@ is a rate for any real granite.**
 | Reaction enthalpy | $\Delta H_r$ | 32.9 kJ mol⁻¹ | **measured.** Quartz dissolution at 25 °C, LLNL thermodynamic database |
 | Intact matrix conductivity | $k_\mathrm{matrix}$ | 5 × 10⁻¹⁰ m s⁻¹ | **measured.** Mid-point of Goodfellow et al. (2016) parent granodiorite |
 | Weathered conductivity | $k_\mathrm{weathered}$ | 5 × 10⁻⁶ m s⁻¹ | **measured.** Mid-point of their most weathered samples |
-| Joint conductivity | $k_\mathrm{fracture}$ | 1 × 10⁻⁵ m s⁻¹ | *placeholder* – a joint has to out-conduct the rock, and this does |
+| Joint aperture | $a$ | 100 µm | **measured.** The *hydraulic* aperture, an order or two below the opening you can see: Rukavičková et al. (2021) inverted through the cubic law give 20–67 µm at borehole depth, and laboratory granite fractures reach 250 µm unstressed. The joint conductivity follows from it, so it is the same joint at every cell size |
 | Saturation length | $L_\mathrm{ref}$ | 0.50 m | *placeholder* – set so a 3 m section weathers on a watchable timescale |
 | Water per rock volume | $\tau_\mathrm{ref}$ | 6700 | *placeholder* – volumes of saturated water needed to remove one volume of soluble phase |
 | Aqueous diffusivity | $D$ | 1 × 10⁻⁹ m² s⁻¹ | order of magnitude for a dissolved ion |
