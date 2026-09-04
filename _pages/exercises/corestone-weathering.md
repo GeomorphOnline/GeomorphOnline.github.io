@@ -335,7 +335,7 @@ is a rate for any real granite.**
 | Saturation length | $L_\mathrm{ref}$ | 0.457 m | **derived.** $qC_{eq}/kA$, with $A$ = 900 m² m⁻³ for 2 mm grains at 30 % plagioclase |
 | Water per rock volume | $\tau_\mathrm{ref}$ | 47 744 | **derived.** $M_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation |
 | Aqueous diffusivity | $D$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured**, and of the right species: dissolved silica (Rebreanu et al. 2008; Wollast & Garrels 1971). Scaled by Stokes–Einstein |
-| Matrix tortuosity | | 10 → 10⁴ | **measured range.** 10 for weathered rock at ~30 % porosity, 10⁴ for intact crystalline rock (2 × 10⁻¹⁴ – 1.3 × 10⁻¹² m² s⁻¹ against free water). Interpolated with $M$, like the conductivity |
+| Matrix tortuosity | | 10⁴ → 10 | **the cost of the detour.** A molecule diffusing through rock cannot go straight; it must follow the pore network around every grain. Tortuosity is how much that slows it, so the diffusivity in rock is the free-water value divided by it. Fresh granite has almost no connected porosity: 10⁴. Weathered rock is full of holes: 10. It follows $M$, like the conductivity |
 | Dispersivity | $\alpha$ | 2 mm | **one grain.** Water threading the rock takes many paths, of different lengths and speeds, and a solute front smears out because of it. The dispersivity is how far those paths wander from one another – at the pore scale, one grain across |
 
 **$k_0$ and $C_0$ are not in the table because the model never evaluates
