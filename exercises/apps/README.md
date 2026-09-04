@@ -116,4 +116,42 @@ dies in the browser with `ModuleNotFoundError`.
 **Every parameter in the corestone model is a placeholder.** None is measured.
 The exercise teaches the mechanism; no number it produces is a rate.
 
+### hillcreep_panel — hillslope diffusivity, taken apart
+
+| | |
+|---|---|
+| model | hillcreep `master` @ `b905c68` (no release, **and no remote — see below**) |
+| application source | hillcreep `master` @ `b905c68` (`interactive_demo/hillcreep_panel.py`) |
+| artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
+| built | 2026-09-04 |
+| panel / bokeh | 1.9.4 / 3.9.2 |
+| browser requirements | `numpy` |
+| design width / measured height | 900 px / 860 px |
+
+Built from a clean tree, checked with `git status` before building (0 modified
+files).
+
+**Provenance gap, stated rather than glossed: `hillcreep` has no git remote.**
+The commit above is real and the tree was clean, but it exists only on Andy's
+machine, so nobody else can fetch `b905c68` and confirm what a student ran.
+Every other entry in this file names a commit that is at least *fetchable*.
+Pushing the repository closes this; until then the provenance is a local
+commit, which is weaker than it looks.
+
+`numpy` is the only browser requirement. The model deliberately does not import
+`scipy` — the whole solver is one explicit second difference — which saves the
+reader about 16 MB relative to the other two exercises.
+
+This build did **not** change `artesian-embed.js` or `artesian-embed.css`: both
+are byte-identical to the versions the other exercises reference, so the `?v=`
+hashes in all three pages still match and nothing needed bumping. It did
+rewrite `artesian-0.1.0.dev0-py3-none-any.whl`, whose *contents* are identical
+to the committed copy (checked by unzipping both and diffing — the difference
+is zip timestamps only), so that rewrite was deliberately left uncommitted.
+
+**No number this model produces is a rate for any particular hillslope.** The
+defaults are chosen so that the surface creep velocity lands inside the range
+that has actually been measured, which is a weaker claim than being calibrated
+to a site, and the exercise says so.
+
 Do not hand-edit anything here except this file.
