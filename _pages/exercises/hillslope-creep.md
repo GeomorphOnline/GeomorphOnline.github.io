@@ -39,7 +39,7 @@ at its base.
 
 {% include figure image_path="/assets/images/hillslope/hooke-bevens-creek-creep-profiles.png"
    alt="Six soil creep profiles from 0 to 42 cm depth, each showing displacement concentrated in the uppermost centimetres and decreasing to nothing with depth"
-   caption="Exactly that experiment. Segmented wooden dowels were set into vertical holes at the Bevens Creek creep stations, Minnesota River Valley, in 1968 and dug up 9.5 years later; the horizontal axis is how far each segment had moved, in centimetres. Read two things off it. **The whole soil is 42 cm deep**, and most of the movement is in the top 5–15 cm — that is the e-folding depth. And the surface moved 1.0–8.0 cm in 9.5 years, which is **1.1–8.4 mm per year**. Measurements by Roger Hooke." %}
+   caption="Exactly that experiment. Segmented wooden dowels were set into vertical holes at the Bevens Creek creep stations, Minnesota River Valley, in 1968 and dug up 9.5 years later; the horizontal axis is how far each segment had moved, in centimetres. Read two things off it. **The whole soil is 42 cm deep**, and most of the movement is in the top 5–15 cm — that is the e-folding depth. And the surface moved 1.0–8.0 cm in 9.5 years, which is **1.1–8.4 mm per year**. Measured by Roger Hooke, and reproduced from his course notes — there is no paper behind this one to go and read." %}
 
 Laboratory hillslopes instrumented down to the grain scale show the same
 exponential shape (Deshpande et al., 2021).

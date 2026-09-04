@@ -256,6 +256,11 @@ rewrite `artesian-0.1.0.dev0-py3-none-any.whl`, whose *contents* are identical
 to the committed copy (checked by unzipping both and diffing — the difference
 is zip timestamps only), so that rewrite was deliberately left uncommitted.
 
+The e-folding depth and the surface creep velocity are read off Roger Hooke's
+Bevens Creek profiles, reproduced on the exercise page from his course notes.
+That figure is unpublished teaching material rather than a paper, so it carries
+no citation — worth knowing if it is ever reused elsewhere.
+
 **No number this model produces is a rate for any particular hillslope.** The
 defaults are chosen so that the surface creep velocity lands inside the range
 that has actually been measured, which is a weaker claim than being calibrated
