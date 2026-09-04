@@ -134,7 +134,7 @@ faster. That is what rounds a block into a corestone.
   The stylesheet, the iframe and the script below are the whole embed.
   The stylesheet has to come FIRST and cannot be left to the script:
   the script cannot size a frame whose document has not loaded, and
-  these demos pull about 70 MB of Pyodide before that happens. Without
+  these demos pull about 40 MB of Pyodide before that happens. Without
   it the reader spends that whole time looking at the browser's default
   iframe, ~300 px wide, stretched to the fallback height below -- which
   is what "stuck loading" looked like.
@@ -158,7 +158,7 @@ faster. That is what rounds a block into a corestone.
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
-runtime – about 70 MB. It runs smoothly after that, and the download is cached,
+runtime – about 40 MB. It runs smoothly after that, and the download is cached,
 so returning to the page is fast. Nothing is sent to a server: the model runs on
 your own machine, inside the browser tab.
 

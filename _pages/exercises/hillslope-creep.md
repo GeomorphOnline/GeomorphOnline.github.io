@@ -15,7 +15,7 @@ classes: wide full-bleed
   Two demos on one page. The scarp comes first because it is the simpler
   boundary problem -- nothing holds it, it just relaxes -- and because its
   closed-form solution motivates the hillslope one. Both iframes carry
-  loading="lazy": each boots its own ~70 MB Pyodide runtime, so the second
+  loading="lazy": each boots its own ~40 MB Pyodide runtime, so the second
   should not start until a reader has scrolled to it.
 -->
 
@@ -113,7 +113,7 @@ metres. Watch that rather than the clock; the reason is in the solution below.
         height="835" loading="lazy" title="A fault scarp diffusing"></iframe>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
-runtime – about 70 MB. It runs smoothly after that, and the download is cached.
+runtime – about 40 MB. It runs smoothly after that, and the download is cached.
 Nothing is sent to a server: the model runs on your own machine, in the tab.
 
 ## What to do — the scarp
