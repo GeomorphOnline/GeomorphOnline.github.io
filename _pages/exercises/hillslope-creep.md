@@ -168,7 +168,8 @@ That lower panel has to have its own axis. At the default settings the hill
 stands 6.25 m above the rivers while the creep dies away over 0.10 m — a ratio
 of over 60 to 1. Drawn to the same vertical scale as the topography, all of the
 motion would be a smear well under one pixel tall. The depth axis reaches
-0.40 m, which is the window Hooke plotted.
+0.20 m, which is the deepest e-folding any of Hooke's stations shows — the
+slider does not offer a creeping layer deeper than anyone measured.
 
 Three sliders: $k_u$ and $\Delta z_u$ as before, plus $\dot\varepsilon$, the
 rate at which the rivers cut down. Set it **negative** and they aggrade
@@ -332,9 +333,9 @@ are closed and the volume is constant to machine precision.
 | *Hillslope:* steady toe slope | | 0.25 (14.0°) | **computed.** Below where a linear creep law breaks down |
 | *Hillslope:* steady $u_s$ at the toe | | 5.00 mm yr⁻¹ | **computed**, $\dot\varepsilon L / 2\Delta z_u$ |
 
-At the default incision rate the sliders span surface creep of **1.25 to
-10 mm yr⁻¹**, which brackets Hooke's measured 1.1–8.4 almost exactly. That is
-not a coincidence — it is where the defaults came from.
+At the default incision rate the sliders span surface creep of **2.5 to
+17 mm yr⁻¹**, straddling Hooke's measured 1.1–8.4. That is not a coincidence —
+it is where the defaults came from.
 
 **No number these models produce is a rate for any particular hillslope or
 scarp.** But the parameters are no longer free: two of the three are read off a
