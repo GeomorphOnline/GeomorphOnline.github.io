@@ -57,7 +57,7 @@ surface rather than staying in the joints.
   below.
 - **Cell size** is the numerical grid, not the rock: 5 cm, 2.5 cm or 2 cm
   across the same 3 m section. Finer resolves the weathering rind more
-  sharply and costs about fifteen times the computing at 2 cm, so use
+  sharply and costs about eighteen times the computing at 2 cm, so use
   **Show** rather than watching it animate: at 2.5 cm and 2 cm a single
   frame costs more than the animation has to give it, and **▶** slows down
   instead of keeping time. Note that fewer joint
@@ -72,7 +72,7 @@ takes four times as long in the model takes four times as long to watch. Cold
 rock is not slow to watch by accident; it is slow because it is slow. (At
 2.5 cm and 2 cm the arithmetic cannot keep up, and that is the one case where
 the guarantee lapses.) That matters at the slow settings: at 0.05 m/yr and 0 °C the section
-is only a quarter dissolved after 200 kyr, and little more than half at
+is only a fifth dissolved after 200 kyr, and not quite half at
 500 kyr, so give it longer. **View results at** with **Show** asks a
 different question – what does the rock look like at 50 kyr? – and answers
 it directly, without the animation. It reaches 500 kyr, which is long
