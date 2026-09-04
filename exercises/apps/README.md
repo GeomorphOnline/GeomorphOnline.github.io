@@ -83,6 +83,13 @@ reproduces exactly the behaviour a reader reported as a bug in the new one.
 There is nothing in the page, the console or the model output to say so. The
 only tell is behaviour that does not match the source.
 
+**Rule out the model before blaming the cache, and vice versa.** On 2026-09-04
+both happened within an hour and looked identical from the page: first a stale
+wheel serving a superseded transport rule, then a genuine defect where the
+model's derived state lagged a slider. A hard reload distinguishes them — but
+a *soft* refresh, including in a private window that has already loaded the
+page once, does not.
+
 **A `?v=` cache-buster does not work here**, unlike the one on
 `artesian-embed.js`. The compiled page passes wheels to `micropip.install` as
 requirement *strings*, and micropip decides "this is a wheel URL rather than a
@@ -149,10 +156,10 @@ The exercise teaches the mechanism; no number it produces is a rate.
 
 | | |
 |---|---|
-| model | hillcreep `master` @ `3abbbcc` (no release, **and no remote — see below**) |
-| application source | hillcreep `master` @ `3abbbcc` (`interactive_demo/hillcreep_panel.py`) |
+| model | hillcreep `master` @ `98fd0a0` (no release, **and no remote — see below**) |
+| application source | hillcreep `master` @ `98fd0a0` (`interactive_demo/hillcreep_panel.py`) |
 | artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-04 (rebuilt: floodplain held only while aggrading) |
+| built | 2026-09-04 (rebuilt: boundary mask refreshed on a rate change) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy` |
 | design width / measured height | 900 px / 903 px |
