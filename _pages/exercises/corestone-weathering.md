@@ -384,6 +384,25 @@ at once, so it was not advancing a *front*, and dividing 3 m by the time was
 not measuring one. Only now, with the part-dissolved zone down to a few per
 cent, is this a front rate at all. A worse match, and a better measurement.
 
+### One mineral, where a rock has many
+
+A granite is quartz, two feldspars, biotite and a little else, and they do not
+weather by one mechanism or at one rate. **This model carries a single soluble
+phase**, and that is a simplification made for teaching rather than a claim
+about rock.
+
+The one worth knowing about is the order of events. Plagioclase dissolving is
+what removes mass and turns rock into sand – but it is not what sets the pace.
+In granite the first reaction is the oxidation of iron in biotite, which
+expands the mineral, cracks the rock around it, and opens the paths that
+everything else then dissolves along (Buss et al. 2008; Goodfellow et al.
+2016). Oxidation paces and opens; dissolution removes. A fuller model would
+carry both.
+
+What survives the simplification is the part this exercise is about: water
+reaches the rock through joints, saturates as it goes, and the rock it never
+reaches survives. That argument does not depend on which mineral is dissolving.
+
 The colour bar reads *none* to *all* of the soluble phase, and deliberately
 not *rock* to *grus*. The model tracks one number per cell – how much of the
 soluble phase has gone – and the weathering grades are not that. Fresh rock,
@@ -433,6 +452,12 @@ rock weathered at all.
   and Mining Sciences* **144**, 104743.
   [doi:10.1016/j.ijrmms.2021.104743](https://doi.org/10.1016/j.ijrmms.2021.104743)
 
+- Buss, H.L., Sak, P.B., Webb, S.M. & Brantley, S.L. (2008). Weathering of the
+  Rio Blanco quartz diorite, Luquillo Mountains, Puerto Rico: coupling
+  oxidation, dissolution, and fracturing. *Geochimica et Cosmochimica Acta*
+  **72**, 4488–4507.
+  [doi:10.1016/j.gca.2008.06.020](https://doi.org/10.1016/j.gca.2008.06.020)
+  – biotite oxidation as the fracture-inducing reaction.
 - White, A.F. & Brantley, S.L. (2003). The effect of time on the weathering of
   silicate minerals: why do weathering rates differ in the laboratory and
   field? *Chemical Geology* **202**, 479–506.
