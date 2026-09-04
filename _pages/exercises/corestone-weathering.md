@@ -67,15 +67,15 @@ surface rather than staying in the joints.
 
 **▶** animates from fresh rock and keeps going until you pause it – there is
 no end. It advances the clock at the same rate whatever the sliders say –
-1000 model years per frame, about 30 000 years per second – so a setting that
+2000 model years per frame, about 60 000 years per second – so a setting that
 takes eight times as long in the model takes eight times as long to watch.
 Cold rock is not slow to watch by accident; it is slow because it is slow. (At
 2.5 cm and 2 cm the arithmetic cannot keep up, and that is the one case where
 the guarantee lapses.) That matters at the slow settings: at 0.05 m/yr and 0 °C the section
-is only an eighth dissolved after 1000 kyr, and a quarter after 2000, so
+is only a fourteenth dissolved after 2000 kyr, and a sixth after 5000, so
 give it longer. **View results at** with **Show** asks a
-different question – what does the rock look like at 500 kyr? – and answers
-it directly, without the animation. It reaches 4000 kyr – long enough for the
+different question – what does the rock look like at 2000 kyr? – and answers
+it directly, without the animation. It reaches 15 000 kyr – long enough for the
 default settings to dissolve completely, and for a cold section too; anything
 slower than that is **▶**'s job.
 
@@ -335,8 +335,8 @@ is a rate for any real granite.**
 | Saturation length | $L_\mathrm{ref}$ | 0.457 m | **derived.** $qC_{eq}/kA$, with $A$ = 900 m² m⁻³ for 2 mm grains at 30 % plagioclase |
 | Water per rock volume | $\tau_\mathrm{ref}$ | 47 744 | **derived.** $M_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation |
 | Aqueous diffusivity | $D$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured**, and of the right species: dissolved silica (Rebreanu et al. 2008; Wollast & Garrels 1971). Scaled by Stokes–Einstein |
-| Matrix tortuosity | | 10 | *chosen.* Matches weathered rock at ~30 % porosity. Fresh granite is nearer 10⁴, and the model uses the weathered value throughout |
-| Dispersivity | | 0.05 m | *chosen.* Gelhar et al. (1992) give roughly a tenth of the transport scale, which would be 0.3 m over this section. This is six times smaller |
+| Matrix tortuosity | | 10 → 10⁴ | **measured range.** 10 for weathered rock at ~30 % porosity, 10⁴ for intact crystalline rock (2 × 10⁻¹⁴ – 1.3 × 10⁻¹² m² s⁻¹ against free water). Interpolated with $M$, like the conductivity |
+| Dispersivity | | 2 mm | **the grain size.** Pore-scale, not Gelhar's field scaling – that is a macrodispersivity standing in for heterogeneity at the transport scale, and here the heterogeneity is the joint network, which this model draws rather than parameterises |
 
 **$k_0$ and $C_0$ are not in the table because the model never evaluates
 them.** Both equations above are written in the textbook form, with an absolute
@@ -353,7 +353,7 @@ $C_{eq}$ never appears on its own anywhere in the code.
 Because nothing in the chemistry or the flow is fitted, how long weathering
 takes is a *result*, and a result can be checked. At the default settings –
 1 m joints, 0.30 m yr⁻¹, 12 °C – this model dissolves 90 % of a 3 m section in
-**1191 kyr**, which is a weathering front advancing at about **2.5 m Myr⁻¹**.
+**3798 kyr**, which is a weathering front advancing at about **0.79 m Myr⁻¹**.
 
 Measured granite regoliths, from cosmogenic and solute budgets:
 
@@ -363,18 +363,26 @@ Measured granite regoliths, from cosmogenic and solute budgets:
 | Davis Run, Virginia | 4 m Myr⁻¹ | temperate |
 | Rio Icacos, Puerto Rico | 43–45 m Myr⁻¹ | tropical |
 
-The model runs at 12 °C, so the temperate pair is the comparison, and it lands
-**within a factor of two of them with nothing tuned**. The tropical site being
-an order of magnitude faster is the direction the temperature slider moves
-too.
+The model runs at 12 °C, so the temperate pair is the comparison, and it is
+**five to nine times slower than they are** – with nothing tuned. The tropical
+site being an order of magnitude faster is the direction the temperature
+slider moves too.
 
-It is a consistency check rather than an accuracy claim: the grain size and
-the plagioclase fraction are ordinary values, not measurements of a particular
-rock, and the surface area they give is geometric rather than BET (White &
-Brantley 2003). But the numbers are no longer free to be anything. An earlier
-version of this exercise was calibrated to weather seven times faster, which
-works out at 17.9 m Myr⁻¹ – three times the temperate field rate, with nothing
-checking it.
+The gap is not spread evenly over the inputs; it sits in the **reactive
+surface area**. This model uses the geometric area of 2 mm grains, 900 m² m⁻³,
+where BET for granite is 3 × 10⁵–3 × 10⁶. Closing the rate would need a factor
+of five, still five hundred times below BET – so the disagreement lives inside
+a range the field itself has not resolved (White & Brantley 2003). It is
+reported rather than removed. Choosing a surface area to make the rate come
+out right is the one move that would make this number meaningless.
+
+Two earlier versions of this exercise got closer and were worse. One was
+calibrated, ran at 17.9 m Myr⁻¹, three times too fast, and nothing checked
+it. The next derived its chemistry and reached 2.5 m Myr⁻¹, which looks like
+agreement within a factor of two; but a third of the section was part-dissolved
+at once, so it was not advancing a *front*, and dividing 3 m by the time was
+not measuring one. Only now, with the part-dissolved zone down to a few per
+cent, is this a front rate at all. A worse match, and a better measurement.
 
 The colour bar reads *none* to *all* of the soluble phase, and deliberately
 not *rock* to *grus*. The model tracks one number per cell – how much of the
