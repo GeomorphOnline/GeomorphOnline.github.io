@@ -212,7 +212,7 @@ The exercise teaches the mechanism; no number it produces is a rate.
 
 | | |
 |---|---|
-| model | hillcreep `master` @ `00d1f91`, version 0.1.0.dev4 (no release, **and no remote — see below**) |
+| model | [hillcreep](https://github.com/MNiMORPH/hillcreep) `master` @ `00d1f91`, version 0.1.0.dev4 (no release yet) |
 | application source | hillcreep `master` @ `00d1f91` (`interactive_demo/hillcreep_panel.py`) |
 | artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
 | built | 2026-09-04 (rebuilt: rivers drawn as direction arrows) |
@@ -226,24 +226,12 @@ button and the read-out added a control row and a line of text; re-measure
 after any change that adds or removes a row, since the page's `height`
 attribute is what a reader looks at for the whole 70 MB load.
 
-**Provenance gap, stated rather than glossed: `hillcreep` has no git remote.**
-The commit above is real and the tree was clean, but it exists only on Andy's
-machine, so nobody else can fetch `b905c68` and confirm what a student ran.
-Every other entry in this file names a commit that is at least *fetchable*.
-Pushing the repository closes this; until then the provenance is a local
-commit, which is weaker than it looks.
-
-**Fixed upstream, 2026-09-04.** `artesian build` used to print
-`built …/<app>.html` and exit 0 even when `panel convert` refused the app,
-because its guard checked that the page *existed* rather than that it had just
-been written — and a previous build's page satisfied that. Its URL-rewriting
-step then touched that stale page, so the timestamp looked fresh too. A
-hillslope demo whose app raised `AttributeError` at import "built" three times
-that way, and was caught only by grepping the emitted `.js` for a line that had
-changed. `build_app` now records the page's mtime before conversion and fails
-if it did not move. **Make sure you are building with artesian at
-`5a7c1ed` or later**; with anything earlier, grep the built `.js` for something
-you just changed before trusting a rebuild.
+**That gap is closed.** Until 2026-09-04 this row named a commit that existed
+only on one machine, so nobody could fetch `00d1f91` and confirm what a student
+had run. `hillcreep` is now published at
+<https://github.com/MNiMORPH/hillcreep>, and every commit named here is
+fetchable. There is still no tagged release, so the commit is the provenance
+and `pip install hillcreep` does not give a reader the same code.
 
 `numpy` is the only browser requirement. The model deliberately does not import
 `scipy` — the whole solver is one explicit second difference — which saves the
@@ -270,7 +258,7 @@ to a site, and the exercise says so.
 
 | | |
 |---|---|
-| model | hillcreep `master` @ `00d1f91`, version 0.1.0.dev4 (no release, **and no remote — see below**) |
+| model | [hillcreep](https://github.com/MNiMORPH/hillcreep) `master` @ `00d1f91`, version 0.1.0.dev4 (no release yet) |
 | application source | hillcreep `master` @ `00d1f91` (`interactive_demo/scarp_panel.py`) |
 | artesian | `main` @ `5a7c1ed`, shipped as a wheel because the app imports `artesian.live` |
 | built | 2026-09-04 |
