@@ -336,7 +336,7 @@ is a rate for any real granite.**
 | Water per rock volume | $\tau_\mathrm{ref}$ | 47 744 | **derived.** $M_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation |
 | Aqueous diffusivity | $D$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured**, and of the right species: dissolved silica (Rebreanu et al. 2008; Wollast & Garrels 1971). Scaled by Stokes–Einstein |
 | Matrix tortuosity | | 10 → 10⁴ | **measured range.** 10 for weathered rock at ~30 % porosity, 10⁴ for intact crystalline rock (2 × 10⁻¹⁴ – 1.3 × 10⁻¹² m² s⁻¹ against free water). Interpolated with $M$, like the conductivity |
-| Dispersivity | | 2 mm | **the grain size.** Pore-scale, not Gelhar's field scaling – that is a macrodispersivity standing in for heterogeneity at the transport scale, and here the heterogeneity is the joint network, which this model draws rather than parameterises |
+| Dispersivity | $\alpha$ | 2 mm | **one grain.** Water threading the rock takes many paths, of different lengths and speeds, and a solute front smears out because of it. The dispersivity is how far those paths wander from one another – at the pore scale, one grain across |
 
 **$k_0$ and $C_0$ are not in the table because the model never evaluates
 them.** Both equations above are written in the textbook form, with an absolute
@@ -414,10 +414,6 @@ rock weathered at all.
   water–mineral interaction kinetics for application to geochemical modeling.
   *U.S. Geological Survey Open-File Report* **2004-1068**, 64 pp.
   [pubs.usgs.gov/of/2004/1068](https://pubs.usgs.gov/of/2004/1068/)
-- Gelhar, L.W., Welty, C. & Rehfeldt, K.R. (1992). A critical review of data
-  on field-scale dispersion in aquifers. *Water Resources Research* **28**,
-  1955–1974. [doi:10.1029/92WR00607](https://doi.org/10.1029/92WR00607)
-  – the dispersivity.
 - Huber, N.K. (1987). *The geologic story of Yosemite National Park.*
   U.S. Geological Survey Bulletin **1595**, 64 pp.
   [doi:10.3133/b1595](https://doi.org/10.3133/b1595) – the corestone diagram.
