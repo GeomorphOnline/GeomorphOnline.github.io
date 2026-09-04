@@ -15,8 +15,16 @@ To rebuild, or to add another:
 
 ```sh
 pip install artesian
-artesian build path/to/your_app.py -o exercises/apps -p path/to/model -r numpy
+artesian build path/to/your_app.py -o exercises/apps -p path/to/model -r numpy \
+    --strip-wheels --strip-vendored
 ```
+
+**Keep both strip flags on every rebuild.** They are not an optimisation to
+apply once: `artesian` re-downloads and re-hosts `panel` and `bokeh` on each
+build, so a single rebuild that omits them replaces the 11.5 MB of wheels here
+with 36.9 MB of full ones. Nothing warns, and the only symptom is every
+reader's first visit quietly getting three times larger. Check with
+`ls -l exercises/apps/*.whl` afterwards.
 
 artesian pins `panel` and `bokeh` to whatever versions the build environment
 has, so a rebuild does not silently pull new 35 MB wheels into git history.
