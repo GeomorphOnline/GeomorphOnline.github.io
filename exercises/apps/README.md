@@ -212,8 +212,8 @@ The exercise teaches the mechanism; no number it produces is a rate.
 
 | | |
 |---|---|
-| model | hillcreep `master` @ `a07e7c0`, version 0.1.0.dev2 (no release, **and no remote — see below**) |
-| application source | hillcreep `master` @ `598c51d` (`interactive_demo/hillcreep_panel.py`) |
+| model | hillcreep `master` @ `e49e096`, version 0.1.0.dev3 (no release, **and no remote — see below**) |
+| application source | hillcreep `master` @ `e49e096` (`interactive_demo/hillcreep_panel.py`) |
 | artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
 | built | 2026-09-04 (rebuilt: rivers drawn as direction arrows) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
@@ -265,8 +265,8 @@ to a site, and the exercise says so.
 
 | | |
 |---|---|
-| model | hillcreep `master` @ `a07e7c0`, version 0.1.0.dev2 (no release, **and no remote — see below**) |
-| application source | hillcreep `master` @ `4b02dc8` (`interactive_demo/scarp_panel.py`, unchanged since) |
+| model | hillcreep `master` @ `e49e096`, version 0.1.0.dev3 (no release, **and no remote — see below**) |
+| application source | hillcreep `master` @ `e49e096` (`interactive_demo/scarp_panel.py`) |
 | artesian | `main` @ `5a7c1ed`, shipped as a wheel because the app imports `artesian.live` |
 | built | 2026-09-04 |
 | panel / bokeh | 1.9.4 / 3.9.2 |
