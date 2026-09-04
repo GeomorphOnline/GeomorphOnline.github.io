@@ -103,6 +103,34 @@ micropip parses name and version out of it. Until that is automated:
 - after redeploying, hard-reload (Ctrl-Shift-R) before judging the demo, and
 - if a reader reports behaviour that contradicts the source, suspect this first.
 
+## The shared panel wheel is stripped, and is not PyPI's
+
+`panel-1.9.4-py3-none-any.whl` here is **not** the file
+`pip install panel==1.9.4` gives you, although it carries that name. Files no
+browser executes have been removed with `artesian`'s `--strip-wheels`:
+
+```
+source maps          217 files
+TypeScript sources    74 files
+its own test suite   185 files
+                     ---
+                     476 files      30.33 MB -> 20.96 MB
+```
+
+That is 9.4 MB off every reader's first visit, for all three exercises at once,
+since the wheel is shared. Nothing executable was removed: no runtime `.js`,
+`.css` or `.py`, and the wheel's `METADATA`, `WHEEL` and `RECORD` are intact.
+The wheel says so for itself, in `panel-1.9.4.dist-info/ARTESIAN-STRIPPED.txt`.
+
+`bokeh` was offered the same treatment and had nothing matching, so its wheel
+is byte-identical to PyPI's.
+
+Recorded here because a filename that asserts a provenance its contents do not
+have is exactly the trap described in the section above, and the reason the
+GRLP demo once shipped a dirty working tree under a release version. If you
+rebuild these apps *without* `--strip-wheels`, a fresh 30.33 MB `panel` wheel
+will replace this one and the saving is silently lost.
+
 ## Provenance
 
 Record what each application was built from, so a result a student reports can
