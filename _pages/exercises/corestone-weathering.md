@@ -331,12 +331,12 @@ is a rate for any real granite.**
 | Reaction enthalpy | $\Delta H_r$ | 32.9 kJ mol⁻¹ | **measured.** Quartz dissolution at 25 °C, LLNL thermodynamic database |
 | Intact matrix conductivity | $k_\mathrm{matrix}$ | 5 × 10⁻¹⁰ m s⁻¹ | **measured.** Mid-point of Goodfellow et al. (2016) parent granodiorite |
 | Weathered conductivity | $k_\mathrm{weathered}$ | 5 × 10⁻⁶ m s⁻¹ | **measured.** Mid-point of their most weathered samples |
-| Joint aperture | $a$ | 100 µm | **measured.** The *hydraulic* aperture, an order or two below the opening you can see: Rukavičková et al. (2021) inverted through the cubic law give 20–67 µm at borehole depth, and laboratory granite fractures reach 250 µm unstressed. The joint conductivity follows from it, so it is the same joint at every cell size |
+| Joint aperture | $a$ | 100 µm | **measured.** Hydraulic aperture, not the visible opening. Rukavičková et al. (2021) give 20–67 µm at borehole depth; laboratory fractures reach 250 µm unstressed. The conductivity follows by the cubic law (Witherspoon et al. 1980) |
 | Saturation length | $L_\mathrm{ref}$ | 0.457 m | **derived.** $qC_{eq}/kA$, with $A$ = 900 m² m⁻³ for 2 mm grains at 30 % plagioclase |
 | Water per rock volume | $\tau_\mathrm{ref}$ | 47 744 | **derived.** $M_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation |
 | Aqueous diffusivity | $D$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured**, and of the right species: dissolved silica (Rebreanu et al. 2008; Wollast & Garrels 1971). Scaled by Stokes–Einstein |
-| Matrix tortuosity | | 10 | Right for *weathered* rock (porosity ~0.3), and **wrong for fresh** granite, which is nearer 10⁴. The one place the model knowingly cheats |
-| Dispersivity | | 0.05 m | A fiftieth of the section. Gelhar et al. (1992) put it near a tenth of the transport scale with orders of magnitude of scatter; this is the conservative end |
+| Matrix tortuosity | | 10 | *chosen.* Matches weathered rock at ~30 % porosity. Fresh granite is nearer 10⁴, and the model uses the weathered value throughout |
+| Dispersivity | | 0.05 m | *chosen.* Gelhar et al. (1992) give roughly a tenth of the transport scale, which would be 0.3 m over this section. This is six times smaller |
 
 **$k_0$ and $C_0$ are not in the table because the model never evaluates
 them.** Both equations above are written in the textbook form, with an absolute
@@ -368,14 +368,13 @@ The model runs at 12 °C, so the temperate pair is the comparison, and it lands
 an order of magnitude faster is the direction the temperature slider moves
 too.
 
-Take that as a consistency check and not an accuracy claim. Two of the inputs
-– 2 mm grains and 30 % plagioclase – are ordinary values rather than
-measurements of any particular rock, and the reactive surface area they imply
-is *geometric* rather than the much larger BET area, which is a genuine open
-question in the field (White & Brantley 2003). What it does establish is that
-the numbers are not free to be anything: an earlier version of this exercise
-was calibrated to weather seven times faster, which works out at 17.9 m Myr⁻¹,
-three times the temperate field rate – and nothing was checking.
+It is a consistency check rather than an accuracy claim: the grain size and
+the plagioclase fraction are ordinary values, not measurements of a particular
+rock, and the surface area they give is geometric rather than BET (White &
+Brantley 2003). But the numbers are no longer free to be anything. An earlier
+version of this exercise was calibrated to weather seven times faster, which
+works out at 17.9 m Myr⁻¹ – three times the temperate field rate, with nothing
+checking it.
 
 The colour bar reads *none* to *all* of the soluble phase, and deliberately
 not *rock* to *grus*. The model tracks one number per cell – how much of the
@@ -441,6 +440,12 @@ rock weathered at all.
   regoliths. *Geochimica et Cosmochimica Acta* **65**, 847–869.
   [doi:10.1016/S0016-7037(00)00577-9](https://doi.org/10.1016/S0016-7037\(00\)00577-9)
   – the Panola and Davis Run weathering front rates.
+- Witherspoon, P.A., Wang, J.S.Y., Iwai, K. & Gale, J.E. (1980). Validity of
+  cubic law for fluid flow in a deformable rock fracture. *Water Resources
+  Research* **16**, 1016–1024.
+  [doi:10.1029/WR016i006p01016](https://doi.org/10.1029/WR016i006p01016)
+  – the joint conductivity. The "cubic law" is the Navier–Stokes solution for
+  laminar flow between parallel plates, integrated across the gap.
 - Wollast, R. & Garrels, R.M. (1971). Diffusion coefficient of silica in
   seawater. *Nature Physical Science* **229**, 94.
   [doi:10.1038/physci229094a0](https://doi.org/10.1038/physci229094a0)
