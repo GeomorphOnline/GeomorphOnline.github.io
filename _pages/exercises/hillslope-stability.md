@@ -55,7 +55,7 @@ it is the most effective way to bring a hillslope down.
 
 {% include figure image_path="/assets/images/hillslope/infinite-slope-states.png"
    alt="Three hillside sections: stable with no failure plane, a required depth deeper than the hillside, and a failure with a red slab"
-   caption="The three things this model can tell you. Left: nothing fails at any depth. Middle: a failure plane exists, but deeper than this hillside can supply. Right: the plane lies inside the hillside, and the shaded slab is what moves." %}
+   caption="The three things this model can tell you, on one 30° hillside with 5 kPa of cohesion. Only the wetness changes. Left, 25% saturated: nothing fails at any depth. Middle, 36%: a failure plane exists, but the 34.9 m it needs is deeper than this 20 m hillside can supply. Right, saturated to the surface: the plane lies 1.53 m down, and the shaded slab is what moves." %}
 
 <!--
   data-design-width is the width the app lays itself out for, and it is
@@ -102,63 +102,78 @@ go. Move a slider and the answer is recomputed.
 
 ## What to do
 
+The water knob is **m**, the percentage of the soil column that is saturated:
+0% is a drained hillside, 100% is saturated all the way to the surface.
+
 **1. Find the angle of repose, and prove it is the friction angle.** Set
-$c' = 0$ and drag the water table down to 20 m, so the hillside is dry.
-Now raise $\theta$ until the readout flips to failure. Compare the angle you
-found with $\phi'$. Change $\phi'$ and find the new one. Write down the rule
-you have just discovered, in one line.
+$c' = 0$ and $m = 0$, so the hillside is dry and has no cohesion. Now raise
+$\theta$ until the readout flips to failure. Compare the angle you found with
+$\phi'$. Change $\phi'$ and find the new one. Write down the rule you have just
+discovered, in one line.
 
-**2. Now drown it.** With $c'$ still zero, set $\theta = 30°$ and $\phi' = 35°$
-– a slope your rule from Part 1 says is safe – and drag the water table to the
-surface. Find the new angle at which it fails. It should be near 20°. The
-stable gradient has roughly **halved**. Using the fact that saturated soil is
-about twice as dense as water, explain where the factor of two comes from.
+**2. Now drown it.** With $c'$ still zero and $\phi' = 35°$, set $m = 100\%$ and
+find the angle at which it now fails. It is **20.0°**, against 35.0° dry. The
+stable gradient has roughly **halved**. Saturated soil is about twice as dense
+as water; use that to explain where the factor of two comes from.
 
-**3. Density does almost nothing.** Set $c' = 0$ and drain the hillside again.
-Now sweep the grain density $\rho_r$ across its whole range and watch the
-*Cohesionless balance* number in the readout. It does not move. Sweep porosity
-$n$: it does not move either. Now put the water table back at the surface and
-repeat both sweeps. Explain why density is irrelevant in a dry slope and
-matters in a wet one.
+**3. Density does almost nothing until water arrives.** Set $c' = 0$,
+$\theta = 30°$, $m = 0$, and sweep the grain density $\rho_r$ across its range.
+The *Cohesionless balance* number does not move: it is 1.2128 at
+2500, 2650 and 2900 kg/m³ alike. Sweep porosity: it does not move either. Now
+set $m = 100\%$ and repeat: you get 0.5987, 0.6276 and 0.6702. Explain why
+density is irrelevant in a dry slope and matters in a wet one.
 
 **4. Cohesion does not decide whether – it decides how deep.** Set
-$\theta = 30°$, $\phi' = 35°$, water table at 0.5 m. Raise $c'$ from 0 to
-50 kPa in steps and record the failure depth $t_c$ each time. Two things to
-notice: $t_c$ is *proportional* to $c'$, and the *Cohesionless balance* number
-never moves at all. Cohesion is divided by depth in the equation above, so it
-vanishes from the deep limit. State in one sentence what cohesion is and is not
-able to do for a hillside.
+$\theta = 30°$, $\phi' = 35°$, $m = 100\%$. Record the failure depth as you
+raise $c'$:
+
+| $c'$ (kPa) | 0 | 5 | 10 | 20 | 50 |
+|---|---|---|---|---|---|
+| $t_c$ (m) | 0 | 1.53 | 3.05 | 6.10 | 15.25 |
+
+Two things to notice: $t_c$ is *proportional* to $c'$, and the *Cohesionless
+balance* number stays at 0.6276 throughout. Cohesion is divided by depth in the
+equation above, so it vanishes from the deep limit. State in one sentence what
+cohesion is, and is not, able to do for a hillside.
 
 **5. Clearcut, plantation, old growth.** Most of the cohesion in a shallow soil
 is **roots**. Measured lateral root cohesion in the Oregon Coast Range runs
 $\le$ 10 kPa in clearcuts, 6.8–23.2 kPa under industrial forest, and
-25.6–94.3 kPa under natural conifer. Set $\theta = 35°$ with the water table at
-0.5 m, and step $c'$ through 5, 20 and 50 kPa. Report the failure depth at each.
-Then answer: a hillslope is logged, and the roots decay over the following
-decade. What happens, and *when* – immediately, or at the next big storm?
+25.6–94.3 kPa under natural conifer. Set $\theta = 35°$ and $m = 100\%$, and
+step $c'$ through 5, 20 and 50 kPa: the failure depth goes 1.08 m, 4.34 m,
+10.85 m. Now answer: a hillslope is logged, and the roots decay over the
+following decade. What happens, and *when* – immediately, or at the next big
+storm?
 
-**6. When the model quits.** Set $c' = 20$ kPa, $\theta = 25°$, and drag the
-water table steadily downward. At some point the readout stops saying
-**FAILURE** and starts saying **NO FAILURE** – but read what it actually says.
-The failure plane has not gone away; it has gone deeper than the hillside can
-supply. Explain why "the required plane is below the hill" is not the same
-statement as "the hill is safe", and what you would go and measure to find out
-which it is.
+**6. Drain it, and watch the model reach its limit.** Set $c' = 20$ kPa,
+$\theta = 30°$, $m = 100\%$: it fails at 6.10 m. Now drain it step by step.
+
+| $m$ | 100% | 60% | 45% | 32% |
+|---|---|---|---|---|
+| $t_c$ | 6.10 m | 15.16 m | 34.24 m | none |
+| verdict | fails | fails | *plane below the hill* | stable |
+
+Draining pushes the failure deeper and eventually removes it. But look at the
+middle of that range: at 45% the model wants a 34 m plane in a 20 m hillside.
+Explain why "the plane it needs is deeper than the hill" is **not** the same
+statement as "the hill is safe" – and what you would go and measure to find out
+which one you are looking at.
 
 ## Under the hood
 
 The model is [infiniteslope](https://github.com/GeomorphOnline/infiniteslope).
 It is the **infinite-slope** idealisation: the failure plane, the water table
 and the ground surface are all parallel, and the slope is long enough that
-what happens at its ends does not matter. With slope-parallel seepage and a
-water table at vertical depth $d_w$,
+what happens at its ends does not matter. With slope-parallel seepage and a fraction
+$m$ of each column saturated,
 
 $$\sigma(z) = W(z)\,g\cos^2\theta, \qquad
   \tau(z)   = W(z)\,g\sin\theta\cos\theta, \qquad
-  u(z)      = \rho_w g (z - d_w)\cos^2\theta$$
+  u(z)      = m\,\rho_w g z\cos^2\theta$$
 
-where $W(z)$ is the mass of the column above unit horizontal area. Two details
-are worth stating because they are the ones most often got wrong:
+where $W(z)$ is the mass of the column above unit horizontal area and $m$ is
+the saturated fraction of it. Three details are worth stating because they are
+the ones most often got wrong:
 
 **There is no porosity in the pore pressure.** Pressure is a property of the
 water phase, not an average over the bulk. Porosity governs how much water is
@@ -166,10 +181,20 @@ present, and therefore how much weight it adds – it does not govern the
 pressure.
 
 **The driving stress carries the total wet weight; the friction carries the
-buoyant weight.** Below the water table the effective normal stress goes as
+buoyant weight.** In the saturated part the effective normal stress goes as
 $(1-n)(\rho_r - \rho_w)$, not $(1-n)\rho_r$. Getting this wrong overestimates
 the friction by about 60% at typical porosities, which is enough to report a
 saturated 30° slope as stable when it is not.
+
+**Water is a fraction of the column, not a depth.** This follows SHALSTAB and
+SINMAP, and it is not cosmetic. A water table at a fixed *depth* leaves
+everything below it saturated for ever, so the deep limit of $FS$ is the fully
+buoyant one no matter where the table sits – draining the hillside would then
+relocate the failure deeper instead of stabilising it. As a fraction, wetness
+survives the limit:
+
+$$FS_\mathrm{deep} = \left[1 - m\,\frac{\rho_w}{\bar\rho}\right]
+                     \frac{\tan\phi'}{\tan\theta}$$
 
 The depth of failure is then the **critical thickness** $t_c$, the shallowest
 plane at which $FS = 1$. Because $FS$ decreases monotonically with depth in
@@ -193,10 +218,15 @@ and porosity are ordinary values for a quartz-rich soil and are yours to move.
 - **There is no bedrock.** The hillside is soil all the way down, so the only
   thing bounding the failure depth is the relief. A real soil–bedrock contact
   usually bounds it first, and that is a shallower and more dangerous answer.
-- **The water table is hydrostatic.** Real storms drive a wetting front
+- **Wetness is uniform with depth.** Real storms drive a wetting front
   downward and the pressure is *not* hydrostatic while that is happening,
   which can put the most dangerous plane at an intermediate depth rather than
   the deepest one.
+- **Near its threshold the model asks for absurd depths.** $t_c$ goes as
+  $1/(1 - FS_\mathrm{deep})$, so a hillside sitting just below stability needs
+  an arbitrarily deep plane – which is what Part 6 walks into. That is a
+  property of an unbounded soil column, and it is the strongest argument for
+  putting a bedrock contact in.
 - **Suction is ignored.** Above the water table, water held under tension adds
   strength – it is why a sandcastle stands. Leaving it out makes the model
   conservative there.
