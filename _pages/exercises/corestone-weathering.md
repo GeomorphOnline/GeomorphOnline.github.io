@@ -72,7 +72,7 @@ takes eight times as long in the model takes eight times as long to watch.
 Cold rock is not slow to watch by accident; it is slow because it is slow. (At
 2.5 cm and 2 cm the arithmetic cannot keep up, and that is the one case where
 the guarantee lapses.) That matters at the slow settings: at 0.05 m/yr and 0 °C the section
-is only a fourteenth dissolved after 2000 kyr, and a sixth after 5000, so
+is only a fourteenth dissolved after 2000 kyr, and about a sixth after 5000, so
 give it longer. **View results at** with **Show** asks a
 different question – what does the rock look like at 2000 kyr? – and answers
 it directly, without the animation. It reaches 15 000 kyr – long enough for the
@@ -353,7 +353,7 @@ $C_{eq}$ never appears on its own anywhere in the code.
 Because nothing in the chemistry or the flow is fitted, how long weathering
 takes is a *result*, and a result can be checked. At the default settings –
 1 m joints, 0.30 m yr⁻¹, 12 °C – this model dissolves 90 % of a 3 m section in
-**3788 kyr**, which is a weathering front advancing at about **0.79 m Myr⁻¹**.
+**3713 kyr**, which is a weathering front advancing at about **0.81 m Myr⁻¹**.
 
 Measured granite regoliths, from cosmogenic and solute budgets:
 
