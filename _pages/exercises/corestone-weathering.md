@@ -104,6 +104,20 @@ faster. That is what rounds a block into a corestone.
 
 ## What to do
 
+Two assignments run on the same model, and the **Reaction** control at the top
+of the demo switches between them.
+
+### In class: feldspar dissolution
+
+*(To be written.)*
+
+### Problem set: biotite oxidation
+
+Set **Reaction** to *Biotite oxidation* and read
+[the section at the end of this page](#what-actually-goes-first-iron-in-biotite)
+first. The transport is identical; the chemistry is not, and several of the
+answers you found in class come out the other way round.
+
 *(To be written.)*
 
 <!--
@@ -393,11 +407,8 @@ about rock.
 
 The one worth knowing about is the order of events. Plagioclase dissolving is
 what removes mass and turns rock into sand – but it is not what sets the pace.
-In granite the first reaction is the oxidation of iron in biotite, which
-expands the mineral, cracks the rock around it, and opens the paths that
-everything else then dissolves along (Buss et al. 2008; Goodfellow et al.
-2016). Oxidation paces and opens; dissolution removes. A fuller model would
-carry both.
+That job belongs to iron in biotite, and it gets a section of its own at the
+end of this page.
 
 What survives the simplification is the part this exercise is about: water
 reaches the rock through joints, saturates as it goes, and the rock it never
@@ -417,6 +428,112 @@ That is not a disclaimer to skim. Until this exercise was checked against the
 literature, the intact-granite conductivity in it was 10⁻⁸ m s⁻¹ – between
 twelve and a hundred times too high – and the flow field never changed as the
 rock weathered at all.
+
+## What actually goes first: iron in biotite
+
+Everything above treats weathering as **dissolution**, because that is the
+reaction to learn first: a rate constant, a solubility ceiling, and water that
+stops working once it is full. Granite does not begin there.
+
+The first reaction in a granite is **oxidation of the iron in biotite**, and
+it is not a dissolution reaction at all. Rain arrives carrying dissolved
+oxygen. The oxygen diffuses into the rock, finds Fe(II) sitting in the
+octahedral sheet of a biotite crystal, and takes an electron from it. Nothing
+has yet left the rock.
+
+Goodfellow et al. (2016) watched this happen, crystal by crystal, with a
+synchrotron X-ray microprobe on 26 biotite grains across ten thin sections.
+Their sentences are worth reading in order, because they are the mechanism:
+
+> "Biotite weathering begins with oxidation of parts of biotite crystals that
+> are being accessed by diffusing oxygen."
+>
+> "To maintain charge balance during Fe oxidation, K⁺ ions from the interlayer
+> are released into solution."
+>
+> "In the most weathered crystals, over 85% of the Fe has oxidized, K is
+> heavily depleted, and biotite crystals have fragmented along cleavage
+> planes."
+
+Read that as a chain: (1) oxygen oxidises the iron, (2) the sheet loses
+negative charge, so the potassium holding the layers together is no longer
+held and leaves, (3) the layers swell, and (4) the crystal splits along its
+cleavage. A biotite grain is a stack of sheets, and oxidising the iron inside
+it prises the stack apart.
+
+That last step is the one that matters for the rock, because **biotite is
+a few per cent of a granite and it is wedging the rest apart**. The swelling
+is small – Goodfellow measure the layer spacing going from 10 Å to 10.5 Å, a
+five per cent expansion – but it is happening inside a rigid crystalline solid
+that has nowhere to move, and rock is far weaker in tension than in
+compression. Fletcher, Buss & Brantley (2006) worked out the energy budget:
+fracture when the elastic strain energy stored by the expansion exceeds the
+energy needed to make new crack surface. The cracks let water in, water
+dissolves the feldspar, and the model on this page takes over.
+
+**Oxidation paces and opens; dissolution removes.** Three lines of evidence
+put them in that order:
+
+1. Buss et al. (2008) imaged oxidised biotite **2.7 cm inside** nominally
+   fresh corestone at Rio Icacos, with **no** plagioclase weathering there.
+   The iron had reacted where the feldspar had not.
+2. Behrens et al. (2015) measured both fronts in a Sri Lankan profile and
+   found the oxygen-consumption front lying **below** the plagioclase
+   dissolution front. Oxidation is the deeper reaction.
+3. Goodfellow et al. (2016) measured matrix hydraulic conductivity rising by
+   three to four orders of magnitude, and attribute it to "early stages of
+   biotite oxidation" – the same measurement this model uses for its
+   `k_matrix` and `k_weathered`.
+
+### Running it: the same model, the other reaction
+
+Set **Reaction** to *Biotite oxidation* and everything above still applies –
+the same joints, the same flow field, the same advection, diffusion and
+reaction. **One thing changes, and it changes the sign of everything.**
+
+In class the solute was a **product**. It started at zero, the rock made it,
+and it accumulated until the water was full and the reaction stopped.
+Weathering was limited by getting the product *away*.
+
+Now the solute is a **reactant**. It arrives at its ceiling in the rain, the
+rock consumes it, and the reaction stops where it runs out. Weathering is
+limited by getting the reactant *in*.
+
+That single swap is the concept worth carrying out of this exercise, because
+it is everywhere: oxygen against organic matter in a river, a nutrient against
+a waste product in a culture, a reactant front against a product front in any
+porous medium. Ask of each: **is this limited by supply, or by removal?** The
+Damköhler number answers it the same way in both cases.
+
+Three things to watch for, because they are not what class led you to expect.
+
+1. **Turn the temperature up and the weathering slows down.** Oxygen is a
+   *gas*, and gases leave solution as water warms – cold water carries
+   0.457 mol m⁻³ of dissolved oxygen against 0.236 at 30 °C. There is no
+   activation energy pushing the other way, because none has ever been
+   measured for this reaction. (This does not say cold *places* weather more
+   slowly. Rio Icacos gets four metres of rain a year, and water supply is a
+   separate dial – try it.)
+2. **The rind gets wider and softer.** Dissolving, the rock goes from
+   almost-all to almost-nothing within a couple of centimetres of a joint.
+   Oxidising, the change is spread over ten to twenty, with rounded corners.
+   That second picture is the one that matches field measurements of rindlet
+   zones, which run 20–60 cm.
+3. **The section stops having a profile with depth.** Granite holds little
+   iron, so the oxygen is barely touched crossing three metres and reaches
+   every depth at nearly full strength – at Rio Icacos, pore water 8.5 m down
+   still carries 88 % of its atmospheric saturation. What limits a corestone
+   here is not depth but the few centimetres oxygen can diffuse into intact
+   rock.
+
+**A warning that comes with the mode.** For plagioclase there is a published
+compilation of measured rate constants and activation energies. For oxidation
+of structural Fe(II) by dissolved O₂ there is no measured activation energy at
+all, and the two values this model could have used differ by a factor of four
+thousand – the larger of them back-calculated from a measured denudation rate
+rather than measured in a laboratory. This mode is built on the softest ground in the model, and you
+should treat its *timescales* as indicative and its *mechanism* as sound.
+
 
 ## References
 
@@ -451,6 +568,23 @@ rock weathered at all.
   fractured blocks of granitic rocks. *International Journal of Rock Mechanics
   and Mining Sciences* **144**, 104743.
   [doi:10.1016/j.ijrmms.2021.104743](https://doi.org/10.1016/j.ijrmms.2021.104743)
+
+- Fletcher, R.C., Buss, H.L. & Brantley, S.L. (2006). A spheroidal weathering
+  model coupling porewater chemistry to soil thicknesses during steady state
+  erosion. *Earth and Planetary Science Letters* **244**, 444–457.
+  [doi:10.1016/j.epsl.2006.01.055](https://doi.org/10.1016/j.epsl.2006.01.055)
+  – the elastic-energy criterion for oxidation-driven fracturing.
+- Behrens, R., Bouchez, J., Schuessler, J.A., Dultz, S., Hewawasam, T. & von
+  Blanckenburg, F. (2015). Mineralogical transformations set slow weathering
+  rates in low-porosity metamorphic bedrock on mountain slopes in a tropical
+  climate. *Chemical Geology* **411**, 283–298.
+  [doi:10.1016/j.chemgeo.2015.07.008](https://doi.org/10.1016/j.chemgeo.2015.07.008)
+  – the oxygen-consumption front measured below the plagioclase front.
+- Navarre-Sitchler, A., Brantley, S.L. & Rother, G. (2015). How porosity
+  increases during incipient weathering of crystalline silicate rocks.
+  *Reviews in Mineralogy and Geochemistry* **80**, 331–354.
+  [doi:10.2138/rmg.2015.80.10](https://doi.org/10.2138/rmg.2015.80.10)
+  – why a low-iron rock lets oxidation run deep.
 
 - Buss, H.L., Sak, P.B., Webb, S.M. & Brantley, S.L. (2008). Weathering of the
   Rio Blanco quartz diorite, Luquillo Mountains, Puerto Rico: coupling
