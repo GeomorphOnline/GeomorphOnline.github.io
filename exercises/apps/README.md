@@ -189,8 +189,8 @@ was never used.
 
 | | |
 |---|---|
-| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `6caa3fa` (no release yet) |
-| application source | corestone `master` @ `6caa3fa` (`interactive_demo/corestone_panel.py`) |
+| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `cc4098d` (no release yet) |
+| application source | corestone `master` @ `cc4098d` (`interactive_demo/corestone_panel.py`) |
 | artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
 | built | 2026-09-04 (rebuilt: loading indicator on Show) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
