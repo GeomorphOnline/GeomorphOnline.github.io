@@ -514,11 +514,13 @@ Three things to watch for, because they are not what class led you to expect.
    measured for this reaction. (This does not say cold *places* weather more
    slowly. Rio Icacos gets four metres of rain a year, and water supply is a
    separate dial – try it.)
-2. **The rind gets wider and softer.** Dissolving, the rock goes from
-   almost-all to almost-nothing within a couple of centimetres of a joint.
-   Oxidising, the change is spread over ten to twenty, with rounded corners.
-   That second picture is the one that matches field measurements of rindlet
-   zones, which run 20–60 cm.
+2. **The rind stops being a front and becomes a gradient.** Dissolving, the
+   joint cell goes to *all* and the block core stays at *none*, with a sharp
+   step between – measured at 30 % of the section reacted, 1.00 at the joint
+   and 0.03 twenty centimetres in. Oxidising, the same comparison runs 0.58 to
+   0.25: the joint never saturates and the core is never untouched. Both
+   reach the 20–60 cm scale of field rindlet zones eventually, but only one
+   of them looks like a gradient the whole way.
 3. **The section stops having a profile with depth.** Granite holds little
    iron, so the oxygen is barely touched crossing three metres and reaches
    every depth at nearly full strength – at Rio Icacos, pore water 8.5 m down
