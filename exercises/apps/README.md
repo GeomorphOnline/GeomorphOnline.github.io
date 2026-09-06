@@ -189,10 +189,10 @@ was never used.
 
 | | |
 |---|---|
-| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `cc4098d` (no release yet) |
-| application source | corestone `master` @ `cc4098d` (`interactive_demo/corestone_panel.py`) |
+| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `fe22d5a` (no release yet) |
+| application source | corestone `master` @ `fe22d5a` (`interactive_demo/corestone_panel.py`) |
 | artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-04 (rebuilt: loading indicator on Show) |
+| built | 2026-09-06 (rebuilt: the **Reaction** control -- feldspar dissolution for the in-class activity, biotite oxidation for the problem set) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 
@@ -205,8 +205,19 @@ provenance; `pip install corestone` does not give a reader the same code.
 `examples/hillslope.py` imports `artesian.live` and needs the wheel, or it
 dies in the browser with `ModuleNotFoundError`.
 
-**Every parameter in the corestone model is a placeholder.** None is measured.
-The exercise teaches the mechanism; no number it produces is a rate.
+**That sentence used to read "every parameter in the corestone model is a
+placeholder, none is measured", and it is no longer true.** Every parameter in
+both reactions and in the flow now comes from a measurement or from geometry;
+the module docstring lists the sources. The one number taken from an
+observation rather than derived is labelled a calibration where it appears.
+
+What a reader should still discount is the OXIDATION timescale rather than its
+mechanism: no activation energy has ever been measured for oxidation of
+structural Fe(II) by dissolved O2, and the two candidate rate constants differ
+by a factor of four thousand. The dissolution side is sourced end to end.
+
+(This was the third copy of that stale sentence found on 2026-09-06. The
+others were in the module docstring and in the demo's own blurb.)
 
 ### hillcreep_panel — hillslope diffusivity, taken apart
 
