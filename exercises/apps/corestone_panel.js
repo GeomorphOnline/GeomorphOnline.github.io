@@ -26,7 +26,7 @@ async function startApplication() {
   try {
     await self.pyodide.runPythonAsync(`
       import micropip
-      await micropip.install(['bokeh-3.9.2-py3-none-any.whl', 'panel-1.9.4-py3-none-any.whl', 'pyodide-http', 'corestone-0.1.0.dev0-py3-none-any.whl', 'numpy', 'scipy']);
+      await micropip.install(['bokeh-3.9.2-py3-none-any.whl', 'panel-1.9.4-py3-none-any.whl', 'pyodide-http', 'corestone-0.1.0.dev0-py3-none-any.whl', 'artesian-0.1.0.dev0-py3-none-any.whl', 'numpy', 'scipy']);
     `);
   } catch(e) {
     console.log(e)

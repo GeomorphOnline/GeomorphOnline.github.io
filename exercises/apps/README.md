@@ -15,9 +15,28 @@ To rebuild, or to add another:
 
 ```sh
 pip install artesian
-artesian build path/to/your_app.py -o exercises/apps -p path/to/model -r numpy \
-    --strip-wheels --strip-vendored
+artesian build path/to/your_app.py -o exercises/apps \
+    -p path/to/model -p path/to/artesian \
+    -r numpy --strip-wheels --strip-vendored
 ```
+
+**`-p` is `append`, and an app that imports `artesian.live` needs TWO of
+them** -- one for your model, one for artesian itself. Miss the second and the
+build succeeds, the page loads, Pyodide starts, and the demo dies in the
+reader's console with `ModuleNotFoundError: No module named 'artesian'`. The
+wheel sitting in this directory is not enough; it has to be in the page's
+install list, which is set by `-p` at build time.
+
+This happened on 2026-09-06: a rebuild followed the command as written here,
+which had only one `-p`, and shipped a demo that could not start. Check it
+afterwards, the same way you check the strip flags:
+
+```sh
+grep -o "micropip.install(\[[^]]*\])" exercises/apps/<app>_panel.js
+```
+
+`grlp_panel` is the exception that needs only one: it predates `artesian.live`
+and hand-rolls its own play/pause.
 
 **Keep both strip flags on every rebuild.** They are not an optimisation to
 apply once: `artesian` re-downloads and re-hosts `panel` and `bokeh` on each
