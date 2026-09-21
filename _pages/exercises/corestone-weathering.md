@@ -17,10 +17,10 @@ classes: wide full-bleed
 -->
 
 Walk up to a weathered granite outcrop and you will find rounded boulders
-sitting in a matrix of crumbling sand. It is natural to assume the boulders are
-made of tougher stuff. **They are not.** A **corestone** is the same granite,
-with the same minerals, that has sat at the same temperature as the **grus**
-falling apart around it.
+sitting in crumbling sand. It is natural to assume the boulders are made of
+tougher stuff. **They are not.** A **corestone** is the same granite, with the
+same minerals, that has sat at the same temperature as the **grus** – the
+loose sand that granite falls apart into – around it.
 
 {% include figure image_path="/assets/images/weathering/corestones-lost-creek-colorado.jpg"
    alt="Rounded granite boulders stacked on vertically jointed granite, Lost Creek Wilderness, Colorado"
@@ -39,9 +39,20 @@ or reached already saturated.
    alt="A pile of rounded granite blocks, Turtle Rock at Vedauwoo, Wyoming"
    caption="Turtle Rock at Vedauwoo, Wyoming: Sherman Granite, weathered along its joints until what is left is a pile of rounded blocks. Photo: Carol M. Highsmith, [Library of Congress](https://lccn.loc.gov/2015632858), public domain." %}
 
-Press **▶ Run** and watch. The left panel is **where the water goes** – its
-speed in metres per year, on a logarithmic scale because it spans four orders
-of magnitude. The right panel is **what the water has taken**. Cause on the
+**What the model is.** A vertical **section** of granite – a slice seen
+edge-on – 3 m across and 3 m deep. The top edge is the ground surface, rain
+enters there, and water drains out of the bottom. The slice has no sides: its left and right edges wrap
+onto each other, so a block near one edge sees rock rather than a wall. Cutting
+through it is a network of **joints** – the fractures tectonics and unloading
+leave in granite – and those are where water moves freely. The solid rock
+between them is called the **matrix**, and it is the same granite, just
+unfractured.
+
+Press **▶ Run** and watch. The left panel is **where the water goes** – the
+water flux in metres per year, on a logarithmic scale because it spans four
+orders of magnitude. (Flux rather than speed: it is the volume crossing a
+square metre of rock each year, and the water itself threads through the pores
+faster than that.) The right panel is **what the water has taken**. Cause on the
 left, effect on the right.
 
 Watch the left panel change. At the default settings the joints start out
@@ -56,7 +67,8 @@ surface rather than staying in the joints.
 - **Temperature** does two things at once, and they are worth separating. See
   below.
 - **Cell size** is the numerical grid, not the rock: 5 cm, 2.5 cm or 2 cm
-  across the same 3 m section. Finer resolves the weathering rind more
+  across the same 3 m section. Finer resolves the weathering **rind** – the
+  shell of part-reacted rock between a joint and an untouched core – more
   sharply and costs about eighteen times the computing at 2 cm. Use **Show**
   there rather than **▶**, which cannot keep time at that cost. Note that
   fewer joint
@@ -73,9 +85,10 @@ the comparison you are here to make. Give the slow settings longer: at
 0.05 m/yr and 0 °C the section is only a fourteenth dissolved after 2000 kyr,
 and about a sixth after 5000. **View results at** with **Show** asks a
 different question – what does the rock look like at 2000 kyr? – and answers
-it directly, without the animation. It reaches 15 000 kyr – long enough for the
-default settings to dissolve completely, and for a cold section too; anything
-slower than that is **▶**'s job.
+it directly, without the animation. It reaches 15 000 kyr, which is long
+enough for the default settings to dissolve completely and for a cold section
+too. Settings slower than that exist, and for those you need **▶**, which has
+no end.
 
 Use **Show** to compare: set a time, press it, change one slider, press it
 again. It always rebuilds from fresh rock, so the answer depends only on the
@@ -85,7 +98,14 @@ happened to press pause is not.
 
 Each slider rebuilds the rock and restarts the clock, because each one is a
 property of the starting state rather than something you can change halfway
-through.
+through. **Fresh rock** does the same on demand: it puts the section back to
+unweathered at the current settings, which is how you start a fair second run.
+
+**Reaction** is the one control that is not a parameter. It switches which
+chemical reaction the model solves – feldspar dissolution or biotite oxidation
+– and the two are taken apart in [the last part of this
+page](#what-actually-goes-first-iron-in-biotite). Leave it on *Feldspar
+dissolution* for now.
 
 Watch the *order* in which the rock goes: the joints first, then the faces of
 each block, then – last – the middles. And watch the corners: a corner sheds
@@ -284,6 +304,11 @@ $$\nabla\cdot(K_\mathrm{sat}\,\nabla h) = 0$$
 - $\nabla\cdot$, the divergence (the net flow out of a point). Set it to zero
   and you have said that what flows in flows out.
 
+That equation needs boundaries to have an answer, and the section supplies
+three. Rain enters the **top** at a prescribed rate, which the infiltration
+slider sets. The **base** drains freely. The **sides** wrap onto each other,
+so nothing enters or leaves there.
+
 Everything interesting lives in $K_\mathrm{sat}$. It ranges over about thirteen
 orders of magnitude between gravel and unfractured crystalline rock (Freeze and
 Cherry, 1979), which is more than any other quantity in this exercise.
@@ -350,6 +375,10 @@ $$\nabla\cdot(qC) - \nabla\cdot(D\nabla C) = \dot{N}$$
 
 In words: what the water carries away, plus what spreads away, equals what the
 rock gives up. Every term is in mol m⁻³ s⁻¹.
+
+This one needs boundaries too. Rain arrives at the top carrying **no dissolved
+solute** ($C = 0$), which is what makes it able to do work. Solute leaves
+through the base with the water. The sides wrap, as before.
 
 One honest note on $D$. The model does add a velocity-dependent term to it
 (mechanical dispersion, the spreading caused by water taking many paths of
@@ -788,7 +817,8 @@ a waste product in a culture, a reactant front against a product front in any
 porous medium. Ask of each: **is this limited by supply, or by removal?** The
 Damköhler number answers it the same way in both cases.
 
-Three things to watch for, because they are not what class led you to expect.
+Three things to watch for. All three run against the intuition that
+dissolution has just built.
 
 1. **Turn the temperature up and the weathering slows down.** Oxygen is a
    *gas*, and gases leave solution as water warms – cold water carries
