@@ -162,20 +162,18 @@ browser tab.
 
 ## What to do
 
-Two assignments run on the same model. Today's is below. The problem set uses
-the **Reaction** control to switch the model to a different reaction, and its
-brief is [at the end of this page](#what-to-do-the-problem-set) – you do not
-need it yet.
+Two exercises run on the same model. The in-class one is below. The problem
+set uses the **Reaction** control to switch the model to a different reaction,
+and its brief is [at the end of this page](#problem-set-what-changes-and-why).
 
 ### In class: what does it do?
 
-Today you are an experimentalist with one apparatus and no theory yet. The
-theory is below, and you should not read it first. Find out what the model
-**does**, and the explanation will be waiting when you want it.
+You are an experimentalist with one apparatus and no theory yet. The theory is
+below, and it is better met second. Find out what the model **does**, and the
+explanation will be waiting when you want it.
 
-Work in pairs. Write your prediction down *before* you run anything, every
-time, because a prediction you keep in your head is one you can revise after
-the fact without noticing.
+Write your prediction down *before* you run anything, every time. A prediction
+you keep in your head is one you can revise after the fact without noticing.
 
 **1. Watch one run, and say what you see.** Leave every slider where it opens.
 Press **▶** and watch until roughly half the section has reacted.
@@ -203,14 +201,14 @@ effect and roughly how big it is, not a number.
 - If the answer does move, is that a discovery about granite or a warning
   about the model?
 
-**4. Hand in, one page.** A sketch of a block from step 1, your three
+**4. Write it up, about a page.** A sketch of a block from step 1, your three
 predictions with what actually happened, and one paragraph on this: **two
 blocks of the same granite, the same minerals, and the same temperature, and
-one is grus while the other is a corestone. Why?** Answer it from what you
+one is grus while the other is a corestone. Why?** Answer from what you
 watched, not from what you have read elsewhere.
 
-Then read **Under the hood**, and see which of your answers the equations
-agree with.
+Then read **Under the hood** and see which of your answers the equations agree
+with.
 
 ## Under the hood
 
@@ -285,8 +283,7 @@ $$\nabla\cdot(K_\mathrm{sat}\,\nabla h) = 0$$
 
 Everything interesting lives in $K_\mathrm{sat}$. It ranges over about thirteen
 orders of magnitude between gravel and unfractured crystalline rock (Freeze and
-Cherry, 1979 – the same book your porosity table comes from), which is more
-than any other quantity you will meet in this exercise.
+Cherry, 1979), which is more than any other quantity in this exercise.
 
 **A joint is not a special rule in this model. It is a large
 $K_\mathrm{sat}$.** Intact granite runs about $5\times10^{-10}$ m s⁻¹, and a
@@ -320,8 +317,8 @@ $$\underbrace{\big[qC\big]_{\rm in} - \big[qC\big]_{\rm out}}_{\text{advection}}
   water is carrying).
 - $-D\nabla C$, **Fick's law**: spreading runs down the concentration gradient,
   from more to less, which is what the minus sign is doing.
-- $\dot{N}$, what the rock gives up per unit volume. (The dot marks a rate, as
-  in your notes. $N_0$ is the stock it draws from.)
+- $\dot{N}$, what the rock gives up per unit volume. (The dot marks a rate: a
+  stock $N$ being drawn down. $N_0$, below, is the stock it starts from.)
 - $nC$, the solute sitting in storage, since only the pore fraction holds water.
 
 Shrink the box. Each in-minus-out becomes a divergence:
@@ -451,9 +448,10 @@ Carry this away if you carry nothing else:
 > ways – **the reactant runs out, or the product fills up.** Ask of any
 > weathering system which of the two it is.
 
-The reaction itself, the evidence that it goes first in a real granite, and how
-to run it are all in [the biotite section](#what-actually-goes-first-iron-in-biotite)
-at the end of this page. You do not need them for today.
+The reaction itself, the evidence that it goes first in a real granite, and
+how to run it are all in
+[the biotite section](#what-actually-goes-first-iron-in-biotite) at the end of
+this page.
 
 ### 6. Two length scales and one ratio
 
@@ -750,8 +748,8 @@ Set **Reaction** to *Biotite oxidation* and everything above still applies –
 the same joints, the same flow field, the same advection, diffusion and
 reaction. **One thing changes, and it changes the sign of everything.**
 
-In class the solute was a **product**. It started at zero, the rock made it,
-and it accumulated until the water was full and the reaction stopped.
+With feldspar the solute was a **product**. It started at zero, the rock made
+it, and it accumulated until the water was full and the reaction stopped.
 Weathering was limited by getting the product *away*.
 
 Now the solute is a **reactant**. It arrives at its ceiling in the rain, the
@@ -796,11 +794,11 @@ rather than measured in a laboratory. This mode is built on the softest ground i
 should treat its *timescales* as indicative and its *mechanism* as sound.
 
 
-### What to do: the problem set
+### Problem set: what changes, and why
 
-Set **Reaction** to *Biotite oxidation*, and read this whole section first. The
-transport is identical to what you did in class. The chemistry is not, and
-several of the answers you found in class come out the other way round.
+Set **Reaction** to *Biotite oxidation*, and read this whole section first.
+The transport is identical to the dissolution version. The chemistry is not,
+and several of the answers come out the other way round.
 
 *(To be written.)*
 
