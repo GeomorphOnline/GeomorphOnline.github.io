@@ -102,24 +102,6 @@ faster. That is what rounds a block into a corestone.
    alt="Large rounded granite boulders on a gravel quarry floor, with two people sitting on them for scale"
    caption="And in Minnesota: corestones in a sand-and-gravel pit in the southwest of the state. These weathered in place; the machines moved them only because they were in the way of the Glacial River Warren sand and gravel being mined around them. So the rounding is the rock's and the arrangement is the excavator's – and the material they sit in is outwash, not the grus they formed in. Kerry Callaghan (University of Illinois Chicago) and Fiona Clubb (Durham University) give the scale. Photo: Andy Wickert, 2017, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)." %}
 
-## What to do
-
-Two assignments run on the same model, and the **Reaction** control at the top
-of the demo switches between them.
-
-### In class: feldspar dissolution
-
-*(To be written.)*
-
-### Problem set: biotite oxidation
-
-Set **Reaction** to *Biotite oxidation* and read
-[the section at the end of this page](#what-actually-goes-first-iron-in-biotite)
-first. The transport is identical; the chemistry is not, and several of the
-answers you found in class come out the other way round.
-
-*(To be written.)*
-
 <!--
   data-design-width is the width the app lays itself out for, and it is
   ALSO recorded inside the compiled page. Two places on purpose: the
@@ -175,6 +157,58 @@ answers you found in class come out the other way round.
 runtime – about 40 MB. It runs smoothly after that, and the download is cached,
 so returning to the page is fast. Nothing is sent to a server: the model runs on
 your own machine, inside the browser tab.
+
+## What to do
+
+Two assignments run on the same model. Today's is below. The problem set uses
+the **Reaction** control to switch the model to a different reaction, and its
+brief is [at the end of this page](#what-to-do-the-problem-set) – you do not
+need it yet.
+
+### In class: what does it do?
+
+Today you are an experimentalist with one apparatus and no theory yet. The
+theory is below, and you should not read it first. Find out what the model
+**does**, and the explanation will be waiting when you want it.
+
+Work in pairs. Write your prediction down *before* you run anything, every
+time, because a prediction you keep in your head is one you can revise after
+the fact without noticing.
+
+**1. Watch one run, and say what you see.** Leave every slider where it opens.
+Press **▶** and watch until roughly half the section has reacted.
+
+- Where does the rock react first? Where does it react last?
+- What *shape* do the untouched blocks take as the run goes on? Sketch one.
+- The left panel is how fast the water is moving, and the right panel is how
+  far the reaction has got. Which one changes during the run, and which one
+  looks much the same at the end as at the start?
+
+**2. Now change one thing at a time.** For each control below, predict first,
+then press **Fresh rock** and run again. You are after the *direction* of the
+effect and roughly how big it is, not a number.
+
+- **Joint spacing.** Closer joints, or wider?
+- **Infiltration.** More rain, or less?
+- **Temperature.** (Do this one last, and take it seriously. Most people get
+  the size of the effect wrong even when they get the direction right.)
+
+**3. One of these is not like the others.** Change **Cell size** and run again.
+
+- What happens to the answer?
+- What *should* happen to the answer, and why? (Cell size is not a property of
+  the rock. It is how finely the computer chops the rock up.)
+- If the answer does move, is that a discovery about granite or a warning
+  about the model?
+
+**4. Hand in, one page.** A sketch of a block from step 1, your three
+predictions with what actually happened, and one paragraph on this: **two
+blocks of the same granite, the same minerals, and the same temperature, and
+one is grus while the other is a corestone. Why?** Answer it from what you
+watched, not from what you have read elsewhere.
+
+Then read **Under the hood**, and see which of your answers the equations
+agree with.
 
 ## Under the hood
 
@@ -391,36 +425,33 @@ the temperature does not simply make weathering proportionally faster**, and
 which of the two effects you are watching depends on where the water is and how
 far it has already got.
 
-### 5. The reaction, two: biotite oxidation
+### 5. What stops a reaction
 
-Your problem set runs the other reaction. It differs in one structural way, and
-that difference matters more than the chemistry does:
+Everything above assumed the solute is something the rock **makes**. Your
+problem set runs a reaction where it is something the rock **consumes**, and
+the difference is structural rather than chemical:
 
 $$\dot{N} = k_{ox}\,A\,C$$
 
-- $k_{ox}$, the oxidation rate constant (the weakest-known number in this
-  model, for reasons the problem set explains).
+- $k_{ox}$, an oxidation rate constant.
 - $C$, dissolved oxygen. (Notice there is **no bracket**. That is the point.)
 
 Dissolving, your solute is a **product**. It starts at zero, the rock makes it,
-and it piles up until the water is full and the reaction stops. Oxidising,
-oxygen is a **reactant**. It arrives at its ceiling in the rain, the rock
-consumes it, and the reaction stops where it runs out. The driving force flips
-from $(1-c)$ to $c$, the inlet concentration flips from 0 to 1, and nothing at
-all in sections 1 through 3 changes.
+and it piles up until the water is full and the reaction stops. Oxidising, it
+is a **reactant**. It arrives at its ceiling in the rain, the rock consumes it,
+and the reaction stops where it runs out. The driving force flips from $(1-c)$
+to $c$, the inlet concentration flips from 0 to 1, and nothing at all in
+sections 1 through 4 changes.
 
-Carry this away from the exercise if you carry nothing else:
+Carry this away if you carry nothing else:
 
 > A reaction stops when the water can no longer do work. It gets there two
 > ways – **the reactant runs out, or the product fills up.** Ask of any
 > weathering system which of the two it is.
 
-Oxidation carries no Arrhenius term here, and that is a finding rather than an
-omission. Nobody has ever measured an activation energy for the oxidation of
-structural Fe(II) by dissolved O₂. Temperature still acts, though, through the
-solubility of oxygen: oxygen is a gas, and gases come *out* of solution as
-water warms. This ceiling **falls** with temperature where your feldspar
-ceiling rose.
+The reaction itself, the evidence that it goes first in a real granite, and how
+to run it are all in [the biotite section](#what-actually-goes-first-iron-in-biotite)
+at the end of this page. You do not need them for today.
 
 ### 6. Two length scales and one ratio
 
@@ -469,12 +500,11 @@ $$\mathrm{Da} = \frac{\text{depth}}{L}$$
 - **Da ≪ 1, reaction-limited.** Water crosses barely touched, and the rate
   constant sets the pace everywhere at once.
 
-Dissolving, your section sits firmly in the first limit at Da = 6.6, and the
-water leaving its base is within 0.14 % of saturation. That is what shelters a block
-interior. Oxidising, it sits in the second at Da = 0.02, with oxygen reaching
-every joint at nearly full strength – and corestones still form. What shelters
-them there is not the supply. It is how far oxygen can *diffuse* into intact
-rock before it is consumed, which is a few centimetres.
+Your section sits firmly in the first limit at Da = 6.6, and the water leaving
+its base is within 0.14 % of saturation. That is what shelters a block
+interior. (Run the same section on oxygen instead and Da drops to 0.02, which
+puts it in the *other* limit and shelters corestones a different way. The
+problem set takes that apart.)
 
 Two different mechanisms, then, and both come out as *the water never got
 there*. Note also that Da is a depth over a length, which tells you about how
@@ -763,6 +793,14 @@ thousand – the larger of them back-calculated from a measured denudation rate
 rather than measured in a laboratory. This mode is built on the softest ground in the model, and you
 should treat its *timescales* as indicative and its *mechanism* as sound.
 
+
+### What to do: the problem set
+
+Set **Reaction** to *Biotite oxidation*, and read this whole section first. The
+transport is identical to what you did in class. The chemistry is not, and
+several of the answers you found in class come out the other way round.
+
+*(To be written.)*
 
 ## References
 
