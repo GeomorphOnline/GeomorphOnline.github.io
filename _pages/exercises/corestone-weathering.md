@@ -190,8 +190,9 @@ effect and roughly how big it is, not a number.
 
 - **Joint spacing.** Closer joints, or wider?
 - **Infiltration.** More rain, or less?
-- **Temperature.** (Do this one last, and take it seriously. Most people get
-  the size of the effect wrong even when they get the direction right.)
+- **Temperature.** (Do this one last. Getting the direction right is the easy
+  half. It is also the biggest lever of the three, and it has two causes
+  rather than one, which **Under the hood** takes apart.)
 
 **3. One of these is not like the others.** Change **Cell size** and run again.
 
@@ -292,7 +293,7 @@ Solve the equation on that field and water runs down the joints on its own,
 because that is what a head field does when a low-resistance path exists. You
 never have to tell it to.
 
-Watch that subscript, though. Your corestones form *above* the water table,
+Watch that subscript, though. Corestones form *above* the water table,
 where pores are only partly full and the true conductivity is both lower and
 dependent on how wet the rock is. Using the saturated value everywhere is the
 wet-end limit: it routes water down the joints correctly, and it overstates how
@@ -300,7 +301,7 @@ briskly the matrix passes water between storms.
 
 ### 2. Solute: the box
 
-Chalk a box on your outcrop, $\Delta x$ wide and $\Delta z$ tall. Ask what
+Chalk a box on the outcrop, $\Delta x$ wide and $\Delta z$ tall. Ask what
 happens to the dissolved material inside it. Four things can: (1) water carries
 solute in and out, which is **advection**; (2) solute spreads from where there
 is more to where there is less, which is **diffusion**; (3) the rock adds
@@ -326,8 +327,8 @@ Shrink the box. Each in-minus-out becomes a divergence:
 $$-\nabla\cdot(qC) + \nabla\cdot(D\nabla C) + \dot{N} = \frac{\partial (nC)}{\partial t}$$
 
 Now drop the storage term. You should know why you are allowed to, because it
-is the one approximation in this derivation: your
-water crosses this section in years, and your rock takes hundreds of thousands.
+is the one approximation in this derivation. Water
+crosses this section in years, and the rock takes hundreds of thousands.
 The solute field therefore settles into its balance long before the rock it is
 dissolving has measurably changed. Furthermore, dropping storage is why porosity never appears
 in the answer. It was the only place $n$ ever entered.
@@ -360,8 +361,8 @@ That is the whole model. Everything below is about $\dot{N}$.
 
 ### 4. The reaction, one: feldspar dissolution
 
-Plagioclase dissolving into water is the textbook case, and it is the one your
-in-class activity runs:
+Plagioclase dissolving into water is the textbook case, and it is the one the
+in-class exercise runs:
 
 $$\dot{N} = k(T)\,A\,\left(1 - \frac{C}{C_{eq}}\right)$$
 
@@ -426,7 +427,7 @@ far it has already got.
 
 ### 5. What stops a reaction
 
-Everything above assumed the solute is something the rock **makes**. Your
+Everything above assumed the solute is something the rock **makes**. The
 problem set runs a reaction where it is something the rock **consumes**, and
 the difference is structural rather than chemical:
 
@@ -435,7 +436,7 @@ $$\dot{N} = k_{ox}\,A\,C$$
 - $k_{ox}$, an oxidation rate constant.
 - $C$, dissolved oxygen. (Notice there is **no bracket**. That is the point.)
 
-Dissolving, your solute is a **product**. It starts at zero, the rock makes it,
+Dissolving, the solute is a **product**. It starts at zero, the rock makes it,
 and it piles up until the water is full and the reaction stops. Oxidising, it
 is a **reactant**. It arrives at its ceiling in the rain, the rock consumes it,
 and the reaction stops where it runs out. The driving force flips from $(1-c)$
@@ -483,8 +484,8 @@ of rock?
 
 $$\tau = \frac{N_0}{C_{eq}}$$
 
-Here $\tau \approx 48{,}000$. The plagioclase in a cubic metre of your granite
-needs forty-eight thousand cubic metres of saturated water to leave. That number, and
+Here $\tau \approx 48{,}000$. The plagioclase in a cubic metre of granite needs
+forty-eight thousand cubic metres of saturated water to leave. That number, and
 not the rate constant, is why weathering is slow. (On oxygen the same rock
 needs about 680, which is why oxidation can pace a process that dissolution
 cannot.)
@@ -500,7 +501,7 @@ $$\mathrm{Da} = \frac{\text{depth}}{L}$$
 - **Da ≪ 1, reaction-limited.** Water crosses barely touched, and the rate
   constant sets the pace everywhere at once.
 
-Your section sits firmly in the first limit at Da = 6.6, and the water leaving
+The section sits firmly in the first limit at Da = 6.6, and the water leaving
 its base is within 0.14 % of saturation. That is what shelters a block
 interior. (Run the same section on oxygen instead and Da drops to 0.02, which
 puts it in the *other* limit and shelters corestones a different way. The
