@@ -307,22 +307,29 @@ solute in and out, which is **advection**; (2) solute spreads from where there
 is more to where there is less, which is **diffusion**; (3) the rock adds
 solute, or takes it away; and (4) the amount inside changes.
 
-Write those four as rates, in moles per second, and you have the balance:
+Write those four as rates and you have the balance. The box is a slice of unit
+thickness, so every term below is **moles per second per metre of thickness**,
+and each flux is multiplied by the length of the face it crosses:
 
-$$\underbrace{\big[qC\big]_{\rm in} - \big[qC\big]_{\rm out}}_{\text{advection}}
-\;+\; \underbrace{\big[-D\nabla C\big]_{\rm in} - \big[-D\nabla C\big]_{\rm out}}_{\text{diffusion}}
+$$\underbrace{\big[qC\,\Delta x\big]_{\rm in} - \big[qC\,\Delta x\big]_{\rm out}}_{\text{advection}}
+\;+\; \underbrace{\big[-D\nabla C\,\Delta x\big]_{\rm in} - \big[-D\nabla C\,\Delta x\big]_{\rm out}}_{\text{diffusion}}
 \;+\; \underbrace{\dot{N}\,\Delta x\,\Delta z}_{\text{reaction}}
 \;=\; \underbrace{\frac{\partial (nC)}{\partial t}\,\Delta x\,\Delta z}_{\text{storage}}$$
 
 - $qC$, solute carried along by flowing water (the water flux, times what that
-  water is carrying).
+  water is carrying). It is a flux, in mol m⁻² s⁻¹, which is why it needs a
+  face length to become a rate. Faces perpendicular to $z$ have length
+  $\Delta x$; faces perpendicular to $x$ have length $\Delta z$. Both are
+  written $\Delta x$ above for brevity.
 - $-D\nabla C$, **Fick's law**: spreading runs down the concentration gradient,
   from more to less, which is what the minus sign is doing.
 - $\dot{N}$, what the rock gives up per unit volume. (The dot marks a rate: a
   stock $N$ being drawn down. $N_0$, below, is the stock it starts from.)
 - $nC$, the solute sitting in storage, since only the pore fraction holds water.
 
-Shrink the box. Each in-minus-out becomes a divergence:
+Divide every term by $\Delta x\,\Delta z$, so that each is now per unit volume,
+and let the box shrink. Each in-minus-out per unit volume is by definition a
+divergence:
 
 $$-\nabla\cdot(qC) + \nabla\cdot(D\nabla C) + \dot{N} = \frac{\partial (nC)}{\partial t}$$
 
@@ -332,6 +339,8 @@ crosses this section in years, and the rock takes hundreds of thousands.
 The solute field therefore settles into its balance long before the rock it is
 dissolving has measurably changed. Furthermore, dropping storage is why porosity never appears
 in the answer. It was the only place $n$ ever entered.
+
+Setting the right-hand side to zero and multiplying through by $-1$:
 
 $$\nabla\cdot(qC) - \nabla\cdot(D\nabla C) = \dot{N}$$
 
@@ -431,17 +440,27 @@ Everything above assumed the solute is something the rock **makes**. The
 problem set runs a reaction where it is something the rock **consumes**, and
 the difference is structural rather than chemical:
 
-$$\dot{N} = k_{ox}\,A\,C$$
+$$\dot{N} = -\,k_{ox}\,A\,C$$
 
-- $k_{ox}$, an oxidation rate constant.
+- $k_{ox}$, the oxidation rate constant, in **m s⁻¹**. Note the units: it is
+  not $k$, which is mol m⁻² s⁻¹. A first-order reaction multiplies a
+  concentration rather than standing alone, so its constant has to carry
+  different units to land on the same mol m⁻³ s⁻¹.
 - $C$, dissolved oxygen. (Notice there is **no bracket**. That is the point.)
+- **The minus sign**, which is the structural change. $\dot{N}$ was defined as
+  what the rock gives *up*. Here the rock takes oxygen *out* of the water, so
+  the same symbol has to go negative.
 
 Dissolving, the solute is a **product**. It starts at zero, the rock makes it,
 and it piles up until the water is full and the reaction stops. Oxidising, it
 is a **reactant**. It arrives at its ceiling in the rain, the rock consumes it,
-and the reaction stops where it runs out. The driving force flips from $(1-c)$
-to $c$, the inlet concentration flips from 0 to 1, and nothing at all in
-sections 1 through 4 changes.
+and the reaction stops where it runs out.
+
+Three things flip, then, and no more: the driving force from $(1-c)$ to $c$,
+the sign of $\dot{N}$ from source to sink, and the concentration of the water
+arriving at the top from 0 to its ceiling. **The transport equation itself does
+not change at all** – same advection, same diffusion, same conservation. That
+is what makes the two reactions one model rather than two.
 
 Carry this away if you carry nothing else:
 
