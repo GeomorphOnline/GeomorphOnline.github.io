@@ -210,8 +210,8 @@ was never used.
 |---|---|
 | model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `fe22d5a` (no release yet) |
 | application source | corestone `master` @ `fe22d5a` (`interactive_demo/corestone_panel.py`) |
-| artesian | `main` @ `afe857e`, shipped as a wheel because the app imports `artesian.live` |
-| built | 2026-09-06 (rebuilt: the **Reaction** control -- feldspar dissolution for the in-class activity, biotite oxidation for the problem set) |
+| artesian | `main` @ `710d1b6`, shipped as a wheel because the app imports `artesian.live`. The tree was one commit further on at `c3d7c2b`, which adds only a CI workflow and nothing under `src/`, so the wheel is the pushed commit's and that is what is recorded |
+| built | 2026-09-21 (rebuilt: restore the `artesian` wheel, which the 2026-09-06 build dropped from the install list and without which the demo cannot start; that build added the **Reaction** control -- feldspar dissolution for the in-class activity, biotite oxidation for the problem set) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 
