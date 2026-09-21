@@ -186,13 +186,13 @@ you could draw on an outcrop.
 ### Notation
 
 Weathering sits where hydrogeology and geochemistry meet, and the two fields
-collide on one letter. **$K$ is hydraulic conductivity; $k$ is a reaction rate
-constant.** They are unrelated.
+collide on one letter. **$K_\mathrm{sat}$ is hydraulic conductivity; $k$ is a
+reaction rate constant.** They are unrelated.
 
 | symbol | meaning | units |
 |---|---|---|
 | $q$ | specific discharge (Darcy flux) | m s⁻¹ |
-| $K$ | hydraulic conductivity | m s⁻¹ |
+| $K_\mathrm{sat}$ | saturated hydraulic conductivity | m s⁻¹ |
 | $h$ | hydraulic head | m |
 | $n$ | porosity, 0 to 1 | – |
 | $C$ | concentration of the reacting solute | mol m⁻³ |
@@ -200,7 +200,7 @@ constant.** They are unrelated.
 | $c = C/C_{eq}$ | normalised concentration | – |
 | $k$ | reaction rate constant, per unit mineral surface | mol m⁻² s⁻¹ |
 | $A$ | reactive mineral surface area per rock volume | m² m⁻³ |
-| $R$ | reaction rate per rock volume | mol m⁻³ s⁻¹ |
+| $\dot{N}$ | reaction rate per rock volume — moles released (or consumed) | mol m⁻³ s⁻¹ |
 | $r = kA/C_{eq}$ | reaction coefficient: how fast undersaturation is used up | s⁻¹ |
 | $D$ | dispersion coefficient | m² s⁻¹ |
 | $N_0$ | moles of reactive mineral per m³ of fresh rock | mol m⁻³ |
@@ -211,7 +211,7 @@ constant.** They are unrelated.
 | $E_a$, $\Delta H_r$ | activation energy, enthalpy of reaction | J mol⁻¹ |
 | $T$ | absolute temperature | K |
 | $t$ | time | s |
-| $R_g$ | gas constant, 8.314 | J mol⁻¹ K⁻¹ |
+| $R$ | universal gas constant, 8.314 | J mol⁻¹ K⁻¹ |
 
 ### 1. Water: Darcy's law
 
@@ -223,16 +223,22 @@ Water flows from high head to low head.
 Henry Darcy established in 1856, pumping water through sand columns, that the
 flow rate is **proportional to the head gradient**:
 
-$$q = -K\,\frac{\partial h}{\partial z}$$
+$$q = -K_\mathrm{sat}\,\frac{\partial h}{\partial z}$$
 
 - $q$ — **specific discharge** (m s⁻¹): volume of water per unit area of rock
   per unit time. Not the speed of a water molecule — the pores are only part of
   the rock, so molecules move faster than $q$ by roughly $1/n$.
-- $K$ — **hydraulic conductivity** (m s⁻¹): how easily this material transmits
-  water. It is the widest-ranging property in this exercise — about thirteen
-  orders of magnitude from gravel to unfractured crystalline rock (Freeze &
-  Cherry, 1979, the same textbook the porosity table in your notes comes
-  from).
+- $K_\mathrm{sat}$ — **saturated hydraulic conductivity** (m s⁻¹): how easily
+  this material transmits water *when its pores are full*. It is the
+  widest-ranging property in this exercise — about thirteen orders of
+  magnitude from gravel to unfractured crystalline rock (Freeze & Cherry,
+  1979, the same textbook the porosity table in your notes comes from).
+  - **The subscript is a real assumption, not decoration.** Corestones form
+    above the water table, where pores are only partly full and the true
+    conductivity is lower and depends on how wet the rock is. This model uses
+    the saturated value everywhere, which is the wet-end limit: it routes
+    water down the joints correctly, and it will overstate how fast the
+    matrix transmits water between storms.
 - $\partial h/\partial z$ — the head gradient (dimensionless), the steepness of
   the energy slope.
 - The **minus sign** puts flow *down* the gradient, from high head to low.
@@ -240,13 +246,13 @@ $$q = -K\,\frac{\partial h}{\partial z}$$
 Two statements, and you have a flow model. Darcy's law says where water goes;
 conservation says it cannot pile up:
 
-$$\nabla\cdot(K\,\nabla h) = 0$$
+$$\nabla\cdot(K_\mathrm{sat}\,\nabla h) = 0$$
 
 - $\nabla\cdot$ — the divergence: net flow out of a point. Setting it to zero
   says **what flows in, flows out**.
 
-Everything interesting is in $K$. **A joint is not a special rule in this
-model; it is a large $K$.** Intact granite is about $5\times10^{-10}$ m s⁻¹; a
+Everything interesting is in $K_\mathrm{sat}$. **A joint is not a special rule
+in this model; it is a large $K_\mathrm{sat}$.** Intact granite is about $5\times10^{-10}$ m s⁻¹; a
 100 µm joint smeared over a 5 cm cell is about thirty thousand times more
 conductive. Solve the equation on that field and water runs down the joints —
 not because anything told it to, but because that is what the head field does
@@ -266,20 +272,21 @@ As rates, in mol s⁻¹:
 
 $$\underbrace{\big[qC\big]_{\rm in} - \big[qC\big]_{\rm out}}_{\text{advection}}
 \;+\; \underbrace{\big[-D\nabla C\big]_{\rm in} - \big[-D\nabla C\big]_{\rm out}}_{\text{dispersion}}
-\;+\; \underbrace{R\,\Delta x\,\Delta z}_{\text{reaction}}
+\;+\; \underbrace{\dot{N}\,\Delta x\,\Delta z}_{\text{reaction}}
 \;=\; \underbrace{\frac{\partial (nC)}{\partial t}\,\Delta x\,\Delta z}_{\text{storage}}$$
 
 - $qC$ — solute carried by flowing water (mol m⁻² s⁻¹): water flux × what it
   carries.
 - $-D\nabla C$ — **Fick's law**: spreading is proportional to the concentration
   gradient, from high to low, hence the minus sign.
-- $R$ — what the rock gives up per unit volume (mol m⁻³ s⁻¹).
+- $\dot{N}$ — what the rock gives up per unit volume (mol m⁻³ s⁻¹). The dot
+  is a rate, as in your notes; $N_0$ is the stock it is drawn from.
 - $nC$ — solute *stored* in the pore water; only the pore fraction $n$ holds
   water.
 
 Shrink the box, and in-minus-out becomes a divergence:
 
-$$-\nabla\cdot(qC) + \nabla\cdot(D\nabla C) + R = \frac{\partial (nC)}{\partial t}$$
+$$-\nabla\cdot(qC) + \nabla\cdot(D\nabla C) + \dot{N} = \frac{\partial (nC)}{\partial t}$$
 
 **Now drop the storage term.** Water crosses this section in years; the rock
 takes hundreds of thousands. The solute field settles long before the rock it
@@ -287,7 +294,7 @@ is dissolving has measurably changed, so at any moment we solve for the
 concentration that *balances*. (This is also why porosity never appears in the
 answer: storage was the only place $n$ entered.)
 
-$$\nabla\cdot(qC) - \nabla\cdot(D\nabla C) = R$$
+$$\nabla\cdot(qC) - \nabla\cdot(D\nabla C) = \dot{N}$$
 
 **In words: what the water carries away, plus what spreads away, equals what
 the rock gives up.** Every term is mol m⁻³ s⁻¹.
@@ -296,21 +303,26 @@ the rock gives up.** Every term is mol m⁻³ s⁻¹.
 
 The moles the water gained are the moles the rock lost:
 
-$$N_0\,\frac{\partial M}{\partial t} = -R$$
+$$N_0\,\frac{\partial M}{\partial t} = -\dot{N}$$
 
 - $N_0$ — moles of the reactive mineral in a cubic metre of fresh rock.
 - $M$ — the fraction of it still there; $M = 1$ fresh, $M = 0$ gone.
 - The **minus sign**: the rock loses what the water gains.
 
-That is the entire model. Everything below is about **$R$**.
+That is the entire model. Everything below is about **$\dot{N}$** — what sets
+the reaction rate.
 
 ### 4. The reaction, one: feldspar dissolution
 
 The in-class activity. Plagioclase dissolving into water:
 
-$$R = k(T)\,A\,\left(1 - \frac{C}{C_{eq}}\right)$$
+$$\dot{N} = k(T)\,A\,\left(1 - \frac{C}{C_{eq}}\right)$$
 
-- $k(T)$ — how fast the mineral reacts, per unit of its surface.
+- $k(T)$ — the **dissolution rate constant** (mol m⁻² s⁻¹): how fast this
+  mineral reacts per unit of its own surface, in water carrying nothing. It is
+  a property of the *mineral*, measured in the laboratory and tabulated — for
+  plagioclase, by Palandri & Kharaka (2004). Writing it $k(T)$ only says that
+  it depends on temperature.
 - $A$ — how much of that surface the water can reach, per m³ of rock.
 - $\left(1 - C/C_{eq}\right)$ — the **affinity**: how far the water is from
   being finished. It is 1 in fresh water and **0 at saturation**.
@@ -319,29 +331,52 @@ $$R = k(T)\,A\,\left(1 - \frac{C}{C_{eq}}\right)$$
 because it is tough. It survives because the water that reached it had already
 finished working.
 
-Temperature enters **twice, in opposite directions**. The rate constant follows
-**Arrhenius**:
+**Temperature enters this equation twice**, in two different places, and the
+two do different jobs.
 
-$$k(T) = k_0 \exp\!\left(-\frac{E_a}{R_g T}\right)$$
+*First, in the rate constant.* Warming makes molecules collide harder and more
+often, so more of them clear the barrier to reacting. The **Arrhenius
+equation** describes that:
 
-- $E_a$ — activation energy: the barrier a reaction must clear. Larger $E_a$,
-  more temperature-sensitive.
-- $T$ — absolute temperature (K).
+$$k(T) = k_0 \exp\!\left(-\frac{E_a}{R\,T}\right)$$
 
-The ceiling moves too, by **van 't Hoff**:
+- $E_a$ — **activation energy** (J mol⁻¹): the energy barrier the reaction has
+  to clear. The larger it is, the more temperature matters.
+- $k_0$ — the **pre-exponential factor** (mol m⁻² s⁻¹): the rate the reaction
+  would run at if there were no barrier at all. It sets the scale; $E_a$ sets
+  the sensitivity.
+- $T$ — absolute temperature (K). It sits in the *denominator* of the
+  exponent, so warming makes the exponent less negative and $k$ larger.
 
-$$C_{eq}(T) = C_0 \exp\!\left(-\frac{\Delta H_r}{R_g T}\right)$$
+*Second, in the ceiling.* $C_{eq}$ is the most solute the water can hold before
+the reaction stops — and that depends on temperature too, because how much of a
+solid dissolves at equilibrium is itself temperature-dependent. The **van 't
+Hoff equation** describes *that*:
 
-- $\Delta H_r$ — enthalpy of the reaction that sets the ceiling.
+$$C_{eq}(T) = C_0 \exp\!\left(-\frac{\Delta H_r}{R\,T}\right)$$
 
-These are different things. Arrhenius makes rock dissolve faster *where it
-stands*; van 't Hoff lets each litre of water leave with more.
+- $\Delta H_r$ — the **enthalpy of the reaction** that sets the ceiling
+  (J mol⁻¹): the heat it takes in or gives out. Positive means dissolving
+  absorbs heat, so warming shifts the equilibrium toward *more* dissolved — a
+  higher ceiling.
+- $C_0$ — a reference scale, playing the same role $k_0$ does above.
+
+**These are not the same effect, and confusing them is the commonest mistake
+here.** Arrhenius makes the rock dissolve faster *where it stands*. Van 't Hoff
+does not speed the reaction up at all — it raises the ceiling, so each litre of
+water can leave carrying more before it has to stop. One is about **speed**,
+the other about **capacity**.
+
+The consequence is worth testing against your intuition with the slider:
+**raising the temperature does not simply make weathering proportionally
+faster.** Which of the two effects dominates depends on where the water is and
+how far it has already got.
 
 ### 5. The reaction, two: biotite oxidation
 
 The problem set. Dissolved oxygen oxidising the iron in biotite:
 
-$$R = k_{ox}\,A\,C$$
+$$\dot{N} = k_{ox}\,A\,C$$
 
 - $k_{ox}$ — the oxidation rate constant.
 - $C$ — dissolved oxygen. **No bracket**, and that is the point.
@@ -423,13 +458,16 @@ gives Da = 2.2.
 
 ### 7. The feedback: weathered rock conducts better
 
-Weathering opens connected porosity, so $K$ rises as the rock reacts —
-interpolated geometrically between intact granite and weathered material:
+Weathering opens connected porosity, so $K_\mathrm{sat}$ rises as the rock
+reacts — interpolated geometrically between intact granite and weathered
+material:
 
-$$K(M) = K_{\rm intact}^{\,M}\; K_{\rm weathered}^{\,1-M}$$
+$$K_\mathrm{sat}(M) = K_\mathrm{sat,intact}^{\,M}\, K_\mathrm{sat,weathered}^{\,1-M}$$
 
-- Geometric, because it is linear in $\log K$, and $K$ varies over orders of
-  magnitude rather than by small increments.
+- Geometric, because it is linear in $\log K_\mathrm{sat}$, and conductivity
+  varies over orders of magnitude rather than by small increments — so the
+  straight line to draw between two values is a straight line in the
+  logarithm.
 
 The head is re-solved as the rock changes, which closes a loop: **water opens
 rock, and open rock draws more water.** Watch what that does with depth —
@@ -454,8 +492,8 @@ only certain angles and spacings let the joint pattern close across the seam.
 weathering *timescale* is no longer something this model was told – it is
 something it predicts. That is a claim you can check, and it is checked below.
 
-Measured: the two ends of the matrix conductivity, $K_\mathrm{intact}$ and
-$K_\mathrm{weathered}$. Goodfellow et al. (2016) measured the hydraulic
+Measured: the two ends of the matrix conductivity, $K_\mathrm{sat,intact}$ and
+$K_\mathrm{sat,weathered}$. Goodfellow et al. (2016) measured the hydraulic
 conductivity of granodiorite *matrix* across a range of weathering grades and
 found it rises three to four orders of magnitude, from 9 × 10⁻⁹ – 8 × 10⁻⁸
 cm s⁻¹ in the parent rock to 9 × 10⁻⁵ – 9 × 10⁻⁴ cm s⁻¹ in the most weathered
@@ -508,8 +546,8 @@ is a rate for any real granite.**
 | Reference temperature | $T_\mathrm{ref}$ | 285 K (11.85 °C) | **normalisation.** Both temperature factors are exactly 1 here, which is why the slider opens at 12 °C |
 | Activation energy | $E_a$ | 69.8 kJ mol⁻¹ | **measured.** Oligoclase, neutral mechanism, Palandri & Kharaka (2004) Table 13 |
 | Reaction enthalpy | $\Delta H_r$ | 32.9 kJ mol⁻¹ | **measured.** Quartz dissolution at 25 °C, LLNL thermodynamic database |
-| Intact matrix conductivity | $K_\mathrm{intact}$ | 5 × 10⁻¹⁰ m s⁻¹ | **measured.** Mid-point of Goodfellow et al. (2016) parent granodiorite |
-| Weathered conductivity | $K_\mathrm{weathered}$ | 5 × 10⁻⁶ m s⁻¹ | **measured.** Mid-point of their most weathered samples |
+| Intact matrix conductivity | $K_\mathrm{sat,intact}$ | 5 × 10⁻¹⁰ m s⁻¹ | **measured.** Mid-point of Goodfellow et al. (2016) parent granodiorite |
+| Weathered conductivity | $K_\mathrm{sat,weathered}$ | 5 × 10⁻⁶ m s⁻¹ | **measured.** Mid-point of their most weathered samples |
 | Joint aperture | $a$ | 100 µm | **measured.** Hydraulic aperture, not the visible opening. Rukavičková et al. (2021) give 20–67 µm at borehole depth; laboratory fractures reach 250 µm unstressed. The conductivity follows by the cubic law (Witherspoon et al. 1980) |
 | Saturation length | $L_\mathrm{ref}$ | 0.457 m | **derived.** $qC_{eq}/kA$, with $A$ = 900 m² m⁻³ for 2 mm grains at 30 % plagioclase |
 | Water per rock volume | $\tau_\mathrm{ref}$ | 47 744 | **derived.** $M_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation |
