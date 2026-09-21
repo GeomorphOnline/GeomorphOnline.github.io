@@ -57,23 +57,21 @@ surface rather than staying in the joints.
   below.
 - **Cell size** is the numerical grid, not the rock: 5 cm, 2.5 cm or 2 cm
   across the same 3 m section. Finer resolves the weathering rind more
-  sharply and costs about eighteen times the computing at 2 cm, so use
-  **Show** rather than watching it animate: at 2.5 cm and 2 cm a single
-  frame costs more than the animation has to give it, and **▶** slows down
-  instead of keeping time. Note that fewer joint
+  sharply and costs about eighteen times the computing at 2 cm. Use **Show**
+  there rather than **▶**, which cannot keep time at that cost. Note that
+  fewer joint
   orientations and spacings are available at 2 cm – only patterns that fit a
   whole number of cells can tile the section exactly, and which ones those
   are depends on the grid.
 
-**▶** animates from fresh rock and keeps going until you pause it – there is
-no end. It advances the clock at the same rate whatever the sliders say –
-1000 model years per frame, about 30 000 years per second – so a setting that
-takes eight times as long in the model takes eight times as long to watch.
-Cold rock is not slow to watch by accident; it is slow because it is slow. (At
-2.5 cm and 2 cm the arithmetic cannot keep up, and that is the one case where
-the guarantee lapses.) That matters at the slow settings: at 0.05 m/yr and 0 °C the section
-is only a fourteenth dissolved after 2000 kyr, and about a sixth after 5000, so
-give it longer. **View results at** with **Show** asks a
+**▶** animates from fresh rock and keeps going until you pause it. It advances
+the clock at the same rate whatever the sliders say (1000 model years per
+frame, about 30 000 years per second), which means a setting that takes eight
+times as long in the model takes eight times as long to watch. **Cold rock is
+not slow to watch by accident. It is slow because it is slow**, and that is
+the comparison you are here to make. Give the slow settings longer: at
+0.05 m/yr and 0 °C the section is only a fourteenth dissolved after 2000 kyr,
+and about a sixth after 5000. **View results at** with **Show** asks a
 different question – what does the rock look like at 2000 kyr? – and answers
 it directly, without the animation. It reaches 15 000 kyr – long enough for the
 default settings to dissolve completely, and for a cold section too; anything
@@ -111,7 +109,7 @@ faster. That is what rounds a block into a corestone.
   demo is never scaled: it sits at its own width inside a wider frame.
 
   height="590" is the demo's measured height at its design width, not a
-  guess: it is what the reader looks at while ~60 MB of Pyodide arrives,
+  guess: it is what the reader looks at while the runtime arrives,
   and the script only replaces it once the app has rendered. Too small and
   the figures are clipped during the whole load, which is what 400 did.
 
@@ -130,7 +128,10 @@ faster. That is what rounds a block into a corestone.
   The stylesheet, the iframe and the script below are the whole embed.
   The stylesheet has to come FIRST and cannot be left to the script:
   the script cannot size a frame whose document has not loaded, and
-  these demos pull about 40 MB of Pyodide before that happens. Without
+  these demos pull tens of megabytes of Pyodide before that happens. The
+  self-hosted half is 11.7 MB and is the only half artesian measures; the
+  runtime and the packages it bundles come from the Pyodide CDN and are not
+  counted anywhere, which is why no exact total is quoted. Without
   it the reader spends that whole time looking at the browser's default
   iframe, ~300 px wide, stretched to the fallback height below -- which
   is what "stuck loading" looked like.
@@ -153,10 +154,11 @@ faster. That is what rounds a block into a corestone.
         height="590" title="Fracture-controlled granite weathering model"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
 
-**The first load takes 10–30 seconds** while your browser downloads the Python
-runtime – about 40 MB. It runs smoothly after that, and the download is cached,
-so returning to the page is fast. Nothing is sent to a server: the model runs on
-your own machine, inside the browser tab.
+**The first load takes 10–30 seconds** while your browser downloads the model
+and the Python runtime it needs (a few tens of megabytes). It runs smoothly
+after that, and the download is cached, so coming back to the page is fast.
+Nothing is sent to a server: the model runs on your own machine, inside the
+browser tab.
 
 ## What to do
 
@@ -218,10 +220,8 @@ to depend on where you are standing in the outcrop, and that is the whole point
 of what follows.
 
 You will build that race in four steps – water, solute, rock, reaction – with
-one equation each, and you will find that every one of them is a statement
-about a box you could chalk on a roadcut, that none needs more than
-conservation of mass to derive, and that the model is what you get when you
-write them down together and let them run.
+one equation each, and every one of them is a statement about a box you could
+chalk on a roadcut.
 
 ### Notation
 
@@ -237,19 +237,21 @@ a reaction rate constant.** They have nothing to do with each other.
 | $n$ | porosity, 0 to 1 | – |
 | $C$ | concentration of the reacting solute | mol m⁻³ |
 | $C_{eq}$ | the ceiling on $C$ | mol m⁻³ |
-| $c = C/C_{eq}$ | normalised concentration | – |
+| $c$ | normalised concentration, $C/C_{eq}$ | – |
 | $k$ | dissolution rate constant, per unit mineral surface | mol m⁻² s⁻¹ |
 | $A$ | reactive mineral surface area per rock volume | m² m⁻³ |
 | $\dot{N}$ | reaction rate per rock volume | mol m⁻³ s⁻¹ |
-| $r = kA/C_{eq}$ | reaction coefficient | s⁻¹ |
+| $r$ | reaction coefficient, $kA/C_{eq}$ | s⁻¹ |
 | $D$ | effective diffusion coefficient in the rock | m² s⁻¹ |
 | $N_0$ | moles of reactive mineral per m³ of fresh rock | mol m⁻³ |
 | $M$ | fraction of reactive mineral remaining | – |
-| $X = 1-M$ | extent of reaction (what the colour bar shows) | – |
+| $X$ | extent of reaction, $1-M$ (what the colour bar shows) | – |
 | $\tau$ | volumes of water needed per volume of rock | – |
 | $L$ | saturation length | m |
-| $E_a$, $\Delta H_r$ | activation energy, enthalpy of reaction | J mol⁻¹ |
-| $T$, $t$ | absolute temperature, time | K, s |
+| $E_a$ | activation energy | J mol⁻¹ |
+| $\Delta H_r$ | enthalpy of the reaction that sets the ceiling | J mol⁻¹ |
+| $T$ | absolute temperature | K |
+| $t$ | time | s |
 | $R$ | universal gas constant, 8.314 | J mol⁻¹ K⁻¹ |
 
 ### 1. Water: Darcy's law
