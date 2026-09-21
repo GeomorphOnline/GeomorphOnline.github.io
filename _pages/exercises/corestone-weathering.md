@@ -241,11 +241,13 @@ a reaction rate constant.** They have nothing to do with each other.
 | $A$ | reactive mineral surface area per rock volume | m² m⁻³ |
 | $\dot{N}$ | reaction rate per rock volume | mol m⁻³ s⁻¹ |
 | $r$ | reaction coefficient, $kA/C_{eq}$ | s⁻¹ |
-| $D$ | effective diffusion coefficient in the rock | m² s⁻¹ |
+| $D$ | effective diffusion coefficient in the rock, $D_w/\theta$ | m² s⁻¹ |
+| $D_w$ | diffusion coefficient in free water | m² s⁻¹ |
 | $N_0$ | moles of reactive mineral per m³ of fresh rock | mol m⁻³ |
 | $M$ | fraction of reactive mineral remaining | – |
 | $X$ | extent of reaction, $1-M$ (what the colour bar shows) | – |
 | $\tau$ | volumes of water needed per volume of rock | – |
+| $\theta$ | tortuosity: how much the pore path lengthens diffusion | – |
 | $L$ | saturation length | m |
 | $E_a$ | activation energy | J mol⁻¹ |
 | $\Delta H_r$ | enthalpy of the reaction that sets the ceiling | J mol⁻¹ |
@@ -337,8 +339,10 @@ Now drop the storage term. You should know why you are allowed to, because it
 is the one approximation in this derivation. Water
 crosses this section in years, and the rock takes hundreds of thousands.
 The solute field therefore settles into its balance long before the rock it is
-dissolving has measurably changed. Furthermore, dropping storage is why porosity never appears
-in the answer. It was the only place $n$ ever entered.
+dissolving has measurably changed. Furthermore, dropping storage is what removes porosity from the transport
+equation. ($n$ has not left the page. It still sets how much faster the water
+itself moves than $q$ does, which the dispersion term uses. It is gone from
+the balance being solved.)
 
 Setting the right-hand side to zero and multiplying through by $-1$:
 
@@ -361,8 +365,10 @@ The moles the water gained are the moles the rock lost:
 
 $$N_0\,\frac{\partial M}{\partial t} = -\dot{N}$$
 
-- $N_0$, the moles of reactive mineral in a cubic metre of fresh rock (about
-  4,800 for the plagioclase here).
+- $N_0$, the moles of solute the fresh rock can release, per cubic metre
+  (about 4,800 here). Counting the *solute* rather than the mineral is what
+  makes this balance 1:1: one plagioclase formula unit releases several
+  silicons, and $N_0$ has already done that multiplication.
 - $M$, the fraction of it still there (1 when fresh, 0 when gone).
 - The minus sign, because the rock loses what the water gains.
 
@@ -608,10 +614,10 @@ kaolinite, the clay that weathering actually makes – and $\Delta H_r$ turns
 weathering down. That is a real regime. It is not this one, and which of the
 two you are in is decided by what stops the reaction, not by the mineral.
 
-Still not measured, and simply chosen so the demo behaves on a human
-timescale: the reference dissolution length, the matrix tortuosity and the
-dispersivity. **No number this model produces
-is a rate for any real granite.**
+**Not calibrated to any particular granite**, and no number here should be
+read as a measurement of one. Every parameter below is either measured
+elsewhere or derived from the mineralogy, but the granite they describe is a
+generic one and the section they run in is drawn rather than surveyed.
 
 ### Every parameter, and where it came from
 
@@ -624,9 +630,9 @@ is a rate for any real granite.**
 | Weathered conductivity | $K_\mathrm{sat,weathered}$ | 5 × 10⁻⁶ m s⁻¹ | **measured.** Mid-point of their most weathered samples |
 | Joint aperture | $a$ | 100 µm | **measured.** Hydraulic aperture, not the visible opening. Rukavičková et al. (2021) give 20–67 µm at borehole depth; laboratory fractures reach 250 µm unstressed. The conductivity follows by the cubic law (Witherspoon et al. 1980) |
 | Saturation length | $L_\mathrm{ref}$ | 0.457 m | **derived.** $qC_{eq}/kA$, with $A$ = 900 m² m⁻³ for 2 mm grains at 30 % plagioclase |
-| Water per rock volume | $\tau_\mathrm{ref}$ | 47 744 | **derived.** $M_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation |
+| Water per rock volume | $\tau_\mathrm{ref}$ | 47 744 | **derived.** $N_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation. $N_0$ counts *silicon released*, not formula units of plagioclase, which is what lets the rock and solute balances be 1:1 |
 | Aqueous diffusivity | $D$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured**, and of the right species: dissolved silica (Rebreanu et al. 2008; Wollast & Garrels 1971). Scaled by Stokes–Einstein |
-| Matrix tortuosity |  | 10⁴ → 10 | **measured range.** The factor by which the connected pore path lengthens and constricts diffusion relative to free solution, $D_\mathrm{eff} = D_w/\tau$. 10⁴ in intact crystalline rock, 10 in saprolite at ~30 % porosity; interpolated with $M$, like the conductivity |
+| Matrix tortuosity | $\theta$ | 10⁴ → 10 | **measured range.** The factor by which the connected pore path lengthens and constricts diffusion relative to free solution, $D_\mathrm{eff} = D_w/\theta$. Written $\theta$ because $\tau$ is already the water requirement above; the literature uses $\tau$ for both. 10⁴ in intact crystalline rock, 10 in saprolite at ~30 % porosity; interpolated with $M$, like the conductivity |
 | Dispersivity | $\alpha$ | 2 mm | **the grain diameter.** Mechanical dispersion per unit pore velocity, $D_\mathrm{mech} = \alpha\lvert v\rvert$; $\alpha$ measures the spread of flow-path velocities, which at the pore scale is set by the grain size |
 
 **$k_0$ and $C_0$ are not in the table because the model never evaluates
@@ -634,10 +640,9 @@ them.** Both equations above are written in the textbook form, with an absolute
 pre-exponential factor, but nothing here needs one: every rate is taken
 relative to the reference state, so what enters the arithmetic is
 $k(T)/k(T_\mathrm{ref})$ and $C_{eq}(T)/C_{eq}(T_\mathrm{ref})$, in which
-$k_0$ and $C_0$ cancel. That is why $L_\mathrm{ref}$ can be a free choice
-without the thermodynamics being wrong – the model has a *normalisation*
-where a research model would need an absolute solubility. It is also why
-$C_{eq}$ never appears on its own anywhere in the code.
+$k_0$ and $C_0$ cancel. The model therefore has a *normalisation* where a
+research model would need an absolute solubility, which is why $C_{eq}$ never
+appears on its own anywhere in the code, only ever as a ratio.
 
 ### Does it get the timescale right?
 
@@ -662,7 +667,8 @@ slider moves too.
 The gap is not spread evenly over the inputs; it sits in the **reactive
 surface area**. This model uses the geometric area of 2 mm grains, 900 m² m⁻³,
 where BET for granite is 3 × 10⁵–3 × 10⁶. Closing the rate would need a factor
-of five, still five hundred times below BET – so the disagreement lives inside
+of five, which is still 70 to 700 times below BET – so the disagreement lives
+inside
 a range the field itself has not resolved (White & Brantley 2003). It is
 reported rather than removed. Choosing a surface area to make the rate come
 out right is the one move that would make this number meaningless.
