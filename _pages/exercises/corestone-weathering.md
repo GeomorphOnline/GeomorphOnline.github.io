@@ -41,12 +41,72 @@ or reached already saturated.
 
 **What the model is.** A vertical **section** of granite – a slice seen
 edge-on – 3 m across and 3 m deep. The top edge is the ground surface, rain
-enters there, and water drains out of the bottom. The slice has no sides: its left and right edges wrap
-onto each other, so a block near one edge sees rock rather than a wall. Cutting
+enters there, and water drains out of the bottom. It has no sides: the left and
+right edges wrap onto each other, so a block near one edge sees rock rather than a wall. Cutting
 through it is a network of **joints** – the fractures tectonics and unloading
 leave in granite – and those are where water moves freely. The solid rock
 between them is called the **matrix**, and it is the same granite, just
 unfractured.
+
+<!--
+  data-design-width is the width the app lays itself out for, and it is
+  ALSO recorded inside the compiled page. Two places on purpose: the
+  script cannot read the compiled page while this page lays itself out,
+  because an iframe starts on a blank document, and on WebKit -- every
+  browser on an iPad -- that is what it sees. Without the attribute the
+  demo is never scaled: it sits at its own width inside a wider frame.
+
+  height="590" is the demo's measured height at its design width, not a
+  guess: it is what the reader looks at while the runtime arrives,
+  and the script only replaces it once the app has rendered. Too small and
+  the figures are clipped during the whole load, which is what 400 did.
+
+  The ?v= on the stylesheet and the script is the first eight characters
+  of each file's SHA-1. GitHub Pages serves them with max-age=600 and
+  no way to set a header, so without it a reader who visited in the last
+  ten minutes silently gets the old one -- which cost most of a morning
+  to diagnose, twice, because it looks exactly like a fix not working.
+  BUMP THESE whenever artesian is rebuilt into exercises/apps.
+
+  scrolling="no" because the frame is sized to its content and so has
+  nothing to scroll. Where it can scroll, a touch drag pans the demo off
+  the edge of its own frame with no obvious way back -- which is what an
+  iPad did, on a rounding difference of a pixel or two.
+
+  The stylesheet, the iframe and the script below are the whole embed.
+  The stylesheet has to come FIRST and cannot be left to the script:
+  the script cannot size a frame whose document has not loaded, and
+  these demos pull tens of megabytes of Pyodide before that happens. The
+  self-hosted half is 11.7 MB and is the only half artesian measures; the
+  runtime and the packages it bundles come from the Pyodide CDN and are not
+  counted anywhere, which is why no exact total is quoted. Without
+  it the reader spends that whole time looking at the browser's default
+  iframe, ~300 px wide, stretched to the fallback height below -- which
+  is what "stuck loading" looked like.
+
+  The iframe and the script below are the whole embed. artesian emits
+  artesian-embed.js beside the compiled apps, shared by every exercise
+  in that directory, and it does the work that used to be copied into
+  each page: sizing the frame to its content (no fixed height can work,
+  since the plot's height follows the reader's window) and SCALING the
+  demo above its design width rather than stretching it.
+
+  Do not reintroduce width="100%" on the frame. Every browser on an
+  iPad is WebKit underneath, and WebKit sizes an iframe to its content
+  rather than honouring a percentage width -- which sent both of these
+  exercises off the side of the page, invisibly on every desktop.
+-->
+<link rel="stylesheet"
+      href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
+<iframe src="{{ '/exercises/apps/corestone_panel.html' | relative_url }}" data-artesian data-design-width="900" scrolling="no"
+        height="590" title="Fracture-controlled granite weathering model"></iframe>
+<script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
+
+**The first load takes 10–30 seconds** while your browser downloads the model
+and the Python runtime it needs (a few tens of megabytes). It runs smoothly
+after that, and the download is cached, so coming back to the page is fast.
+Nothing is sent to a server: the model runs on your own machine, inside the
+browser tab.
 
 Press **▶ Run** and watch. The left panel is **where the water goes** – the
 water flux in metres per year, on a logarithmic scale because it spans four
@@ -119,66 +179,6 @@ faster. That is what rounds a block into a corestone.
 {% include figure image_path="/assets/images/weathering/corestones-quarry-minnesota.jpg"
    alt="Large rounded granite boulders on a gravel quarry floor, with two people sitting on them for scale"
    caption="And in Minnesota: corestones in a sand-and-gravel pit in the southwest of the state. These weathered in place; the machines moved them only because they were in the way of the Glacial River Warren sand and gravel being mined around them. So the rounding is the rock's and the arrangement is the excavator's – and the material they sit in is outwash, not the grus they formed in. Kerry Callaghan (University of Illinois Chicago) and Fiona Clubb (Durham University) give the scale. Photo: Andy Wickert, 2017, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)." %}
-
-<!--
-  data-design-width is the width the app lays itself out for, and it is
-  ALSO recorded inside the compiled page. Two places on purpose: the
-  script cannot read the compiled page while this page lays itself out,
-  because an iframe starts on a blank document, and on WebKit -- every
-  browser on an iPad -- that is what it sees. Without the attribute the
-  demo is never scaled: it sits at its own width inside a wider frame.
-
-  height="590" is the demo's measured height at its design width, not a
-  guess: it is what the reader looks at while the runtime arrives,
-  and the script only replaces it once the app has rendered. Too small and
-  the figures are clipped during the whole load, which is what 400 did.
-
-  The ?v= on the stylesheet and the script is the first eight characters
-  of each file's SHA-1. GitHub Pages serves them with max-age=600 and
-  no way to set a header, so without it a reader who visited in the last
-  ten minutes silently gets the old one -- which cost most of a morning
-  to diagnose, twice, because it looks exactly like a fix not working.
-  BUMP THESE whenever artesian is rebuilt into exercises/apps.
-
-  scrolling="no" because the frame is sized to its content and so has
-  nothing to scroll. Where it can scroll, a touch drag pans the demo off
-  the edge of its own frame with no obvious way back -- which is what an
-  iPad did, on a rounding difference of a pixel or two.
-
-  The stylesheet, the iframe and the script below are the whole embed.
-  The stylesheet has to come FIRST and cannot be left to the script:
-  the script cannot size a frame whose document has not loaded, and
-  these demos pull tens of megabytes of Pyodide before that happens. The
-  self-hosted half is 11.7 MB and is the only half artesian measures; the
-  runtime and the packages it bundles come from the Pyodide CDN and are not
-  counted anywhere, which is why no exact total is quoted. Without
-  it the reader spends that whole time looking at the browser's default
-  iframe, ~300 px wide, stretched to the fallback height below -- which
-  is what "stuck loading" looked like.
-
-  The iframe and the script below are the whole embed. artesian emits
-  artesian-embed.js beside the compiled apps, shared by every exercise
-  in that directory, and it does the work that used to be copied into
-  each page: sizing the frame to its content (no fixed height can work,
-  since the plot's height follows the reader's window) and SCALING the
-  demo above its design width rather than stretching it.
-
-  Do not reintroduce width="100%" on the frame. Every browser on an
-  iPad is WebKit underneath, and WebKit sizes an iframe to its content
-  rather than honouring a percentage width -- which sent both of these
-  exercises off the side of the page, invisibly on every desktop.
--->
-<link rel="stylesheet"
-      href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
-<iframe src="{{ '/exercises/apps/corestone_panel.html' | relative_url }}" data-artesian data-design-width="900" scrolling="no"
-        height="590" title="Fracture-controlled granite weathering model"></iframe>
-<script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
-
-**The first load takes 10–30 seconds** while your browser downloads the model
-and the Python runtime it needs (a few tens of megabytes). It runs smoothly
-after that, and the download is cached, so coming back to the page is fast.
-Nothing is sent to a server: the model runs on your own machine, inside the
-browser tab.
 
 ## What to do
 
