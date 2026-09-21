@@ -178,272 +178,275 @@ your own machine, inside the browser tab.
 
 ## Under the hood
 
-The model is [corestone](https://github.com/MNiMORPH/corestone). This section
-builds it in the order the physics happens: **water arrives, water reacts with
-rock, rock changes, and the change feeds back on the water.** Each step is one
-equation, and each equation is a statement about a box you could draw on an
-outcrop.
+Weathering is a race between **how fast water arrives** and **how fast rock
+reacts with it**. This section builds that race in four steps — water, solute,
+rock, reaction — one equation each. Every equation is a statement about a box
+you could draw on an outcrop.
 
 ### Notation
 
 Weathering sits where hydrogeology and geochemistry meet, and the two fields
-collide on one letter. **$K$ is hydraulic conductivity and $k$ is a reaction
-rate constant.** They are unrelated, and they are kept apart throughout.
+collide on one letter. **$K$ is hydraulic conductivity; $k$ is a reaction rate
+constant.** They are unrelated.
 
 | symbol | meaning | units |
 |---|---|---|
-| $q$ | specific discharge (Darcy flux) – water volume per area per time | m s⁻¹ |
-| $K$ | hydraulic conductivity of the rock | m s⁻¹ |
+| $q$ | specific discharge (Darcy flux) | m s⁻¹ |
+| $K$ | hydraulic conductivity | m s⁻¹ |
 | $h$ | hydraulic head | m |
 | $n$ | porosity, 0 to 1 | – |
-| $C$ | concentration of the reacting solute in pore water | mol m⁻³ |
-| $C_{eq}$ | the ceiling on $C$: saturation, or the supply in rainwater | mol m⁻³ |
+| $C$ | concentration of the reacting solute | mol m⁻³ |
+| $C_{eq}$ | the ceiling on $C$ | mol m⁻³ |
 | $c = C/C_{eq}$ | normalised concentration | – |
 | $k$ | reaction rate constant, per unit mineral surface | mol m⁻² s⁻¹ |
-| $A$ | reactive mineral surface area per unit rock volume | m² m⁻³ |
-| $R$ | reaction rate per unit rock volume | mol m⁻³ s⁻¹ |
-| $D$ | dispersion coefficient of the solute | m² s⁻¹ |
-| $N_0$ | moles of the reactive mineral in a cubic metre of fresh rock | mol m⁻³ |
-| $M$ | fraction of the reactive mineral remaining | – |
-| $X = 1-M$ | extent of reaction: what the colour bar shows | – |
+| $A$ | reactive mineral surface area per rock volume | m² m⁻³ |
+| $R$ | reaction rate per rock volume | mol m⁻³ s⁻¹ |
+| $r = kA/C_{eq}$ | reaction coefficient: how fast undersaturation is used up | s⁻¹ |
+| $D$ | dispersion coefficient | m² s⁻¹ |
+| $N_0$ | moles of reactive mineral per m³ of fresh rock | mol m⁻³ |
+| $M$ | fraction of reactive mineral remaining | – |
+| $X = 1-M$ | extent of reaction — what the colour bar shows | – |
 | $\tau$ | volumes of water needed per volume of rock | – |
 | $L$ | saturation length | m |
 | $E_a$, $\Delta H_r$ | activation energy, enthalpy of reaction | J mol⁻¹ |
+| $T$ | absolute temperature | K |
+| $t$ | time | s |
 | $R_g$ | gas constant, 8.314 | J mol⁻¹ K⁻¹ |
 
-Two warnings about $D$. It is a *dispersion* coefficient here, not the
-hillslope diffusivity of the [hillslope creep
-exercise]({{ '/exercises/hillslope-creep/' | relative_url }}) – same units, same
-form of equation, different process. And it lumps two things: molecular diffusion
-through the pore network, and mechanical dispersion caused by water taking many
-paths of different length. Both spread solute; only the first works where the
-water is still.
+### 1. Water: Darcy's law
 
-### 1. Water: where does it go?
+Water moves through rock the way it moves through a sponge: along connected
+pores and cracks, from where its energy is high to where it is low. That energy
+is the **hydraulic head** $h$ — in the field, the height water stands in a well.
+Water flows from high head to low head.
 
-Darcy's law. The specific discharge is proportional to the head gradient,
+Henry Darcy established in 1856, pumping water through sand columns, that the
+flow rate is **proportional to the head gradient**:
 
-$$q = -K\,\nabla h$$
+$$q = -K\,\frac{\partial h}{\partial z}$$
 
-and if water is neither stored nor created, what flows in flows out:
+- $q$ — **specific discharge** (m s⁻¹): volume of water per unit area of rock
+  per unit time. Not the speed of a water molecule — the pores are only part of
+  the rock, so molecules move faster than $q$ by roughly $1/n$.
+- $K$ — **hydraulic conductivity** (m s⁻¹): how easily this material transmits
+  water. It is the widest-ranging property in this exercise — about thirteen
+  orders of magnitude from gravel to unfractured crystalline rock (Freeze &
+  Cherry, 1979, the same textbook the porosity table in your notes comes
+  from).
+- $\partial h/\partial z$ — the head gradient (dimensionless), the steepness of
+  the energy slope.
+- The **minus sign** puts flow *down* the gradient, from high head to low.
+
+Two statements, and you have a flow model. Darcy's law says where water goes;
+conservation says it cannot pile up:
 
 $$\nabla\cdot(K\,\nabla h) = 0$$
 
-That is the whole flow model, and everything interesting is in $K$. **A joint
-is not a special rule in this model; it is a high value of $K$.** Intact
-granite is about $5\times10^{-10}$ m s⁻¹; a 100 µm joint smeared across a 5 cm
-cell is about thirty thousand times more conductive. Solve the equation above
-on that field and water runs down the joints because that is what the head
-field does when a low-resistance path exists – not because anything told it to.
+- $\nabla\cdot$ — the divergence: net flow out of a point. Setting it to zero
+  says **what flows in, flows out**.
 
-Rain enters at the top at a prescribed rate, the base drains, and the section
-is periodic left to right.
+Everything interesting is in $K$. **A joint is not a special rule in this
+model; it is a large $K$.** Intact granite is about $5\times10^{-10}$ m s⁻¹; a
+100 µm joint smeared over a 5 cm cell is about thirty thousand times more
+conductive. Solve the equation on that field and water runs down the joints —
+not because anything told it to, but because that is what the head field does
+when a low-resistance path exists.
 
 ### 2. Solute: the box
 
-This is the step worth doing slowly, because it is the same mass balance you
-have already written for a hillslope – just with solute instead of soil.
+Draw a box of rock, $\Delta x$ wide and $\Delta z$ tall. Ask what happens to
+the dissolved material inside it. Four things can:
 
-Draw a box of rock, $\Delta x$ wide and $\Delta z$ tall, one unit thick. Ask
-what happens to the solute inside it. Four things can:
-
-1. water **carries solute in and out** – *advection*;
-2. solute **spreads** from where there is more to where there is less –
-   *dispersion*;
-3. the rock **puts solute in**, or **takes it out**;
+1. water **carries solute in and out** — *advection*;
+2. solute **spreads** from more to less — *dispersion*;
+3. the rock **adds** solute, or **removes** it;
 4. the amount inside **changes**.
 
-Write them as rates, in mol per second:
+As rates, in mol s⁻¹:
 
 $$\underbrace{\big[qC\big]_{\rm in} - \big[qC\big]_{\rm out}}_{\text{advection}}
 \;+\; \underbrace{\big[-D\nabla C\big]_{\rm in} - \big[-D\nabla C\big]_{\rm out}}_{\text{dispersion}}
 \;+\; \underbrace{R\,\Delta x\,\Delta z}_{\text{reaction}}
 \;=\; \underbrace{\frac{\partial (nC)}{\partial t}\,\Delta x\,\Delta z}_{\text{storage}}$$
 
-Shrink the box and the differences become divergences:
+- $qC$ — solute carried by flowing water (mol m⁻² s⁻¹): water flux × what it
+  carries.
+- $-D\nabla C$ — **Fick's law**: spreading is proportional to the concentration
+  gradient, from high to low, hence the minus sign.
+- $R$ — what the rock gives up per unit volume (mol m⁻³ s⁻¹).
+- $nC$ — solute *stored* in the pore water; only the pore fraction $n$ holds
+  water.
+
+Shrink the box, and in-minus-out becomes a divergence:
 
 $$-\nabla\cdot(qC) + \nabla\cdot(D\nabla C) + R = \frac{\partial (nC)}{\partial t}$$
 
-**Now drop the storage term**, and it is worth knowing why you are allowed to.
-Water crosses this section in years; the rock takes hundreds of thousands. The
-solute field reaches its steady shape long before the rock it is dissolving
-has noticeably changed, so at any moment we can solve for the concentration
-that *balances* – a quasi-steady approximation. That is also why no porosity
-appears in the model's answer: the storage term is the only place $n$ would
-have entered.
+**Now drop the storage term.** Water crosses this section in years; the rock
+takes hundreds of thousands. The solute field settles long before the rock it
+is dissolving has measurably changed, so at any moment we solve for the
+concentration that *balances*. (This is also why porosity never appears in the
+answer: storage was the only place $n$ entered.)
 
 $$\nabla\cdot(qC) - \nabla\cdot(D\nabla C) = R$$
 
 **In words: what the water carries away, plus what spreads away, equals what
 the rock gives up.** Every term is mol m⁻³ s⁻¹.
 
-### 3. Rock: what it loses
+### 3. Rock: the same balance, from the other side
 
-The same balance from the mineral's side. If the rock holds $N_0$ moles of the
-reactive phase per cubic metre, and $M$ is the fraction of it left,
+The moles the water gained are the moles the rock lost:
 
 $$N_0\,\frac{\partial M}{\partial t} = -R$$
 
-Conservation, and nothing more: the moles the water gains are the moles the
-rock lost. Coupled to the equation above, that is the entire model. Everything
-that follows is about **$R$** – what sets the reaction rate.
+- $N_0$ — moles of the reactive mineral in a cubic metre of fresh rock.
+- $M$ — the fraction of it still there; $M = 1$ fresh, $M = 0$ gone.
+- The **minus sign**: the rock loses what the water gains.
+
+That is the entire model. Everything below is about **$R$**.
 
 ### 4. The reaction, one: feldspar dissolution
 
-Plagioclase dissolving into water is the textbook case, and the one the
-in-class activity runs.
+The in-class activity. Plagioclase dissolving into water:
 
 $$R = k(T)\,A\,\left(1 - \frac{C}{C_{eq}}\right)$$
 
-Read it as three factors. $k(T)$ is how fast the mineral reacts. $A$ is how
-much mineral surface the water can reach. And the bracket is **how far the
-water is from being finished** – the *affinity*. At $C = 0$ the water is fresh
-and the reaction runs at full speed; at $C = C_{eq}$ it is saturated and the
-reaction stops dead, however warm and however soluble the rock.
+- $k(T)$ — how fast the mineral reacts, per unit of its surface.
+- $A$ — how much of that surface the water can reach, per m³ of rock.
+- $\left(1 - C/C_{eq}\right)$ — the **affinity**: how far the water is from
+  being finished. It is 1 in fresh water and **0 at saturation**.
 
-**That bracket is the whole idea of the exercise.** Rock does not survive
+**That bracket is the whole idea of this exercise.** Rock does not survive
 because it is tough. It survives because the water that reached it had already
 finished working.
 
-Temperature enters **twice, and in opposite directions.** The rate constant
-follows the Arrhenius equation,
+Temperature enters **twice, in opposite directions**. The rate constant follows
+**Arrhenius**:
 
 $$k(T) = k_0 \exp\!\left(-\frac{E_a}{R_g T}\right)$$
 
-so warming speeds the reaction, steeply. But the ceiling moves too, by van 't
-Hoff,
+- $E_a$ — activation energy: the barrier a reaction must clear. Larger $E_a$,
+  more temperature-sensitive.
+- $T$ — absolute temperature (K).
+
+The ceiling moves too, by **van 't Hoff**:
 
 $$C_{eq}(T) = C_0 \exp\!\left(-\frac{\Delta H_r}{R_g T}\right)$$
 
-so warm water can carry more away before it stops. These are different things.
-The first makes the rock dissolve faster *where it stands*; the second lets
-each litre leave with more.
+- $\Delta H_r$ — enthalpy of the reaction that sets the ceiling.
+
+These are different things. Arrhenius makes rock dissolve faster *where it
+stands*; van 't Hoff lets each litre of water leave with more.
 
 ### 5. The reaction, two: biotite oxidation
 
-The problem set runs the other reaction, and it differs in one structural way
-that is worth more than the chemistry.
+The problem set. Dissolved oxygen oxidising the iron in biotite:
 
 $$R = k_{ox}\,A\,C$$
 
+- $k_{ox}$ — the oxidation rate constant.
+- $C$ — dissolved oxygen. **No bracket**, and that is the point.
+
 Dissolving, the solute is a **product**: it starts at zero, the rock makes it,
 and it accumulates until the water is full and the reaction stops. Oxidising,
-dissolved oxygen is a **reactant**: it arrives at its ceiling in the rain, the
-rock consumes it, and the reaction stops where it runs out.
+oxygen is a **reactant**: it arrives at its ceiling in the rain, the rock
+consumes it, and the reaction stops where it runs out.
 
-So the driving force flips from $(1 - c)$ to $c$, the inlet concentration flips
-from 0 to 1, and **nothing else in sections 1 to 3 changes at all** – same
-Darcy solve, same box, same conservation. That is the generalisation to carry
-away:
+So the driving force flips from $(1-c)$ to $c$, the inlet concentration flips
+from 0 to 1, and **nothing in sections 1–3 changes at all**. That is the idea
+to carry away:
 
 > A reaction stops when the water can no longer do work. It gets there two
 > ways: **the reactant runs out, or the product fills up.** Ask of any
 > weathering system which one it is.
 
-Oxidation has no Arrhenius term in this model, and that is a finding rather
-than an omission: no activation energy has ever been measured for oxidation of
-structural Fe(II) by dissolved O₂. Temperature still acts, through the oxygen
-*solubility* – and because oxygen is a gas, warm water holds **less** of it.
+Oxidation carries no Arrhenius term here, and that is a finding rather than an
+omission: no activation energy has ever been measured for oxidation of
+structural Fe(II) by dissolved O₂. Temperature still acts — through oxygen
+*solubility*, and because oxygen is a gas, warm water holds **less**.
 
-### 6. Putting numbers to it: two scales and one ratio
+### 6. Two length scales and one ratio
 
-Normalise the concentration, $c = C/C_{eq}$, and the dissolution balance
-becomes
+Divide through by $C_{eq}$ so concentration runs 0 to 1:
 
 $$\nabla\cdot(q c) - \nabla\cdot(D \nabla c) = r\,(1 - c),
 \qquad r \equiv \frac{k A}{C_{eq}}$$
 
-$r$ has units of s⁻¹ – it is the rate at which undersaturation is used up. Two
-scales fall out of it, and they are what the sliders move.
+- $c = C/C_{eq}$ — normalised concentration.
+- $r$ — the reaction coefficient (s⁻¹): how fast undersaturation is used up.
 
-**The saturation length.** Along a flow path, how far does water travel before
-it is spent?
+**The saturation length.** How far does water travel before it is spent?
 
 $$L = \frac{q}{r} = \frac{q\,C_{eq}}{k\,A}$$
 
 Here $L = 0.46$ m. It is *not* a distance at which equilibrium is reached: $c$
-approaches 1 asymptotically and never arrives. After $L$ the undersaturation is
-down to $1/e$ of what it was; after $2L$, $1/e^2$.
+approaches 1 asymptotically and never arrives. After $L$, the undersaturation
+is $1/e$ of what it was.
 
-Notice what $L$ is made of. It rises with flux, falls with reactivity, and
-because it goes as $C_{eq}/k$, its temperature dependence is set by the
-**difference** $(E_a - \Delta H_r)$ = 36.9 kJ mol⁻¹ and not by $E_a$ alone.
-That difference is the **apparent activation energy of weathering** – what a
-field study measuring rate against temperature actually recovers. If
-$\Delta H_r$ exceeded $E_a$, warming would *lengthen* $L$ and slow weathering
-down. Nothing forbids it.
+Notice what $L$ is made of: it grows with flux, shrinks with reactivity, and
+because it goes as $C_{eq}/k$, its temperature dependence is the **difference**
+$(E_a - \Delta H_r) = 36.9$ kJ mol⁻¹ — not $E_a$ alone. That difference is the
+**apparent activation energy of weathering**, and it is what a field study
+measuring rate against temperature actually recovers.
 
-**The water requirement.** How many volumes of saturated water does it take to
-strip one volume of rock?
+**The water requirement.** How many volumes of saturated water strip one volume
+of rock?
 
 $$\tau = \frac{N_0}{C_{eq}}$$
 
-Here $\tau \approx 48{,}000$: the plagioclase in a cubic metre of granite needs
-forty-eight thousand cubic metres of quartz-saturated water. That number, not
-the rate constant, is why weathering is slow. On oxygen the same rock needs
-about 680 – seventy times fewer – which is why oxidation can pace a process
-that dissolution cannot.
+Here $\tau \approx 48{,}000$ — the plagioclase in a cubic metre of granite needs
+forty-eight thousand cubic metres of saturated water. *That* is why weathering
+is slow, not the rate constant. On oxygen the same rock needs about 680.
 
-**The ratio that decides the picture.** Divide the depth of the section by the
-saturation length:
+**The ratio that decides the picture.** Divide the section depth by $L$:
 
 $$\mathrm{Da} = \frac{\text{depth}}{L}$$
 
-the **Damköhler number**, which counts the e-foldings of saturation a parcel of
-water undergoes on its way down. Here it is **6.6**.
+the **Damköhler number**, counting e-foldings of saturation on the way down.
+Here $\mathrm{Da} = 6.6$.
 
 - **Da ≫ 1 — saturation-limited.** Water fills up long before it runs out of
   rock. Weathering happens where fresh water arrives, and nowhere else. At
-  Da = 6.6 water leaving the base is within 0.14 % of saturation.
+  Da = 6.6, water leaving the base is within 0.14 % of saturation.
 - **Da ≪ 1 — reaction-limited.** Water crosses barely touched; the rate
   constant sets the pace everywhere at once.
 
-Under dissolution this section is firmly in the first limit, and that is what
-shelters a block interior. **Under oxidation it is in the second** – Da = 0.02,
-oxygen reaches every joint at almost full strength – and corestones still form,
-because what shelters them there is not the supply but how far oxygen can
-*diffuse* into intact rock before it is consumed, a few centimetres. Two
-different mechanisms, both of which come out as *the water never got there*.
+Dissolving, this section is firmly in the first limit, and that is what
+shelters a block interior. **Oxidising, it is in the second** — Da = 0.02,
+oxygen reaching every joint at nearly full strength — and corestones still
+form, because what shelters them there is how far oxygen can *diffuse* into
+intact rock before it is consumed: a few centimetres. Two mechanisms, and both
+come out as *the water never got there*.
 
-Note what Da is made of: a depth over a length. It is a property of **how much
-rock you are looking at**, not of the rock. The same granite viewed one metre
-at a time gives Da = 2.2.
-
-(Chemists call the Da ≫ 1 limit *transport-limited*, for the transport of
-solute. That name is avoided here: in geomorphology it means an erosion rate
-set by the capacity to move sediment, and nothing in this model moves
-sediment.)
+Da is a depth over a length, so it is a property of **how much rock you are
+looking at**, not of the rock. The same granite viewed one metre at a time
+gives Da = 2.2.
 
 ### 7. The feedback: weathered rock conducts better
 
-One more coupling, and it is the one that makes the pictures look like real
-outcrops. Weathering opens connected porosity, so the rock's conductivity rises
-as it reacts – interpolated geometrically between intact granite and fully
-weathered material,
+Weathering opens connected porosity, so $K$ rises as the rock reacts —
+interpolated geometrically between intact granite and weathered material:
 
 $$K(M) = K_{\rm intact}^{\,M}\; K_{\rm weathered}^{\,1-M}$$
 
-which is linear in $\log K$, because that is how conductivity varies. The head
-is then re-solved as the rock changes.
+- Geometric, because it is linear in $\log K$, and $K$ varies over orders of
+  magnitude rather than by small increments.
 
-This closes a loop: **water opens rock, open rock draws more water.** It is the
-same positive feedback that makes wormholes in limestone and fingers in any
-dissolving porous medium. Watch what it does with depth – shallow blocks are
-destroyed while deeper ones survive and taper, because water opens the rock it
-passes through on the way down and arrives at depth already spent. That is a
-weathering *profile*. Held fixed, as this model did until it was checked, the
-section weathers at nearly the same rate at every depth, which no outcrop does.
+The head is re-solved as the rock changes, which closes a loop: **water opens
+rock, and open rock draws more water.** Watch what that does with depth —
+shallow blocks destroyed while deeper ones survive and taper, because water
+opens the rock it passes on the way down and arrives at depth already spent.
+That is a weathering *profile*, and it is what a saprolite looks like. Held
+fixed, the section weathers at nearly the same rate at every depth, which no
+outcrop does.
 
 {% include figure image_path="/assets/images/weathering/weathering-rinds-galicia.jpg"
    alt="Concentric weathering rinds in granite seen from above, with a coin for scale"
    caption="The rind, in the field: concentric shells of weathered granite around a core the water has not finished with, Estaca de Bares, Galicia. The coin gives the scale. Photo: [PePeEfe](https://commons.wikimedia.org/wiki/File:Concentric_spheroidal_weathering_in_granite.JPG), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)." %}
 
-### 8. Why the section is periodic
-
-It has no side walls, because a no-flow wall forces lateral flow to vanish
-there and manufactures a drainage divide down the middle of the domain. That is
-also why the joint orientation and spacing sliders snap: only certain angles
-and spacings let the joint pattern close on itself across the seam.
+The section is **periodic left to right** — it has no side walls, because a
+no-flow wall forces lateral flow to vanish and manufactures a drainage divide
+down the middle. That is also why the orientation and spacing sliders snap:
+only certain angles and spacings let the joint pattern close across the seam.
 
 ## Where the numbers come from
 
@@ -701,6 +704,8 @@ should treat its *timescales* as indicative and its *mechanism* as sound.
 
 ## References
 
+- Freeze, R.A. & Cherry, J.A. (1979). *Groundwater.* Prentice-Hall, 604 pp.
+  – the classic ranges for hydraulic conductivity and porosity.
 - Goodfellow, B.W., Hilley, G.E., Webb, S.M., Sklar, L.S., Moon, S. & Olson,
   C.A. (2016). The chemical, mechanical, and hydrological evolution of
   weathering granitoid. *Journal of Geophysical Research: Earth Surface*
