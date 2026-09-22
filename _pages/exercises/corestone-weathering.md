@@ -644,7 +644,7 @@ read as a measurement of one. Every parameter below is either measured
 elsewhere or derived from the mineralogy, but the granite they describe is a
 generic one and the section they run in is drawn rather than surveyed.
 
-### Every parameter, and where it came from
+### Every dissolution parameter, and where it came from
 
 | | symbol | value | where it came from |
 |---|---|---|---|
@@ -659,24 +659,6 @@ generic one and the section they run in is drawn rather than surveyed.
 | Aqueous diffusivity | $D$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured**, and of the right species: dissolved silica (Rebreanu et al. 2008; Wollast & Garrels 1971). Scaled by Stokes–Einstein |
 | Matrix tortuosity | $\theta$ | 10⁴ → 10 | **measured range.** The factor by which the connected pore path lengthens and constricts diffusion relative to free solution, $D_\mathrm{eff} = D_w/\theta$. Written $\theta$ because $\tau$ is already the water requirement above; the literature uses $\tau$ for both. 10⁴ in intact crystalline rock, 10 in saprolite at ~30 % porosity; interpolated with $M$, like the conductivity |
 | Dispersivity | $\alpha$ | 2 mm | **the grain diameter.** Mechanical dispersion per unit pore velocity, $D_\mathrm{mech} = \alpha\lvert v\rvert$; $\alpha$ measures the spread of flow-path velocities, which at the pore scale is set by the grain size |
-
-**The oxidation reaction** runs on a different set, and they are given here
-because the model reports numbers from them. Every one is weaker than its
-dissolution counterpart, for reasons the last part of this page sets out.
-
-| | symbol | value | where it came from |
-|---|---|---|---|
-| Oxidation rate constant | $k_{ox}$ | 4 × 10⁻¹³ m s⁻¹ | **weakest number in the model.** From the one published rate for Fe(II) silicate oxidation by dissolved O₂. Candidate values span a factor of four thousand |
-| Biotite fraction | $\phi_\mathrm{bt}$ | 0.06 | **chosen** from the 3–10 % range for granite |
-| Biotite surface area | $A$ | 180 m² m⁻³ | **derived.** $6\phi_\mathrm{bt}/d$ at $d$ = 2 mm, the same geometric convention as the plagioclase above |
-| Iron content | $f_\mathrm{FeO}$ | 0.011 | **measured.** Whole-rock FeO in USGS reference granites G-1, G-2, G-3 (0.0083–0.0116) |
-| O₂ diffusivity, free water | $D_w$ | 2.1 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured.** About twice silica's, O₂ being a small neutral molecule |
-| Dissolved O₂ | $C_{eq}$ | 0.457 → 0.236 mol m⁻³ | **measured.** Air-saturated fresh water, 0 °C to 30 °C. Note the direction: a gas leaves solution as water warms |
-| Water per rock volume | $\tau$ | 678 | **derived.** $f_\mathrm{FeO}/(4V_\mathrm{FeO}C_{eq})$ at 12 °C; the 4 is four Fe(II) oxidised per O₂ |
-| Activation energy | $E_a$ | **none** | **none has ever been measured** for this reaction. The model gives it none, so its whole temperature response is the O₂ solubility above |
-
-Those give an oxidation length of 132 m, a Damköhler number of 0.023 over the
-3 m section, and an O₂ penetration into intact rock of 4.5 cm.
 
 **$k_0$ and $C_0$ are not in the table because the model never evaluates
 them.** Both equations above are written in the textbook form, with an absolute
@@ -810,6 +792,28 @@ put them in that order:
    three to four orders of magnitude, and attribute it to "early stages of
    biotite oxidation" – the same measurement this model uses for its
    `k_matrix` and `k_weathered`.
+
+### Every oxidation parameter, and where it came from
+
+These are the biotite counterparts of the dissolution table above, and the
+comparison is the point: **every one of them is weaker than its opposite
+number.** Where the dissolution side has a compiled rate constant and a
+measured activation energy, this side has one published rate and no
+activation energy at all.
+
+| | symbol | value | where it came from |
+|---|---|---|---|
+| Oxidation rate constant | $k_{ox}$ | 4 × 10⁻¹³ m s⁻¹ | **weakest number in the model.** From the one published rate for Fe(II) silicate oxidation by dissolved O₂. Candidate values span a factor of four thousand |
+| Biotite fraction | $\phi_\mathrm{bt}$ | 0.06 | **chosen** from the 3–10 % range for granite |
+| Biotite surface area | $A$ | 180 m² m⁻³ | **derived.** $6\phi_\mathrm{bt}/d$ at $d$ = 2 mm, the same geometric convention used for the plagioclase in the dissolution table. Using one convention for both is what makes the two reactions comparable |
+| Iron content | $f_\mathrm{FeO}$ | 0.011 | **measured.** Whole-rock FeO in USGS reference granites G-1, G-2, G-3 (0.0083–0.0116) |
+| O₂ diffusivity, free water | $D_w$ | 2.1 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured.** About twice silica's, O₂ being a small neutral molecule |
+| Dissolved O₂ | $C_{eq}$ | 0.457 → 0.236 mol m⁻³ | **measured.** Air-saturated fresh water, 0 °C to 30 °C. Note the direction: a gas leaves solution as water warms |
+| Water per rock volume | $\tau$ | 678 | **derived.** $f_\mathrm{FeO}/(4V_\mathrm{FeO}C_{eq})$ at 12 °C; the 4 is four Fe(II) oxidised per O₂ |
+| Activation energy | $E_a$ | **none** | **none has ever been measured** for this reaction. The model gives it none, so its whole temperature response is the O₂ solubility above |
+
+Those give an oxidation length of 132 m, a Damköhler number of 0.023 over the
+3 m section, and an O₂ penetration into intact rock of 4.5 cm.
 
 ### Running it: the same model, the other reaction
 
