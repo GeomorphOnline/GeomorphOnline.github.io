@@ -260,7 +260,7 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 | $h$ | hydraulic head | m |
 | $n$ | porosity, 0 to 1 | – |
 | $C$ | concentration of the reacting solute | mol m⁻³ |
-| $C_{eq}$ | the ceiling on $C$ | mol m⁻³ |
+| $C_{eq}$ | equilibrium concentration of the dissolved species, and so the ceiling on $C$ | mol m⁻³ |
 | $c$ | normalised concentration, $C/C_{eq}$ | – |
 | $k$ | reaction rate constant, dissolution | s⁻¹ |
 | $k_\mathrm{ox}$ | reaction rate constant, oxidation | s⁻¹ |
@@ -275,7 +275,8 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 | $X$ | extent of reaction, $1-M$ (what the colour bar shows) | – |
 | $L$ | saturation length | m |
 | $E_a$ | activation energy | J mol⁻¹ |
-| $\Delta H_r$ | enthalpy of the reaction that sets the ceiling | J mol⁻¹ |
+| $\Delta H_r$ | enthalpy change of the reaction | J mol⁻¹ |
+| $\Delta S_r$ | entropy change of the reaction | J mol⁻¹ K⁻¹ |
 | $T$ | absolute temperature | K |
 | $t$ | time | s |
 | $R$ | universal gas constant, 8.314 | J mol⁻¹ K⁻¹ |
@@ -433,8 +434,9 @@ $$r = k(T)\,C_{eq}\left(1 - \frac{C}{C_{eq}}\right)$$
 - $k(T)$, the **reaction rate constant**, in s⁻¹: how often, per unit time, an
   interaction at the mineral surface causes a reaction. Writing it $k(T)$ only
   says that it depends on temperature.
-- $C_{eq}$, the ceiling, which sets how much solute one reaction's worth of
-  progress puts into the water, and so carries the units.
+- $C_{eq}$, the **equilibrium concentration** of the dissolved species: the
+  value $C$ climbs to when the reaction has run as far as it can go. It is the
+  ceiling, and it carries the units.
 - $(1 - C/C_{eq})$, the **affinity**: how far the water is from being finished.
   It is 1 in fresh water, and 0 at saturation.
 
@@ -450,10 +452,17 @@ $$k(T) = A \exp\!\left(-\frac{E_a}{R\,T}\right) \qquad \text{Arrhenius}$$
 $$C_{eq}(T) = C_\mathrm{eq,0} \exp\!\left(-\frac{\Delta H_r}{R\,T}\right) \qquad \text{van 't Hoff}$$
 
 - $E_a$, the **activation energy**: the barrier a reaction has to clear.
-- $A$, the **Arrhenius frequency**: interactions per unit time. This is where
-  surface area enters, and it is why fracturing rock speeds its chemistry up.
-- $\Delta H_r$, the **enthalpy** of the reaction that sets the ceiling.
+- $A$, the **Arrhenius frequency**: how often the reaction is attempted, per
+  unit time. Surface area enters here, which is why fracturing rock speeds its
+  chemistry up. The exponential beside it is the fraction of those attempts
+  carrying enough energy to clear the barrier.
+- $\Delta H_r$, the **enthalpy change** of the reaction: the heat it takes in.
   Positive here, so warming raises $C_{eq}$.
+- $C_\mathrm{eq,0}$, the **entropy** term, $\propto \exp(\Delta S_r / R)$.
+  Dissolution turns an ordered crystal into ions wandering loose in water, and
+  the larger that gain in disorder, the higher the ceiling sits at every
+  temperature. The two equations are one statement, $\Delta G_r = \Delta H_r -
+  T\Delta S_r$, split into its enthalpy and entropy halves.
 
 Put both into the rate law and the bracket multiplies out:
 
