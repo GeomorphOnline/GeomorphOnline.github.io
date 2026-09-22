@@ -250,8 +250,8 @@ rather than a law of either field – Fletcher, Buss & Brantley (2006) write
 $K = kS$ for a lumped kinetic parameter, and White & Brantley (2003) use $K_s$
 for a solubility constant – so both carry subscripts here.
 
-Two symbols are shared with your lecture and mean exactly what they mean there:
-$k$, the reaction rate constant in s⁻¹, and $A$, the Arrhenius frequency.
+Two of them carry their standard Arrhenius meanings: $k$, the reaction rate
+constant in s⁻¹, and $A$, the Arrhenius frequency.
 
 | symbol | meaning | units |
 |---|---|---|
@@ -423,10 +423,9 @@ exercise above runs:
 
 $$\dot{N} = k(T)\,C_{eq}\left(1 - \frac{C}{C_{eq}}\right)$$
 
-- $k(T)$, the **reaction rate constant**, in s⁻¹ – the same $k$ your lecture
-  writes. It counts how often, per unit time, an interaction at the mineral
-  surface actually causes a reaction. Writing it $k(T)$ only says that it
-  depends on temperature.
+- $k(T)$, the **reaction rate constant**, in s⁻¹: how often, per unit time, an
+  interaction at the mineral surface causes a reaction. Writing it $k(T)$ only
+  says that it depends on temperature.
 - $C_{eq}$, the ceiling, which turns that rate into moles per cubic metre of
   rock per second.
 - $(1 - C/C_{eq})$, the **affinity**: how far the water is from being finished.
@@ -548,8 +547,7 @@ $$\mathrm{Da} = \frac{\text{depth}}{L}$$
 The section sits firmly in the first limit at Da = 6.6, and the water leaving
 its base is within 0.14 % of saturation. That is what shelters a block
 interior. (Run the same section on oxygen instead and Da drops to 0.02, the
-*other* limit, and no interior is sheltered at all. [The last part of this
-page](#what-actually-goes-first-iron-in-biotite) takes that apart.)
+*other* limit.)
 
 Two different mechanisms, then, and both come out as *the water never got
 there*. Note also that Da is a depth over a length, which tells you about how
@@ -829,8 +827,8 @@ a waste product in a culture, a reactant front against a product front in any
 porous medium. Ask of each: **is this limited by supply, or by removal?** The
 Damköhler number answers it the same way in both cases.
 
-Three things to watch for. All three run against the intuition that
-dissolution has just built.
+Two things to watch for. Both run against the intuition that dissolution
+builds.
 
 1. **Turn the temperature up and the weathering slows down.** Oxygen is a
    *gas*, and gases leave solution as water warms – cold water carries
@@ -839,24 +837,11 @@ dissolution has just built.
    measured for this reaction. (This does not say cold *places* weather more
    slowly. Rio Icacos gets four metres of rain a year, and water supply is a
    separate dial – try it.)
-2. **The rind stops being a front and becomes a gradient.** Dissolving, the
-   joint cell goes to *all* and the block core stays at *none*, with a sharp
-   step between – measured at 30 % of the section reacted, 1.00 at the joint
-   and 0.03 twenty centimetres in. Oxidising, the same comparison runs 0.58 to
-   0.25: the joint never saturates and the core is never untouched. Both
-   reach the 20–60 cm scale of field rindlet zones eventually, but only one
-   of them looks like a gradient the whole way.
-3. **No corestones.** The section disaggregates more or less evenly instead.
-   Dissolving, water reaching a block interior is saturated and the driving
-   force $(1-c)$ falls to 0.03 of its value at the joint – the reaction has
-   stopped, and the core is protected. Oxidising, oxygen reaching that same
-   interior is dilute but present, so $c$ is still 0.6 of its joint value and
-   the core keeps reacting, only slower. A product hits a ceiling and stops; a
-   reactant thins out and carries on.
-
-   **That is why the real process needs both stages.** Oxidation goes first
-   and opens the rock, but it cannot shelter a core. Removing mass, and
-   leaving a core the water has finished with, is dissolution's job.
+2. **The rind becomes a gradient, and the block interiors do not survive.**
+   Dissolving, the joint cell goes to *all* while the core stays at *none* –
+   at 30 % of the section reacted, 1.00 at the joint and 0.03 twenty
+   centimetres in. Oxidising, the same comparison runs 0.58 to 0.25. Section 5
+   is enough to work out why.
 
 **A warning that comes with the mode.** For plagioclase there is a published
 compilation of measured rate constants and activation energies. For oxidation
