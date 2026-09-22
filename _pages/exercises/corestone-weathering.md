@@ -255,12 +255,15 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 
 | symbol | meaning | units |
 |---|---|---|
+| $x$ | horizontal distance across the section | m |
+| $z$ | depth below the ground surface, positive **downward** | m |
 | $q$ | specific discharge (Darcy flux) | m s⁻¹ |
 | $K_\mathrm{sat}$ | saturated hydraulic conductivity | m s⁻¹ |
 | $h$ | hydraulic head | m |
 | $n$ | porosity, 0 to 1 | – |
 | $C$ | concentration of the reacting solute | mol m⁻³ |
 | $C_{eq}$ | equilibrium concentration of the dissolved species, and so the ceiling on $C$ | mol m⁻³ |
+| $C_\mathrm{eq,0}$ | the entropy term in $C_{eq}(T)$, $\propto\exp(\Delta S_r/R)$ | mol m⁻³ |
 | $\Omega$ | saturation state of the fluid, $C/C_{eq} = Q/K$ | – |
 | $k$ | reaction rate constant, dissolution | s⁻¹ |
 | $k_\mathrm{ox}$ | reaction rate constant, oxidation | s⁻¹ |
@@ -274,6 +277,7 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 | $M$ | fraction of that still locked in, $N/N_0$ | – |
 | $X$ | extent of reaction, $1-M$ (what the colour bar shows) | – |
 | $L$ | saturation length | m |
+| $\mathrm{Da}$ | Damköhler number, a depth divided by $L$ | – |
 | $E_a$ | activation energy | J mol⁻¹ |
 | $\Delta H_r$ | enthalpy change of the reaction that sets the ceiling | J mol⁻¹ |
 | $\Delta S_r$ | entropy change of that same reaction | J mol⁻¹ K⁻¹ |
