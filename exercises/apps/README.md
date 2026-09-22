@@ -208,10 +208,10 @@ was never used.
 
 | | |
 |---|---|
-| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `fe22d5a` (no release yet) |
-| application source | corestone `master` @ `0c6b805` (`interactive_demo/corestone_panel.py`) |
+| model | [corestone](https://github.com/MNiMORPH/corestone) `master` @ `b60d07b` (no release yet) |
+| application source | corestone `master` @ `b60d07b` (`interactive_demo/corestone_panel.py`) |
 | artesian | `main` @ `f28c9f4`, shipped as a wheel because the app imports `artesian.live`. The tree was one commit further on at `c3d7c2b`, which adds only a CI workflow and nothing under `src/`, so the wheel is the pushed commit's and that is what is recorded |
-| built | 2026-09-22 (rebuilt: the surface can now refuse water, so the spacing slider reaches **none** and the rainfall slider is named for what arrives rather than what enters) |
+| built | 2026-09-22 (rebuilt: the unjointed case is solved as a single column, because solved as a grid the reactive-infiltration instability amplifies rounding error into fingers whose width follows the mesh) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 
