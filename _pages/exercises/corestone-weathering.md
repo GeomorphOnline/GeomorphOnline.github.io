@@ -673,13 +673,12 @@ generic one and the section they run in is drawn rather than surveyed.
 | Dispersivity | $\alpha$ | 2 mm | **the grain diameter.** Mechanical dispersion per unit pore velocity, $D_\mathrm{mech} = \alpha\lvert v\rvert$; $\alpha$ measures the spread of flow-path velocities, which at the pore scale is set by the grain size |
 
 **$A$ and $C_\mathrm{eq,0}$ are not in the table because the model never
-evaluates them.** Both equations above are written in the textbook form, with an absolute
-pre-exponential factor, but nothing here needs one: every rate is taken
-relative to the reference state, so what enters the arithmetic is
-$k(T)/k(T_\mathrm{ref})$ and
-$C_{eq}(T)/C_{eq}(T_\mathrm{ref})$, in which the two pre-exponentials cancel. The model therefore has a *normalisation* where a
-research model would need an absolute solubility, which is why $C_{eq}$ never
-appears on its own anywhere in the code, only ever as a ratio.
+evaluates them.** Each is a real physical quantity, an attempt frequency and an
+entropy. But every rate here is taken relative to the reference state, so what
+enters the arithmetic is $k(T)/k(T_\mathrm{ref})$ and
+$C_{eq}(T)/C_{eq}(T_\mathrm{ref})$, and both cancel. This model therefore holds
+a *normalisation* where a research model would need an absolute solubility,
+which is why $C_{eq}$ appears in the code only ever as a ratio.
 
 ### Does it get the timescale right?
 
