@@ -265,7 +265,7 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 | $k$ | reaction rate constant, dissolution | s⁻¹ |
 | $k_\mathrm{ox}$ | reaction rate constant, oxidation | s⁻¹ |
 | $A$ | Arrhenius frequency: interactions per unit time, and therefore proportional to reactive surface area | s⁻¹ |
-| $s_\mathrm{geo}$ | reactive mineral surface area per rock volume, **geometric** rather than BET | m² m⁻³ |
+| $s_\mathrm{geo}$ | reactive mineral surface area per rock volume, **geometric** rather than BET (gas-adsorption) | m² m⁻³ |
 | $\dot{N}$ | reaction rate per rock volume | mol m⁻³ s⁻¹ |
 | $D$ | diffusion coefficient in the rock, $D_w$ divided by tortuosity | m² s⁻¹ |
 | $D_w$ | diffusion coefficient in free water | m² s⁻¹ |
@@ -569,7 +569,8 @@ rock, and open rock draws more water.
 Watch what that does with depth in your own run. Shallow blocks are destroyed
 while deeper ones survive and taper, because water opens the rock it passes through on the way
 down and arrives at depth already spent. That is a weathering *profile*, and it
-is what a saprolite looks like. Hold the conductivity fixed instead (as this
+is what a saprolite looks like – rock rotted in place, still holding the shape
+it had. Hold the conductivity fixed instead (as this
 model did until it was checked) and the section weathers at nearly the same
 rate at every depth, which no outcrop does.
 
@@ -591,14 +592,16 @@ something it predicts. That is a claim you can check, and it is checked below.
 
 Measured: the two ends of the matrix conductivity, $K_\mathrm{sat,intact}$ and
 $K_\mathrm{sat,weathered}$. Goodfellow et al. (2016) measured the hydraulic
-conductivity of granodiorite *matrix* across a range of weathering grades and
+conductivity of the *matrix* of granodiorite, a close relative of granite,
+across a range of weathering grades and
 found it rises three to four orders of magnitude, from 9 × 10⁻⁹ – 8 × 10⁻⁸
 cm s⁻¹ in the parent rock to 9 × 10⁻⁵ – 9 × 10⁻⁴ cm s⁻¹ in the most weathered
 samples, driven by the cracking that follows oxidative dissolution of biotite.
 The model uses the mid-points of those ranges: 5 × 10⁻¹⁰ and 5 × 10⁻⁶ m s⁻¹.
 Those are *matrix* conductivities, deliberately. Goodfellow et al. note that
 their values sit one to three orders of magnitude below field measurements on
-weathering granitoids, and attribute the difference to their having measured
+weathering granitoids (the granite family), and attribute the difference to
+their having measured
 the matrix directly. A field value already contains the fractures; here the
 fractures are not a correction to be folded in, they are the joints, and the
 model draws them separately.
@@ -617,8 +620,9 @@ which it often is not, but because it sets the pace: at 25 °C and near-neutral
 pH it dissolves 3.7 times faster than K-feldspar, and given equal surface
 areas it still carries about four fifths of the dissolution. What makes grus is
 the phase that goes, not the phase that survives. So the activation energy is
-oligoclase's, $E_a$ = 69.8 kJ mol⁻¹ (Palandri & Kharaka 2004, neutral
-mechanism; K-feldspar would be 38.0).
+that of oligoclase – the particular plagioclase a granite usually carries –
+$E_a$ = 69.8 kJ mol⁻¹ (Palandri & Kharaka 2004, neutral mechanism; K-feldspar
+would be 38.0).
 
 The reaction enthalpy $\Delta H_r$ is not a property of the dissolving mineral
 at all – it is a statement about *what saturates*. Here the ceiling on the
@@ -668,7 +672,7 @@ takes is a *result*, and a result can be checked. At the default settings –
 1 m joints, 0.30 m yr⁻¹, 12 °C – this model dissolves 90 % of a 3 m section in
 **3713 kyr**, which is a weathering front advancing at about **0.81 m Myr⁻¹**.
 
-Measured granite regoliths, from cosmogenic and solute budgets:
+Measured granite regoliths – the weathered layer sitting on fresh rock – from cosmogenic and solute budgets:
 
 | site | front | climate |
 |---|---|---|
@@ -683,7 +687,7 @@ slider moves too.
 
 The gap is not spread evenly over the inputs; it sits in the **reactive
 surface area**. This model uses the geometric area of 2 mm grains, 900 m² m⁻³,
-where BET for granite is 3 × 10⁵–3 × 10⁶. Closing the rate would need a factor
+where BET – surface area measured by how much gas the rock adsorbs, which counts every pit and crack – runs 3 × 10⁵–3 × 10⁶ for granite. Closing the rate would need a factor
 of five, which is still 70 to 700 times below BET – so the disagreement lives
 inside
 a range the field itself has not resolved (White & Brantley 2003). It is
@@ -717,7 +721,7 @@ reaches survives. That argument does not depend on which mineral is dissolving.
 The colour bar reads *none* to *all* of the soluble phase, and deliberately
 not *rock* to *grus*. The model tracks one number per cell – how much of the
 soluble phase has gone – and the weathering grades are not that. Fresh rock,
-saprock, saprolite and grus are distinguished by fabric and mineralogy, and a
+saprock, saprolite and grus are distinguished by fabric (how the grains sit together) and mineralogy, and a
 **corestone is a shape**: a rounded block surrounded by weathered rock, which
 no per-cell threshold can recognise. This page used to report "grus X %,
 corestone Y %" from two cut-offs that were never justified, and under which
@@ -736,13 +740,14 @@ reaction to learn first: a rate constant, a solubility ceiling, and water that
 stops working once it is full. Granite does not begin there.
 
 The first reaction in a granite is **oxidation of the iron in biotite**, and
-it is not a dissolution reaction at all. Rain arrives carrying dissolved
-oxygen. The oxygen diffuses into the rock, finds Fe(II) sitting in the
-octahedral sheet of a biotite crystal, and takes an electron from it. Nothing
+it is not a dissolution reaction at all. Biotite is built in sheets, stacked
+like pages with potassium between them, and the iron sits inside the sheets.
+Rain arrives carrying dissolved oxygen. The oxygen diffuses into the rock,
+finds that Fe(II), and takes an electron from it. Nothing
 has yet left the rock.
 
 Goodfellow et al. (2016) watched this happen, crystal by crystal, with a
-synchrotron X-ray microprobe on 26 biotite grains across ten thin sections.
+synchrotron X-ray microprobe on 26 biotite grains across ten thin sections (rock ground thin enough to see through).
 Their sentences are worth reading in order, because they are the mechanism:
 
 > "Biotite weathering begins with oxidation of parts of biotite crystals that
@@ -758,8 +763,7 @@ Their sentences are worth reading in order, because they are the mechanism:
 Read that as a chain: (1) oxygen oxidises the iron, (2) the sheet loses
 negative charge, so the potassium holding the layers together is no longer
 held and leaves, (3) the layers swell, and (4) the crystal splits along its
-cleavage. A biotite grain is a stack of sheets, and oxidising the iron inside
-it prises the stack apart.
+cleavage. Oxidising the iron inside the stack prises it apart.
 
 That last step is the one that matters for the rock, because **biotite is
 a few per cent of a granite and it is wedging the rest apart**. The swelling
