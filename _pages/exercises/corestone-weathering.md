@@ -256,7 +256,7 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 | symbol | meaning | units |
 |---|---|---|
 | $x$ | horizontal distance across the section | m |
-| $z$ | depth below the ground surface, positive **downward** | m |
+| $z$ | vertical coordinate, positive **upward** | m |
 | $q$ | specific discharge (Darcy flux) | m s⁻¹ |
 | $K_\mathrm{sat}$ | saturated hydraulic conductivity | m s⁻¹ |
 | $h$ | hydraulic head | m |
@@ -275,7 +275,6 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 | $N$ | solute still locked in the rock, per unit volume | mol m⁻³ |
 | $N_0$ | $N$ in fresh rock, before any weathering | mol m⁻³ |
 | $M$ | fraction of that still locked in, $N/N_0$ | – |
-| $X$ | extent of reaction, $1-M$ (what the colour bar shows) | – |
 | $L$ | saturation length | m |
 | $\mathrm{Da}$ | Damköhler number, a depth divided by $L$ | – |
 | $E_a$ | activation energy | J mol⁻¹ |
