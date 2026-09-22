@@ -266,7 +266,7 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 | $k_\mathrm{ox}$ | reaction rate constant, oxidation | s⁻¹ |
 | $A$ | Arrhenius frequency: interactions per unit time, and therefore proportional to reactive surface area | s⁻¹ |
 | $s_\mathrm{geo}$ | reactive mineral surface area per rock volume, **geometric** rather than BET (gas-adsorption) | m² m⁻³ |
-| $\dot{N}$ | reaction rate per rock volume | mol m⁻³ s⁻¹ |
+| $r$ | reaction rate per rock volume | mol m⁻³ s⁻¹ |
 | $D$ | diffusion coefficient in the rock, $D_w$ divided by tortuosity | m² s⁻¹ |
 | $D_w$ | diffusion coefficient in free water | m² s⁻¹ |
 | $N_0$ | moles of solute the fresh rock can release, per m³ | mol m⁻³ |
@@ -353,7 +353,7 @@ and each flux is multiplied by the length of the face it crosses:
 
 $$\underbrace{\big[qC\,\Delta x\big]_{\rm in} - \big[qC\,\Delta x\big]_{\rm out}}_{\text{advection}}
 \;+\; \underbrace{\big[-D\nabla C\,\Delta x\big]_{\rm in} - \big[-D\nabla C\,\Delta x\big]_{\rm out}}_{\text{diffusion}}
-\;+\; \underbrace{\dot{N}\,\Delta x\,\Delta z}_{\text{reaction}}
+\;+\; \underbrace{r\,\Delta x\,\Delta z}_{\text{reaction}}
 \;=\; \underbrace{\frac{\partial (nC)}{\partial t}\,\Delta x\,\Delta z}_{\text{storage}}$$
 
 - $qC$, solute carried along by flowing water (the water flux, times what that
@@ -363,15 +363,14 @@ $$\underbrace{\big[qC\,\Delta x\big]_{\rm in} - \big[qC\,\Delta x\big]_{\rm out}
   written $\Delta x$ above for brevity.
 - $-D\nabla C$, **Fick's law**: spreading runs down the concentration gradient,
   from more to less, which is what the minus sign is doing.
-- $\dot{N}$, what the rock gives up per unit volume. (The dot marks a rate: a
-  stock $N$ being drawn down. $N_0$, below, is the stock it starts from.)
+- $r$, the rate at which the rock releases solute, per unit volume.
 - $nC$, the solute sitting in storage, since only the pore fraction holds water.
 
 Divide every term by $\Delta x\,\Delta z$, so that each is now per unit volume,
 and let the box shrink. Each in-minus-out per unit volume is by definition a
 divergence:
 
-$$-\nabla\cdot(qC) + \nabla\cdot(D\nabla C) + \dot{N} = \frac{\partial (nC)}{\partial t}$$
+$$-\nabla\cdot(qC) + \nabla\cdot(D\nabla C) + r = \frac{\partial (nC)}{\partial t}$$
 
 Now drop the storage term. You should know why you are allowed to, because it
 is the one approximation in this derivation. Water
@@ -384,7 +383,7 @@ the balance being solved.)
 
 Setting the right-hand side to zero and multiplying through by $-1$:
 
-$$\nabla\cdot(qC) - \nabla\cdot(D\nabla C) = \dot{N}$$
+$$\nabla\cdot(qC) - \nabla\cdot(D\nabla C) = r$$
 
 In words: what the water carries away, plus what spreads away, equals what the
 rock gives up. Every term is in mol m⁻³ s⁻¹.
@@ -405,7 +404,7 @@ lets a block weather inward at all.
 
 The moles the water gained are the moles the rock lost:
 
-$$N_0\,\frac{\partial M}{\partial t} = -\dot{N}$$
+$$N_0\,\frac{\partial M}{\partial t} = -r$$
 
 - $N_0$, the moles of solute the fresh rock can release, per cubic metre
   (about 4,800 here). Counting the *solute* rather than the mineral is what
@@ -414,14 +413,14 @@ $$N_0\,\frac{\partial M}{\partial t} = -\dot{N}$$
 - $M$, the fraction of it still there (1 when fresh, 0 when gone).
 - The minus sign, because the rock loses what the water gains.
 
-That is the whole model. Everything below is about $\dot{N}$.
+That is the whole model. Everything below is about $r$.
 
 ### 4. The reaction, one: feldspar dissolution
 
 Plagioclase dissolving into water is the textbook case, and it is the one the
 exercise above runs:
 
-$$\dot{N} = k(T)\,C_{eq}\left(1 - \frac{C}{C_{eq}}\right)$$
+$$r = k(T)\,C_{eq}\left(1 - \frac{C}{C_{eq}}\right)$$
 
 - $k(T)$, the **reaction rate constant**, in s⁻¹: how often, per unit time, an
   interaction at the mineral surface causes a reaction. Writing it $k(T)$ only
@@ -450,7 +449,7 @@ $$C_{eq}(T) = C_\mathrm{eq,0} \exp\!\left(-\frac{\Delta H_r}{R\,T}\right) \qquad
 
 Put both into the rate law and the bracket multiplies out:
 
-$$\dot{N} = k\,(C_{eq} - C)$$
+$$r = k\,(C_{eq} - C)$$
 
 Warming raises $k$ and raises $C_{eq}$. It raises the rate through both.
 
@@ -466,12 +465,12 @@ Everything above assumed the solute is something the rock **makes**. Granite
 has a second reaction where it is something the rock **consumes** instead, and
 the difference is structural rather than chemical:
 
-$$\dot{N} = -\,k_\mathrm{ox}\,C$$
+$$r = -\,k_\mathrm{ox}\,C$$
 
 - $k_\mathrm{ox}$, the oxidation rate constant, in s⁻¹, exactly like the
   dissolution $k$ above.
 - $C$, dissolved oxygen. (Notice there is **no bracket**. That is the point.)
-- **The minus sign**, which is the structural change. $\dot{N}$ was defined as
+- **The minus sign**, which is the structural change. $r$ was defined as
   what the rock gives *up*. Here the rock takes oxygen *out* of the water, so
   the same symbol has to go negative.
 
@@ -481,7 +480,7 @@ is a **reactant**. It arrives at its ceiling in the rain, the rock consumes it,
 and the reaction stops where it runs out.
 
 Three things flip, then, and no more: the driving force from $(1-c)$ to $c$,
-the sign of $\dot{N}$ from source to sink, and the concentration of the water
+the sign of $r$ from source to sink, and the concentration of the water
 arriving at the top from 0 to its ceiling. **The transport equation itself does
 not change at all** – same advection, same diffusion, same conservation. That
 is what makes the two reactions one model rather than two.
