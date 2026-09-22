@@ -275,8 +275,8 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 | $X$ | extent of reaction, $1-M$ (what the colour bar shows) | – |
 | $L$ | saturation length | m |
 | $E_a$ | activation energy | J mol⁻¹ |
-| $\Delta H_r$ | enthalpy change of the reaction | J mol⁻¹ |
-| $\Delta S_r$ | entropy change of the reaction | J mol⁻¹ K⁻¹ |
+| $\Delta H_r$ | enthalpy change of the reaction that sets the ceiling | J mol⁻¹ |
+| $\Delta S_r$ | entropy change of that same reaction | J mol⁻¹ K⁻¹ |
 | $T$ | absolute temperature | K |
 | $t$ | time | s |
 | $R$ | universal gas constant, 8.314 | J mol⁻¹ K⁻¹ |
@@ -456,8 +456,10 @@ $$C_{eq}(T) = C_\mathrm{eq,0} \exp\!\left(-\frac{\Delta H_r}{R\,T}\right) \qquad
   unit time. Surface area enters here, which is why fracturing rock speeds its
   chemistry up. The exponential beside it is the fraction of those attempts
   carrying enough energy to clear the barrier.
-- $\Delta H_r$, the **enthalpy change** of the reaction: the heat it takes in.
-  Positive here, so warming raises $C_{eq}$.
+- $\Delta H_r$, the **enthalpy change** of the reaction that sets the ceiling:
+  the heat it takes in. Positive here, so warming raises $C_{eq}$. Note the
+  subscript is *reaction*, not *dissolution*: the reaction meant is whichever
+  one saturates the water, and it is not the one dissolving the rock.
 - $C_\mathrm{eq,0}$, the **entropy** term, $\propto \exp(\Delta S_r / R)$.
   Dissolution turns an ordered crystal into ions wandering loose in water, and
   the larger that gain in disorder, the higher the ceiling sits at every
