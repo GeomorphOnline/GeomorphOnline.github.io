@@ -437,54 +437,29 @@ it is tough. It survives because the water that reached it had already finished
 working – and everything you watch the demo do follows from that one factor
 going to zero.
 
-**Temperature enters this equation twice**, in two different places, and the two
-do completely different jobs.
+**Temperature enters the rate law twice**, once in each factor.
 
-*First, in the rate constant.* A reaction has an energy barrier to clear, and
-warming gives molecules more energy to clear it with. More of them make it
-over. The reaction speeds up steeply, because the effect is exponential, and
-the **Arrhenius equation** puts a number on it:
+$$k(T) = A \exp\!\left(-\frac{E_a}{R\,T}\right) \qquad \text{Arrhenius}$$
 
-$$k(T) = A \exp\!\left(-\frac{E_a}{R\,T}\right)$$
+$$C_{eq}(T) = C_\mathrm{eq,0} \exp\!\left(-\frac{\Delta H_r}{R\,T}\right) \qquad \text{van 't Hoff}$$
 
-- $E_a$, the **activation energy**: the height of that barrier. (The taller it
-  is, the more temperature matters.)
-- $A$, the **Arrhenius frequency**: interactions per unit time, whether or
-  not they cause a reaction. The exponential is the fraction of them that
-  clear the barrier, so $k = A$ would mean every interaction reacts.
-  - **$A$ is where surface area enters**, and it is the reason physical
-    weathering speeds chemical weathering up. More surface means more
-    interactions per unit time, so fracturing the rock raises $A$ without
-    touching $E_a$ or $T$.
-- $T$ sits in the denominator of the exponent. Warm it and the exponent gets
-  less negative, which makes $k$ larger.
+- $E_a$, the **activation energy**: the barrier a reaction has to clear.
+- $A$, the **Arrhenius frequency**: interactions per unit time. This is where
+  surface area enters, and it is why fracturing rock speeds its chemistry up.
+- $\Delta H_r$, the **enthalpy** of the reaction that sets the ceiling.
+  Positive here, so warming raises $C_{eq}$.
 
-*Second, in the ceiling.* Dissolving is itself a reaction with a heat of its
-own, and it either takes heat in or gives heat out. Warm a reaction that
-absorbs heat and you push it further along – which here means driving more
-mineral into solution, and lifting the ceiling. That is Le Chatelier's
-principle. The **van 't Hoff equation** is its quantitative form, applied to
-the equilibrium constant (which for a saturating solid is the solubility
-itself):
+Put both into the rate law and the bracket multiplies out:
 
-$$C_{eq}(T) = C_\mathrm{eq,0} \exp\!\left(-\frac{\Delta H_r}{R\,T}\right)$$
+$$\dot{N} = k\,(C_{eq} - C)$$
 
-- $\Delta H_r$, the **enthalpy of the reaction** that sets the ceiling: the
-  heat it takes in or gives out. Positive means dissolution absorbs heat, and
-  warming therefore raises the ceiling. (Negative means the reverse, and warming lowers
-  it. Quartz is positive, which is why this section's ceiling climbs.)
-- $C_\mathrm{eq,0}$, a reference scale, playing the part $A$ plays above.
+Warming raises $k$ and raises $C_{eq}$. It raises the rate through both.
 
-Do not confuse the two. Arrhenius makes the rock dissolve faster *where it
-stands*, while van 't Hoff does not speed the reaction at all – it raises the
-ceiling, and each litre therefore carries more away before it has to stop. One
-is about speed, the other about capacity.
+The saturation length is where the two pull against each other. $L = q/k$, and
+$k$ carries the **difference** $(E_a - \Delta H_r)$ = 36.9 kJ mol⁻¹, not $E_a$
+alone. Warming shortens $L$: 0.90 m at 0 °C, 0.18 m at 30 °C.
 
-Now test that against your own intuition. Move your temperature slider and
-watch the section. **Raising
-the temperature does not simply make weathering proportionally faster**, and
-which of the two effects you are watching depends on where the water is and how
-far it has already got.
+Move the temperature slider and watch which of those you are seeing.
 
 ### 5. What stops a reaction
 
