@@ -122,8 +122,11 @@ spreads into it, which is why the weathering runs away downward from the
 surface rather than staying in the joints.
 
 - **Joint orientation** and **joint spacing** set the fracture network – the
-  input from tectonics, fixed before weathering starts.
-- **Infiltration rate** sets how fast rain is delivered.
+  input from tectonics, fixed before weathering starts. Spacing reaches
+  **none** at its far end, which removes the fractures altogether.
+- **Rainfall** sets how fast water arrives at the surface. How much of it gets
+  *in* is up to the rock: with joints, all of it; without them, about a
+  twenty-fourth of it, and the rest runs off.
 - **Temperature** does two things at once, and they are worth separating. See
   below.
 - **Cell size** is the numerical grid, not the rock: 5 cm, 2.5 cm or 2 cm
@@ -205,7 +208,7 @@ then press **Fresh rock** and run again. You are after the *direction* of the
 effect and roughly how big it is, not a number.
 
 - **Joint spacing.** Closer joints, or wider?
-- **Infiltration.** More rain, or less?
+- **Rainfall.** More rain, or less?
 - **Temperature.** (Do this one last. Getting the direction right is the easy
   half. It is also the biggest lever of the three, and it has two causes
   rather than one, which **Under the hood** takes apart.)
@@ -314,9 +317,10 @@ $$\nabla\cdot(K_\mathrm{sat}\,\nabla h) = 0$$
   and you have said that what flows in flows out.
 
 That equation needs boundaries to have an answer, and the section supplies
-three. Rain enters the **top** at a prescribed rate, which the infiltration
-slider sets. The **base** drains freely. The **sides** wrap onto each other,
-so nothing enters or leaves there.
+three. Rain arrives at the **top** at the rate the rainfall slider sets, and
+the rock takes it up to its own capacity – the rest ponds and runs off, which
+matters only when there are no joints. The **base** drains freely. The
+**sides** wrap onto each other, so nothing enters or leaves there.
 
 Everything interesting lives in $K_\mathrm{sat}$. It ranges over about thirteen
 orders of magnitude between gravel and unfractured crystalline rock (Freeze and
