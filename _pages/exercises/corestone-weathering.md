@@ -241,17 +241,14 @@ chalk on a roadcut.
 ### Notation
 
 Weathering sits where hydrogeology meets geochemistry, and the two fields
-collide on one letter. **Capital $K$ is always a hydraulic conductivity;
-lower-case $k$ is always a reaction rate constant.** They have nothing to do
-with each other, so every one of them carries a subscript saying which it is:
+collide on one letter. **Capital $K$ here is always a hydraulic conductivity,
+and lower-case $k$ always a reaction rate constant.** That is this page's rule
+rather than a law of either field – Fletcher, Buss & Brantley (2006) write
+$K = kS$ for a lumped kinetic parameter, and White & Brantley (2003) use $K_s$
+for a solubility constant – so both carry subscripts here.
 
-- $K_\mathrm{sat}$, and its two endpoints $K_\mathrm{sat,intact}$ and
-  $K_\mathrm{sat,weathered}$, for the rock's ability to pass water.
-- $k_\mathrm{diss}$ and $k_\mathrm{ox}$ for the two reactions, each measured
-  per unit of mineral surface; $k_\mathrm{diss,0}$ for the first one's
-  pre-exponential factor.
-- $k_1$ for the first-order coefficient built from them, whose subscript is
-  the **reaction order**.
+Two symbols are shared with your lecture and mean exactly what they mean there:
+$k$, the reaction rate constant in s⁻¹, and $A$, the Arrhenius frequency.
 
 | symbol | meaning | units |
 |---|---|---|
@@ -262,25 +259,30 @@ with each other, so every one of them carries a subscript saying which it is:
 | $C$ | concentration of the reacting solute | mol m⁻³ |
 | $C_{eq}$ | the ceiling on $C$ | mol m⁻³ |
 | $c$ | normalised concentration, $C/C_{eq}$ | – |
-| $k_\mathrm{diss}$ | dissolution rate constant, per unit mineral surface | mol m⁻² s⁻¹ |
-| $k_\mathrm{ox}$ | oxidation rate constant, per unit mineral surface | m s⁻¹ |
-| $k_1$ | first-order reaction coefficient, $k_\mathrm{diss}A/C_{eq}$ | s⁻¹ |
-| $A$ | reactive mineral surface area per rock volume | m² m⁻³ |
+| $k$ | reaction rate constant, dissolution | s⁻¹ |
+| $k_\mathrm{ox}$ | reaction rate constant, oxidation | s⁻¹ |
+| $A$ | Arrhenius frequency: interactions per unit time, and therefore proportional to reactive surface area | s⁻¹ |
+| $s_\mathrm{geo}$ | reactive mineral surface area per rock volume, **geometric** rather than BET | m² m⁻³ |
 | $\dot{N}$ | reaction rate per rock volume | mol m⁻³ s⁻¹ |
-
-| $D$ | effective diffusion coefficient in the rock, $D_w/\theta$ | m² s⁻¹ |
+| $D$ | diffusion coefficient in the rock, $D_w$ divided by tortuosity | m² s⁻¹ |
 | $D_w$ | diffusion coefficient in free water | m² s⁻¹ |
-| $N_0$ | moles of reactive mineral per m³ of fresh rock | mol m⁻³ |
+| $N_0$ | moles of solute the fresh rock can release, per m³ | mol m⁻³ |
 | $M$ | fraction of reactive mineral remaining | – |
 | $X$ | extent of reaction, $1-M$ (what the colour bar shows) | – |
-| $\tau$ | volumes of water needed per volume of rock | – |
-| $\theta$ | tortuosity: how much the pore path lengthens diffusion | – |
 | $L$ | saturation length | m |
 | $E_a$ | activation energy | J mol⁻¹ |
 | $\Delta H_r$ | enthalpy of the reaction that sets the ceiling | J mol⁻¹ |
 | $T$ | absolute temperature | K |
 | $t$ | time | s |
 | $R$ | universal gas constant, 8.314 | J mol⁻¹ K⁻¹ |
+
+Two quantities on this page keep their English names rather than take a Greek
+letter, because every letter the literature offers for them is already spent in
+geomorphology. **Tortuosity** is written out; $\tau$ is shear stress and
+$\theta$ is a slope angle. **Pore volumes** – how many volumes of saturated
+water it takes to strip one volume of rock – is written out too; $\tau$ is the
+mass transfer coefficient in Goodfellow et al. (2016) and Fletcher et al.
+(2006), where it runs from −1 to 0 and measures how weathered a rock is.
 
 ### 1. Water: Darcy's law
 
@@ -415,16 +417,14 @@ That is the whole model. Everything below is about $\dot{N}$.
 Plagioclase dissolving into water is the textbook case, and it is the one the
 exercise above runs:
 
-$$\dot{N} = k_\mathrm{diss}(T)\,A\,\left(1 - \frac{C}{C_{eq}}\right)$$
+$$\dot{N} = k(T)\,C_{eq}\left(1 - \frac{C}{C_{eq}}\right)$$
 
-- $k_\mathrm{diss}(T)$, the **dissolution rate constant**: how fast this
-  mineral reacts per
-  unit of its own surface, in water carrying nothing. It belongs to the
-  *mineral*, and it is measured in the laboratory and tabulated (for
-  plagioclase, by Palandri and Kharaka, 2004). Writing it $k_\mathrm{diss}(T)$ only says
-  that it depends on temperature.
-- $A$, how much of that surface the water can actually reach, per cubic metre
-  of rock.
+- $k(T)$, the **reaction rate constant**, in s⁻¹ – the same $k$ your lecture
+  writes. It counts how often, per unit time, an interaction at the mineral
+  surface actually causes a reaction. Writing it $k(T)$ only says that it
+  depends on temperature.
+- $C_{eq}$, the ceiling, which turns that rate into moles per cubic metre of
+  rock per second.
 - $(1 - C/C_{eq})$, the **affinity**: how far the water is from being finished.
   It is 1 in fresh water, and 0 at saturation.
 
@@ -441,14 +441,19 @@ warming gives molecules more energy to clear it with. More of them make it
 over. The reaction speeds up steeply, because the effect is exponential, and
 the **Arrhenius equation** puts a number on it:
 
-$$k_\mathrm{diss}(T) = k_\mathrm{diss,0} \exp\!\left(-\frac{E_a}{R\,T}\right)$$
+$$k(T) = A \exp\!\left(-\frac{E_a}{R\,T}\right)$$
 
 - $E_a$, the **activation energy**: the height of that barrier. (The taller it
   is, the more temperature matters.)
-- $k_\mathrm{diss,0}$, the **pre-exponential factor**: the rate with no barrier at all. It
-  sets the scale, and $E_a$ sets the sensitivity.
+- $A$, the **Arrhenius frequency**: interactions per unit time, whether or
+  not they cause a reaction. The exponential is the fraction of them that
+  clear the barrier, so $k = A$ would mean every interaction reacts.
+  - **$A$ is where surface area enters**, and it is the reason physical
+    weathering speeds chemical weathering up. More surface means more
+    interactions per unit time, so fracturing the rock raises $A$ without
+    touching $E_a$ or $T$.
 - $T$ sits in the denominator of the exponent. Warm it and the exponent gets
-  less negative, which makes $k_\mathrm{diss}$ larger.
+  less negative, which makes $k$ larger.
 
 *Second, in the ceiling.* Dissolving is itself a reaction with a heat of its
 own, and it either takes heat in or gives heat out. Warm a reaction that
@@ -464,8 +469,7 @@ $$C_{eq}(T) = C_\mathrm{eq,0} \exp\!\left(-\frac{\Delta H_r}{R\,T}\right)$$
   heat it takes in or gives out. Positive means dissolution absorbs heat, and
   warming therefore raises the ceiling. (Negative means the reverse, and warming lowers
   it. Quartz is positive, which is why this section's ceiling climbs.)
-- $C_\mathrm{eq,0}$, a reference scale, playing the part $k_\mathrm{diss,0}$
-  plays above.
+- $C_\mathrm{eq,0}$, a reference scale, playing the part $A$ plays above.
 
 Do not confuse the two. Arrhenius makes the rock dissolve faster *where it
 stands*, while van 't Hoff does not speed the reaction at all – it raises the
@@ -484,12 +488,10 @@ Everything above assumed the solute is something the rock **makes**. Granite
 has a second reaction where it is something the rock **consumes** instead, and
 the difference is structural rather than chemical:
 
-$$\dot{N} = -\,k_\mathrm{ox}\,A\,C$$
+$$\dot{N} = -\,k_\mathrm{ox}\,C$$
 
-- $k_\mathrm{ox}$, the oxidation rate constant, in **m s⁻¹**. Note the units:
-  they are not $k_\mathrm{diss}$'s mol m⁻² s⁻¹. A first-order reaction multiplies a
-  concentration rather than standing alone, so its constant has to carry
-  different units to land on the same mol m⁻³ s⁻¹.
+- $k_\mathrm{ox}$, the oxidation rate constant, in s⁻¹, exactly like the
+  dissolution $k$ above.
 - $C$, dissolved oxygen. (Notice there is **no bracket**. That is the point.)
 - **The minus sign**, which is the structural change. $\dot{N}$ was defined as
   what the rock gives *up*. Here the rock takes oxygen *out* of the water, so
@@ -520,24 +522,23 @@ what changes when you run it are all in
 
 Divide through by $C_{eq}$ so that concentration runs from 0 to 1:
 
-$$\nabla\cdot(q c) - \nabla\cdot(D \nabla c) = k_1\,(1 - c), \qquad k_1 \equiv \frac{k_\mathrm{diss} A}{C_{eq}}$$
+$$\nabla\cdot(q c) - \nabla\cdot(D \nabla c) = k\,(1 - c)$$
 
 - $c = C/C_{eq}$, the normalised concentration.
-- $k_1$, the **first-order reaction coefficient**: how fast undersaturation
-  gets used up (units of s⁻¹, and the flux has cancelled out of it). The
-  subscript is the reaction order, and it is what the Damköhler number below
-  is built from.
+- $k$, the same reaction rate constant as above, now doing a second job: how
+  fast undersaturation gets used up. The flux has cancelled out of it, and it
+  is what the Damköhler number below is built from.
 
 **The saturation length.** How far does water travel before it is spent?
 
-$$L = \frac{q}{k_1} = \frac{q\,C_{eq}}{k_\mathrm{diss}\,A}$$
+$$L = \frac{q}{k}$$
 
 Here $L = 0.46$ m. It is not a distance at which equilibrium is reached ($c$
 approaches 1 asymptotically, and never arrives) – after one $L$, the
 undersaturation is down to $1/e$ of what it was.
 
 Look at what $L$ is built from. It grows with flux and shrinks with
-reactivity, and because it goes as $C_{eq}/k_\mathrm{diss}$, it takes its temperature
+reactivity, and because $k$ carries $C_{eq}$ and the rate constant together, it takes its temperature
 dependence from the *difference* $(E_a - \Delta H_r) = 36.9$ kJ mol⁻¹ rather
 than from $E_a$ alone. That difference is the **apparent activation energy of
 weathering**. It is what a field study measuring rate against temperature
@@ -669,17 +670,17 @@ generic one and the section they run in is drawn rather than surveyed.
 | Intact matrix conductivity | $K_\mathrm{sat,intact}$ | 5 × 10⁻¹⁰ m s⁻¹ | **measured.** Mid-point of Goodfellow et al. (2016) parent granodiorite |
 | Weathered conductivity | $K_\mathrm{sat,weathered}$ | 5 × 10⁻⁶ m s⁻¹ | **measured.** Mid-point of their most weathered samples |
 | Joint aperture | $a$ | 100 µm | **measured.** Hydraulic aperture, not the visible opening. Rukavičková et al. (2021) give 20–67 µm at borehole depth; laboratory fractures reach 250 µm unstressed. The conductivity follows by the cubic law (Witherspoon et al. 1980) |
-| Saturation length | $L_\mathrm{ref}$ | 0.457 m | **derived.** $qC_{eq}/k_\mathrm{diss}A$, with $A$ = 900 m² m⁻³ for 2 mm grains at 30 % plagioclase |
-| Water per rock volume | $\tau_\mathrm{ref}$ | 47 744 | **derived.** $N_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation. $N_0$ counts *silicon released*, not formula units of plagioclase, which is what lets the rock and solute balances be 1:1 |
-| Aqueous diffusivity | $D$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured**, and of the right species: dissolved silica (Rebreanu et al. 2008; Wollast & Garrels 1971). Scaled by Stokes–Einstein |
-| Matrix tortuosity | $\theta$ | 10⁴ → 10 | **measured range.** The factor by which the connected pore path lengthens and constricts diffusion relative to free solution, $D_\mathrm{eff} = D_w/\theta$. Written $\theta$ because $\tau$ is already the water requirement above; the literature uses $\tau$ for both. 10⁴ in intact crystalline rock, 10 in saprolite at ~30 % porosity; interpolated with $M$, like the conductivity |
+| Saturation length | $L_\mathrm{ref}$ | 0.457 m | **derived.** $q/k$, where $k$ comes from a surface-normalised rate constant of 10⁻¹¹·⁸⁴ mol m⁻² s⁻¹ (Palandri & Kharaka) on $s_\mathrm{geo}$ = 900 m² m⁻³, for 2 mm grains at 30 % plagioclase |
+| Pore volumes per rock volume | – | 47 744 | **derived.** $N_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation. $N_0$ counts *silicon released*, not formula units of plagioclase, which is what lets the rock and solute balances be 1:1 |
+| Free-water diffusivity | $D_w$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured**, and of the right species: dissolved silica (Rebreanu et al. 2008; Wollast & Garrels 1971). Scaled by Stokes–Einstein. In the rock it is this divided by the tortuosity below, which is $D$ |
+| Matrix tortuosity | – | 10⁴ → 10 | **measured range.** The factor by which the connected pore path lengthens and constricts diffusion relative to free solution: $D = D_w$ divided by it. The literature writes it $\tau$, which on this page is shear stress in your own notes, so it keeps its English name. 10⁴ in intact crystalline rock, 10 in saprolite at ~30 % porosity; interpolated with $M$, like the conductivity |
 | Dispersivity | $\alpha$ | 2 mm | **the grain diameter.** Mechanical dispersion per unit pore velocity, $D_\mathrm{mech} = \alpha\lvert v\rvert$; $\alpha$ measures the spread of flow-path velocities, which at the pore scale is set by the grain size |
 
-**$k_\mathrm{diss,0}$ and $C_\mathrm{eq,0}$ are not in the table because the
-model never evaluates them.** Both equations above are written in the textbook form, with an absolute
+**$A$ and $C_\mathrm{eq,0}$ are not in the table because the model never
+evaluates them.** Both equations above are written in the textbook form, with an absolute
 pre-exponential factor, but nothing here needs one: every rate is taken
 relative to the reference state, so what enters the arithmetic is
-$k_\mathrm{diss}(T)/k_\mathrm{diss}(T_\mathrm{ref})$ and
+$k(T)/k(T_\mathrm{ref})$ and
 $C_{eq}(T)/C_{eq}(T_\mathrm{ref})$, in which the two pre-exponentials cancel. The model therefore has a *normalisation* where a
 research model would need an absolute solubility, which is why $C_{eq}$ never
 appears on its own anywhere in the code, only ever as a ratio.
@@ -818,9 +819,9 @@ activation energy at all.
 
 | | symbol | value | where it came from |
 |---|---|---|---|
-| Oxidation rate constant | $k_\mathrm{ox}$ | 4 × 10⁻¹³ m s⁻¹ | **weakest number in the model.** From the one published rate for Fe(II) silicate oxidation by dissolved O₂. Candidate values span a factor of four thousand |
+| Oxidation rate constant | $k_\mathrm{ox}$ | 7.2 × 10⁻¹¹ s⁻¹ | **weakest number in the model.** Built from a surface-normalised 4 × 10⁻¹³ m s⁻¹ on $s_\mathrm{geo}$ = 180 m² m⁻³, from the one published rate for Fe(II) silicate oxidation by dissolved O₂. Candidate values span a factor of four thousand. Compare the dissolution $k$, 2.1 × 10⁻⁸ s⁻¹ |
 | Biotite fraction | $\phi_\mathrm{bt}$ | 0.06 | **chosen** from the 3–10 % range for granite |
-| Biotite surface area | $A$ | 180 m² m⁻³ | **derived.** $6\phi_\mathrm{bt}/d$ at $d$ = 2 mm, the same geometric convention used for the plagioclase in the dissolution table. Using one convention for both is what makes the two reactions comparable |
+| Biotite surface area | $s_\mathrm{geo}$ | 180 m² m⁻³ | **derived.** $6\phi_\mathrm{bt}/d$ for cubic grains of diameter $d$ = 2 mm, the same geometric convention used for the plagioclase in the dissolution table. Using one convention for both is what makes the two reactions comparable |
 | Iron content | $f_\mathrm{FeO}$ | 0.011 | **measured.** Whole-rock FeO in USGS reference granites G-1, G-2, G-3 (0.0083–0.0116) |
 | O₂ diffusivity, free water | $D_w$ | 2.1 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured.** About twice silica's, O₂ being a small neutral molecule |
 | Dissolved O₂ | $C_{eq}$ | 0.457 → 0.236 mol m⁻³ | **measured.** Air-saturated fresh water, 0 °C to 30 °C. Note the direction: a gas leaves solution as water warms |
