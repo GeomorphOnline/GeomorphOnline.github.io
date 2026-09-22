@@ -269,8 +269,9 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 | $r$ | reaction rate per rock volume | mol m⁻³ s⁻¹ |
 | $D$ | diffusion coefficient in the rock, $D_w$ divided by tortuosity | m² s⁻¹ |
 | $D_w$ | diffusion coefficient in free water | m² s⁻¹ |
-| $N_0$ | moles of solute the fresh rock can release, per m³ | mol m⁻³ |
-| $M$ | fraction of reactive mineral remaining | – |
+| $N$ | solute still locked in the rock, per unit volume | mol m⁻³ |
+| $N_0$ | $N$ in fresh rock, before any weathering | mol m⁻³ |
+| $M$ | fraction of that still locked in, $N/N_0$ | – |
 | $X$ | extent of reaction, $1-M$ (what the colour bar shows) | – |
 | $L$ | saturation length | m |
 | $E_a$ | activation energy | J mol⁻¹ |
@@ -404,13 +405,18 @@ lets a block weather inward at all.
 
 The moles the water gained are the moles the rock lost:
 
-$$N_0\,\frac{\partial M}{\partial t} = -r$$
+$$\frac{\partial N}{\partial t} = -r
+\qquad\text{equivalently}\qquad
+N_0\,\frac{\partial M}{\partial t} = -r$$
 
-- $N_0$, the moles of solute the fresh rock can release, per cubic metre
-  (about 4,800 here). Counting the *solute* rather than the mineral is what
-  makes this balance 1:1: one plagioclase formula unit releases several
-  silicons, and $N_0$ has already done that multiplication.
-- $M$, the fraction of it still there (1 when fresh, 0 when gone).
+- $N$, how much silicon is still locked in a cubic metre of rock, counted as a
+  number of atoms and reported in moles. Counting *atoms of the solute* rather
+  than formula units of the mineral is what makes this balance 1:1: one
+  plagioclase unit releases several silicons, and $N$ has already done that
+  multiplication.
+- $N_0$, the value of $N$ in fresh rock, about 4,800 mol m⁻³.
+- $M = N/N_0$, the fraction still locked in: 1 when fresh, 0 when spent. The
+  model tracks $M$, since that is what porosity and conductivity respond to.
 - The minus sign, because the rock loses what the water gains.
 
 That is the whole model. Everything below is about $r$.
