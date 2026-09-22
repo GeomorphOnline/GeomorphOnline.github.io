@@ -541,9 +541,9 @@ actually recovers (and it is not $E_a$, which is the trap).
 **The water requirement.** How many volumes of saturated water strip one volume
 of rock?
 
-$$\tau = \frac{N_0}{C_{eq}}$$
+$$\text{pore volumes} = \frac{N_0}{C_{eq}}$$
 
-Here $\tau \approx 48{,}000$. The plagioclase in a cubic metre of granite needs
+Here it is about 48,000. The plagioclase in a cubic metre of granite needs
 forty-eight thousand cubic metres of saturated water to leave. That number, and
 not the rate constant, is why weathering is slow. (On oxygen the same rock
 needs about 680, which is why oxidation can pace a process that dissolution
@@ -820,7 +820,7 @@ activation energy at all.
 | Iron content | $f_\mathrm{FeO}$ | 0.011 | **measured.** Whole-rock FeO in USGS reference granites G-1, G-2, G-3 (0.0083–0.0116) |
 | O₂ diffusivity, free water | $D_w$ | 2.1 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured.** About twice silica's, O₂ being a small neutral molecule |
 | Dissolved O₂ | $C_{eq}$ | 0.457 → 0.236 mol m⁻³ | **measured.** Air-saturated fresh water, 0 °C to 30 °C. Note the direction: a gas leaves solution as water warms |
-| Water per rock volume | $\tau$ | 678 | **derived.** $f_\mathrm{FeO}/(4V_\mathrm{FeO}C_{eq})$ at 12 °C; the 4 is four Fe(II) oxidised per O₂ |
+| Water per rock volume | – | 678 | **derived.** $f_\mathrm{FeO}/(4V_\mathrm{FeO}C_{eq})$ at 12 °C; the 4 is four Fe(II) oxidised per O₂ |
 | Activation energy | $E_a$ | **none** | **none has ever been measured** for this reaction. The model gives it none, so its whole temperature response is the O₂ solubility above |
 
 Those give an oxidation length of 132 m, a Damköhler number of 0.023 over the
