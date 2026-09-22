@@ -266,7 +266,7 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 | $k_\mathrm{ox}$ | reaction rate constant, oxidation | s⁻¹ |
 | $A$ | Arrhenius frequency: interactions per unit time, and therefore proportional to reactive surface area | s⁻¹ |
 | $s_\mathrm{geo}$ | reactive mineral surface area per rock volume, **geometric** rather than BET (gas-adsorption) | m² m⁻³ |
-| $r$ | reaction rate per rock volume | mol m⁻³ s⁻¹ |
+| $r$ | rate at which the rock releases (or consumes) solute, per unit volume | mol m⁻³ s⁻¹ |
 | $D$ | diffusion coefficient in the rock, $D_w$ divided by tortuosity | m² s⁻¹ |
 | $D_w$ | diffusion coefficient in free water | m² s⁻¹ |
 | $N$ | solute still locked in the rock, per unit volume | mol m⁻³ |
@@ -364,7 +364,9 @@ $$\underbrace{\big[qC\,\Delta x\big]_{\rm in} - \big[qC\,\Delta x\big]_{\rm out}
   written $\Delta x$ above for brevity.
 - $-D\nabla C$, **Fick's law**: spreading runs down the concentration gradient,
   from more to less, which is what the minus sign is doing.
-- $r$, the rate at which the rock releases solute, per unit volume.
+- $r$, the rate at which silicon is leached out of the rock, per cubic metre
+  of it. (Under oxidation this is the rate at which oxygen is consumed
+  instead, and $r$ changes sign.)
 - $nC$, the solute sitting in storage, since only the pore fraction holds water.
 
 Divide every term by $\Delta x\,\Delta z$, so that each is now per unit volume,
@@ -386,8 +388,8 @@ Setting the right-hand side to zero and multiplying through by $-1$:
 
 $$\nabla\cdot(qC) - \nabla\cdot(D\nabla C) = r$$
 
-In words: what the water carries away, plus what spreads away, equals what the
-rock gives up. Every term is in mol m⁻³ s⁻¹.
+In words: what the flow carries away, plus what diffusion spreads away, equals
+what the rock supplies. Every term is in mol m⁻³ s⁻¹.
 
 This one needs boundaries too. Rain arrives at the top carrying **no dissolved
 solute** ($C = 0$), which is what makes it able to do work. Solute leaves
@@ -403,7 +405,7 @@ lets a block weather inward at all.
 
 ### 3. Rock: the same balance, seen from the mineral
 
-The moles the water gained are the moles the rock lost:
+Whatever the water gains, the rock has lost:
 
 $$\frac{\partial N}{\partial t} = -r
 \qquad\text{equivalently}\qquad
@@ -431,8 +433,8 @@ $$r = k(T)\,C_{eq}\left(1 - \frac{C}{C_{eq}}\right)$$
 - $k(T)$, the **reaction rate constant**, in s⁻¹: how often, per unit time, an
   interaction at the mineral surface causes a reaction. Writing it $k(T)$ only
   says that it depends on temperature.
-- $C_{eq}$, the ceiling, which turns that rate into moles per cubic metre of
-  rock per second.
+- $C_{eq}$, the ceiling, which sets how much solute one reaction's worth of
+  progress puts into the water, and so carries the units.
 - $(1 - C/C_{eq})$, the **affinity**: how far the water is from being finished.
   It is 1 in fresh water, and 0 at saturation.
 
