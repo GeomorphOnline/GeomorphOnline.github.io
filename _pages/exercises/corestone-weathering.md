@@ -261,7 +261,7 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 | $n$ | porosity, 0 to 1 | – |
 | $C$ | concentration of the reacting solute | mol m⁻³ |
 | $C_{eq}$ | equilibrium concentration of the dissolved species, and so the ceiling on $C$ | mol m⁻³ |
-| $c$ | normalised concentration, $C/C_{eq}$ | – |
+| $\Omega$ | saturation state of the fluid, $C/C_{eq} = Q/K$ | – |
 | $k$ | reaction rate constant, dissolution | s⁻¹ |
 | $k_\mathrm{ox}$ | reaction rate constant, oxidation | s⁻¹ |
 | $A$ | Arrhenius frequency: interactions per unit time, and therefore proportional to reactive surface area | s⁻¹ |
@@ -437,8 +437,28 @@ $$r = k(T)\,C_{eq}\left(1 - \frac{C}{C_{eq}}\right)$$
 - $C_{eq}$, the **equilibrium concentration** of the dissolved species: the
   value $C$ climbs to when the reaction has run as far as it can go. It is the
   ceiling, and it carries the units.
-- $(1 - C/C_{eq})$, the **affinity**: how far the water is from being finished.
-  It is 1 in fresh water, and 0 at saturation.
+- $(1 - \Omega)$, where $\Omega = C/C_{eq}$ is the **saturation state** of the
+  fluid: how much of its capacity the water has already used. It is 1 in fresh
+  water and 0 at saturation, so it is the term that stops the reaction.
+
+$\Omega$ is the standard way to say how close a fluid is to equilibrium with a
+mineral. It is the ion activity product over the equilibrium constant, $Q/K$,
+which for this reaction is just $C/C_{eq}$ because the quartz and the water
+have unit activity. You will also meet it as the saturation index,
+$\mathrm{SI} = \log_{10}\Omega$, which is zero at equilibrium.
+
+Written this way the rate law reads straight off the fluid chemistry, and it
+covers more than dissolution:
+
+| saturation state | the fluid is | and so |
+|---|---|---|
+| $\Omega < 1$ | undersaturated | $r > 0$, the mineral dissolves |
+| $\Omega = 1$ | at equilibrium | $r = 0$, nothing happens |
+| $\Omega > 1$ | supersaturated | $r < 0$, the mineral precipitates |
+
+The third row is how secondary minerals form, and it is the same equation.
+(This linear form is the near-equilibrium case of the general rate law, which
+carries $1 - \exp(\Delta G_r / RT)$ in place of $1 - \Omega$.)
 
 That bracket is the whole idea of this exercise. Rock does not survive because
 it is tough. It survives because the water that reached it had already finished
@@ -498,7 +518,7 @@ and it piles up until the water is full and the reaction stops. Oxidising, it
 is a **reactant**. It arrives at its ceiling in the rain, the rock consumes it,
 and the reaction stops where it runs out.
 
-Three things flip, then, and no more: the driving force from $(1-c)$ to $c$,
+Three things flip, then, and no more: the driving force from $(1-\Omega)$ to $\Omega$,
 the sign of $r$ from source to sink, and the concentration of the water
 arriving at the top from 0 to its ceiling. **The transport equation itself does
 not change at all** – same advection, same diffusion, same conservation. That
@@ -518,9 +538,9 @@ what changes when you run it are all in
 
 Divide through by $C_{eq}$ so that concentration runs from 0 to 1:
 
-$$\nabla\cdot(q c) - \nabla\cdot(D \nabla c) = k\,(1 - c)$$
+$$\nabla\cdot(q \Omega) - \nabla\cdot(D \nabla \Omega) = k\,(1 - \Omega)$$
 
-- $c = C/C_{eq}$, the normalised concentration.
+- $\Omega = C/C_{eq}$, the saturation state, which now runs from 0 to 1.
 - $k$, the same reaction rate constant as above, now doing a second job: how
   fast undersaturation gets used up. The flux has cancelled out of it, and it
   is what the Damköhler number below is built from.
@@ -529,7 +549,7 @@ $$\nabla\cdot(q c) - \nabla\cdot(D \nabla c) = k\,(1 - c)$$
 
 $$L = \frac{q}{k}$$
 
-Here $L = 0.46$ m. It is not a distance at which equilibrium is reached ($c$
+Here $L = 0.46$ m. It is not a distance at which equilibrium is reached ($\Omega$
 approaches 1 asymptotically, and never arrives) – after one $L$, the
 undersaturation is down to $1/e$ of what it was.
 
