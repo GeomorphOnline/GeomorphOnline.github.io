@@ -163,9 +163,9 @@ unweathered at the current settings, which is how you start a fair second run.
 
 **Reaction** is the one control that is not a parameter. It switches which
 chemical reaction the model solves – feldspar dissolution or biotite oxidation
-– and the two are taken apart in [the last part of this
-page](#what-actually-goes-first-iron-in-biotite). Leave it on *Feldspar
-dissolution* for now.
+– and [the last part of this page](#what-actually-goes-first-iron-in-biotite)
+takes the two apart. The exercise below uses *Feldspar dissolution*, which is
+where it opens.
 
 Watch the *order* in which the rock goes: the joints first, then the faces of
 each block, then – last – the middles. And watch the corners: a corner sheds
@@ -182,11 +182,7 @@ faster. That is what rounds a block into a corestone.
 
 ## What to do
 
-Two exercises run on the same model. The in-class one is below. The problem
-set uses the **Reaction** control to switch the model to a different reaction,
-and its brief is [at the end of this page](#problem-set-what-changes-and-why).
-
-### In class: what does it do?
+### What does it do?
 
 You are an experimentalist with one apparatus and no theory yet. The theory is
 below, and it is better met second. Find out what the model **does**, and the
@@ -406,7 +402,7 @@ That is the whole model. Everything below is about $\dot{N}$.
 ### 4. The reaction, one: feldspar dissolution
 
 Plagioclase dissolving into water is the textbook case, and it is the one the
-in-class exercise runs:
+exercise above runs:
 
 $$\dot{N} = k(T)\,A\,\left(1 - \frac{C}{C_{eq}}\right)$$
 
@@ -471,8 +467,8 @@ far it has already got.
 
 ### 5. What stops a reaction
 
-Everything above assumed the solute is something the rock **makes**. The
-problem set runs a reaction where it is something the rock **consumes**, and
+Everything above assumed the solute is something the rock **makes**. Granite
+has a second reaction where it is something the rock **consumes** instead, and
 the difference is structural rather than chemical:
 
 $$\dot{N} = -\,k_{ox}\,A\,C$$
@@ -504,9 +500,8 @@ Carry this away if you carry nothing else:
 > weathering system which of the two it is.
 
 The reaction itself, the evidence that it goes first in a real granite, and
-how to run it are all in
-[the biotite section](#what-actually-goes-first-iron-in-biotite) at the end of
-this page.
+what changes when you run it are all in
+[the last part of this page](#what-actually-goes-first-iron-in-biotite).
 
 ### 6. Two length scales and one ratio
 
@@ -558,8 +553,9 @@ $$\mathrm{Da} = \frac{\text{depth}}{L}$$
 The section sits firmly in the first limit at Da = 6.6, and the water leaving
 its base is within 0.14 % of saturation. That is what shelters a block
 interior. (Run the same section on oxygen instead and Da drops to 0.02, which
-puts it in the *other* limit and shelters corestones a different way. The
-problem set takes that apart.)
+puts it in the *other* limit and shelters corestones a different way. [The
+last part of this page](#what-actually-goes-first-iron-in-biotite) takes that
+apart.)
 
 Two different mechanisms, then, and both come out as *the water never got
 there*. Note also that Da is a depth over a length, which tells you about how
@@ -663,6 +659,24 @@ generic one and the section they run in is drawn rather than surveyed.
 | Aqueous diffusivity | $D$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured**, and of the right species: dissolved silica (Rebreanu et al. 2008; Wollast & Garrels 1971). Scaled by Stokes–Einstein |
 | Matrix tortuosity | $\theta$ | 10⁴ → 10 | **measured range.** The factor by which the connected pore path lengthens and constricts diffusion relative to free solution, $D_\mathrm{eff} = D_w/\theta$. Written $\theta$ because $\tau$ is already the water requirement above; the literature uses $\tau$ for both. 10⁴ in intact crystalline rock, 10 in saprolite at ~30 % porosity; interpolated with $M$, like the conductivity |
 | Dispersivity | $\alpha$ | 2 mm | **the grain diameter.** Mechanical dispersion per unit pore velocity, $D_\mathrm{mech} = \alpha\lvert v\rvert$; $\alpha$ measures the spread of flow-path velocities, which at the pore scale is set by the grain size |
+
+**The oxidation reaction** runs on a different set, and they are given here
+because the model reports numbers from them. Every one is weaker than its
+dissolution counterpart, for reasons the last part of this page sets out.
+
+| | symbol | value | where it came from |
+|---|---|---|---|
+| Oxidation rate constant | $k_{ox}$ | 4 × 10⁻¹³ m s⁻¹ | **weakest number in the model.** From the one published rate for Fe(II) silicate oxidation by dissolved O₂. Candidate values span a factor of four thousand |
+| Biotite fraction | $\phi_\mathrm{bt}$ | 0.06 | **chosen** from the 3–10 % range for granite |
+| Biotite surface area | $A$ | 180 m² m⁻³ | **derived.** $6\phi_\mathrm{bt}/d$ at $d$ = 2 mm, the same geometric convention as the plagioclase above |
+| Iron content | $f_\mathrm{FeO}$ | 0.011 | **measured.** Whole-rock FeO in USGS reference granites G-1, G-2, G-3 (0.0083–0.0116) |
+| O₂ diffusivity, free water | $D_w$ | 2.1 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured.** About twice silica's, O₂ being a small neutral molecule |
+| Dissolved O₂ | $C_{eq}$ | 0.457 → 0.236 mol m⁻³ | **measured.** Air-saturated fresh water, 0 °C to 30 °C. Note the direction: a gas leaves solution as water warms |
+| Water per rock volume | $\tau$ | 678 | **derived.** $f_\mathrm{FeO}/(4V_\mathrm{FeO}C_{eq})$ at 12 °C; the 4 is four Fe(II) oxidised per O₂ |
+| Activation energy | $E_a$ | **none** | **none has ever been measured** for this reaction. The model gives it none, so its whole temperature response is the O₂ solubility above |
+
+Those give an oxidation length of 132 m, a Damköhler number of 0.023 over the
+3 m section, and an O₂ penetration into intact rock of 4.5 cm.
 
 **$k_0$ and $C_0$ are not in the table because the model never evaluates
 them.** Both equations above are written in the textbook form, with an absolute
@@ -849,14 +863,6 @@ thousand – the larger of them back-calculated from a measured denudation rate
 rather than measured in a laboratory. This mode is built on the softest ground in the model, and you
 should treat its *timescales* as indicative and its *mechanism* as sound.
 
-
-### Problem set: what changes, and why
-
-Set **Reaction** to *Biotite oxidation*, and read this whole section first.
-The transport is identical to the dissolution version. The chemistry is not,
-and several of the answers come out the other way round.
-
-*(To be written.)*
 
 ## References
 
