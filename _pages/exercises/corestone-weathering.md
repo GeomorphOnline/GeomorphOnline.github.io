@@ -547,10 +547,9 @@ $$\mathrm{Da} = \frac{\text{depth}}{L}$$
 
 The section sits firmly in the first limit at Da = 6.6, and the water leaving
 its base is within 0.14 % of saturation. That is what shelters a block
-interior. (Run the same section on oxygen instead and Da drops to 0.02, which
-puts it in the *other* limit and shelters corestones a different way. [The
-last part of this page](#what-actually-goes-first-iron-in-biotite) takes that
-apart.)
+interior. (Run the same section on oxygen instead and Da drops to 0.02, the
+*other* limit, and no interior is sheltered at all. [The last part of this
+page](#what-actually-goes-first-iron-in-biotite) takes that apart.)
 
 Two different mechanisms, then, and both come out as *the water never got
 there*. Note also that Da is a depth over a length, which tells you about how
@@ -847,12 +846,17 @@ dissolution has just built.
    0.25: the joint never saturates and the core is never untouched. Both
    reach the 20–60 cm scale of field rindlet zones eventually, but only one
    of them looks like a gradient the whole way.
-3. **The section stops having a profile with depth.** Granite holds little
-   iron, so the oxygen is barely touched crossing three metres and reaches
-   every depth at nearly full strength – at Rio Icacos, pore water 8.5 m down
-   still carries 88 % of its atmospheric saturation. What limits a corestone
-   here is not depth but the few centimetres oxygen can diffuse into intact
-   rock.
+3. **No corestones.** The section disaggregates more or less evenly instead.
+   Dissolving, water reaching a block interior is saturated and the driving
+   force $(1-c)$ falls to 0.03 of its value at the joint – the reaction has
+   stopped, and the core is protected. Oxidising, oxygen reaching that same
+   interior is dilute but present, so $c$ is still 0.6 of its joint value and
+   the core keeps reacting, only slower. A product hits a ceiling and stops; a
+   reactant thins out and carries on.
+
+   **That is why the real process needs both stages.** Oxidation goes first
+   and opens the rock, but it cannot shelter a core. Removing mass, and
+   leaving a core the water has finished with, is dissolution's job.
 
 **A warning that comes with the mode.** For plagioclase there is a published
 compilation of measured rate constants and activation energies. For oxidation
