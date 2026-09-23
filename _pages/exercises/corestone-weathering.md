@@ -644,14 +644,15 @@ generic one and the section they run in is drawn rather than surveyed.
 
 | | symbol | value | where it came from |
 |---|---|---|---|
-| Reference temperature | $T_\mathrm{ref}$ | 285 K (11.85 °C) | **normalisation.** Both temperature factors are exactly 1 here, which is why the slider opens at 12 °C |
+| Reference temperature | $T_\mathrm{ref}$ | 298.15 K (25 °C) | **where the data are.** The rate constant and the solubility below were both measured at 25 °C, so both temperature factors are 1 there and nowhere else |
+| Starting temperature | – | 285 K (11.85 °C) | **a choice**, an ordinary temperate value; it is where the slider opens, and is not the reference above |
 | Activation energy | $E_a$ | 69.8 kJ mol⁻¹ | **measured.** Oligoclase, neutral mechanism, Palandri & Kharaka (2004) Table 13 |
 | Reaction enthalpy | $\Delta H_r$ | 32.9 kJ mol⁻¹ | **measured.** Quartz dissolution at 25 °C, LLNL thermodynamic database |
 | Intact matrix conductivity | $K_\mathrm{sat,intact}$ | 5 × 10⁻¹⁰ m s⁻¹ | **measured.** Mid-point of Goodfellow et al. (2016) parent granodiorite |
 | Weathered conductivity | $K_\mathrm{sat,weathered}$ | 5 × 10⁻⁶ m s⁻¹ | **measured.** Mid-point of their most weathered samples |
 | Joint aperture | $a$ | 100 µm | **measured.** Hydraulic aperture, not the visible opening. Rukavičková et al. (2021) give 20–67 µm at borehole depth; laboratory fractures reach 250 µm unstressed. The conductivity follows by the cubic law (Witherspoon et al. 1980) |
-| Saturation length | $L_\mathrm{ref}$ | 0.457 m | **derived.** $q/k$, where $k$ comes from a surface-normalised rate constant of 10⁻¹¹·⁸⁴ mol m⁻² s⁻¹ (Palandri & Kharaka) on $s_\mathrm{geo}$ = 900 m² m⁻³, for 2 mm grains at 30 % plagioclase |
-| Pore volumes per rock volume | – | 47 744 | **derived.** $N_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation. $N_0$ counts *silicon released*, not formula units of plagioclase, which is what lets the rock and solute balances be 1:1 |
+| Saturation length | $L_\mathrm{ref}$ | 0.457 m at 25 °C, 0.908 m at 12 °C | **derived.** $q/k$, where $k$ comes from a surface-normalised rate constant of 10⁻¹¹·⁸⁴ mol m⁻² s⁻¹ (Palandri & Kharaka) on $s_\mathrm{geo}$ = 900 m² m⁻³, for 2 mm grains at 30 % plagioclase |
+| Pore volumes per rock volume | – | 47 744 at 25 °C, 88 080 at 12 °C | **derived.** $N_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation. $N_0$ counts *silicon released*, not formula units of plagioclase, which is what lets the rock and solute balances be 1:1 |
 | Free-water diffusivity | $D_w$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured**, and of the right species: dissolved silica (Rebreanu et al. 2008; Wollast & Garrels 1971). Scaled by Stokes–Einstein. In the rock it is this divided by the tortuosity below, which is $D$ |
 | Matrix tortuosity | – | 10⁴ → 10 | **measured range.** The factor by which the connected pore path lengthens and constricts diffusion relative to free solution: $D = D_w$ divided by it. The literature writes it $\tau$, which on this page is shear stress in your own notes, so it keeps its English name. 10⁴ in intact crystalline rock, 10 in saprolite at ~30 % porosity; interpolated with $M$, like the conductivity |
 | Dispersivity | $\alpha$ | 2 mm | **the grain diameter.** Mechanical dispersion per unit pore velocity, $D_\mathrm{mech} = \alpha\lvert v\rvert$; $\alpha$ measures the spread of flow-path velocities, which at the pore scale is set by the grain size |
