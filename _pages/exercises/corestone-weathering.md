@@ -599,9 +599,10 @@ touched in one place and saturates within a grain diameter in the other.
 
 **That spread is the corestone**, written as a number. Both limits sit in the
 same rock at the same time, and which one a point is in is decided by how much
-water reaches it. (Run the section on oxygen instead and the saturation length
-is 132 m rather than 0.46 m, so every Da here falls by nearly 300 and the whole
-section moves into the reaction-limited limit.)
+water reaches it. (Run the section on oxygen instead and every Da here falls by
+about 290. It moves less rock across the line than that sounds: the field is
+sharply two-valued, joints and matrix with little in between, so the fresh-water
+region goes from 6.3 % of the section to 6.6 %. What deepens is the joints.)
 
 ### 7. The feedback: weathered rock conducts better
 
