@@ -237,8 +237,8 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 Two quantities on this page keep their English names rather than take a Greek
 letter, because every letter the literature offers for them is already spent in
 geomorphology. **Tortuosity** is written out; $\tau$ is shear stress and
-$\theta$ is a slope angle. **Pore volumes** – how many volumes of saturated
-water it takes to strip one volume of rock – is written out too; $\tau$ is the
+$\theta$ is a slope angle. **Water per rock volume** – how much water it takes
+to carry away the soluble part of one volume of rock – is written out too; $\tau$ is the
 mass transfer coefficient in Goodfellow et al. (2016) and Fletcher et al.
 (2006), where it runs from −1 to 0 and measures how weathered a rock is.
 
@@ -514,10 +514,10 @@ than from $E_a$ alone. That difference is the **apparent activation energy of
 weathering**. It is what a field study measuring rate against temperature
 actually recovers (and it is not $E_a$, which is the trap).
 
-**The water requirement.** How many volumes of saturated water strip one volume
-of rock?
+**The water requirement.** How much water does it take to carry away the
+soluble part of one volume of rock?
 
-$$\text{pore volumes} = \frac{N_0}{C_{eq}}$$
+$$\frac{\text{water volume}}{\text{rock volume}} = \frac{N_0}{C_{eq}}$$
 
 Here it is about 48,000. The plagioclase in a cubic metre of granite needs
 forty-eight thousand cubic metres of saturated water to leave. That number, and
@@ -652,7 +652,7 @@ generic one and the section they run in is drawn rather than surveyed.
 | Weathered conductivity | $K_\mathrm{sat,weathered}$ | 5 × 10⁻⁶ m s⁻¹ | **measured.** Mid-point of their most weathered samples |
 | Joint aperture | $a$ | 100 µm | **measured.** Hydraulic aperture, not the visible opening. Rukavičková et al. (2021) give 20–67 µm at borehole depth; laboratory fractures reach 250 µm unstressed. The conductivity follows by the cubic law (Witherspoon et al. 1980) |
 | Saturation length | $L_\mathrm{ref}$ | 0.457 m at 25 °C, 0.908 m at 12 °C | **derived.** $q/k$, where $k$ comes from a surface-normalised rate constant of 10⁻¹¹·⁸⁴ mol m⁻² s⁻¹ (Palandri & Kharaka) on $s_\mathrm{geo}$ = 900 m² m⁻³, for 2 mm grains at 30 % plagioclase |
-| Pore volumes per rock volume | – | 47 744 at 25 °C, 88 080 at 12 °C | **derived.** $N_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation. $N_0$ counts *silicon released*, not formula units of plagioclase, which is what lets the rock and solute balances be 1:1 |
+| Water per rock volume | – | 47 744 at 25 °C, 88 080 at 12 °C | **derived.** $N_0/C_{eq}$: 4774 mol Si m⁻³ of rock, over quartz saturation. $N_0$ counts *silicon released*, not formula units of plagioclase, which is what lets the rock and solute balances be 1:1 |
 | Free-water diffusivity | $D_w$ | 1.0 × 10⁻⁹ m² s⁻¹ at 25 °C | **measured**, and of the right species: dissolved silica (Rebreanu et al. 2008; Wollast & Garrels 1971). Scaled by Stokes–Einstein. In the rock it is this divided by the tortuosity below, which is $D$ |
 | Matrix tortuosity | – | 10⁴ → 10 | **measured range.** The factor by which the connected pore path lengthens and constricts diffusion relative to free solution: $D = D_w$ divided by it. The literature writes it $\tau$, which on this page is shear stress in your own notes, so it keeps its English name. 10⁴ in intact crystalline rock, 10 in saprolite at ~30 % porosity; interpolated with $M$, like the conductivity |
 | Dispersivity | $\alpha$ | 2 mm | **the grain diameter.** Mechanical dispersion per unit pore velocity, $D_\mathrm{mech} = \alpha\lvert v\rvert$; $\alpha$ measures the spread of flow-path velocities, which at the pore scale is set by the grain size |
