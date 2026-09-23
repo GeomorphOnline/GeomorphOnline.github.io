@@ -146,14 +146,10 @@ the clock at the same rate whatever the sliders say (1000 model years per
 frame, about 30 000 years per second), which means a setting that takes eight
 times as long in the model takes eight times as long to watch. **Cold rock is
 not slow to watch by accident. It is slow because it is slow**, and that is
-the comparison you are here to make. Give the slow settings longer: at
-0.05 m/yr and 0 °C the section is only a fourteenth dissolved after 2000 kyr,
-and about a sixth after 5000. **View results at** with **Show** asks a
+the comparison you are here to make. **View results at** with **Show** asks a
 different question – what does the rock look like at 2000 kyr? – and answers
-it directly, without the animation. It reaches 15 000 kyr, which is long
-enough for the default settings to dissolve completely and for a cold section
-too. Settings slower than that exist, and for those you need **▶**, which has
-no end.
+it directly, without the animation. Its dial runs to 15 000 kyr; for anything
+slower than that you need **▶**, which has no end.
 
 Use **Show** to compare: set a time, press it, change one slider, press it
 again. It always rebuilds from fresh rock, so the answer depends only on the
@@ -668,36 +664,6 @@ $C_{eq}(T)/C_{eq}(T_\mathrm{ref})$, and both cancel. This model therefore holds
 a *normalisation* where a research model would need an absolute solubility,
 which is why $C_{eq}$ appears in the code only ever as a ratio.
 
-### Does it get the timescale right?
-
-Nothing in the chemistry or the flow is fitted, so how long weathering takes is
-a *result*. At the default settings – 1 m joints, 0.30 m yr⁻¹, 12 °C – the
-model reacts 90 % of a 3 m section in about **15 000 kyr**. Divide the depth by
-the time and you have something to compare against the field: 0.20 m Myr⁻¹.
-
-| site | rate | climate |
-|---|---|---|
-| Panola, Georgia | 7 m Myr⁻¹ | temperate |
-| Davis Run, Virginia | 4 m Myr⁻¹ | temperate |
-| Rio Icacos, Puerto Rico | 43–45 m Myr⁻¹ | tropical |
-
-So the model is more than twenty times slower than the temperate pair. That is
-worth sitting with rather than explaining away, and one likely reason is the
-thing this exercise is about. **The rock that weathers fastest is not jointed a
-metre apart.** At Rio Icacos the granite at the weathering front splits into
-layers about 2.6 cm thick, and the splitting is made by the weathering itself
-rather than inherited from tectonics. Set the joint spacing slider finer and
-watch how much more of the section goes.
-
-Two cautions come with the comparison, and both are worth more than the number.
-Dividing a depth by a time measures a front only if there *is* a front, and
-here there is not – the joint network dissolves at every depth at once, so
-drawing a deeper section would return a bigger number without anything about
-the rock having changed. And the field rates are not all measuring the same
-quantity: regolith production, front advance and total denudation are all
-reported in m Myr⁻¹ and are not interchangeable. Before comparing two rates,
-find out what each one is the rate *of*.
-
 ### One mineral, where a rock has many
 
 A granite is quartz, two feldspars, biotite and a little else, and they do not
@@ -725,9 +691,7 @@ intact bedrock at depth counted as corestone. What you see instead is the
 mean fraction dissolved, which needs no cut-off.
 
 That is not a disclaimer to skim. Until this exercise was checked against the
-literature, the intact-granite conductivity in it was 10⁻⁸ m s⁻¹ – between
-twelve and a hundred times too high – and the flow field never changed as the
-rock weathered at all.
+literature, the flow field never changed as the rock weathered at all.
 
 ## What actually goes first: iron in biotite
 
@@ -916,11 +880,6 @@ should treat its *timescales* as indicative and its *mechanism* as sound.
   [doi:10.1016/j.chemgeo.2003.03.001](https://doi.org/10.1016/j.chemgeo.2003.03.001)
   – why a laboratory rate constant is paired with a geometric surface area
   here rather than a BET one.
-- White, A.F., Bullen, T.D., Schulz, M.S., Blum, A.E., Huntington, T.G. &
-  Peters, N.E. (2001). Differential rates of feldspar weathering in granitic
-  regoliths. *Geochimica et Cosmochimica Acta* **65**, 847–869.
-  [doi:10.1016/S0016-7037(00)00577-9](https://doi.org/10.1016/S0016-7037\(00\)00577-9)
-  – the Panola and Davis Run weathering front rates.
 - Witherspoon, P.A., Wang, J.S.Y., Iwai, K. & Gale, J.E. (1980). Validity of
   cubic law for fluid flow in a deformable rock fracture. *Water Resources
   Research* **16**, 1016–1024.
