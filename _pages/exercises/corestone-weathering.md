@@ -744,12 +744,10 @@ reported in m Myr⁻¹ and are not interchangeable. Before comparing two rates,
 find out what each one is the rate *of*.
 
 **A second check, from an independent measurement.** Weathering is not only
-measured on rock. Sample the water leaving a catchment, measure its dissolved
-load, and you have a weathering rate – a good part of the literature comes from
-exactly that. Dissolved silica is determined colorimetrically, which is routine
-laboratory chemistry rather than accelerator time, though it is still a
-spectrophotometer and not a field kit. The model makes a prediction that can be
-tested the same way: its water leaves the base of the section carrying about
+measured on rock. A good part of the literature works from water instead: what
+a catchment exports in solution, over a known area and time, is a weathering
+rate. The model makes a prediction in that same currency, and it is a long way
+off. Its water leaves the base of the section carrying about
 **0.55 mg L⁻¹** of dissolved silica, where granitic groundwaters carry 14 to
 25. The water in this model is running through the rock without picking up what
 real water picks up – which points the same way the timescale did, from a
