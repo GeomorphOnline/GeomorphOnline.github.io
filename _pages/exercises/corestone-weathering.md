@@ -12,8 +12,10 @@ classes: wide full-bleed
   search indexing. It is NOT private: this repository and this site are public,
   so anyone with the URL can reach the page. Do not put solutions here.
 
-  THE EXERCISE TASK ITSELF IS STILL TO BE WRITTEN -- what to vary, what to
-  observe, what to explain. Replace the "What to do" section.
+  THE ASSIGNMENT DOES NOT LIVE HERE. This page is reference material; the
+  problem set is a separate document that draws on it. A "What to do" section
+  sat here until 2026-09-23 and was moved out for that reason -- recover it
+  from the commit before this one if it is wanted as a starting point.
 -->
 
 Walk up to a weathered granite outcrop and you will find rounded boulders
@@ -182,53 +184,6 @@ faster. That is what rounds a block into a corestone.
 {% include figure image_path="/assets/images/weathering/corestones-quarry-minnesota.jpg"
    alt="Large rounded granite boulders on a gravel quarry floor, with two people sitting on them for scale"
    caption="And in Minnesota: corestones in a sand-and-gravel pit in the southwest of the state. These weathered in place; the machines moved them only because they were in the way of the Glacial River Warren sand and gravel being mined around them. So the rounding is the rock's and the arrangement is the excavator's – and the material they sit in is outwash, not the grus they formed in. Kerry Callaghan (University of Illinois Chicago) and Fiona Clubb (Durham University) give the scale. Photo: Andy Wickert, 2017, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)." %}
-
-## What to do
-
-### What does it do?
-
-You are an experimentalist with one apparatus and no theory yet. The theory is
-below, and it is better met second. Find out what the model **does**, and the
-explanation will be waiting when you want it.
-
-Write your prediction down *before* you run anything, every time. A prediction
-you keep in your head is one you can revise after the fact without noticing.
-
-**1. Watch one run, and say what you see.** Leave every slider where it opens.
-Press **▶** and watch until roughly half the section has reacted.
-
-- Where does the rock react first? Where does it react last?
-- What *shape* do the untouched blocks take as the run goes on? Sketch one.
-- The left panel is how fast the water is moving, and the right panel is how
-  far the reaction has got. Which one changes during the run, and which one
-  looks much the same at the end as at the start?
-
-**2. Now change one thing at a time.** For each control below, predict first,
-then press **Fresh rock** and run again. You are after the *direction* of the
-effect and roughly how big it is, not a number.
-
-- **Joint spacing.** Closer joints, or wider?
-- **Rainfall.** More rain, or less?
-- **Temperature.** (Do this one last. Getting the direction right is the easy
-  half. It is also the biggest lever of the three, and it has two causes
-  rather than one, which **Under the hood** takes apart.)
-
-**3. One of these is not like the others.** Change **Cell size** and run again.
-
-- What happens to the answer?
-- What *should* happen to the answer, and why? (Cell size is not a property of
-  the rock. It is how finely the computer chops the rock up.)
-- If the answer does move, is that a discovery about granite or a warning
-  about the model?
-
-**4. Write it up, about a page.** A sketch of a block from step 1, your three
-predictions with what actually happened, and one paragraph on this: **two
-blocks of the same granite, the same minerals, and the same temperature, and
-one is grus while the other is a corestone. Why?** Answer from what you
-watched, not from what you have read elsewhere.
-
-Then read **Under the hood** and see which of your answers the equations agree
-with.
 
 ## Under the hood
 
