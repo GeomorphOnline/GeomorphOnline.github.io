@@ -717,10 +717,11 @@ which is why $C_{eq}$ appears in the code only ever as a ratio.
 
 Because nothing in the chemistry or the flow is fitted, how long weathering
 takes is a *result*, and a result can be checked. At the default settings –
-1 m joints, 0.30 m yr⁻¹, 12 °C – this model dissolves 90 % of a 3 m section in
-**3713 kyr**, which is a weathering front advancing at about **0.81 m Myr⁻¹**.
+1 m joints, 0.30 m yr⁻¹, 12 °C – this model reacts 90 % of a 3 m section in
+about **15 000 kyr**.
 
-Measured granite regoliths – the weathered layer sitting on fresh rock – from cosmogenic and solute budgets:
+Measured granite regoliths – the weathered layer sitting on fresh rock – give
+the rate at which the base of that layer eats downward into fresh rock:
 
 | site | front | climate |
 |---|---|---|
@@ -728,27 +729,31 @@ Measured granite regoliths – the weathered layer sitting on fresh rock – fro
 | Davis Run, Virginia | 4 m Myr⁻¹ | temperate |
 | Rio Icacos, Puerto Rico | 43–45 m Myr⁻¹ | tropical |
 
-The model runs at 12 °C, so the temperate pair is the comparison, and it is
-**five to nine times slower than they are** – with nothing tuned. The tropical
-site being an order of magnitude faster is the direction the temperature
-slider moves too.
+Divide 3 m by 15 000 kyr and you get 0.20 m Myr⁻¹, twenty to thirty-five times
+slower than the temperate pair. **But that division does not measure a front,
+and the comparison is not a fair one.** Dividing a depth by a time measures a
+front only if there *is* a front, and here there is not: at the moment 90 % has
+reacted, 91 % of the section has been part-reacted for most of the run. Watch
+the right-hand panel and you can see why – the joint network dissolves at every
+depth at once, rather than a boundary sweeping down from the surface. Draw a
+deeper section and the same division gives a bigger number, which is the
+signature of a quantity that is reporting your figure boundary back to you.
 
-The gap is not spread evenly over the inputs; it sits in the **reactive
-surface area**. This model uses the geometric area of 2 mm grains, 900 m² m⁻³,
-where BET – surface area measured by how much gas the rock adsorbs, which counts every pit and crack – runs 3 × 10⁵–3 × 10⁶ for granite. Closing the rate would need a factor
-of five, which is still 70 to 700 times below BET – so the disagreement lives
-inside
-a range the field itself has not resolved (White & Brantley 2003). It is
-reported rather than removed. Choosing a surface area to make the rate come
-out right is the one move that would make this number meaningless.
+**So the honest statement is narrower: the model is slow, and how slow is not
+something this comparison can settle.** It is slow by at least the factor
+above, and where the slowness sits is an open question rather than a settled
+one. The obvious suspect is the **reactive surface area** – this model uses the
+geometric area of 2 mm grains, 900 m² m⁻³, where BET is hundreds of times
+larger – but that does not survive being tested. Raise the area a
+thousandfold in the model and the rock consumed goes up by only 1.7, because
+water running down a joint does not touch the block interior however reactive
+that interior is. Surface area cannot buy what contact does not deliver.
 
-Two earlier versions of this exercise got closer and were worse. One was
-calibrated, ran at 17.9 m Myr⁻¹, three times too fast, and nothing checked
-it. The next derived its chemistry and reached 2.5 m Myr⁻¹, which looks like
-agreement within a factor of two; but a third of the section was part-dissolved
-at once, so it was not advancing a *front*, and dividing 3 m by the time was
-not measuring one. Only now, with the part-dissolved zone down to a few per
-cent, is this a front rate at all. A worse match, and a better measurement.
+What the model *can* be caught on is a single number you could go and measure.
+Its water leaves the base of the section carrying **0.55 mg L⁻¹** of dissolved
+silica. Granitic groundwaters carry 14 to 25. The water in this model is
+running through the rock without picking up what real water picks up, and that
+is a more useful thing to know than a rate that agrees.
 
 ### One mineral, where a rock has many
 
