@@ -715,45 +715,33 @@ which is why $C_{eq}$ appears in the code only ever as a ratio.
 
 ### Does it get the timescale right?
 
-Because nothing in the chemistry or the flow is fitted, how long weathering
-takes is a *result*, and a result can be checked. At the default settings –
-1 m joints, 0.30 m yr⁻¹, 12 °C – this model reacts 90 % of a 3 m section in
-about **15 000 kyr**.
+Nothing in the chemistry or the flow is fitted, so how long weathering takes is
+a *result*. At the default settings – 1 m joints, 0.30 m yr⁻¹, 12 °C – the
+model reacts 90 % of a 3 m section in about **15 000 kyr**. Divide the depth by
+the time and you have something to compare against the field: 0.20 m Myr⁻¹.
 
-Measured granite regoliths – the weathered layer sitting on fresh rock – give
-the rate at which the base of that layer eats downward into fresh rock:
-
-| site | front | climate |
+| site | rate | climate |
 |---|---|---|
 | Panola, Georgia | 7 m Myr⁻¹ | temperate |
 | Davis Run, Virginia | 4 m Myr⁻¹ | temperate |
 | Rio Icacos, Puerto Rico | 43–45 m Myr⁻¹ | tropical |
 
-Divide 3 m by 15 000 kyr and you get 0.20 m Myr⁻¹, twenty to thirty-five times
-slower than the temperate pair. **But that division does not measure a front,
-and the comparison is not a fair one.** Dividing a depth by a time measures a
-front only if there *is* a front, and here there is not: at the moment 90 % has
-reacted, 91 % of the section has been part-reacted for most of the run. Watch
-the right-hand panel and you can see why – the joint network dissolves at every
-depth at once, rather than a boundary sweeping down from the surface. Draw a
-deeper section and the same division gives a bigger number, which is the
-signature of a quantity that is reporting your figure boundary back to you.
+So the model is more than twenty times slower than the temperate pair. That is
+worth sitting with rather than explaining away, and one likely reason is the
+thing this exercise is about. **The rock that weathers fastest is not jointed a
+metre apart.** At Rio Icacos the granite at the weathering front splits into
+layers about 2.6 cm thick, and the splitting is made by the weathering itself
+rather than inherited from tectonics. Set the joint spacing slider finer and
+watch how much more of the section goes.
 
-**So the honest statement is narrower: the model is slow, and how slow is not
-something this comparison can settle.** It is slow by at least the factor
-above, and where the slowness sits is an open question rather than a settled
-one. The obvious suspect is the **reactive surface area** – this model uses the
-geometric area of 2 mm grains, 900 m² m⁻³, where BET is hundreds of times
-larger – but that does not survive being tested. Raise the area a
-thousandfold in the model and the rock consumed goes up by only 1.7, because
-water running down a joint does not touch the block interior however reactive
-that interior is. Surface area cannot buy what contact does not deliver.
-
-What the model *can* be caught on is a single number you could go and measure.
-Its water leaves the base of the section carrying **0.55 mg L⁻¹** of dissolved
-silica. Granitic groundwaters carry 14 to 25. The water in this model is
-running through the rock without picking up what real water picks up, and that
-is a more useful thing to know than a rate that agrees.
+Two cautions come with the comparison, and both are worth more than the number.
+Dividing a depth by a time measures a front only if there *is* a front, and
+here there is not – the joint network dissolves at every depth at once, so
+drawing a deeper section would return a bigger number without anything about
+the rock having changed. And the field rates are not all measuring the same
+quantity: regolith production, front advance and total denudation are all
+reported in m Myr⁻¹ and are not interchangeable. Before comparing two rates,
+find out what each one is the rate *of*.
 
 ### One mineral, where a rock has many
 
