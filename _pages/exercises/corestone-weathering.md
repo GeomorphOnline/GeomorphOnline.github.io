@@ -275,7 +275,7 @@ constant in s⁻¹, and $A$, the Arrhenius frequency.
 | $N_0$ | $N$ in fresh rock, before any weathering | mol m⁻³ |
 | $M$ | fraction of that still locked in, $N/N_0$ | – |
 | $L$ | saturation length | m |
-| $\mathrm{Da}$ | Damköhler number, a depth divided by $L$ | – |
+| $\mathrm{Da}$ | Damköhler number, joint spacing divided by $L$ | – |
 | $E_a$ | activation energy | J mol⁻¹ |
 | $\Delta H_r$ | enthalpy change of the reaction that sets the ceiling | J mol⁻¹ |
 | $\Delta S_r$ | entropy change of that same reaction | J mol⁻¹ K⁻¹ |
@@ -574,26 +574,34 @@ not the rate constant, is why weathering is slow. (On oxygen the same rock
 needs about 680, which is why oxidation can pace a process that dissolution
 cannot.)
 
-**The ratio.** Divide the depth of the section by the saturation length and you
-have the **Damköhler number**, which counts the e-foldings of saturation a
-parcel of water goes through on its way down:
+**The ratio.** Divide the **joint spacing** – how far water travels between
+entering a joint and reaching the block it has to attack – by the saturation
+length, and you have the **Damköhler number**. It counts the e-foldings of
+saturation a parcel of water goes through on the way:
 
-$$\mathrm{Da} = \frac{\text{depth}}{L}$$
+$$\mathrm{Da} = \frac{\text{joint spacing}}{L}$$
 
 - **Da ≫ 1, saturation-limited.** Water fills up long before it runs out of
   rock. Weathering happens where fresh water arrives, and nowhere else.
 - **Da ≪ 1, reaction-limited.** Water crosses barely touched, and the rate
   constant sets the pace everywhere at once.
 
-The section sits firmly in the first limit at Da = 6.6, and the water leaving
-its base is within 0.14 % of saturation. That is what shelters a block
-interior. (Run the same section on oxygen instead and Da drops to 0.02, the
-*other* limit.)
+The spacing is the right length because it is one the *rock* sets. A depth is
+not: it is how much of the section you chose to draw, and Da would move with
+that choice while the granite stayed the same.
 
-Two different mechanisms, then, and both come out as *the water never got
-there*. Note also that Da is a depth over a length, which tells you about how
-much rock you are looking at rather than about the rock itself: view the same
-granite one metre at a time and you get Da = 2.2.
+**Da is a field, not a number.** $L = q/k$, and the joints made $q$ uneven in
+the first place. At 1 m spacing the model carries $L \approx 7$ m in the cells
+a joint touches and $L \approx 0.24$ mm in the matrix between them – a factor
+of thirty thousand – so Da runs from about 0.14 beside a joint to several
+thousand a few grains inside a block. Water goes the whole spacing barely
+touched in one place and saturates within a grain diameter in the other.
+
+**That spread is the corestone**, written as a number. Both limits sit in the
+same rock at the same time, and which one a point is in is decided by how much
+water reaches it. (Run the section on oxygen instead and the saturation length
+is 132 m rather than 0.46 m, so every Da here falls by nearly 300 and the whole
+section moves into the reaction-limited limit.)
 
 ### 7. The feedback: weathered rock conducts better
 
