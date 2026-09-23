@@ -430,7 +430,7 @@ That is the whole model. Everything below is about how fast $N$ falls.
 Plagioclase dissolving into water is the textbook case, and it is the one the
 exercise above runs:
 
-$$-\frac{\partial N}{\partial t} = k(T)\,C_{eq}\left(1 - \frac{C}{C_{eq}}\right)$$
+$$\frac{\partial N}{\partial t} = -k(T)\,C_{eq}\left(1 - \frac{C}{C_{eq}}\right)$$
 
 - $k(T)$, the **reaction rate constant**, in s⁻¹: how often, per unit time, an
   interaction at the mineral surface causes a reaction. Writing it $k(T)$ only
@@ -489,7 +489,7 @@ $$C_{eq}(T) = C_\mathrm{eq,0} \exp\!\left(-\frac{\Delta H_r}{R\,T}\right) \qquad
 
 Put both into the rate law and the bracket multiplies out:
 
-$$-\frac{\partial N}{\partial t} = k\,(C_{eq} - C)$$
+$$\frac{\partial N}{\partial t} = -k\,(C_{eq} - C)$$
 
 Warming raises $k$ and raises $C_{eq}$. It raises the rate through both.
 
@@ -505,7 +505,7 @@ Everything above assumed the solute is something the rock **makes**. Granite
 has a second reaction where it is something the rock **consumes** instead, and
 the difference is structural rather than chemical:
 
-$$-\frac{\partial N}{\partial t} = k_\mathrm{ox}\,C$$
+$$\frac{\partial N}{\partial t} = -k_\mathrm{ox}\,C$$
 
 - $k_\mathrm{ox}$, the oxidation rate constant, in s⁻¹, exactly like the
   dissolution $k$ above.
