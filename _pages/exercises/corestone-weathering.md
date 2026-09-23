@@ -743,6 +743,17 @@ quantity: regolith production, front advance and total denudation are all
 reported in m Myr⁻¹ and are not interchangeable. Before comparing two rates,
 find out what each one is the rate *of*.
 
+**A second check, and one you could go and make.** Weathering is not only
+measured on rock. Sample the water leaving a catchment, measure what it
+carries, and the dissolved load *is* a weathering rate – that is where a good
+part of the literature comes from, and it is the one method here that needs a
+bottle rather than an accelerator. The model makes a prediction you could test
+the same way: its water leaves the base of the section carrying about
+**0.55 mg L⁻¹** of dissolved silica, where granitic groundwaters carry 14 to
+25. The water in this model is running through the rock without picking up what
+real water picks up – which points the same way the timescale did, from a
+completely different measurement.
+
 ### One mineral, where a rock has many
 
 A granite is quartz, two feldspars, biotite and a little else, and they do not
