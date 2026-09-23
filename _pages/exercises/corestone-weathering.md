@@ -676,9 +676,7 @@ would be 38.0).
 The reaction enthalpy $\Delta H_r$ is not a property of the dissolving mineral
 at all – it is a statement about *what saturates*. Here the ceiling on the
 solute is dissolved silica, so $\Delta H_r$ = 32.9 kJ mol⁻¹ is quartz's, and
-quartz does not dissolve in this model for a reason rather than by decree: the
-water is already at its saturation, so its driving force $(1 - C/C_{eq})$ is
-zero. Read the ceiling differently – as the solution being buffered by
+quartz itself is held inert here. Read the ceiling differently – as the solution being buffered by
 kaolinite, the clay that weathering actually makes – and $\Delta H_r$ turns
 *negative* for calcium-rich plagioclase, and warming the rock would slow its
 weathering down. That is a real regime. It is not this one, and which of the
