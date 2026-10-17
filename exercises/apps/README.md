@@ -284,6 +284,51 @@ defaults are chosen so that the surface creep velocity lands inside the range
 that has actually been measured, which is a weaker claim than being calibrated
 to a site, and the exercise says so.
 
+### drlp_panel - a detachment-limited river long profile
+
+| | |
+|---|---|
+| model | [DRLP](https://github.com/MNiMORPH/DRLP) `master` @ `59381e3`, version 0.1.0.dev0 (no release yet) |
+| application source | DRLP `master` @ `59381e3` (`interactive_demo/drlp_panel.py`) |
+| artesian | not shipped: the app hand-rolls its own play/pause and does not import `artesian.live`, so it is `grlp_panel`'s case and needs only one `-p` |
+| built | 2026-10-17 |
+| panel / bokeh | 1.9.4 / 3.9.2 |
+| browser requirements | `numpy`, `scipy` |
+| design width / measured height | 900 px / **NOT YET MEASURED**, 1030 px assumed |
+
+Built from a clean tree, checked with `git status` before building (0 modified
+files) by `DRLP/deploy_geomorphonline.sh`, which refuses a dirty tree for
+exactly the reason this file gives.
+
+**Two gaps, both recorded rather than papered over.**
+
+`DRLP has no git remote`, so the commit named above exists only on one machine
+and nobody can fetch it to confirm what a reader ran. This is the same gap
+`hillcreep` had until 2026-09-04. It closes when DRLP is pushed.
+
+**The height is an estimate and the demo has never been opened in a browser.**
+1030 px is `grlp_panel`'s measured 760 px plus two further sliders and a longer
+blurb. The compiled page was verified another way - the install list carries
+`drlp`, `numpy` and `scipy`, and the app was driven headlessly through all
+sixteen slider corners plus a base-level drop - but nothing has rendered it.
+Measure the height and correct it on the page.
+
+`scipy` is a browser requirement here, unlike `hillcreep`'s `numpy` alone,
+because the general-`n` case needs a root-finder: `scipy.optimize.brentq` on a
+bracket the model proves rather than samples. At `n = 1` the node update is
+closed-form and scipy is never called, but the wheel still has to be there.
+
+This build did **not** change `artesian-embed.js` or `artesian-embed.css`: both
+are byte-identical to the versions the other exercises reference, so every
+page's `?v=` hash still matches and nothing needed bumping. It did rewrite the
+shared `panel` and `bokeh` wheels; their contents were checked by unzipping
+both and diffing (identical, zip timestamps only) and the committed bytes were
+restored, so this deploy leaves them untouched in git.
+
+**The exercise task is deliberately not written.** The page describes the
+equation and what each control does. What to vary and what to explain belongs
+to whoever sets the work.
+
 ### scarp_panel — dating a fault scarp
 
 | | |
