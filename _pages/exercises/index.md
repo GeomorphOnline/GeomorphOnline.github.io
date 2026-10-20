@@ -14,9 +14,6 @@ classes: wide
   same. Add a line here when an exercise page is added.
 -->
 
-Each exercise runs a landscape-evolution model in your browser: change the
-inputs and watch the landscape respond.
-
 - [Hillslope diffusivity, taken apart]({{ '/exercises/hillslope-creep/' | relative_url }})
   – soil creep and the diffusivity $k_\mathrm{hs}$, from a relaxing scarp to a
   steady hillslope.
