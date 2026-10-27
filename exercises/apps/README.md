@@ -288,14 +288,14 @@ to a site, and the exercise says so.
 
 | | |
 |---|---|
-| model | [DRLP](https://github.com/MNiMORPH/DRLP) `master` @ `bd53428`, version 0.1.0.dev1 (no release yet) |
-| application source | DRLP `master` @ `bd53428` (`interactive_demo/drlp_panel.py`) |
+| model | [DRLP](https://github.com/MNiMORPH/DRLP) `master` @ `9f020d3`, version 0.1.0.dev2 (no release yet) |
+| application source | DRLP `master` @ `9f020d3` (`interactive_demo/drlp_panel.py`) |
 | artesian | not shipped: the app hand-rolls its own play/pause and does not import `artesian.live`, so it is `grlp_panel`'s case and needs only one `-p` |
-| built | 2026-10-27 (rebuilt: 2 km default relief, an elevation axis that cannot clip, and a base-level lock) |
+| built | 2026-10-27 (rebuilt: an elevation axis that tracks the profile, outward at once and inward over half a second) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 | design width / measured height | 900 px / **NOT YET MEASURED**, 1030 px assumed |
-| version history | `0.1.0.dev0` deployed 2026-10-17, `0.1.0.dev1` 2026-10-27. Bumped by `deploy_geomorphonline.sh --bump` on every redeploy, because the filename is the only cache-buster a wheel has |
+| version history | `0.1.0.dev0` deployed 2026-10-17, `0.1.0.dev1` and `0.1.0.dev2` 2026-10-27. Bumped by `deploy_geomorphonline.sh --bump` on every redeploy, because the filename is the only cache-buster a wheel has |
 
 Built from a clean tree, checked with `git status` before building (0 modified
 files) by `DRLP/deploy_geomorphonline.sh`, which refuses a dirty tree for
