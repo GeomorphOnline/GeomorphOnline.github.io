@@ -19,7 +19,7 @@ classes: wide full-bleed
 
   The slug is `bedrock-river-erosion` while the model is named DRLP, for
   detachment-limited. That is intentional: the stream-power law is a
-  parameterisation of detachment-limited incision and does not know what the
+  parameterization of detachment-limited incision and does not know what the
   bed is made of, so the "bedrock" name is reserved for a mechanistic model of
   abrasion, plucking, tools and cover. The URL was in circulation first and is
   kept.
@@ -52,7 +52,7 @@ it travels. Drop base level in both and watch the difference.
 
   Do not reintroduce width="100%" on the frame. Every browser on an iPad is
   WebKit underneath, and WebKit sizes an iframe to its content rather than
-  honouring a percentage width.
+  honoring a percentage width.
 
   `height` is the demo's measured height at its design width, and is what the
   reader looks at while Pyodide arrives. THIS VALUE IS AN ESTIMATE and has not
@@ -83,7 +83,7 @@ it runs and the profile is left where it is and allowed to respond.
 | $m$ | the exponent on discharge |
 | $n$ | the exponent on slope. $n = 1$ makes the equation linear, and the knickpoint travels at a speed that does not depend on how steep it is |
 | $U$ | rock uplift rate, a **rate**: it does nothing until time passes |
-| base level | the elevation of the downstream end, an **elevation**: it moves the moment you drag it |
+| base level | the elevation of the downstream end, an **elevation**: it moves the moment you drag it. Falls only, unless locked to the uplift rate |
 
 Discharge is not a slider. It is built from the two things that stand between a
 position on the river and the water flowing past it: drainage area grows
@@ -92,11 +92,20 @@ fixed runoff rate, $Q = 10^{-8} A$.
 
 ## Two things this model will not do
 
-**Base level only goes down.** Stream power erodes and never deposits, so the
-bed can come back up only as fast as rock is being uplifted, and not at all when
-$U = 0$. Raise base level above where the river sits and you get a drowned
-reach, not a prediction. A real river aggrades, and that is what the
-[gravel](/exercises/gravel-river-long-profile/) and sand models are for.
+**Base level goes down, or it rides the uplift.** Stream power erodes and never
+deposits, so nothing here can bring a drowned bed back up: a real river
+aggrades, and that is what the
+[gravel](/exercises/gravel-river-long-profile/) and sand models are for. So the
+base-level slider only falls. Drag it down and the running river responds; drag
+it up and the river is rebuilt there instead, which is a different starting
+point rather than a filling the model cannot do.
+
+The 🔓 button beside it **locks base level to the uplift rate**. Locked, the
+outlet rides the same rising rock as everything else, the whole long profile
+goes up at $U$ together, and no *relative* base-level change is left. The river
+keeps eroding and loses its steady state: relief closes toward zero while every
+elevation climbs. A landscape can be uplifting everywhere and still give its
+rivers nothing to cut into.
 
 **There is only one channel.** No tributaries, no confluences, and no
 accumulation of discharge from a branching network: just a single long profile
