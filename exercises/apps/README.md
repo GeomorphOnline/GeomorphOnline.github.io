@@ -288,13 +288,14 @@ to a site, and the exercise says so.
 
 | | |
 |---|---|
-| model | [DRLP](https://github.com/MNiMORPH/DRLP) `master` @ `59381e3`, version 0.1.0.dev0 (no release yet) |
-| application source | DRLP `master` @ `59381e3` (`interactive_demo/drlp_panel.py`) |
+| model | [DRLP](https://github.com/MNiMORPH/DRLP) `master` @ `bd53428`, version 0.1.0.dev1 (no release yet) |
+| application source | DRLP `master` @ `bd53428` (`interactive_demo/drlp_panel.py`) |
 | artesian | not shipped: the app hand-rolls its own play/pause and does not import `artesian.live`, so it is `grlp_panel`'s case and needs only one `-p` |
-| built | 2026-10-17 |
+| built | 2026-10-27 (rebuilt: 2 km default relief, an elevation axis that cannot clip, and a base-level lock) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 | design width / measured height | 900 px / **NOT YET MEASURED**, 1030 px assumed |
+| version history | `0.1.0.dev0` deployed 2026-10-17, `0.1.0.dev1` 2026-10-27. Bumped by `deploy_geomorphonline.sh --bump` on every redeploy, because the filename is the only cache-buster a wheel has |
 
 Built from a clean tree, checked with `git status` before building (0 modified
 files) by `DRLP/deploy_geomorphonline.sh`, which refuses a dirty tree for
@@ -306,12 +307,16 @@ exactly the reason this file gives.
 and nobody can fetch it to confirm what a reader ran. This is the same gap
 `hillcreep` had until 2026-09-04. It closes when DRLP is pushed.
 
-**The height is an estimate and the demo has never been opened in a browser.**
-1030 px is `grlp_panel`'s measured 760 px plus two further sliders and a longer
-blurb. The compiled page was verified another way - the install list carries
-`drlp`, `numpy` and `scipy`, and the app was driven headlessly through all
-sixteen slider corners plus a base-level drop - but nothing has rendered it.
-Measure the height and correct it on the page.
+**The page runs: Andy loaded and drove the `0.1.0.dev0` build on 2026-10-27,
+which retires the open question of whether a compiled DRLP page works at all.**
+What that validated is the whole chain - `artesian build`, the shared stripped
+wheels, the iframe embed, Pyodide pulling `scipy` for the general-`n`
+root-find, and the install list.
+
+**The height is still an estimate.** 1030 px is `grlp_panel`'s measured 760 px
+plus two further sliders and a longer blurb, and the blurb has since grown
+again. Too tall shows as dead space below the demo; too short makes the frame
+jump when the app finishes loading. Measure it and correct it on the page.
 
 `scipy` is a browser requirement here, unlike `hillcreep`'s `numpy` alone,
 because the general-`n` case needs a root-finder: `scipy.optimize.brentq` on a
