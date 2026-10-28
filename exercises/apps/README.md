@@ -288,14 +288,14 @@ to a site, and the exercise says so.
 
 | | |
 |---|---|
-| model | [DRLP](https://github.com/MNiMORPH/DRLP) `master` @ `ce51764`, version 0.1.0.dev5 (no release yet) |
-| application source | DRLP `master` @ `ce51764` (`interactive_demo/drlp_panel.py`) |
+| model | [DRLP](https://github.com/MNiMORPH/DRLP) `master` @ `932b3b3`, version 0.1.0.dev6 (no release yet) |
+| application source | DRLP `master` @ `932b3b3` (`interactive_demo/drlp_panel.py`) |
 | artesian | not shipped: the app hand-rolls its own play/pause and does not import `artesian.live`, so it is `grlp_panel`'s case and needs only one `-p` |
-| built | 2026-10-28 (rebuilt: raising base level now does nothing, and y limits ease through time) |
+| built | 2026-10-28 (rebuilt: the base-level bar tracks base level while locked) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 | design width / measured height | 900 px / **NOT YET MEASURED**, 1030 px assumed. The figure grew from 680x380 to 880x420, so this is now an underestimate |
-| version history | `0.1.0.dev0` deployed 2026-10-17, `0.1.0.dev1` and `0.1.0.dev2` 2026-10-27, `0.1.0.dev3` `0.1.0.dev4` and `0.1.0.dev5` 2026-10-28. Bumped by `deploy_geomorphonline.sh --bump` on every redeploy, because the filename is the only cache-buster a wheel has |
+| version history | `0.1.0.dev0` deployed 2026-10-17, `0.1.0.dev1` and `0.1.0.dev2` 2026-10-27, `0.1.0.dev3` and `0.1.0.dev4` through `0.1.0.dev6` 2026-10-28. Bumped by `deploy_geomorphonline.sh --bump` on every redeploy, because the filename is the only cache-buster a wheel has |
 
 Built from a clean tree, checked with `git status` before building (0 modified
 files) by `DRLP/deploy_geomorphonline.sh`, which refuses a dirty tree for

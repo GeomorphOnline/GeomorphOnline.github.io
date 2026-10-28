@@ -104,7 +104,8 @@ The 🔓 button beside it **locks base level to the uplift rate**. Locked, the
 outlet rides the same rising rock as everything else, the whole long profile
 goes up at $U$ together, and no *relative* base-level change is left. The river
 keeps eroding and loses its steady state: relief closes toward zero while every
-elevation climbs. A landscape can be uplifting everywhere and still give its
+elevation climbs, and the base-level slider creeps up on its own to show where
+base level has got to. A landscape can be uplifting everywhere and still give its
 rivers nothing to cut into. With no uplift, base level cannot come up at all,
 which is the physics rather than a limit of the controls.
 
