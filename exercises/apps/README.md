@@ -294,6 +294,7 @@ to a site, and the exercise says so.
 | built | 2026-10-28 (rebuilt: the base-level bar tracks base level while locked) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
+| CI | `tests.yml`, Python 3.9 through 3.13, green on the first run |
 | design width / measured height | 900 px / **NOT YET MEASURED**, 1030 px assumed. The figure grew from 680x380 to 880x420, so this is now an underestimate |
 | **issued to students** | **`0.1.0.dev6`, declared the problem-set version on 2026-10-28.** `DRLP/PSET_VERSION` records it and the deploy script warns before superseding it, because `artesian build` prunes the wheel it replaces |
 | version history | `0.1.0.dev0` deployed 2026-10-17, `0.1.0.dev1` and `0.1.0.dev2` 2026-10-27, `0.1.0.dev3` and `0.1.0.dev4` through `0.1.0.dev6` 2026-10-28. Bumped by `deploy_geomorphonline.sh --bump` on every redeploy, because the filename is the only cache-buster a wheel has |
@@ -302,11 +303,15 @@ Built from a clean tree, checked with `git status` before building (0 modified
 files) by `DRLP/deploy_geomorphonline.sh`, which refuses a dirty tree for
 exactly the reason this file gives.
 
-**Two gaps, both recorded rather than papered over.**
+**The provenance gap is closed.** DRLP was published at
+<https://github.com/MNiMORPH/DRLP> on 2026-10-28, public and GPL-3.0-or-later,
+so every commit named here is fetchable and a reader's result can be traced to
+the code that produced it. `932b3b3`, the problem-set build, resolves there.
+There is still no tagged release, so the commit is the provenance and
+`pip install drlp` does not give a reader the same code.
 
-`DRLP has no git remote`, so the commit named above exists only on one machine
-and nobody can fetch it to confirm what a reader ran. This is the same gap
-`hillcreep` had until 2026-09-04. It closes when DRLP is pushed.
+`HANDOFF.md`, the AI build brief this model was written from, is not in the
+published HEAD. It remains in the repository's earlier history.
 
 **The page runs: Andy loaded and drove the `0.1.0.dev0` build on 2026-10-27,
 which retires the open question of whether a compiled DRLP page works at all.**
@@ -323,13 +328,6 @@ entirely. That happened on 2026-10-28: eight slider combinations times four
 hundred frames reported zero clipped frames against a page whose axis never
 followed the profile. Replace the range with an explicit `Range1d`, as
 `hillcreep_panel` does, and assert the TYPE rather than the values.
-
-**This is the version a problem set was issued against, so the unfetchable
-commit above now matters.** A student's result traces to a DRLP commit that
-exists on one machine, because DRLP has no git remote. In a year, "what did
-they actually run?" has no answer anyone but Andy can give. It is the same
-gap `hillcreep` carried until it was published on 2026-09-04, and it closes
-the same way.
 
 **The height is still an estimate.** 1030 px is `grlp_panel`'s measured 760 px
 plus two further sliders and a longer blurb, and the blurb has since grown
