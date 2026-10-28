@@ -96,16 +96,17 @@ fixed runoff rate, $Q = 10^{-8} A$.
 deposits, so nothing here can bring a drowned bed back up: a real river
 aggrades, and that is what the
 [gravel](/exercises/gravel-river-long-profile/) and sand models are for. So the
-base-level slider only falls. Drag it down and the running river responds; drag
-it up and the river is rebuilt there instead, which is a different starting
-point rather than a filling the model cannot do.
+base-level slider only falls. Drag it down and the running river responds.
+Drag it **up and nothing happens** – the slider snaps back, because there is
+no such process.
 
 The 🔓 button beside it **locks base level to the uplift rate**. Locked, the
 outlet rides the same rising rock as everything else, the whole long profile
 goes up at $U$ together, and no *relative* base-level change is left. The river
 keeps eroding and loses its steady state: relief closes toward zero while every
 elevation climbs. A landscape can be uplifting everywhere and still give its
-rivers nothing to cut into.
+rivers nothing to cut into. With no uplift, base level cannot come up at all,
+which is the physics rather than a limit of the controls.
 
 **There is only one channel.** No tributaries, no confluences, and no
 accumulation of discharge from a branching network: just a single long profile
