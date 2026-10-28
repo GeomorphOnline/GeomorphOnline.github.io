@@ -295,6 +295,7 @@ to a site, and the exercise says so.
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
 | design width / measured height | 900 px / **NOT YET MEASURED**, 1030 px assumed. The figure grew from 680x380 to 880x420, so this is now an underestimate |
+| **issued to students** | **`0.1.0.dev6`, declared the problem-set version on 2026-10-28.** `DRLP/PSET_VERSION` records it and the deploy script warns before superseding it, because `artesian build` prunes the wheel it replaces |
 | version history | `0.1.0.dev0` deployed 2026-10-17, `0.1.0.dev1` and `0.1.0.dev2` 2026-10-27, `0.1.0.dev3` and `0.1.0.dev4` through `0.1.0.dev6` 2026-10-28. Bumped by `deploy_geomorphonline.sh --bump` on every redeploy, because the filename is the only cache-buster a wheel has |
 
 Built from a clean tree, checked with `git status` before building (0 modified
@@ -322,6 +323,13 @@ entirely. That happened on 2026-10-28: eight slider combinations times four
 hundred frames reported zero clipped frames against a page whose axis never
 followed the profile. Replace the range with an explicit `Range1d`, as
 `hillcreep_panel` does, and assert the TYPE rather than the values.
+
+**This is the version a problem set was issued against, so the unfetchable
+commit above now matters.** A student's result traces to a DRLP commit that
+exists on one machine, because DRLP has no git remote. In a year, "what did
+they actually run?" has no answer anyone but Andy can give. It is the same
+gap `hillcreep` carried until it was published on 2026-09-04, and it closes
+the same way.
 
 **The height is still an estimate.** 1030 px is `grlp_panel`'s measured 760 px
 plus two further sliders and a longer blurb, and the blurb has since grown
