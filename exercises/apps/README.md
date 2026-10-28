@@ -288,14 +288,14 @@ to a site, and the exercise says so.
 
 | | |
 |---|---|
-| model | [DRLP](https://github.com/MNiMORPH/DRLP) `master` @ `9f020d3`, version 0.1.0.dev2 (no release yet) |
-| application source | DRLP `master` @ `9f020d3` (`interactive_demo/drlp_panel.py`) |
+| model | [DRLP](https://github.com/MNiMORPH/DRLP) `master` @ `de0034b`, version 0.1.0.dev3 (no release yet) |
+| application source | DRLP `master` @ `de0034b` (`interactive_demo/drlp_panel.py`) |
 | artesian | not shipped: the app hand-rolls its own play/pause and does not import `artesian.live`, so it is `grlp_panel`'s case and needs only one `-p` |
-| built | 2026-10-27 (rebuilt: an elevation axis that tracks the profile, outward at once and inward over half a second) |
+| built | 2026-10-28 (rebuilt: both axes made explicit Range1d, so the tracking actually governs the rendered axis) |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, `scipy` |
-| design width / measured height | 900 px / **NOT YET MEASURED**, 1030 px assumed |
-| version history | `0.1.0.dev0` deployed 2026-10-17, `0.1.0.dev1` and `0.1.0.dev2` 2026-10-27. Bumped by `deploy_geomorphonline.sh --bump` on every redeploy, because the filename is the only cache-buster a wheel has |
+| design width / measured height | 900 px / **NOT YET MEASURED**, 1030 px assumed. The figure grew from 680x380 to 880x420, so this is now an underestimate |
+| version history | `0.1.0.dev0` deployed 2026-10-17, `0.1.0.dev1` and `0.1.0.dev2` 2026-10-27, `0.1.0.dev3` 2026-10-28. Bumped by `deploy_geomorphonline.sh --bump` on every redeploy, because the filename is the only cache-buster a wheel has |
 
 Built from a clean tree, checked with `git status` before building (0 modified
 files) by `DRLP/deploy_geomorphonline.sh`, which refuses a dirty tree for
@@ -312,6 +312,16 @@ which retires the open question of whether a compiled DRLP page works at all.**
 What that validated is the whole chain - `artesian build`, the shared stripped
 wheels, the iframe embed, Pyodide pulling `scipy` for the general-`n`
 root-find, and the install list.
+
+**A warning for anyone rescaling an axis from Python here.** `figure()`
+returns a `DataRange1d`, which auto-ranges to the renderers' data **in the
+browser**. Setting its `start` and `end` from Python does not govern what is
+drawn, and reading them back returns only what Python last wrote -- so
+headless tests of a tracking axis pass while the deployed page ignores it
+entirely. That happened on 2026-10-28: eight slider combinations times four
+hundred frames reported zero clipped frames against a page whose axis never
+followed the profile. Replace the range with an explicit `Range1d`, as
+`hillcreep_panel` does, and assert the TYPE rather than the values.
 
 **The height is still an estimate.** 1030 px is `grlp_panel`'s measured 760 px
 plus two further sliders and a longer blurb, and the blurb has since grown
