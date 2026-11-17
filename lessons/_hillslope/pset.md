@@ -121,13 +121,13 @@ After writing this scaling argument, sketch half of a valley cross section, from
 
 The actual solution for this scaling (part **i**) is:
 
-$$L = 2 \sqrt{k_m t}$$,
+$$L = 2 \sqrt{k_h t}$$,
 
 where $$L$$ is a characteristic length scale. Yes, I just gave you (sort of) the answer to this first part! And so this is why you have to show your work: I need to know that you know how you get to this length-scale--time-scale *proportionality*.
 
 Considering that the bluffs of the upper Mississippi valley are made of dolostone, which is considerably less erodible than glacial till (though it can weather), I assume that:
 
-$$k_m = 0.01$$.
+$$k_h = 0.01$$.
 
 This value may be a bit high, but it sure makes the math easier!
 
@@ -175,7 +175,7 @@ Paste this data set in your desired spreadsheet program. You are ready to begin 
 * Second, create a curve fit to this as a second-order polynomial
 * Third, note that the parabolic fit, strictly speaking, is only valid near the top of the hill. Consider trimming some of the river valleys and surrounding regions. I expect you to obtain a good fit regardless, and for the result to be relatively insensitive to this.
 
-**Your mission now** Once you have this fit, use it with the above equation to find the average erosion rate. For this, assume (as before), that $$k_m = 0.01$$ in units of meters and years. When considering the sign of your solution, recall that erosion is defined such that *down* is positive. (Right? Becuase otherwise it wouldn't be... eroding.)
+**Your mission now** Once you have this fit, use it with the above equation to find the average erosion rate. For this, assume (as before), that $$k_h = 0.01$$ in units of meters and years. When considering the sign of your solution, recall that erosion is defined such that *down* is positive. (Right? Becuase otherwise it wouldn't be... eroding.)
 
 **Also:** Project how much additional erosion might occur in the next 1 million years.
 
