@@ -172,7 +172,7 @@ $$\sigma(z) = W(z)\,g\cos^2\theta, \qquad
   \tau(z)   = W(z)\,g\sin\theta\cos\theta, \qquad
   u(z)      = S\,\rho_w g z\cos^2\theta$$
 
-where $W(z)$ is the mass of the column above unit horizontal area. Three
+where $W(z)$ is the mass of the column above unit horizontal area. Four
 details are worth stating because they are the ones most often got wrong:
 
 **There is no porosity in the pore pressure.** Pressure is a property of the
