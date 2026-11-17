@@ -183,7 +183,7 @@ pressure.
 **The driving stress carries the total wet weight; the friction carries the
 buoyant weight.** In the saturated part the effective normal stress goes as
 $(1-n)(\rho_r - \rho_w)$, not $(1-n)\rho_r$. Getting this wrong overestimates
-the friction by about 60% at typical porosities, which is enough to report a
+the friction by about 60% at a grain density of 2650 kg/m³, which is enough to report a
 saturated 30° slope as stable when it is not.
 
 **Porosity belongs in the weight, not the pressure.** The bulk density is
