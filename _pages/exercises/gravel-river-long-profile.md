@@ -72,7 +72,7 @@ These are the three controls of Lane's balance, played out dynamically. Use
 
   Do not reintroduce width="100%" on the frame. Every browser on an
   iPad is WebKit underneath, and WebKit sizes an iframe to its content
-  rather than honouring a percentage width -- which sent both of these
+  rather than honoring a percentage width -- which sent both of these
   exercises off the side of the page, invisibly on every desktop.
 -->
 <link rel="stylesheet"
