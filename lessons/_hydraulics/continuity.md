@@ -25,7 +25,7 @@ Continuity is a state of balance in which everything entering a cross-section mu
 
 ### Potomac bedrock constriction
 
-Watch this video of the Potomac River. I do not (yet!) expect you to know what a "hydraulic jump" is, but think about how the consriction in the river is impacting the flow. And then think about what how the speed and depth of the water might change if the flow exits the gorge into a wider area.
+Watch this video of the Potomac River. I do not (yet!) expect you to know what a "hydraulic jump" is, but think about how the constriction in the river is impacting the flow. And then think about what how the speed and depth of the water might change if the flow exits the gorge into a wider area.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ms_-lxkUD20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

@@ -29,7 +29,7 @@ You have been tasked with understanding the flow and channel dynamics in a reach
 
 ### Channel characteristics
 
-Approximately rectangular. Units given in square brackets at the end of each bullet point; all equations are desgined for SI units.
+Approximately rectangular. Units given in square brackets at the end of each bullet point; all equations are designed for SI units.
 
 * 50 m wide ($$b$$) [m]
 * 2 m deep (this is the bankfull flow depth, referred to in the notes as $$h_{bf}$$) [m]
@@ -66,7 +66,7 @@ Also recall that:
 
 $$u_\tau = \sqrt{ \frac{\tau_b}{\rho} }$$
 
-#### Enegelund--Hansen sand-transport formula (new!)
+#### Engelund--Hansen sand-transport formula (new!)
 
 This formula relates dimensionless basal shear stress, $$\tau_b^* $$, to dimensionless discharge of sand per unit width of channel, $$q_s^* $$, as:
 
@@ -143,7 +143,7 @@ Describe in a few sentences why you think this plot has the shape that it does? 
 
 Finally, many of the following questions are going to require you to convert discharge into stage. You might, however, notice that you have used multiple equations to compute the stage--discharge relationship and that stage appears in multiple terms -- including within a logarithm! Empirical stage--discharge rating curves, on the other hand, often use a simple power--law fit of the type $$h = \lambda_1 Q^{\lambda_2}$$, where $\lambda_1$ and $\lambda_2$ are the coefficient and exponent of an empirical fit, respectively. This equation is simpler, and may be easily inverted (i.e., you can easily rearrange it to solve for $$h$$ or $$Q$$). Using a spreadsheet or programming language, fit this generic power-law equation to your computed stage--discharge relationship (likely represented as a set of points where you have calculated it at different levels), and plot this fit. Provide the best-fitting parameters as well. You can use this equation to help you answer the questions below.
 
-*Hint: Don't worry if the curve fit doesn't look very nice. The key point here is to go through the process and get practice with the relationships between these key measureables and variables.*
+*Hint: Don't worry if the curve fit doesn't look very nice. The key point here is to go through the process and get practice with the relationships between these key measurables and variables.*
 
 
 ## 3. Flood risk and the flood-frequency curve (20 points)
@@ -154,7 +154,7 @@ $$Q = 170 \log_{10}(5 P_R),$$
 
 where $$P_R$$ indicates the *return period* of that flood in years.
 
-*Important note: This equation is not dimensionally consistent! This means that no theory should be able to explain it; it is just an arbitrarty observed relationship between two variables. Therefore, $$Q$$ is volumetric water discharge [m<sup>3</sup>/s] whereas $$P_R$$ is return period [1/yr]. There's a lot of empiricism in observational hydrology. Maybe one of you will help to find the deeper meaning and answer behind this!*
+*Important note: This equation is not dimensionally consistent! This means that no theory should be able to explain it; it is just an arbitrary observed relationship between two variables. Therefore, $$Q$$ is volumetric water discharge [m<sup>3</sup>/s] whereas $$P_R$$ is return period [1/yr]. There's a lot of empiricism in observational hydrology. Maybe one of you will help to find the deeper meaning and answer behind this!*
 
 ### Part A
 
@@ -231,7 +231,7 @@ First, gain a bit of background by watching the video, below:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LTv6RkFnelM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Then, go to [their investivative study](https://projects.propublica.org/graphics/levees). It starts with the same video (so you could watch it here instead), and then goes on to demonstrate the impacts of levees through some interactive activities and descriptions.
+Then, go to [their investigative study](https://projects.propublica.org/graphics/levees). It starts with the same video (so you could watch it here instead), and then goes on to demonstrate the impacts of levees through some interactive activities and descriptions.
 
 ### Part A
 

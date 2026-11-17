@@ -31,7 +31,7 @@ First-semester physics courses typically introduce the linear relationship betwe
 
 $$F = k x$$
 
-Here, $$F$$ is a force, $$k$$ is the spring constnt, and $$x$$ is some amount of displacement.
+Here, $$F$$ is a force, $$k$$ is the spring constant, and $$x$$ is some amount of displacement.
 
 The spring constant wraps (heh!) together many different variables.
 * How long is the spring? Longer springs have more coils that can deform, and therefore become more easily stretched or compressed.

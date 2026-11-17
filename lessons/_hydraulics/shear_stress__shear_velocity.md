@@ -23,7 +23,7 @@ author_profile: true
 
 Turbulence exists at many scales in a river.
 * The smallest eddies are at what we call the "Kolmogorov scale" -- the length scale at which viscous dampening removes eddies from the flow. *Fluid viscosity prevents eddies smaller than this from forming.*
-* The largest eddies exist at the distance across the flow. When considering vertical mixing, as we do when considering velocitgy and shear stress in natural rivers, this is typically the flow depth. *There is not enough space available for larger eddies to form.*
+* The largest eddies exist at the distance across the flow. When considering vertical mixing, as we do when considering velocity and shear stress in natural rivers, this is typically the flow depth. *There is not enough space available for larger eddies to form.*
 
 If we think of eddies as approximately circular, then they have a diameter and we can state that:
 
@@ -31,7 +31,7 @@ Kolmogorov scale < eddy diameter < flow depth
 
 All of these scales of turbulence respond to shear within the flow, and they all in turn affect the flow velocity profile by mixing fluid up and down in the stream.
 
-When watching this video, try to think about what scales you see by following the neuturally buoyant white tracer particles. You might want to watch more than once to train your eye to pick up both small and large whirls in the flow:
+When watching this video, try to think about what scales you see by following the neutrally buoyant white tracer particles. You might want to watch more than once to train your eye to pick up both small and large whirls in the flow:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LSi_2fw6ySY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br/>
 

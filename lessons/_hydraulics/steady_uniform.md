@@ -29,7 +29,7 @@ Here I discuss steady flow, uniform flow, and how to tell when a backwater effec
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8pwHTVnNv2A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Note that we consider the question of steady, uniform flow purely in the downsteram direction. Natural flows do vary across the channel.
+Note that we consider the question of steady, uniform flow purely in the downstream direction. Natural flows do vary across the channel.
 
 ## Unsteady and nonuniform flow example: dam-breach experiment
 
