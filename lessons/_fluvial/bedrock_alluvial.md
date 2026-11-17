@@ -40,7 +40,7 @@ author_profile: true
 ![Bedrock and alluvial river reaches](https://ars.els-cdn.com/content/image/1-s2.0-S0169555X15002263-gr2.jpg)
 *From [Ellen Wohl et al. (2015)](https://www-sciencedirect-com.ezp3.lib.umn.edu/science/article/pii/S0169555X15002263).*
 
-Bedrock and alluvial sections of rivers can exist at many scales, from portions of a singe river reach, to adjacent reaches of a river, to different portions of a drainage network. Note how these "real-world" cases are more complicated than the eroding bedrock mountains $$\rightarrow$$ low hills and valleys $$\rightarrow$$ coastal plain schematic that typical diagrams show for portions of a river. These bedrock and alluvial reaches evolve differently, with bedrock reaches producing fresh sediment through erosion and alluvial reaches more actively exchanging with biological and chemical processes and their surrounding ecosystems.
+Bedrock and alluvial sections of rivers can exist at many scales, from portions of a single river reach, to adjacent reaches of a river, to different portions of a drainage network. Note how these "real-world" cases are more complicated than the eroding bedrock mountains $$\rightarrow$$ low hills and valleys $$\rightarrow$$ coastal plain schematic that typical diagrams show for portions of a river. These bedrock and alluvial reaches evolve differently, with bedrock reaches producing fresh sediment through erosion and alluvial reaches more actively exchanging with biological and chemical processes and their surrounding ecosystems.
 
 ## Examples
 

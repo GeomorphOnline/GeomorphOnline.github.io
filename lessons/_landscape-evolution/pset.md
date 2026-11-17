@@ -19,7 +19,7 @@ author_profile: true
 
 ## River long profiles: Tectonic uplift and bedrock incision
 
-You are studying a river draining a small mountain range along the eastern margin of the the tectonically active but never-glaciated tropical Andes. You have a time machine and a way of perfectly measuring elevations down river profiles, so you can directly link your observations to theory on how rivers should evolve over time. You're going to look into how your study river changes, and think about what processes happened to cause it to look so different.
+You are studying a river draining a small mountain range along the eastern margin of the tectonically active but never-glaciated tropical Andes. You have a time machine and a way of perfectly measuring elevations down river profiles, so you can directly link your observations to theory on how rivers should evolve over time. You're going to look into how your study river changes, and think about what processes happened to cause it to look so different.
 
 A few important characteristics of this river:
 * It experiences the same precipitation rate at all elevations
