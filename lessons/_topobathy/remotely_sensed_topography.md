@@ -17,7 +17,7 @@ author_profile: true
 
 ## Shuttle Radar Topography Mission (SRTM)
 
-Even though this video looks like it was cut by a 16-year-old, it is the most informative that I could find available on the Internet! (I watched the whole thing, and it's good.) Learn about how the first near-global topographic data set was created. Locally, these data are superceded by newer and higher-resolution data sets, but SRTM remains a benchmark against which all of these others are compared, and a active and pervasively used data product.
+Even though this video looks like it was cut by a 16-year-old, it is the most informative that I could find available on the Internet! (I watched the whole thing, and it's good.) Learn about how the first near-global topographic data set was created. Locally, these data are superseded by newer and higher-resolution data sets, but SRTM remains a benchmark against which all of these others are compared, and a active and pervasively used data product.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NjypOcYGuQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

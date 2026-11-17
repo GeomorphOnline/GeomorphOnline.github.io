@@ -21,7 +21,7 @@ author_profile: true
 ## Learning Goals
 
 * Define "topography" and "bathymetry"
-* Learn about Earth's large-scale "hyposometry": its distribution of elevations.
+* Learn about Earth's large-scale "hypsometry": its distribution of elevations.
 
 ## Podcast
 

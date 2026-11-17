@@ -29,7 +29,7 @@ author_profile: true
 * (25 points) This same map once more, but this time with the semi-transparent colored DEM replaced by semi-transparent GIS vector layers delineating hillslope vs. channel process domains in a subset of this landscape. Additionally, include an explanation of how you chose different process domains, as described in Step 11, below.
 * (15 points) Identify graphically and in words the locations on the landscape in which you expect to find the shallowest and deepest soils, as well as the youngest and oldest soils. Here, it is your reasoning that counts! Think back to soil-production functions and think about what factors may cause hillslope material to erode quickly or to stay in place for a long time. See Step 12 for more information on this.
 
-You are expected to hand in a **single PDF document** that is responsive to the above three bullet points, including both the maps and the text. There are many tools that you may use to stich PDFs together (web searches are your friend).
+You are expected to hand in a **single PDF document** that is responsive to the above three bullet points, including both the maps and the text. There are many tools that you may use to stitch PDFs together (web searches are your friend).
 
 ## Steps
 
@@ -48,7 +48,7 @@ sudo apt install qgis qgis-dev
 
 [DEM ZIP](/assets/datasets/Minnesota_LiDAR_GIS_intro_lab.zip)
 
-Note that this ZIP archive has many files in it! Each contains some data or metatadata, such as binary values that combine to give topographic information or geospatial referencing information.
+Note that this ZIP archive has many files in it! Each contains some data or metadata, such as binary values that combine to give topographic information or geospatial referencing information.
 
 *If you like: check out http://arcgis.dnr.state.mn.us/maps/mntopo/ to see where it came from. MnTopo is a great portal for high-resolution topography from across the state of Minnesota.*
 
@@ -91,7 +91,7 @@ Set the color ramp. the following instructions are just a suggestion – you may
 *Note: if you are really into the cognitive science behind color maps, as well as colorblind-friendliness, you should take a look at [Scientific Colour Maps](http://www.fabiocrameri.ch/colourmaps.php).*
 
 
-### 6. Create a hilshade map.
+### 6. Create a hillshade map.
 * Right-click on the DEM in the Layers palette, and click “Duplicate Layer”
 * Rename the copied layer to “Hillshade” via the right-click menu.
 * While you’re at it, rename the original DEM to “DEM”
@@ -140,7 +140,7 @@ To see how the satellite photo intersects your topography, try the following:
 * Double-click on the Google Maps layer and change its opacity (“Transparency” tab) to a moderately low value, maybe 30–50%. This will show you how the lakes, forests, and farms intersect the hills and low points of the topography.
 * With this overlay on, you can click on and off of the “DEM” layer to see how this intersects the lakes, etc. It will not be a pretty picture – color mish-mash instead! But it will be informative to toggle between the two and look at what you notice.
 
-Using the print layout, create a figure containing this semi-transparent imagery overaying the shaded-relief basemap, along with a scale bar.
+Using the print layout, create a figure containing this semi-transparent imagery overlaying the shaded-relief basemap, along with a scale bar.
 
 
 ### 11. Process Domains

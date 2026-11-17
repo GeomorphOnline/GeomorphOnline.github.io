@@ -67,7 +67,7 @@ points) and (2) (5 points) from the end of this section
 
 ### Cross-section (10 points)
 
-Plot a full cross-sectional profile across the hypothetical section of river valley **(Section 5 of the notes)**, incluidng the channel bottom, floodplain, and water surface. You may find it useful to use a spreadsheet or a computer-programming-based method of plotting to generate this cross section, though we will of course accept solutions performed by hand on graph paper (and submitted electronically).
+Plot a full cross-sectional profile across the hypothetical section of river valley **(Section 5 of the notes)**, including the channel bottom, floodplain, and water surface. You may find it useful to use a spreadsheet or a computer-programming-based method of plotting to generate this cross section, though we will of course accept solutions performed by hand on graph paper (and submitted electronically).
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
