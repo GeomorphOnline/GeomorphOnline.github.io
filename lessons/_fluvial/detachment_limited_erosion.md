@@ -44,7 +44,7 @@ Therefore, here, $$k$$ has units of distance per stress per time. In base SI uni
 
 ### Useful for soils, not so much for bedrock
 
-The above equation works for erosion of conehsive soils and clays, but bedrock is so strong that the basal shear stress will not often approach the value at which pieces of the bedrock can start to be detached. Therefore, it requires either:
+The above equation works for erosion of cohesive soils and clays, but bedrock is so strong that the basal shear stress will not often approach the value at which pieces of the bedrock can start to be detached. Therefore, it requires either:
 * Abrasion with clasts -- particle impacts scouring bedrock.
 * Quarrying -- wholesale removal of blocks. (This can be aided by clasts that "wedge" the blocks, or in very large flows or with very fractured bedrock, can be similar to the initiation of sediment motion and transport in an alluvial river.)
 

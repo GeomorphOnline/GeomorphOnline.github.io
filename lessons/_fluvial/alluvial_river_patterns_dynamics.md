@@ -28,7 +28,7 @@ author_profile: true
 
 Laboratory experiments are among the best ways to study and analyze river behaviors. They allow us to demonstrate river-channel change over time scales that we can watch -- instead of needing centuries of repeat maps!
 
-The following experiments compare meandering and braided systems; the meandering river forms because cohesive sediment is used to create the surface into which it carves its course. The cohesionless sand in the braided-river case promotes unconfined flow and what is thermed the "braiding instability" -- which leads to this form of river.
+The following experiments compare meandering and braided systems; the meandering river forms because cohesive sediment is used to create the surface into which it carves its course. The cohesionless sand in the braided-river case promotes unconfined flow and what is termed the "braiding instability" -- which leads to this form of river.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fv_oCOvsnLA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

@@ -10,7 +10,7 @@ author: Andrew Wickert
 author_profile: true
 ---
 
-*We can decribe river and drainage basin geometry in a way that links to the stream-power law for bedrock incision.*
+*We can describe river and drainage basin geometry in a way that links to the stream-power law for bedrock incision.*
 
 ## Learning Goals
 * Learn how drainage-basin area and river discharge relate via Hack's Law.
@@ -22,7 +22,7 @@ Hack's Law relates river-channel length, $$l$$, to drainage area, $$A$$. It migh
 
 $$l \propto A^h$$
 
-Here, $$h$$ is Hack's exponent, and commonly has a vlaue of 0.5--0.6. Let's think about the shapes of drainage basins that would cause Hack's exponent to be small vs. close to 1.
+Here, $$h$$ is Hack's exponent, and commonly has a value of 0.5--0.6. Let's think about the shapes of drainage basins that would cause Hack's exponent to be small vs. close to 1.
 
 ![Hack's figure](https://topotoolbox.files.wordpress.com/2020/04/hackslaw.png?w=705)
 
@@ -34,7 +34,7 @@ The exponent, $$h$$, is obtained by a curve fit with data from natural landscape
 
 *Hack's Law describes the relationship between the length of the longest river in a catchment and the drainage-basin area. This data set from [Sassolas-Serrayet et al. (2018)](https://www.nature.com/articles/s41467-018-06210-4) shows how it holds true across the Bhutanese Himalaya.*
 
-Rivers in more humid climates tend to be fed by more groundwater, leading to wider angles between tributaries. This leads to broad, branching drainage networks and a greater increase in dranage-basin area than in arid systems, which are fed by overland flow that produces river systems that flow more parallel to one another.
+Rivers in more humid climates tend to be fed by more groundwater, leading to wider angles between tributaries. This leads to broad, branching drainage networks and a greater increase in drainage-basin area than in arid systems, which are fed by overland flow that produces river systems that flow more parallel to one another.
 
 ![USA Hack's Law as a function of climate](https://royalsocietypublishing.org/cms/asset/2b87c479-f23a-4b1e-b941-a2c8bb019b4c/rspa20180081f01.jpg)
 
@@ -47,13 +47,13 @@ Most channels have a concave-up long-profile shape, but even if they don't, it i
 
 $$\text{Concavity} = \frac{\mathrm{d}^2 z}{\mathrm{d} x^2}.$$
 
-However, geomorphologists define a separate *concavity index* that relates to drainge-basin area, which as you now know, also relates to distance downstream. We define a slope--area relationship as:
+However, geomorphologists define a separate *concavity index* that relates to drainage-basin area, which as you now know, also relates to distance downstream. We define a slope--area relationship as:
 
 $$S = k_s A^{-\theta}.$$
 
 Here, $$S$$ is channel slope, $$k_s$$ is a steepness index, and $$\theta$$ is the concavity index.
 
-**Steepness index** indicates whether a channel is unexpectedly steep or gentle in slope when compared to its drainage area. We expect channel slopes to decrease wtih drainage-basin area.
+**Steepness index** indicates whether a channel is unexpectedly steep or gentle in slope when compared to its drainage area. We expect channel slopes to decrease with drainage-basin area.
 
 **Concavity** is positive for a concave-up channel, negative for a convex-up channel, and 0 for a channel with a constant slope. (I can write this because of the Hack's Law relationship between channel distance downstream and channel concavity.)
 

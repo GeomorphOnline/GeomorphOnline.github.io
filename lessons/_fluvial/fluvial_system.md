@@ -10,7 +10,7 @@ author: Andrew Wickert
 author_profile: true
 ---
 
-*The fluvial system comrpises all parts of the landscape impacted by water flow across the surface. In includes headwaters streams, river channels, valleys, terraces, and floodplains.*
+*The fluvial system comprises all parts of the landscape impacted by water flow across the surface. In includes headwaters streams, river channels, valleys, terraces, and floodplains.*
 
 ## Learning Goals
 * Know the definition and components of the fluvial system.
@@ -23,8 +23,8 @@ The fluvial system begins when surface water converges on hillslopes, forming sm
 * The hillslope-to-fluvial (or hillslope--channel) transition
 * Bedrock and alluvial rivers
 * Detachment- and transport-limited rivers
-* The geneneral geographic setting of rivers from source (uplands or mountains) to sink (enclosed basins or the ocean)
-* Geogrpahical terminology surrounding river systems
+* The general geographic setting of rivers from source (uplands or mountains) to sink (enclosed basins or the ocean)
+* Geographical terminology surrounding river systems
 
 <iframe title="GeomorphOnline: Andy Wickert" id="multi_iframe" style="border: none;" scrolling="no" allowfullscreen="" src="https://www.podbean.com/media/player/multi?playlist=http%3A%2F%2Fplaylist.podbean.com%2F9275608%2Fplaylist_multi.xml&vjs=1&size=315&share=1&fonts=Helvetica&auto=0&download=1&skin=0" width="100%" height="505"></iframe>
 
@@ -69,7 +69,7 @@ Notes:
 As an aside, the three types of deltas noted are built by different dominant processes:
 * Arcuate/Fan and Cuspate: waves
 * Bird's Foot: fluvial
-* Other deltas may be built in a way that is dominated by tidal sediment tranpsort; an example is the Ganga--Brahmaputra
+* Other deltas may be built in a way that is dominated by tidal sediment transport; an example is the Ganga--Brahmaputra
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XJ_FNS8Z_ek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

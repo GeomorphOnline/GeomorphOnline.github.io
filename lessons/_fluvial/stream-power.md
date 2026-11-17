@@ -10,7 +10,7 @@ author: Andrew Wickert
 author_profile: true
 ---
 
-*Bedrock river evolution can be modeled to occur via transfer of potential energy form flowing water into mechanical energy breaking down the bedrock and kinetic energy carrying pieces of it away.*
+*Bedrock river evolution can be modeled to occur via transfer of potential energy from flowing water into mechanical energy breaking down the bedrock and kinetic energy carrying pieces of it away.*
 
 ## Learning Goals
 * Relate potential, kinetic, and mechanical energy in bedrock streams

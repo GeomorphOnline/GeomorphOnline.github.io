@@ -35,7 +35,7 @@ author_profile: true
 ![Conditions for bedrock vs. alluvial rivers](https://ars.els-cdn.com/content/image/1-s2.0-S0169555X15002263-gr6.jpg)
 *Conditions for bedrock vs. alluvial rivers, from [Ellen Wohl et al. (2015)](https://www-sciencedirect-com.ezp3.lib.umn.edu/science/article/pii/S0169555X15002263).*
 
-## Bedrock and alluval sections of rivers
+## Bedrock and alluvial sections of rivers
 
 ![Bedrock and alluvial river reaches](https://ars.els-cdn.com/content/image/1-s2.0-S0169555X15002263-gr2.jpg)
 *From [Ellen Wohl et al. (2015)](https://www-sciencedirect-com.ezp3.lib.umn.edu/science/article/pii/S0169555X15002263).*
@@ -49,7 +49,7 @@ Bedrock and alluvial sections of rivers can exist at many scales, from portions 
 ![Cascade River](/assets/images/fluvial/CascadeRiver_2012_RengersTrip_IThink.png)
 *Photo: A. Wickert*
 
-The purely bedrock bed of the Cascade River, along with the scoured and eroded bedrock, show that it is here a suppy- and detachment-limited river.
+The purely bedrock bed of the Cascade River, along with the scoured and eroded bedrock, show that it is here a supply- and detachment-limited river.
 
 ### Bedrock and alluvial rivers in Scotland
 
