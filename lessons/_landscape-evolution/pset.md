@@ -26,7 +26,7 @@ A few important characteristics of this river:
 * It is incising through the same type and strength of bedrock everywhere: Andesite, of course!
 * Its drainage area increases downstream following Hack's Law:
 
-![Draiange Area vs. Distance Downstream](/assets/images/fluvial/DrainageAreaDistance.png)
+![Drainage Area vs. Distance Downstream](/assets/images/fluvial/DrainageAreaDistance.png)
 
 ### 1. Detachment- and transport-limited river evolution (10 points)
 

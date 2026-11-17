@@ -42,7 +42,7 @@ In nature, steady-state landscapes **do not exist without uplift**. Therefore, a
 
 ### Fluvial-system response to uplift
 
-If we focus only on the fluvial system, we obtain the eqatuion:
+If we focus only on the fluvial system, we obtain the equation:
 
 $$U = K A^m S^n$$
 
@@ -66,7 +66,7 @@ If we focus only on the hillslope system:
 
 $$U = -k_h \frac{\partial^2 z}{\partial x^2}$$
 
-If you think through the second derivative, you'll find that a concanve-up surface has a *positive* second derivative and that a concave-down surface has a *negative* second derivative.
+If you think through the second derivative, you'll find that a concave-up surface has a *positive* second derivative and that a concave-down surface has a *negative* second derivative.
 
 ![Second derivative test with smiley faces](http://www.pleacher.com/mp/mgifs/gifs7/faces.gif)
 

@@ -13,7 +13,7 @@ author_profile: true
 *By coupling equations for hillslope diffusion and bedrock-river incision and adding in tectonic uplift, we can derive a straightforward and broadly-used expression for landscape evolution.*
 
 ## Learning Goals
-* Appreciate how simple it can be to combine the pieces of knowledge into something that describes rich and complex -- though still straightforwrad -- topographic evolution.
+* Appreciate how simple it can be to combine the pieces of knowledge into something that describes rich and complex -- though still straightforward -- topographic evolution.
 
 ## Derivation
 
@@ -39,7 +39,7 @@ Note the steep valley walls: this indicates that hillslope processes may be slow
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5UGHdlqmGAE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Eurpoean Geosciences Union medal to Jean Braun
+## European Geosciences Union medal to Jean Braun
 
 If you're really into this, Jean Braun is one of the leading experts in landscape evolution. You'll see the exact equation that you've just learned in an international scientific society medalist lecture!
 
