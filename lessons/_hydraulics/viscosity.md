@@ -46,7 +46,7 @@ To address (1), we reframe $x$ as a change in length of the material $\Delta l$ 
 
 $$\frac{F}{A} = E \frac{\Delta l}{l}$$
 
-What is this $E$ term? This is Young's Modulus. It is like a spring constant, except it depends only only the properties of the material -- not on its geometry.
+What is this $E$ term? This is Young's Modulus. It is like a spring constant, except it depends only on the properties of the material -- not on its geometry.
 
 Now, let's apply a couple of definitions. A force per unit area is defined as a stress, $\sigma$:
 

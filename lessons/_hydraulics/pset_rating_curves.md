@@ -106,7 +106,7 @@ In order to calculate flow velocity in the channel with the provided information
 
 Using the Law of the Wall and the mean-value theorem (MVT), solve for the mean (i.e., vertically averaged) flow velocity $$\bar{u}$$ [m/s]. *Note that this is the vertically averaged $$\bar{u}$$ that is used, e.g., for Manning's Equation. It is not the time-averaged $$\bar{u}$$ that is used for the Reynolds, i.e., turbulent, decomposition. Your goal is to find the vertically averaged velocity in order to connect flow depth [m] and discharge [m<sup>3</sup>/s].* When applying the MVT, recall that flow velocity is assumed to go to 0 at a small elevation $$z = z_0$$ [m] (due to the fact that we do not take into account the laminar sublayer). Consider a flow of arbitrary depth $$h$$ [m], and express the solution with respect to this depth.
 
-As a reminder of your calculus days, the MVT provides the average value of a function, $$f(x)$$, over a a range of the independent variable ($$x$$) extending from $$x_0$$ to $$x_1$$:
+As a reminder of your calculus days, the MVT provides the average value of a function, $$f(x)$$, over a range of the independent variable ($$x$$) extending from $$x_0$$ to $$x_1$$:
 
 $$\overline{f(x)} = \frac{1}{x_1-x_0} \int_{x_0}^{x_1}{f(x) \mathrm{d}x}$$
 
@@ -193,9 +193,9 @@ Now, multiply these together (i.e., $$Q_s/P_R$$) to obtain the amount of net sed
 
 ### Part D
 
-Using this last plot, pick the the most geomorphically effective discharge; it should appear as a peak in the plot of $$Q_s/P_R$$ vs. $$Q$$. How does this compare to the bankfull discharge?
+Using this last plot, pick the most geomorphically effective discharge; it should appear as a peak in the plot of $$Q_s/P_R$$ vs. $$Q$$. How does this compare to the bankfull discharge?
 
-*Hint: this number may not, as expected, correspond to bankfull discharge. Indeed, you may need to extend the range of floods that you are considering to find where this optimum lies. You can think about how this could relate to human modifications to the river channel. Also think about about how close a bankfull discharge may be to that given here: is it in the ballpark or not?*
+*Hint: this number may not, as expected, correspond to bankfull discharge. Indeed, you may need to extend the range of floods that you are considering to find where this optimum lies. You can think about how this could relate to human modifications to the river channel. Also think about how close a bankfull discharge may be to that given here: is it in the ballpark or not?*
 
 <!-- Then, on another set of axes, plot the frequency of each flood (*y* axis), which is the reciprocal of its return period, against water discharge (*x* axis).
 
@@ -243,7 +243,7 @@ The study's authors also show how water levels change for a given discharge afte
 
 ### Part C
 
-The ProPublica study's authors note that flood risks become higher in the zone upstream of the levees. This is due to the *backwater effect* -- the upstream water becomes backed up behind the higher water between the levees due to the pressure pressure force exerted on the upstream flow. Earlier in class, we defined a *backwater length* as the the distance over which a river significantly responds to this backwater effect.
+The ProPublica study's authors note that flood risks become higher in the zone upstream of the levees. This is due to the *backwater effect* -- the upstream water becomes backed up behind the higher water between the levees due to the pressure force exerted on the upstream flow. Earlier in class, we defined a *backwater length* as the distance over which a river significantly responds to this backwater effect.
 
 In the normal case, when a river flows into the ocean, we calculate the backwater length, $$l_{bw}$$, as:
 

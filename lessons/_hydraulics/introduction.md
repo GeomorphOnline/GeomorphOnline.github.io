@@ -24,7 +24,7 @@ Rivers are open channels, meaning that they have a closed bottom and sides, but 
 
 ### SAFL main channel
 
-This high-flow discharge is scouring through the sandy bed in the main channel at [SAFL](https://cse.umn.edu/safl). (I'm one of of the onlookers!) You need not watch the whole thing, but I want you to observe and think about what is happening: How is the water picking up the sand? What controls the waves? What does the structure of the flow look like?
+This high-flow discharge is scouring through the sandy bed in the main channel at [SAFL](https://cse.umn.edu/safl). (I'm one of the onlookers!) You need not watch the whole thing, but I want you to observe and think about what is happening: How is the water picking up the sand? What controls the waves? What does the structure of the flow look like?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IRuVRfQ65yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
