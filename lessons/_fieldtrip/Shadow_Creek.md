@@ -17,7 +17,7 @@ author_profile: true
 * Gain experience with geomorphic field observations
 * Build an understanding of the links between channel (fluvial) and hillslope processes
 * Note the role of lithology in both fluvial and hillslope processes
-* Observe changes in a river (and the surrounidng hillslopes) from headwaters to mouth
+* Observe changes in a river (and the surrounding hillslopes) from headwaters to mouth
 
 ## Pre-activity video introduction
 
@@ -52,7 +52,7 @@ Click on the image to enter.
 
 ## Post-field-trip reflection (DELIVERABLE: 45 points total)
 
-Write one paragrpah in response to each of the following three prompts (**three** paragraphs in total). Your answer to each question is worth 15 points.
+Write one paragraph in response to each of the following three prompts (**three** paragraphs in total). Your answer to each question is worth 15 points.
 
 1. What observations would you use to decide whether a hillslope is most likely evolving via gradual creep or via mass-wasting processes? Include as many lines of evidence as you can think of. Describe how such a characterization may relate to other aspects of the region, including geology, hazard, and past (and/or ongoing) events that could have shaped the landscape.
 
