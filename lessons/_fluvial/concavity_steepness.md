@@ -94,7 +94,7 @@ $$\frac{U}{K} = A^m S^n$$
 
 $$S^n = \frac{U}{K} A^{-m}$$
 
-$$S = \frac{U}{K} A^{-m/n}$$
+$$S = \left(\frac{U}{K}\right)^{1/n} A^{-m/n}$$
 
 The finding here is profound.
 
@@ -104,7 +104,7 @@ $$\theta = \frac{m}{n}$$
 
 The **steepness index** increases with uplift rate and decreases with erodibility. Rapidly uplifting hard rock requires the steepest channels to erode at a pace that is comparable to the rest of the river system.
 
-$$k_s = \frac{U}{K}$$
+$$k_s = \left(\frac{U}{K}\right)^{1/n}$$
 
 Therefore, we expect **knickpoints**, steep zones in rivers, to occur where **rocks are hard** and/or **tectonic uplift is fast**.
 
