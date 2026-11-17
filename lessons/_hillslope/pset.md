@@ -216,7 +216,7 @@ $$\sigma_d = \tau = \left((1 - \lambda_p) \rho_r + \lambda_p f_w \rho_w\right) g
 
 and the effective normal stress, $$\sigma_\mathrm{eff}$$, which is part of the *resisting* stress term:
 
-$$\sigma_\mathrm{eff} = \sigma - P_f = (1 - \lambda_p) \rho_r g h$$
+$$\sigma_\mathrm{eff} = \sigma - P_f = (1 - \lambda_p) (\rho_r - f_w \rho_w) g h$$
 
 Use the following parameters
 * Slope angle $$\theta$$ = 45 degrees
