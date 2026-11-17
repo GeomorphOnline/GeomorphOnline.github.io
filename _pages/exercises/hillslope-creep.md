@@ -23,7 +23,7 @@ Every model of a soil-mantled landscape contains one number, $k_\mathrm{hs}$,
 and almost nothing you can measure in a field season goes into it. It is fitted
 to topography, quoted in m² yr⁻¹, and left standing for every process that
 moves soil downhill at once: worms, gophers, frost, tree throw, rainsplash,
-burrowing, ploughing. Calling it a diffusivity does not make it one thing.
+burrowing, plowing. Calling it a diffusivity does not make it one thing.
 
 These two experiments take it apart. You will not set $k_\mathrm{hs}$ anywhere
 on this page. You will set two quantities that a person can go and measure, and
@@ -38,8 +38,8 @@ and dig it up, and it comes out bent — displaced most at the top, hardly at al
 at its base.
 
 {% include figure image_path="/assets/images/hillslope/hooke-bevens-creek-creep-profiles.png"
-   alt="Six soil creep profiles from 0 to 42 cm depth, each showing displacement concentrated in the uppermost centimetres and decreasing to nothing with depth"
-   caption="Exactly that experiment. Segmented wooden dowels were set into vertical holes at the Bevens Creek creep stations, Minnesota River Valley, in 1968 and dug up 9.5 years later; the horizontal axis is how far each segment had moved, in centimetres. Read two things off it. **The whole soil is 42 cm deep**, and most of the movement is in the top 5–15 cm — that is the e-folding depth. And the surface moved 1.0–8.0 cm in 9.5 years, which is **1.1–8.4 mm per year**. Measured by Roger Hooke, and reproduced from his course notes — there is no paper behind this one to go and read." %}
+   alt="Six soil creep profiles from 0 to 42 cm depth, each showing displacement concentrated in the uppermost centimeters and decreasing to nothing with depth"
+   caption="Exactly that experiment. Segmented wooden dowels were set into vertical holes at the Bevens Creek creep stations, Minnesota River Valley, in 1968 and dug up 9.5 years later; the horizontal axis is how far each segment had moved, in centimeters. Read two things off it. **The whole soil is 42 cm deep**, and most of the movement is in the top 5–15 cm — that is the e-folding depth. And the surface moved 1.0–8.0 cm in 9.5 years, which is **1.1–8.4 mm per year**. Measured by Roger Hooke, and reproduced from his course notes — there is no paper behind this one to go and read." %}
 
 Laboratory hillslopes instrumented down to the grain scale show the same
 exponential shape (Deshpande et al., 2021).
@@ -102,10 +102,10 @@ foot.
 **Reading it.** The upper panel is the scarp: dashed as it was cut, solid as it
 is now. The lower panel is the creep underneath, on its own depth axis — white
 is no motion, deeper red is faster. Everything moves one way here, so the whole
-panel is one colour, and what you are watching is *where* the motion is.
+panel is one color, and what you are watching is *where* the motion is.
 
 The read-out gives the **morphologic age**, $k_\mathrm{hs}\,t$, in square
-metres. Watch that rather than the clock; the reason is in the solution below.
+meters. Watch that rather than the clock; the reason is in the solution below.
 
 <link rel="stylesheet"
       href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
@@ -151,7 +151,7 @@ cutting down, and they never stop taking material away.
 **Reading it.** The upper panel is the hillslope at true vertical scale. The
 dashed line is the steady form it is chasing — the parabola that balances
 erosion against transport,
-$z = -\tfrac{1}{2}(\dot\varepsilon/k_\mathrm{hs})x^2 + z_0$. The sand-coloured
+$z = -\tfrac{1}{2}(\dot\varepsilon/k_\mathrm{hs})x^2 + z_0$. The sand-colored
 band is the valley floor.
 
 **The blue arrows are the rivers, and they are the reason for everything else.**
@@ -225,7 +225,7 @@ exactly 5 mm yr⁻¹ in both. Verify this, then explain it.
 $\dot\varepsilon$ to its most negative value — watch the arrows turn over — and
 press **▶ Run**. The rivers stop cutting down and start filling their valleys.
 
-Watch the read-out, which reports how many metres of hillslope the sediment has
+Watch the read-out, which reports how many meters of hillslope the sediment has
 buried, and the lower panel, where creep stops wherever the alluvium has
 covered the ground: while a river is *aggrading* it is actively regrading its
 floodplain, holding it flat, so nothing there creeps.
@@ -265,7 +265,7 @@ $$\frac{\partial z}{\partial t} =
 which is the diffusion equation. What is different here is that
 $k_\mathrm{hs}$ is never supplied: it is assembled from $k_u$ and
 $\Delta z_u$ every time you move a slider, and the velocity profile it
-summarises is drawn underneath.
+summarizes is drawn underneath.
 
 The transport law is not invented here either. Integrating an exponential creep
 profile over a mobile layer of finite thickness $h_m$ gives
