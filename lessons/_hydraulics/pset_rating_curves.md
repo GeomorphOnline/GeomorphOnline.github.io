@@ -185,15 +185,15 @@ Consider the floodplain to be covered in thick enough vegetation that no signifi
 
 ### Part B
 
-Next, on another set of axes, plot the relative proportion of time that the river is at a certain flood stage (*y* axis) vs. water discharge (*x* axis). To represent the relative proportion of time that the river is at a certain flood stage in a simple way, we can just use the reciprocal of the flow return period ($$1/P$$). I write *relative* because this is not normalized to anything meaningful, but can help us to compare the frequency of one flow to another in this time series.
+Next, on another set of axes, plot the relative proportion of time that the river is at a certain flood stage (*y* axis) vs. water discharge (*x* axis). To represent the relative proportion of time that the river is at a certain flood stage in a simple way, we can just use the reciprocal of the flow return period ($$1/P_R$$). I write *relative* because this is not normalized to anything meaningful, but can help us to compare the frequency of one flow to another in this time series.
 
 ### Part C
 
-Now, multiply these together (i.e., $$Q_s/P$$) to obtain the amount of net sediment transport performed by events of different recurrence intervals. This will show you the relative geomorphic effectiveness of each flood: you should see that larger ones have a higher sediment-transport capacity but occur much more rarely. Plot this (sediment discharge times ) on the *y* axis and water discharge on the *x* axis.
+Now, multiply these together (i.e., $$Q_s/P_R$$) to obtain the amount of net sediment transport performed by events of different recurrence intervals. This will show you the relative geomorphic effectiveness of each flood: you should see that larger ones have a higher sediment-transport capacity but occur much more rarely. Plot this (sediment discharge times ) on the *y* axis and water discharge on the *x* axis.
 
 ### Part D
 
-Using this last plot, pick the the most geomorphically effective discharge; it should appear as a peak in the plot of $$Q_s/P$$ vs. $$Q$$. How does this compare to the bankfull discharge?
+Using this last plot, pick the the most geomorphically effective discharge; it should appear as a peak in the plot of $$Q_s/P_R$$ vs. $$Q$$. How does this compare to the bankfull discharge?
 
 *Hint: this number may not, as expected, correspond to bankfull discharge. Indeed, you may need to extend the range of floods that you are considering to find where this optimum lies. You can think about how this could relate to human modifications to the river channel. Also think about about how close a bankfull discharge may be to that given here: is it in the ballpark or not?*
 
