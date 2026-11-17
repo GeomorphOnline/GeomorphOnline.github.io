@@ -82,7 +82,7 @@ Recall that $$\dot{\varepsilon}$$ is vertical erosion (i.e., incision) rate, and
 
 Let's turn this into a landscape-evolution equation by including tectonic uplift, $$U$$:
 
-$$\frac{\mathrm{d} z}{\mathrm{d} x} = -K A^m S^n + U.$$
+$$\frac{\mathrm{d} z}{\mathrm{d} t} = -K A^m S^n + U.$$
 
 We'll next posit that we are at ***topographic steady state***: that is, erosion equals uplift everywhere:
 
