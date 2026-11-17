@@ -20,7 +20,7 @@ author_profile: true
 
 ## Soil composition
 
-This is a "standard" or "textbook" soil compositoin. As you look at soils, you will see some with different amounts of organic vs. inorganic (i.e., mineral) material. This is an important diagnostic feature! Think about how a desert soil and a soil developed in a forested temperate climate might differ. The fractions of water and air may also change depending on the aridity of the environment, and the total air and water fraction wiil change as a function of soil compaction.
+This is a "standard" or "textbook" soil composition. As you look at soils, you will see some with different amounts of organic vs. inorganic (i.e., mineral) material. This is an important diagnostic feature! Think about how a desert soil and a soil developed in a forested temperate climate might differ. The fractions of water and air may also change depending on the aridity of the environment, and the total air and water fraction will change as a function of soil compaction.
 
 ![Soil composition](https://www.nrcs.usda.gov/Internet/FSE_MEDIA/nrcseprd423221.jpg)
 *USDA*

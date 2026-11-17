@@ -24,7 +24,7 @@ author_profile: true
 This is the Nobel lecture at Gustavus Adolphus by [Dave
 Montgomery](https://www.ess.washington.edu/people/profile.php?pid=montgomery--david)
 ([Wikipedia page](https://en.wikipedia.org/wiki/David_R._Montgomery)),
-geomorphologist at the Univeristy of Washingon.
+geomorphologist at the University of Washington.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4-8mCXxsR3M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

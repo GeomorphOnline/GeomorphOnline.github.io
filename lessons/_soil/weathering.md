@@ -78,9 +78,9 @@ This weathering engine moves downwards into the rock as it weathers and removes 
 ![The weathering engine](/assets/images/soil/brantley2007-egli-notes.png)
 *Left: here you can see everything from the A (and possible O) horizon on top down to the R (parent material) horizon in the corestone at the bottom. Right: diagram of the weathering engine and weathering-front advance in an erosional portion of the landscape. (Figure from [Brantley, 2007, Elements](https://pubs-geoscienceworld-org.ezp2.lib.umn.edu/msa/elements/article/3/5/307/137740/Crossing-Disciplines-and-Scales-to-Understand-the), as included by Markus Egli in his [course notes on soil formation and weathering](http://www.bodenerosion-alpen.ch/referate/do/m-egli.pdf).)*
 
-### Depositoinal regions ("cumulative" soils)
+### Depositional regions ("cumulative" soils)
 
-In landscapes with net deposition of unconsolidated material, this zone above bedrock becomes thicker over time, sometimes to the point that soils are completely buried and preserved as "paleosols". Benath very thick blankets of unconsolidated material (e.g., river sediments, glacial till, wind-blown silt or sand), weathering of the bedrock surface may slow or even stop due to its great distance from the surface and the associated physical and chemical gradients and biological activity.
+In landscapes with net deposition of unconsolidated material, this zone above bedrock becomes thicker over time, sometimes to the point that soils are completely buried and preserved as "paleosols". Beneath very thick blankets of unconsolidated material (e.g., river sediments, glacial till, wind-blown silt or sand), weathering of the bedrock surface may slow or even stop due to its great distance from the surface and the associated physical and chemical gradients and biological activity.
 
 ### Erosional regions ("erosional soils")
 

@@ -10,7 +10,7 @@ author: Andrew Wickert
 author_profile: true
 ---
 
-*Soils are the critical outer carapice of Earth's surface, where water, life, rock, and energy meet and form the basis for the world that we know.*
+*Soils are the critical outer carapace of Earth's surface, where water, life, rock, and energy meet and form the basis for the world that we know.*
 
 ## Learning Goals
 
@@ -53,6 +53,6 @@ This MinuteEarth piece is a good follow-on from Dave Montgomery's Nobel Conferen
 
 ### Soils Geomorphology
 
-*Soils geomorphologists* use soil formation to understand how a landscape forms and changes and to provide *relative dates* on landforms. They often investigate past climate, erosion, and depositoin in the context of soils.
+*Soils geomorphologists* use soil formation to understand how a landscape forms and changes and to provide *relative dates* on landforms. They often investigate past climate, erosion, and deposition in the context of soils.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
