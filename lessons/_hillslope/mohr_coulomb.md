@@ -20,7 +20,7 @@ author_profile: true
 
 ## Mohr-Coulomb Failure
 
-The apprpoach used here, in which I compare driving (weight, slope) and resisting (frictional + cohesive - pore-fluid) stresses is called Mohr-Coulomb failure analysis.
+The approach used here, in which I compare driving (weight, slope) and resisting (frictional + cohesive - pore-fluid) stresses is called Mohr-Coulomb failure analysis.
 
 ## Video
 

@@ -36,7 +36,7 @@ Write the equation that relates the failure angle to the coefficient of friction
 
 ### (c) 5 points: Compute angle of repose
 
-Compute the angle of internal friction, which is equal to the failure angle in the block-on-an-inclined-plane example, for a hill made of sand. The coefficient of internal friction of sand, which is analogous to the frictional coefficinet between the block and plane, is $$\mu = 0.6$$. Because this is the angle at which materials will fail, this is the angle that the topography of a cohesionless hill of that material (in this case, sand) will form. Provide the angle of repose, along with your work.
+Compute the angle of internal friction, which is equal to the failure angle in the block-on-an-inclined-plane example, for a hill made of sand. The coefficient of internal friction of sand, which is analogous to the frictional coefficient between the block and plane, is $$\mu = 0.6$$. Because this is the angle at which materials will fail, this is the angle that the topography of a cohesionless hill of that material (in this case, sand) will form. Provide the angle of repose, along with your work.
 
 
 ## 2. Distribution of slope in a landscape governed by fluvial and hillslope processes (20 points)
@@ -52,7 +52,7 @@ First, import the [DEM](/assets/datasets/Minnesota_LiDAR_GIS_intro_lab.zip) (if 
 
 Then, look to the "processing toolbox" to the right. If you cannot see it, go to **view → panels → processing toolbox**.
 
-You'll want to become acquainted with this -- it holds many useful tools for computing and comparing geographic and geomorphic features. This toolbox gives access to many built-in features wihtin QGIS, as well as powerful functions from [GDAL](https://gdal.org/), which underlies all modern GIS software, and from the feature-rich open-source [GRASS GIS](https://grass.osgeo.org/).
+You'll want to become acquainted with this -- it holds many useful tools for computing and comparing geographic and geomorphic features. This toolbox gives access to many built-in features within QGIS, as well as powerful functions from [GDAL](https://gdal.org/), which underlies all modern GIS software, and from the feature-rich open-source [GRASS GIS](https://grass.osgeo.org/).
 
 In the search bar, type "clip", and select GDAL's "clip raster by extent".
 
@@ -89,9 +89,9 @@ Computing the histogram might take some time, and it will get stuck on 99%. Don'
 
 ### (b): 10 points: Why does this histogram look the way it does?
 
-Why does the distribution of slopes on the DEM look the way it does? Think about different processes that could be intfluencing the topography. (Note: significant erosion has occurred in this region since the Mississippi River incised between ~2.5 and 0.8 million years ago: Over this time, the landscape has eroded on average.)
+Why does the distribution of slopes on the DEM look the way it does? Think about different processes that could be influencing the topography. (Note: significant erosion has occurred in this region since the Mississippi River incised between ~2.5 and 0.8 million years ago: Over this time, the landscape has eroded on average.)
 
-Take a screenshot of the histogram and annotate it, and write a paragraph supporting your conjectures. For example: Is the histogram continuous or not, and why? How does the set of slopes compare wtih the angle of repose, and is this as expected or is it surprising? Do you think that the slope map is more representative of channels or hillslopes? Can you see zones where gradual creep vs. sudden mass-wasting processes may be dominant? Support your ideas based on what we have learned about the mechanics of these landscapes.
+Take a screenshot of the histogram and annotate it, and write a paragraph supporting your conjectures. For example: Is the histogram continuous or not, and why? How does the set of slopes compare with the angle of repose, and is this as expected or is it surprising? Do you think that the slope map is more representative of channels or hillslopes? Can you see zones where gradual creep vs. sudden mass-wasting processes may be dominant? Support your ideas based on what we have learned about the mechanics of these landscapes.
 
 
 ## 3. Obtaining erosion rate and extent from hillslope diffusion and hilltop curvature (45 points)
@@ -115,7 +115,7 @@ Showing your work, use a similar approach to the dimensional analysis to show ho
 
 #### ii: 5 points
 
-After writing this scaling argument, sketch half of a valley cross section, from the center line of the channel (your lowest point) and going perpndicularly out of the valley and towards the hills. Do so for three time steps, $$t_0$$, $$t_1$$, and $$t_2$$. Hint: at your first time step, $$t_0$$, you can draw the landscape as a sideways "L", with a river that has cut a vertical slot canyon and the hill still being just a cliff. There is no need to have real values on the axes; the point is that you can intuit how hillslopes might respond to a sudden river incision over time.
+After writing this scaling argument, sketch half of a valley cross section, from the center line of the channel (your lowest point) and going perpendicularly out of the valley and towards the hills. Do so for three time steps, $$t_0$$, $$t_1$$, and $$t_2$$. Hint: at your first time step, $$t_0$$, you can draw the landscape as a sideways "L", with a river that has cut a vertical slot canyon and the hill still being just a cliff. There is no need to have real values on the axes; the point is that you can intuit how hillslopes might respond to a sudden river incision over time.
 
 #### iii: 5 points
 
@@ -160,7 +160,7 @@ Select this single line in the "layers" panel and open the Profiler Tool. Choose
 
 ![Hilltop profile](/assets/images/hillslope/hilltop_profile.png)
 
-Take a screenshot of your computer at this stage to demonstrate that you have successfully extracted your own data. This will be the basis for the 5 points -- basically, I want to give you some credit for griding through the mechanics of QGIS.
+Take a screenshot of your computer at this stage to demonstrate that you have successfully extracted your own data. This will be the basis for the 5 points -- basically, I want to give you some credit for grinding through the mechanics of QGIS.
 
 Then, go to the "Table" tab and copy the data table to the clipboard. This will contain $$x$$ (distance along the profile) and $$z$$ (elevation) data.
 
@@ -175,7 +175,7 @@ Paste this data set in your desired spreadsheet program. You are ready to begin 
 * Second, create a curve fit to this as a second-order polynomial
 * Third, note that the parabolic fit, strictly speaking, is only valid near the top of the hill. Consider trimming some of the river valleys and surrounding regions. I expect you to obtain a good fit regardless, and for the result to be relatively insensitive to this.
 
-**Your mission now** Once you have this fit, use it with the above equation to find the average erosion rate. For this, assume (as before), that $$k_h = 0.01$$ in units of meters and years. When considering the sign of your solution, recall that erosion is defined such that *down* is positive. (Right? Becuase otherwise it wouldn't be... eroding.)
+**Your mission now** Once you have this fit, use it with the above equation to find the average erosion rate. For this, assume (as before), that $$k_h = 0.01$$ in units of meters and years. When considering the sign of your solution, recall that erosion is defined such that *down* is positive. (Right? Because otherwise it wouldn't be... eroding.)
 
 **Also:** Project how much additional erosion might occur in the next 1 million years.
 
@@ -187,7 +187,7 @@ Paste this data set in your desired spreadsheet program. You are ready to begin 
 
 #### iii: 5 points
 
-You have solved for a natural backgorund erosion rate. Stan Trimble, geomorphologist from UCLA, studied erosion following Euro-American settlement in Coon Creek, a river basin on the Wisconsin side of the Mississippi valley. From his paper ([linked here for those with UMN libraries access](https://primo.lib.umn.edu/primo-explore/fulldisplay?docid=TN_cdi_gale_infotracacademiconefile_A2075004&context=PC&vid=TWINCITIES&lang=en_US&search_scope=mncat_discovery&adaptor=primo_central_multiple_fe&tab=article_discovery&query=any,contains,Changes%20in%20Sediment%20Storage%20in%20the%20Coon%20Creek%20Basin,%20Driftless%20Area,%20Wisconsin,%201853%20to%201975)), he estimates an average depth of erosion of 13.2 cm over the course of time from 1853 to 1975, which encompasses the major phase of Euro-American settlement, land clearing, and unsustainable plowing practices.
+You have solved for a natural background erosion rate. Stan Trimble, geomorphologist from UCLA, studied erosion following Euro-American settlement in Coon Creek, a river basin on the Wisconsin side of the Mississippi valley. From his paper ([linked here for those with UMN libraries access](https://primo.lib.umn.edu/primo-explore/fulldisplay?docid=TN_cdi_gale_infotracacademiconefile_A2075004&context=PC&vid=TWINCITIES&lang=en_US&search_scope=mncat_discovery&adaptor=primo_central_multiple_fe&tab=article_discovery&query=any,contains,Changes%20in%20Sediment%20Storage%20in%20the%20Coon%20Creek%20Basin,%20Driftless%20Area,%20Wisconsin,%201853%20to%201975)), he estimates an average depth of erosion of 13.2 cm over the course of time from 1853 to 1975, which encompasses the major phase of Euro-American settlement, land clearing, and unsustainable plowing practices.
 
 Compare the natural erosion rate to the 19th--20th century rate, and (in a few sentences) and describe why you expect this discrepancy exists, perhaps drawing from some of the information you learned from Dave Montgomery's lecture.
 
@@ -200,7 +200,7 @@ Using the slope map that you built in Question 2, compute a binary raster based 
 
 ### (b) 5 points: Topographic observations
 
-What do you notice that is different between the sections of the landscape that are above vs. below the anlge of repose? Describe this in ~2 sentences.
+What do you notice that is different between the sections of the landscape that are above vs. below the angle of repose? Describe this in ~2 sentences.
 
 ### (c) 10 points: Cohesion
 

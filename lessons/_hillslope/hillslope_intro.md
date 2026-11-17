@@ -10,7 +10,7 @@ author: Andrew Wickert
 author_profile: true
 ---
 
-*Hillslopes are the most common landform on Earth. Here I take you through a tour of their shapes and the "creep" and "mass wasting" processes that casue them to evolve into characteristic forms.*
+*Hillslopes are the most common landform on Earth. Here I take you through a tour of their shapes and the "creep" and "mass wasting" processes that cause them to evolve into characteristic forms.*
 
 ## Learning Goals
 

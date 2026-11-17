@@ -14,14 +14,14 @@ author_profile: true
 
 ## Learning Goals
 
-* Rounded hililtops are the rule in nature.
+* Rounded hilltops are the rule in nature.
 * Derive how this is consistent with hillslope diffusion.
 * Gain intuition for how hills steepen with higher river incision rates and lower diffusivity (erodibility).
 * Gain practice in separating variables to solve differential equations.
 
 ## Videos
 
-### Pictoral and descriptive introduction
+### Pictorial and descriptive introduction
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/T9dFOF-_LyM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
