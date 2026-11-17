@@ -24,7 +24,7 @@ $$\tau_b = \rho C_f \bar{u}^2 = \rho u_\tau^2$$
 
 Therefore,
 
-$$u_\tau = \rho C_f \bar{u}^2$$ 
+$$u_\tau^2 = C_f \bar{u}^2$$ 
 
 $$\bar{u} = \frac{1}{\sqrt{C_f}} u_\tau$$
 
