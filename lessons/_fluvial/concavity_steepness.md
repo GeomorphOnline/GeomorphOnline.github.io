@@ -18,7 +18,7 @@ author_profile: true
 
 ## Hack's Law
 
-Hack's Law relates river-channel length, $l$, to drainage area, $$A$$. It might be obvious that a longer river should necessitate a larger drainage basin!
+Hack's Law relates river-channel length, $$l$$, to drainage area, $$A$$. It might be obvious that a longer river should necessitate a larger drainage basin!
 
 $$l \propto A^h$$
 
@@ -51,7 +51,7 @@ However, geomorphologists define a separate *concavity index* that relates to dr
 
 $$S = k_s A^{-\theta}.$$
 
-Here, $$S$$ is channel slope, $$k_s$$ is a steepness index, and $$theta$$ is the concavity index.
+Here, $$S$$ is channel slope, $$k_s$$ is a steepness index, and $$\theta$$ is the concavity index.
 
 **Steepness index** indicates whether a channel is unexpectedly steep or gentle in slope when compared to its drainage area. We expect channel slopes to decrease wtih drainage-basin area.
 
