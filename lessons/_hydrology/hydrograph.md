@@ -30,7 +30,7 @@ Recall that in a time-averaged sense that river discharge can be given by:
 
 $$Q = P - ET - \Delta S$$
 
-where $$Q$$ is river discharge, $$P$$ is precipitation, $$ET$$ is evapotranspiration, and $$\Delta S$$ is change in storage within the watershed (e.g., in groundwater or snowpack. Recall that all of these input values are summed across the entire area ($A$) of the drainage basin (= catchment, = watershed) draining to the point of interest (e.g., where there is a stream gauge that can measure discharge).
+where $$Q$$ is river discharge, $$P$$ is precipitation, $$ET$$ is evapotranspiration, and $$\Delta S$$ is change in storage within the watershed (e.g., in groundwater or snowpack). Recall that all of these input values are summed across the entire area ($A$) of the drainage basin (= catchment, = watershed) draining to the point of interest (e.g., where there is a stream gauge that can measure discharge).
 
 Within the physical stream, river discharge can be defined as the mean velocity of the flow traveling through a cross section of river times the cross-sectional area of the river:
 
@@ -50,7 +50,7 @@ $$Q = \bar{u} A_c$$
 
 For simplicity, we often assume that river channels are approximately rectangular in cross section. This approximation quite often isn't as terrible as one might think: many rivers are ~20x as wide as they are deep, meaning that any variations in depth are quite subtle. Of course, this approximation is not used when precisely gauging the stream discharge, but it can be good enough for work to understand geomorphology.
 
-$$A \approx b h$$,
+$$A_c \approx b h$$,
 
 and therefore,
 
