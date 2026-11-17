@@ -94,7 +94,7 @@ $$\tau_b^* = \frac{\text{Strength of flow pushing grains to move}}{\text{Grain s
 
 As you can see, ***nondimensionalization is our way of lumping opposing drivers in the same term in order to create intuitive variables that may be combined easily with one another***.
 
-You'll just have to trust me for now that this conceptual argument works in terms of the formal physics as well. Alternatively, you can read the derivation of the force balance on a grain written by [Wiberg and Smith, 1987](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/WR023i008p01471)).
+You'll just have to trust me for now that this conceptual argument works in terms of the formal physics as well. Alternatively, you can read the derivation of the force balance on a grain written by [Wiberg and Smith, 1987](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/WR023i008p01471).
 
 ## 1. Mean flow velocity (20 points)
 
