@@ -18,14 +18,14 @@ classes: wide full-bleed
   There k_hs is never an input; here the depth of failure is never an input.
 -->
 
-A hillslope that creeps will not creep for ever. Push it steeper and at some
+A hillslope that creeps will not creep forever. Push it steeper and at some
 point it stops moving grain by grain and goes all at once. The
 [companion exercise]({{ '/exercises/hillslope-creep/' | relative_url }}) is
 about the slow way; this one is about the sudden way.
 
 The question that matters in the field is not only *whether* a slope will fail.
-It is **how deep the failure will be** – whether you are looking at a metre of
-soil peeling off, or ten metres of hillside on the move. Those are different
+It is **how deep the failure will be** – whether you are looking at a meter of
+soil peeling off, or ten meters of hillside on the move. Those are different
 events, they kill different numbers of people, and they need different
 engineering. So the depth is the thing this model solves for. **You never set
 it.**
@@ -83,7 +83,7 @@ it is the most effective way to bring a hillslope down.
 
   Do not reintroduce width="100%" on the frame. Every browser on an
   iPad is WebKit underneath, and WebKit sizes an iframe to its content
-  rather than honouring a percentage width.
+  rather than honoring a percentage width.
 -->
 <link rel="stylesheet"
       href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
@@ -163,7 +163,7 @@ which one you are looking at.
 ## Under the hood
 
 The model is [infiniteslope](https://github.com/GeomorphOnline/infiniteslope).
-It is the **infinite-slope** idealisation: the failure plane and the ground
+It is the **infinite-slope** idealization: the failure plane and the ground
 surface are parallel, and the slope is long enough that what happens at its
 ends does not matter. With slope-parallel seepage and a uniform degree of
 saturation $S$,
@@ -193,9 +193,9 @@ fraction of the bulk volume the water occupies, what it exerts is the head of
 water above the plane.
 
 **Saturation is uniform, not a water table.** A water table at a fixed *depth*
-leaves everything below it saturated for ever, so the deep limit of $FS$ is the
+leaves everything below it saturated forever, so the deep limit of $FS$ is the
 fully buoyant one no matter where the table sits – drying the hillside would
-then relocate the failure deeper instead of stabilising it. Being uniform and
+then relocate the failure deeper instead of stabilizing it. Being uniform and
 dimensionless, $S$ survives the limit:
 
 $$FS_\mathrm{deep} = \left[1 - S\,\frac{\rho_w}{\rho}\right]
@@ -211,7 +211,7 @@ here is the hillside itself.
 
 Every default is a published central value rather than a convenient one.
 Friction angles are peak values for flysch-derived colluvium, $\phi' = 35°$,
-with residual values near 31° and 23–29° in the shallowest few metres. Root
+with residual values near 31° and 23–29° in the shallowest few meters. Root
 cohesion is from the Oregon Coast Range, quoted in Part 5 above. Grain density
 and porosity are ordinary values for a quartz-rich soil and are yours to move.
 
