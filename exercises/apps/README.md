@@ -382,4 +382,59 @@ rebuilds the model both of them run**. After changing the model, rebuild and
 re-verify *both*; the hillslope demo was re-driven in a browser after the
 refactor that introduced this one, for exactly that reason.
 
+### lem_panel - a landscape of streams and hillslopes
+
+| | |
+|---|---|
+| model | `lemdemo` 0.1.0.dev0, from `~/models/landscape-evolution-demo` @ `456027a`. A local repository with no remote and no release, so this commit is not yet fetchable by a reader |
+| application source | the same repository @ `456027a` (`interactive_demo/lem_panel.py`) |
+| Landlab | 2.11.0, built as a WebAssembly wheel for Pyodide 0.29.3 by `~/models/landlab-pyodide` @ `2c5f142` (`./build.sh`). sha256 `1f73905196a1eb1597e24c1ebc93ad585c63f9182a8d97f39de661b306c35eb2`, 3,791,630 bytes. Landlab publishes wheels for Linux, macOS, and Windows only, and Pyodide does not carry it |
+| artesian | not shipped: the app hand-rolls its own play/pause and does not import `artesian.live`, so it is `grlp_panel`'s case and needs only one `-p` |
+| built | 2026-11-20 |
+| panel / bokeh | 1.9.4 / 3.9.2 |
+| browser requirements | `numpy`, and the Landlab wheel above, named with `-r` after copying it into this directory. micropip resolves the rest: scipy, pandas, matplotlib, statsmodels, and xarray from Pyodide, bmipy and requireit from PyPI |
+| design width / measured height | 900 px / 1060 px (document `scrollHeight` in headless Chrome at 700, 900, and 1280 px wide) |
+| version history | `0.1.0.dev0` built 2026-11-20. Not yet pushed |
+
+Built from a clean tree: both modules in the shipped `lemdemo` wheel are
+byte-identical to `456027a`.
+
+    cp ~/models/landlab-pyodide/dist/landlab-2.11.0-cp313-cp313-pyodide_2025_0_wasm32.whl exercises/apps/
+    cd ~/models/landscape-evolution-demo
+    artesian build interactive_demo/lem_panel.py -o <this directory> -p . \
+        -r numpy -r landlab-2.11.0-cp313-cp313-pyodide_2025_0_wasm32.whl \
+        --strip-wheels --strip-vendored
+
+Measured on 2026-11-20 in Chrome, served from this directory on localhost:
+
+- **The browser gives the native answer.** Paused at 364 kyr (182 steps of
+  2000 yr at the defaults), the trunk profile read from the page had 125 nodes,
+  a head at 149.56258899711793 m, and elevations summing to
+  5353.783785073139 m; the same run in native Python printed
+  149.56258899711793 and 5353.783785073138.
+- **30 frames per second**, the rate the app asks for, at the defaults and at
+  the slowest slider corner (K = 1 × 10⁻⁵ /yr, D = 0.40 m²/yr).
+- **First load, fresh profile: 15.0 s** from navigation to the live document,
+  and 67.3 MB by Content-Length, 49.0 MB of it from cdn.jsdelivr.net and
+  15.3 MB from this directory. A second load on a warm cache took 14.6 s: on a
+  fast connection the wait is Python importing, not the download.
+- **Inside the embed** at a 1100 px column the frame scales by 1.222 with no
+  console errors.
+
+**Landlab's imports are the download.** By the Pyodide 0.29.3 lock file the
+largest wheels it brings are scipy (13.26 MB), statsmodels (8.48 MB),
+matplotlib (6.72 MB), and pandas (4.49 MB).
+
+This build did **not** change `artesian-embed.js` or `artesian-embed.css`: both
+are byte-identical to the committed versions. It did rewrite
+`panel-1.9.4-py3-none-any.whl` and `bokeh-3.9.2-py3-none-any.whl` with one zip
+timestamp changed in each and every member's CRC and size unchanged; those two
+rewrites are not committed, so the deployed wheels are the bytes that were
+already here.
+
+`artesian build` runs the app in the building environment, which here was the
+system Python 3.12.3 (panel 1.9.4, bokeh 3.9.2, numpy 1.26.4) with Landlab
+2.11.0 on the path from another project's virtual environment. A build
+environment of its own is still to be made.
+
 Do not hand-edit anything here except this file.
