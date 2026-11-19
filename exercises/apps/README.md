@@ -105,10 +105,10 @@ with `cache-control: max-age=600`, so a reader who has the page open, or who
 returns within ten minutes, reinstalls the **previous** wheel under the same
 name and runs the old model. Verified: the wheel deployed at `9bf2313` and the
 one at `d268d9a` have identical filenames and different bytes, and the older one
-reproduces exactly the behaviour a reader reported as a bug in the new one.
+reproduces exactly the behavior a reader reported as a bug in the new one.
 
 There is nothing in the page, the console or the model output to say so. The
-only tell is behaviour that does not match the source.
+only tell is behavior that does not match the source.
 
 **Rule out the model before blaming the cache, and vice versa.** On 2026-09-04
 both happened within an hour and looked identical from the page: first a stale
@@ -228,7 +228,7 @@ dies in the browser with `ModuleNotFoundError`.
 placeholder, none is measured", and it is no longer true.** Every parameter in
 both reactions and in the flow now comes from a measurement or from geometry;
 the module docstring lists the sources. The one number taken from an
-observation rather than derived is labelled a calibration where it appears.
+observation rather than derived is labeled a calibration where it appears.
 
 What a reader should still discount is the OXIDATION timescale rather than its
 mechanism: no activation energy has ever been measured for oxidation of
