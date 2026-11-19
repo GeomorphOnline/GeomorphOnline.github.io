@@ -26,3 +26,5 @@ classes: wide
   supply, and base level.
 - [Bedrock river erosion]({{ '/exercises/bedrock-river-erosion/' | relative_url }})
   – river incision into rock by the stream-power law.
+- [Landscape evolution]({{ '/exercises/landscape-evolution/' | relative_url }})
+  – rock uplift, stream incision, and hillslope diffusion shaping a 2 km block.
