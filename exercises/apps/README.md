@@ -38,7 +38,7 @@ grep -o "micropip.install(\[[^]]*\])" exercises/apps/<app>_panel.js
 `grlp_panel` is the exception that needs only one: it predates `artesian.live`
 and hand-rolls its own play/pause.
 
-**Keep both strip flags on every rebuild.** They are not an optimisation to
+**Keep both strip flags on every rebuild.** They are not an optimization to
 apply once: `artesian` re-downloads and re-hosts `panel` and `bokeh` on each
 build, so a single rebuild that omits them replaces the 11.5 MB of wheels here
 with 36.9 MB of full ones. Nothing warns, and the only symptom is every
