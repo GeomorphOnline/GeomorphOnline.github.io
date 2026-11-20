@@ -386,18 +386,18 @@ refactor that introduced this one, for exactly that reason.
 
 | | |
 |---|---|
-| model | `lemdemo` 0.1.0.dev0, from `~/models/landscape-evolution-demo` @ `456027a`. A local repository with no remote and no release, so this commit is not yet fetchable by a reader |
-| application source | the same repository @ `456027a` (`interactive_demo/lem_panel.py`) |
+| model | `lemdemo` 0.1.0.dev0, from `~/models/landscape-evolution-demo` @ `a6dc18c`. A local repository with no remote and no release, so this commit is not yet fetchable by a reader |
+| application source | the same repository @ `a6dc18c` (`interactive_demo/lem_panel.py`) |
 | Landlab | 2.11.0, built as a WebAssembly wheel for Pyodide 0.29.3 by `~/models/landlab-pyodide` @ `2c5f142` (`./build.sh`). sha256 `1f73905196a1eb1597e24c1ebc93ad585c63f9182a8d97f39de661b306c35eb2`, 3,791,630 bytes. Landlab publishes wheels for Linux, macOS, and Windows only, and Pyodide does not carry it |
 | artesian | not shipped: the app hand-rolls its own play/pause and does not import `artesian.live`, so it is `grlp_panel`'s case and needs only one `-p` |
 | built | 2026-11-20 |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, and the Landlab wheel above, named with `-r` after copying it into this directory. micropip resolves the rest: scipy, pandas, matplotlib, statsmodels, and xarray from Pyodide, bmipy and requireit from PyPI |
-| design width / measured height | 900 px / 1060 px (document `scrollHeight` in headless Chrome at 700, 900, and 1280 px wide) |
-| version history | `0.1.0.dev0` built 2026-11-20. Not yet pushed |
+| design width / measured height | 900 px / 1060 px (document `scrollHeight` in headless Chrome at 700, 900, and 1280 px wide for the first build; 1059 and 1060 px in Chrome at 1440 px wide and in a 900 px frame for the second) |
+| version history | `0.1.0.dev0` built 2026-11-20 @ `456027a`, and rebuilt the same day @ `a6dc18c` under the same version. The rule above was not broken: the first build was never pushed, so no reader holds its wheel. Not yet pushed; the next build after a push bumps the version |
 
 Built from a clean tree: both modules in the shipped `lemdemo` wheel are
-byte-identical to `456027a`.
+byte-identical to `a6dc18c`.
 
     cp ~/models/landlab-pyodide/dist/landlab-2.11.0-cp313-cp313-pyodide_2025_0_wasm32.whl exercises/apps/
     cd ~/models/landscape-evolution-demo
@@ -405,7 +405,8 @@ byte-identical to `456027a`.
         -r numpy -r landlab-2.11.0-cp313-cp313-pyodide_2025_0_wasm32.whl \
         --strip-wheels --strip-vendored
 
-Measured on 2026-11-20 in Chrome, served from this directory on localhost:
+Measured on 2026-11-20 in Chrome, served from this directory on localhost, on
+the first build (`456027a`):
 
 - **The browser gives the native answer.** Paused at 364 kyr (182 steps of
   2000 yr at the defaults), the trunk profile read from the page had 125 nodes,
@@ -420,6 +421,18 @@ Measured on 2026-11-20 in Chrome, served from this directory on localhost:
   fast connection the wait is Python importing, not the download.
 - **Inside the embed** at a 1100 px column the frame scales by 1.222 with no
   console errors.
+
+Measured on the second build (`a6dc18c`) the same day, in Chrome on localhost:
+
+- **A click on the map reaches Python three ways.** A click chose the stream, a
+  shift-click the hill crest, and a right-click the hill crest, with the
+  browser's own menu staying shut over the map. Bokeh has no event for the
+  right mouse button and stops `contextmenu` at the plot, so the page listens
+  for it on the document in the capture phase. A listener in the bubble phase
+  never fires.
+- **One frame costs 5.4 ms in native Python**, against 3.6 ms for the model
+  step alone (mean of 100 frames at the defaults, with a stream and a crest
+  picked). Not timed in the browser.
 
 **Landlab's imports are the download.** By the Pyodide 0.29.3 lock file the
 largest wheels it brings are scipy (13.26 MB), statsmodels (8.48 MB),
