@@ -53,13 +53,13 @@ curved hilltop.
   honoring a percentage width.
 
   `height` is the demo's measured height at its design width, and is what the
-  reader looks at while Pyodide arrives: 1060 px at 900 px wide, measured in
+  reader looks at while Pyodide arrives: 1167 px at 900 px wide, measured in
   headless Chrome on 2026-11-20 (see exercises/apps/README.md).
 -->
 <link rel="stylesheet"
       href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
 <iframe src="{{ '/exercises/apps/lem_panel.html' | relative_url }}" data-artesian data-design-width="900" scrolling="no"
-        height="1060" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
+        height="1167" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
@@ -69,12 +69,13 @@ model runs on your own machine, inside the browser tab.
 
 ## What the controls do
 
-**▶** runs the clock, which reads in thousands of years and advances 2000 years
-per frame. Change a slider while it runs and the landscape is left where it is
+**▶** runs the clock, which reads in thousands of years above the map and
+advances 2000 years per frame. Change a slider while it runs and the landscape is left where it is
 and allowed to respond. **Start from a flat surface** begins again from a
 surface that is flat to within a millimeter, at the current slider settings.
-Click the map to choose the stream. Right-click it (or shift-click) to choose
-the hill crest.
+Click the map to choose the stream. Shift-click it to choose the hillcrest. In
+some browsers a right-click does this too. On a touch screen, tap for the
+stream and press and hold for the hillcrest.
 
 | | |
 |---|---|
@@ -91,15 +92,21 @@ water leaves to the south.
 
 | | |
 |---|---|
-| long profile | the stream nearest your click, from its head to the south edge. Before any click it is the trunk stream, which brings the most drainage area to the south edge. The title gives the time and the elevation of the highest point on the block |
-| map | shaded relief colored by elevation, with the stream in blue, the hillslope profile in dark gray, and its crest marked |
-| hill crest | the hill crest above your right-click, with the profile that runs from it down the steepest descent to the valley on either side. Before any click it is the highest point on the block. The dashed parabola has the curvature of the crest. The title gives that curvature, $\nabla^2 z$, and $-D \nabla^2 z$ |
+| map | shaded relief colored by elevation, with the stream in blue, the hillslope profile in dark gray, and its crest marked. The title gives the time and the elevation of the highest point on the block |
+| hillcrest | the hillcrest above your shift-click, with the profile that runs from it down the steepest descent to the valley on either side. Before any click it is the highest point on the block. The dashed parabola has the curvature of the crest. The title gives that curvature, $\nabla^2 z$, and $-D \nabla^2 z$ |
+| long profile | the stream nearest your click, from its head to the south edge. Before any click it is the trunk stream, which brings the most drainage area to the south edge |
+| slope–area | the slope at each node of that stream against its drainage area, on logarithmic axes |
+
+The open circle on the map, the long profile, and the slope–area plot is the
+channel–hillslope transition: the first point down the stream where the surface
+is not convex ($\nabla^2 z \geq 0$).
 
 Hover over a node on the long profile to read its downstream distance,
-elevation, and drainage area. Hover over the map to read elevation, drainage
-area, and curvature $\nabla^2 z$, which is negative on a hilltop. Hover over a
-node on the hillslope to read its distance from the crest, elevation, drainage
-area, and curvature.
+elevation, drainage area, and slope. Hover over a point on the slope–area plot
+to read the same node's drainage area, slope, and downstream distance. Hover
+over the map to read elevation, drainage area, and curvature $\nabla^2 z$,
+which is negative on a hilltop. Hover over a node on the hillslope to read its
+distance from the crest, elevation, drainage area, and curvature.
 
 ## Two things this model will not do
 
