@@ -73,6 +73,8 @@ model runs on your own machine, inside the browser tab.
 per frame. Change a slider while it runs and the landscape is left where it is
 and allowed to respond. **Start from a flat surface** begins again from a
 surface that is flat to within a millimeter, at the current slider settings.
+Click the map to choose the stream. Right-click it (or shift-click) to choose
+the hill crest.
 
 | | |
 |---|---|
@@ -89,13 +91,15 @@ water leaves to the south.
 
 | | |
 |---|---|
-| long profile | the trunk stream, which brings the most drainage area to the south edge, from its head to its outlet. The title gives the time and the elevation of the highest point on the block |
-| map | shaded relief colored by elevation, with the trunk stream in blue and the transect dashed |
-| transect | elevation from west to east across the middle of the block |
+| long profile | the stream nearest your click, from its head to the south edge. Before any click it is the trunk stream, which brings the most drainage area to the south edge. The title gives the time and the elevation of the highest point on the block |
+| map | shaded relief colored by elevation, with the stream in blue, the hillslope profile in dark gray, and its crest marked |
+| hill crest | the hill crest above your right-click, with the profile that runs from it down the steepest descent to the valley on either side. Before any click it is the highest point on the block. The dashed parabola has the curvature of the crest. The title gives that curvature, $\nabla^2 z$, and $-D \nabla^2 z$ |
 
 Hover over a node on the long profile to read its downstream distance,
 elevation, and drainage area. Hover over the map to read elevation, drainage
-area, and curvature $\nabla^2 z$, which is negative on a hilltop.
+area, and curvature $\nabla^2 z$, which is negative on a hilltop. Hover over a
+node on the hillslope to read its distance from the crest, elevation, drainage
+area, and curvature.
 
 ## Two things this model will not do
 
