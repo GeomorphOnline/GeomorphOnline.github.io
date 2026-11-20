@@ -386,18 +386,19 @@ refactor that introduced this one, for exactly that reason.
 
 | | |
 |---|---|
-| model | `lemdemo` 0.1.0.dev0, from `~/models/landscape-evolution-demo` @ `a6dc18c`. A local repository with no remote and no release, so this commit is not yet fetchable by a reader |
-| application source | the same repository @ `a6dc18c` (`interactive_demo/lem_panel.py`) |
+| model | `lemdemo` 0.1.0.dev1, from `~/models/landscape-evolution-demo` @ `0ca7d16`. A local repository with no remote and no release, so this commit is not yet fetchable by a reader |
+| application source | the same repository @ `0ca7d16` (`interactive_demo/lem_panel.py`) |
 | Landlab | 2.11.0, built as a WebAssembly wheel for Pyodide 0.29.3 by `~/models/landlab-pyodide` @ `2c5f142` (`./build.sh`). sha256 `1f73905196a1eb1597e24c1ebc93ad585c63f9182a8d97f39de661b306c35eb2`, 3,791,630 bytes. Landlab publishes wheels for Linux, macOS, and Windows only, and Pyodide does not carry it |
 | artesian | not shipped: the app hand-rolls its own play/pause and does not import `artesian.live`, so it is `grlp_panel`'s case and needs only one `-p` |
 | built | 2026-11-20 |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, and the Landlab wheel above, named with `-r` after copying it into this directory. micropip resolves the rest: scipy, pandas, matplotlib, statsmodels, and xarray from Pyodide, bmipy and requireit from PyPI |
-| design width / measured height | 900 px / 1060 px (document `scrollHeight` in headless Chrome at 700, 900, and 1280 px wide for the first build; 1059 and 1060 px in Chrome at 1440 px wide and in a 900 px frame for the second) |
-| version history | `0.1.0.dev0` built 2026-11-20 @ `456027a`, and rebuilt the same day @ `a6dc18c` under the same version. The rule above was not broken: the first build was never pushed, so no reader holds its wheel. Pushed 2026-11-20; the next build bumps the version |
+| design width / measured height | 900 px / 1167 px (document `scrollHeight` in headless Chrome at 900 px wide for the third build; 1060 px for the first two, which had three plots) |
+| version history | `0.1.0.dev0` built 2026-11-20 @ `456027a`, and rebuilt the same day @ `a6dc18c` under the same version. The rule above was not broken: the first build was never pushed, so no reader holds its wheel. Pushed 2026-11-20. `0.1.0.dev1` built 2026-11-20 @ `0ca7d16`: four plots, the channel–hillslope transition, the hillcrest by a shift-click or a held press, Landlab's logo, and the code review's changes. The next build bumps the version |
 
-Built from a clean tree: both modules in the shipped `lemdemo` wheel are
-byte-identical to `a6dc18c`.
+Built from a clean tree: the two modules and the logo in the shipped `lemdemo`
+wheel are byte-identical to `0ca7d16`. The wheel is 47,304 bytes, sha256
+`cd655f6a9cc012ac374421a69c0860c27ad8609af92a1a18717a51c884fa3677`.
 
     cp ~/models/landlab-pyodide/dist/landlab-2.11.0-cp313-cp313-pyodide_2025_0_wasm32.whl exercises/apps/
     cd ~/models/landscape-evolution-demo
@@ -433,6 +434,19 @@ Measured on the second build (`a6dc18c`) the same day, in Chrome on localhost:
 - **One frame costs 5.4 ms in native Python**, against 3.6 ms for the model
   step alone (mean of 100 frames at the defaults, with a stream and a crest
   picked). Not timed in the browser.
+
+Measured on the third build (`0ca7d16`) the same day, in headless Chrome on
+localhost, served with the `panel`, `bokeh`, and Landlab wheels as committed
+here:
+
+- **A click chooses the stream and a shift-click the hillcrest; on a touch
+  screen, a tap and a 0.9 s press.** A click on the map's legend, which covers
+  5.8 % of the map, chooses the stream under it.
+- **30.21 frames per second** over 8 s at the defaults, with 15.19 patch
+  messages per frame.
+- **A Pause clicked 0.3 s after the first Run is answered after 0.56 s**, and
+  after 0.78 s with each model step padded to 40 ms.
+- The only console error is the local server's missing `favicon.ico`.
 
 **Landlab's imports are the download.** By the Pyodide 0.29.3 lock file the
 largest wheels it brings are scipy (13.26 MB), statsmodels (8.48 MB),
