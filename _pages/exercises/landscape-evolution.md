@@ -59,7 +59,7 @@ curved hilltop.
 <link rel="stylesheet"
       href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
 <iframe src="{{ '/exercises/apps/lem_panel.html' | relative_url }}" data-artesian data-design-width="900" scrolling="no"
-        height="1167" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
+        height="1190" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
@@ -70,7 +70,9 @@ model runs on your own machine, inside the browser tab.
 ## What the controls do
 
 **▶** runs the clock, which reads in thousands of years above the map and
-advances 2000 years per frame. Change a slider while it runs and the landscape is left where it is
+advances 2000 years per frame. **Speed** sets how many thousands of years pass
+each second by changing the time between frames, and the landscape is the same
+at any speed. Change a slider while it runs and the landscape is left where it is
 and allowed to respond. **Start from a flat surface** begins again from a
 surface that is flat to within a millimeter, at the current slider settings.
 Click the map to choose the stream. Shift-click it to choose the hillcrest. In
@@ -99,7 +101,9 @@ water leaves to the south.
 
 The open circle on the map, the long profile, and the slope–area plot is the
 channel–hillslope transition: the first point down the stream where the surface
-is not convex ($\nabla^2 z \geq 0$).
+is not convex ($\nabla^2 z \geq 0$). Check **channel–hillslope transition** to
+draw the line $\nabla^2 z = 0$ over the whole map. Check **ridgelines** to draw
+the ridges between the streams that drain at least 0.04 km².
 
 Hover over a node on the long profile to read its downstream distance,
 elevation, drainage area, and slope. Hover over a point on the slope–area plot
