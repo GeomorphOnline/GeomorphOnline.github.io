@@ -386,19 +386,19 @@ refactor that introduced this one, for exactly that reason.
 
 | | |
 |---|---|
-| model | `lemdemo` 0.1.0.dev2, from `~/models/landscape-evolution-demo` @ `41a7a73`. A local repository with no remote and no release, so this commit is not yet fetchable by a reader |
-| application source | the same repository @ `41a7a73` (`interactive_demo/lem_panel.py`) |
+| model | `lemdemo` 0.1.0.dev3, from `~/models/landscape-evolution-demo` @ `1597026`. A local repository with no remote and no release, so this commit is not yet fetchable by a reader |
+| application source | the same repository @ `1597026` (`interactive_demo/lem_panel.py`) |
 | Landlab | 2.11.0, built as a WebAssembly wheel for Pyodide 0.29.3 by `~/models/landlab-pyodide` @ `2c5f142` (`./build.sh`). sha256 `1f73905196a1eb1597e24c1ebc93ad585c63f9182a8d97f39de661b306c35eb2`, 3,791,630 bytes. Landlab publishes wheels for Linux, macOS, and Windows only, and Pyodide does not carry it |
 | artesian | not shipped: the app hand-rolls its own play/pause and does not import `artesian.live`, so it is `grlp_panel`'s case and needs only one `-p` |
 | built | 2026-11-20 |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, and the Landlab wheel above, named with `-r` after copying it into this directory. micropip resolves the rest: contourpy, scipy, pandas, matplotlib, statsmodels, and xarray from Pyodide, bmipy and requireit from PyPI |
-| design width / measured height | 900 px / 1190 px (document `scrollHeight` in headless Chrome at 900 px wide for the fourth build; 1167 px for the third; 1060 px for the first two, which had three plots) |
-| version history | `0.1.0.dev0` built 2026-11-20 @ `456027a`, and rebuilt the same day @ `a6dc18c` under the same version. The rule above was not broken: the first build was never pushed, so no reader holds its wheel. Pushed 2026-11-20. `0.1.0.dev1` built 2026-11-20 @ `0ca7d16`: four plots, the channel–hillslope transition, the hillcrest by a shift-click or a held press, Landlab's logo, and the code review's changes. Pushed 2026-11-20. `0.1.0.dev2` built 2026-11-20 @ `41a7a73`: a speed slider, and checkboxes for the line ∇²z = 0 and for the ridgelines. The next build bumps the version |
+| design width / measured height | 900 px / 1188 px (document `scrollHeight` in headless Chrome at 900 px wide for the fifth build; 1190 px for the fourth; 1167 px for the third; 1060 px for the first two, which had three plots) |
+| version history | `0.1.0.dev0` built 2026-11-20 @ `456027a`, and rebuilt the same day @ `a6dc18c` under the same version. The rule above was not broken: the first build was never pushed, so no reader holds its wheel. Pushed 2026-11-20. `0.1.0.dev1` built 2026-11-20 @ `0ca7d16`: four plots, the channel–hillslope transition, the hillcrest by a shift-click or a held press, Landlab's logo, and the code review's changes. Pushed 2026-11-20. `0.1.0.dev2` built 2026-11-20 @ `41a7a73`: a speed slider, and checkboxes for the line ∇²z = 0 and for the ridgelines. Pushed 2026-11-20. `0.1.0.dev3` built 2026-11-20 @ `1597026`: a channels checkbox, and the interface reorganized (controls in a box, checkboxes as color keys above the map, no plot toolbars, the four frames on one grid). The next build bumps the version |
 
 Built from a clean tree: the two modules and the logo in the shipped `lemdemo`
-wheel are byte-identical to `41a7a73`. The wheel is 49,840 bytes, sha256
-`a3b90a9443b2283f766032c88eab07de5c470395325ce19efa013a73ce095c9b`.
+wheel are byte-identical to `1597026`. The wheel is 50,193 bytes, sha256
+`f08345add3b1343f646de35fef56361a0524a634f27631bfe7c02280cc75f3c1`.
 
     cp ~/models/landlab-pyodide/dist/landlab-2.11.0-cp313-cp313-pyodide_2025_0_wasm32.whl exercises/apps/
     cd ~/models/landscape-evolution-demo
@@ -462,6 +462,21 @@ localhost, built into a scratch directory and copied here (`lem_panel.html`,
 - A click and a shift-click with both boxes checked choose the stream and the
   hillcrest as before.
 - The only console error is the local server's missing `favicon.ico`.
+
+Measured on the fifth build (`1597026`) the same day, in headless Chrome on
+localhost, built into a scratch directory and copied here:
+
+- **26.80 to 30.43 frames per second** over 8 s each at the defaults and full
+  speed, for the eight settings of the three checkboxes and the first again.
+- **At the defaults the channels are 1464 links**, each from a channel node to
+  its receiver. A channel starts where the drainage area is at least 4 cells
+  (1600 m²) and ∇²z ≥ 0, and every node below it is channel.
+- **The four frames are 330 px wide.** Their left edges are at 62 px in the
+  left column and 545 px in the right; their tops are at 285 px in the upper
+  row and 705 px in the lower.
+- A click and a shift-click with every box checked choose the stream and the
+  hillcrest. The only console error is the local server's missing
+  `favicon.ico`.
 
 **Landlab's imports are the download.** By the Pyodide 0.29.3 lock file the
 largest wheels it brings are scipy (13.26 MB), statsmodels (8.48 MB),
