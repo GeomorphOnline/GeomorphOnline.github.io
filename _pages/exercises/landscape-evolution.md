@@ -59,7 +59,7 @@ curved hilltop.
 <link rel="stylesheet"
       href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
 <iframe src="{{ '/exercises/apps/lem_panel.html' | relative_url }}" data-artesian data-design-width="900" scrolling="no"
-        height="1190" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
+        height="1188" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
@@ -101,9 +101,16 @@ water leaves to the south.
 
 The open circle on the map, the long profile, and the slope–area plot is the
 channel–hillslope transition: the first point down the stream where the surface
-is not convex ($\nabla^2 z \geq 0$). Check **channel–hillslope transition** to
-draw the line $\nabla^2 z = 0$ over the whole map. Check **ridgelines** to draw
-the ridges between the streams that drain at least 0.04 km².
+is not convex ($\nabla^2 z \geq 0$).
+
+The three checkboxes above the map each draw a set of lines on it, in the
+checkbox's own color:
+
+| | |
+|---|---|
+| channel–hillslope transition | the line $\nabla^2 z = 0$ over the whole map |
+| ridgelines | the ridges between the streams that drain at least 0.04 km² |
+| channels | every channel. A channel starts where 1600 m² drain to it, and no higher than its transition |
 
 Hover over a node on the long profile to read its downstream distance,
 elevation, drainage area, and slope. Hover over a point on the slope–area plot
