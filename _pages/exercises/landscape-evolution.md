@@ -59,7 +59,7 @@ curved hilltop.
 <link rel="stylesheet"
       href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
 <iframe src="{{ '/exercises/apps/lem_panel.html' | relative_url }}" data-artesian data-design-width="900" scrolling="no"
-        height="1268" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
+        height="1287" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
@@ -118,7 +118,8 @@ chosen stream:
 | | |
 |---|---|
 | Strahler order | darker blues with the order, from first to sixth and above |
-| $k_{sn}$ | the steepness of each link of a channel, $k_{sn} = S A^{0.5}$, from blue through orange to red on a logarithmic scale from 2.5 m to 250 m |
+| $k_{sn}$ | the steepness of each link of a channel, $k_{sn} = S A^{0.5}$, from blue through orange to red on a logarithmic scale from 2.5 m to 250 m. The chosen stream's points on the slope–area plot take the same colors from the transition down |
+| $\chi$ | $\chi = \int (A_0 / A)^{0.5} \, dx$ up each channel from the edge of the block, with $A_0$ = 1 m², from 0 m to 7 m |
 
 The drainage density appears beside them: the length of the channels over the
 area of the block.
