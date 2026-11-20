@@ -394,7 +394,7 @@ refactor that introduced this one, for exactly that reason.
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, and the Landlab wheel above, named with `-r` after copying it into this directory. micropip resolves the rest: scipy, pandas, matplotlib, statsmodels, and xarray from Pyodide, bmipy and requireit from PyPI |
 | design width / measured height | 900 px / 1060 px (document `scrollHeight` in headless Chrome at 700, 900, and 1280 px wide for the first build; 1059 and 1060 px in Chrome at 1440 px wide and in a 900 px frame for the second) |
-| version history | `0.1.0.dev0` built 2026-11-20 @ `456027a`, and rebuilt the same day @ `a6dc18c` under the same version. The rule above was not broken: the first build was never pushed, so no reader holds its wheel. Not yet pushed; the next build after a push bumps the version |
+| version history | `0.1.0.dev0` built 2026-11-20 @ `456027a`, and rebuilt the same day @ `a6dc18c` under the same version. The rule above was not broken: the first build was never pushed, so no reader holds its wheel. Pushed 2026-11-20; the next build bumps the version |
 
 Built from a clean tree: both modules in the shipped `lemdemo` wheel are
 byte-identical to `a6dc18c`.
