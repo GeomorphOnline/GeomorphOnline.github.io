@@ -386,19 +386,19 @@ refactor that introduced this one, for exactly that reason.
 
 | | |
 |---|---|
-| model | `lemdemo` 0.1.0.dev7, from `~/models/landscape-evolution-demo` @ `307e80d`. A local repository with no remote and no release, so this commit is not yet fetchable by a reader |
-| application source | the same repository @ `307e80d` (`interactive_demo/lem_panel.py`) |
+| model | `lemdemo` 0.1.0.dev8, from `~/models/landscape-evolution-demo` @ `f6b5585`. A local repository with no remote and no release, so this commit is not yet fetchable by a reader |
+| application source | the same repository @ `f6b5585` (`interactive_demo/lem_panel.py`) |
 | Landlab | 2.11.0, built as a WebAssembly wheel for Pyodide 0.29.3 by `~/models/landlab-pyodide` @ `2c5f142` (`./build.sh`). sha256 `1f73905196a1eb1597e24c1ebc93ad585c63f9182a8d97f39de661b306c35eb2`, 3,791,630 bytes. Landlab publishes wheels for Linux, macOS, and Windows only, and Pyodide does not carry it |
 | artesian | not shipped: the app hand-rolls its own play/pause and does not import `artesian.live`, so it is `grlp_panel`'s case and needs only one `-p` |
 | built | 2026-11-20 |
 | panel / bokeh | 1.9.4 / 3.9.2 |
 | browser requirements | `numpy`, and the Landlab wheel above, named with `-r` after copying it into this directory. micropip resolves the rest: contourpy, scipy, pandas, matplotlib, statsmodels, and xarray from Pyodide, bmipy and requireit from PyPI |
-| design width / measured height | 900 px / 1268 px (document `scrollHeight` in headless Chrome at 900 px wide for the ninth build; 1206 px for the seventh and eighth; 1188 px for the fifth and sixth; 1190 px for the fourth; 1167 px for the third; 1060 px for the first two, which had three plots) |
-| version history | `0.1.0.dev0` built 2026-11-20 @ `456027a`, and rebuilt the same day @ `a6dc18c` under the same version. The rule above was not broken: the first build was never pushed, so no reader holds its wheel. Pushed 2026-11-20. `0.1.0.dev1` built 2026-11-20 @ `0ca7d16`: four plots, the channel–hillslope transition, the hillcrest by a shift-click or a held press, Landlab's logo, and the code review's changes. Pushed 2026-11-20. `0.1.0.dev2` built 2026-11-20 @ `41a7a73`: a speed slider, and checkboxes for the line ∇²z = 0 and for the ridgelines. Pushed 2026-11-20. `0.1.0.dev3` built 2026-11-20 @ `1597026`: a channels checkbox, and the interface reorganized (controls in a box, checkboxes as color keys above the map, no plot toolbars, the four frames on one grid). Pushed 2026-11-20. `0.1.0.dev4` built 2026-11-20 @ `6a6af74`: every plot has a fixed outer size, and the rows wrap in a frame narrower than 900 px. Pushed 2026-11-20. `0.1.0.dev5` built 2026-11-20 @ `cb1b406`: channels colored by Strahler order with a halo on the chosen stream, the drainage density, and a shift-click that takes the nearest crest. Pushed 2026-11-20. `0.1.0.dev6` built 2026-11-20 @ `7851466`: the hill profile goes down the steepest of eight neighbors on the surface as drawn. Pushed 2026-11-20. `0.1.0.dev7` built 2026-11-20 @ `307e80d`: channels colored by none, Strahler order, or ksn, and a fit of S = ks A^(−θ) on the slope–area plot. The next build bumps the version |
+| design width / measured height | 900 px / 1287 px (document `scrollHeight` in headless Chrome at 900 px wide for the tenth build; 1268 px for the ninth; 1206 px for the seventh and eighth; 1188 px for the fifth and sixth; 1190 px for the fourth; 1167 px for the third; 1060 px for the first two, which had three plots) |
+| version history | `0.1.0.dev0` built 2026-11-20 @ `456027a`, and rebuilt the same day @ `a6dc18c` under the same version. The rule above was not broken: the first build was never pushed, so no reader holds its wheel. Pushed 2026-11-20. `0.1.0.dev1` built 2026-11-20 @ `0ca7d16`: four plots, the channel–hillslope transition, the hillcrest by a shift-click or a held press, Landlab's logo, and the code review's changes. Pushed 2026-11-20. `0.1.0.dev2` built 2026-11-20 @ `41a7a73`: a speed slider, and checkboxes for the line ∇²z = 0 and for the ridgelines. Pushed 2026-11-20. `0.1.0.dev3` built 2026-11-20 @ `1597026`: a channels checkbox, and the interface reorganized (controls in a box, checkboxes as color keys above the map, no plot toolbars, the four frames on one grid). Pushed 2026-11-20. `0.1.0.dev4` built 2026-11-20 @ `6a6af74`: every plot has a fixed outer size, and the rows wrap in a frame narrower than 900 px. Pushed 2026-11-20. `0.1.0.dev5` built 2026-11-20 @ `cb1b406`: channels colored by Strahler order with a halo on the chosen stream, the drainage density, and a shift-click that takes the nearest crest. Pushed 2026-11-20. `0.1.0.dev6` built 2026-11-20 @ `7851466`: the hill profile goes down the steepest of eight neighbors on the surface as drawn. Pushed 2026-11-20. `0.1.0.dev7` built 2026-11-20 @ `307e80d`: channels colored by none, Strahler order, or ksn, and a fit of S = ks A^(−θ) on the slope–area plot. Pushed 2026-11-20. `0.1.0.dev8` built 2026-11-20 @ `f6b5585`: χ as a fourth coloring, and the slope–area points colored by ksn in that coloring. The next build bumps the version |
 
 Built from a clean tree: the two modules and the logo in the shipped `lemdemo`
-wheel are byte-identical to `307e80d`. The wheel is 52,121 bytes, sha256
-`544d9d0efccfe4e19c4b360593e5069902faaa3873dc298c145b43126bee8c36`.
+wheel are byte-identical to `f6b5585`. The wheel is 52,405 bytes, sha256
+`07d9b3971383ccbefb131f60d3c337f9de8eb4b84b32b9f8103cb267ca3660d3`.
 
     cp ~/models/landlab-pyodide/dist/landlab-2.11.0-cp313-cp313-pyodide_2025_0_wasm32.whl exercises/apps/
     cd ~/models/landscape-evolution-demo
@@ -528,6 +528,12 @@ localhost:
 - **29.8 to 30.2 frames per second** in each of the three colorings with
   every box checked.
 - A click and a shift-click choose the stream and the hillcrest.
+
+The tenth build (`f6b5585`) adds χ: the sum down each channel's flow path of
+(A₀/A)^0.5 times each link's length, with A₀ = 1 m². Its largest value ran
+from 4.79 to 6.49 m across five slider settings at 1800 kyr in native Python,
+and the color scale is fixed at 0 to 7 m. 29.8 to 30.2 frames per second in
+each of the four colorings, in headless Chrome on localhost.
 
 **Landlab's imports are the download.** By the Pyodide 0.29.3 lock file the
 largest wheels it brings are scipy (13.26 MB), statsmodels (8.48 MB),
