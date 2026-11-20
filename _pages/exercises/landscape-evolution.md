@@ -112,8 +112,8 @@ checkbox's own color:
 | ridgelines | the ridges between the streams that drain at least 0.04 km² |
 | channels | every channel. A channel starts where 1600 m² drain to it, and no higher than its transition |
 
-While the channels are drawn, they can be colored, and a halo then marks the
-chosen stream:
+The channels can be colored, and a halo then marks the chosen stream. The
+coloring can be chosen before the channels are drawn:
 
 | | |
 |---|---|
