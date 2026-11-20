@@ -59,7 +59,7 @@ curved hilltop.
 <link rel="stylesheet"
       href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
 <iframe src="{{ '/exercises/apps/lem_panel.html' | relative_url }}" data-artesian data-design-width="900" scrolling="no"
-        height="1206" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
+        height="1268" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
@@ -111,10 +111,22 @@ checkbox's own color:
 | channel–hillslope transition | the line $\nabla^2 z = 0$ over the whole map |
 | ridgelines | the ridges between the streams that drain at least 0.04 km² |
 | channels | every channel. A channel starts where 1600 m² drain to it, and no higher than its transition |
-| Strahler order | the channels again, darker with their Strahler order, from first to sixth and above. A halo then marks the chosen stream |
 
-While the channels are drawn, the drainage density appears beside the
-checkboxes: the length of the channels over the area of the block.
+While the channels are drawn, they can be colored, and a halo then marks the
+chosen stream:
+
+| | |
+|---|---|
+| Strahler order | darker blues with the order, from first to sixth and above |
+| $k_{sn}$ | the steepness of each link of a channel, $k_{sn} = S A^{0.5}$, from blue through orange to red on a logarithmic scale from 2.5 m to 250 m |
+
+The drainage density appears beside them: the length of the channels over the
+area of the block.
+
+Check **fit** to draw $S = k_s A^{-\theta}$ through the chosen stream on the
+slope–area plot, from its transition down. The plot's title gives $\theta$ and
+$k_s$ with both free ($k_s$ is in m$^{2\theta}$), and $k_{sn}$ with $\theta$
+held at 0.5.
 
 Hover over a node on the long profile to read its downstream distance,
 elevation, drainage area, and slope. Hover over a point on the slope–area plot
