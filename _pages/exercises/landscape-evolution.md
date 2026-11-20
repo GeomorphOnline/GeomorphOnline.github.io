@@ -59,7 +59,7 @@ curved hilltop.
 <link rel="stylesheet"
       href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
 <iframe src="{{ '/exercises/apps/lem_panel.html' | relative_url }}" data-artesian data-design-width="900" scrolling="no"
-        height="1188" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
+        height="1206" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
@@ -95,7 +95,7 @@ water leaves to the south.
 | | |
 |---|---|
 | map | shaded relief colored by elevation, with the stream in blue, the hillslope profile in dark gray, and its crest marked. The title gives the time and the elevation of the highest point on the block |
-| hillcrest | the hillcrest above your shift-click, with the profile that runs from it down the steepest descent to the valley on either side. Before any click it is the highest point on the block. The dashed parabola has the curvature of the crest. The title gives that curvature, $\nabla^2 z$, and $-D \nabla^2 z$ |
+| hillcrest | the hillcrest nearest your shift-click, with the profile that runs from it down the steepest descent to the valley on either side. Before any click it is the highest point on the block. The dashed parabola has the curvature of the crest. The title gives that curvature, $\nabla^2 z$, and $-D \nabla^2 z$ |
 | long profile | the stream nearest your click, from its head to the south edge. Before any click it is the trunk stream, which brings the most drainage area to the south edge |
 | slope–area | the slope at each node of that stream against its drainage area, on logarithmic axes |
 
@@ -103,7 +103,7 @@ The open circle on the map, the long profile, and the slope–area plot is the
 channel–hillslope transition: the first point down the stream where the surface
 is not convex ($\nabla^2 z \geq 0$).
 
-The three checkboxes above the map each draw a set of lines on it, in the
+The checkboxes above the map each draw a set of lines on it, in the
 checkbox's own color:
 
 | | |
@@ -111,6 +111,10 @@ checkbox's own color:
 | channel–hillslope transition | the line $\nabla^2 z = 0$ over the whole map |
 | ridgelines | the ridges between the streams that drain at least 0.04 km² |
 | channels | every channel. A channel starts where 1600 m² drain to it, and no higher than its transition |
+| Strahler order | the channels again, darker with their Strahler order, from first to sixth and above. A halo then marks the chosen stream |
+
+While the channels are drawn, the drainage density appears beside the
+checkboxes: the length of the channels over the area of the block.
 
 Hover over a node on the long profile to read its downstream distance,
 elevation, drainage area, and slope. Hover over a point on the slope–area plot
