@@ -59,7 +59,7 @@ curved hilltop.
 <link rel="stylesheet"
       href="{{ '/exercises/apps/artesian-embed.css' | relative_url }}?v=f6188e3a">
 <iframe src="{{ '/exercises/apps/lem_panel.html' | relative_url }}" data-artesian data-design-width="900" scrolling="no"
-        height="1287" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
+        height="1304" title="Landscape-evolution model: uplift, stream power, and hillslope diffusion"></iframe>
 <script src="{{ '/exercises/apps/artesian-embed.js' | relative_url }}?v=5558fdc9"></script>
 
 **The first load takes 10–30 seconds** while your browser downloads the Python
@@ -127,7 +127,10 @@ area of the block.
 Check **fit** to draw $S = k_s A^{-\theta}$ through the chosen stream on the
 slope–area plot, from its transition down. The plot's title gives $\theta$ and
 $k_s$ with both free ($k_s$ is in m$^{2\theta}$), and $k_{sn}$ with $\theta$
-held at 0.5.
+held at 0.5. After the uplift rate changes, the stream is fitted reach by
+reach: the reach by the outlet that has adjusted and the reach above it that
+has not each get a line, and the title gives each one's $k_{sn}$. The smeared
+reach between them gets none.
 
 Hover over a node on the long profile to read its downstream distance,
 elevation, drainage area, and slope. Hover over a point on the slope–area plot
