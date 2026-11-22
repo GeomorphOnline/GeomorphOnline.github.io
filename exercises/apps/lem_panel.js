@@ -26,7 +26,7 @@ async function startApplication() {
   try {
     await self.pyodide.runPythonAsync(`
       import micropip
-      await micropip.install(['bokeh-3.9.2-py3-none-any.whl', 'panel-1.9.4-py3-none-any.whl', 'pyodide-http', 'lemdemo-0.1.0.dev12-py3-none-any.whl', 'numpy', 'landlab-2.11.0-cp313-cp313-pyodide_2025_0_wasm32.whl']);
+      await micropip.install(['bokeh-3.9.2-py3-none-any.whl', 'panel-1.9.4-py3-none-any.whl', 'pyodide-http', 'lemdemo-0.1.0.dev13-py3-none-any.whl', 'numpy', 'landlab-2.11.0-cp313-cp313-pyodide_2025_0_wasm32.whl']);
     `);
   } catch(e) {
     console.log(e)
