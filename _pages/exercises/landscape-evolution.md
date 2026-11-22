@@ -141,12 +141,15 @@ over the map to read elevation, drainage area, and curvature $\nabla^2 z$,
 which is negative on a hilltop. Hover over a node on the hillslope to read its
 distance from the crest, elevation, drainage area, and curvature.
 
-## Two things this model will not do
+## Soil in the valleys
 
-**Hillslopes erode and never deposit.** The hillslope term lowers the surface
-where it is convex and does nothing where it is concave: soil that reaches a
-hollow is taken to leave with the stream. Allow deposition and soil fills the
-valley floors, and the streams steepen past $U = K A^m S^n$.
+The hillslope term lowers the surface where it is convex and raises it where
+it is concave: soil that reaches a valley floor is deposited there, and the
+stream removes it along with the rock that rises beneath it. A steady stream
+holds $K A^m S^n = U + D \nabla^2 z$, and is steeper than $U = K A^m S^n$
+gives.
+
+## What this model will not do
 
 **Uplift is uniform and base level is fixed.** The south edge stays at zero
 elevation and every other node rises at $U$. There are no faults and no tilting.
